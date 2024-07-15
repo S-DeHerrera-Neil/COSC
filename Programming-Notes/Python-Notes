@@ -13,11 +13,10 @@ bool-boolean(True/False)
 int-integers(1,2,3...)
 float-floating point decimal(1.0,1.2,1.3....)
 str-string('Hello'...)
-
-ex. for data types below [,1,2,3,4,5]
-  tuple-
-  list-
-Both ^ hold multiple items
+  
+tuple-immutable
+list-mutable
+Both ^ hold multiple items. example for both data types [,1,2,3,4,5]
 */
 
 

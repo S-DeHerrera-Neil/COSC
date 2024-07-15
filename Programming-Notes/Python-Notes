@@ -59,6 +59,12 @@ logical AND- and
 logical OR- or
 logical NOT- not
 */
+
+        ## Functions ##
+
+        ## Scope ##
+    # Global #
+    # Local #
                       ## Lesson Plan 112-SCRPY004: Flow Control - Loops ##
 
                       ## Lesson Plan 112-SCRPY005: File IO ##

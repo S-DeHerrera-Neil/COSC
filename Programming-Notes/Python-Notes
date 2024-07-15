@@ -92,9 +92,17 @@
 ## Reading Files ##
 ## File Position ##
                       ## Lesson Plan 112-SCRPY006: Python Standard Library ##
-
+## Importing Modules ##
+## if name == 'main': ##
+## Explore useful built-in functions ##
                       ## Lesson Plan 112-SCRPY007: Data Structures ##
-
+## Sets ##
+## Dictionaries ##
+## Named vs Positional functional arguments ##
+## Argument Unpacking ##
+## *args, **kwargs ##
+## sorted() & using key ##
+## Lambda ##
                       ## Lesson Plan 112-SCRPY012: Binary Data ##
 
                       ## Lesson Plan 112-SCRPY023: Object Oriented Programming ##

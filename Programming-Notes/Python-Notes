@@ -1,13 +1,13 @@
 # Day_1 Notes
                       ## Lesson Plan 112-SCRPY001: Describe Python ##
 
-## Read Evaluate Print Loop (REPL) ##
+        ## Read Evaluate Print Loop (REPL) ##
 
-## Python Scripts##
+        ## Python Scripts##
 
-## String Manipulation
+        ## String Manipulation
                       ## Lesson Plan 112-SCRPY002: Variables, IO ##
-## Data Types ##
+        ## Data Types ##
 /*
 bool-boolean(True/False)
 int-integers(1,2,3...)
@@ -20,7 +20,7 @@ list-mutable()
 Both ^ hold multiple items. example for both data types [,1,2,3,4,5]
 */
 
-## Mathematical Operations ##
+        ## Mathematical Operations ##
 /*
 addition- +
 subtraction- -
@@ -32,7 +32,7 @@ exponent- **
 */
 
                       ## Lesson Plan 112-SCRPY003: Flow Control - Branching ##
-## Branching Statements ##
+        ## Branching Statements ##
 /*
 if <condition>
   <indented code block>
@@ -42,6 +42,22 @@ elif <condition>
   <indented code block>
 else:
   <indented code block>
+*/
+        ## Comparison Operators ##
+/*
+equal to- ==
+not equal to- !=
+less than- <
+less than or equal- <=
+greater than- >
+greater than or equal- >=
+
+value in collection- in
+object id match- is
+
+logical AND- and 
+logical OR- or
+logical NOT- not
 */
                       ## Lesson Plan 112-SCRPY004: Flow Control - Loops ##
 

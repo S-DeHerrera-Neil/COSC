@@ -8,57 +8,58 @@
         ## String Manipulation
                       ## Lesson Plan 112-SCRPY002: Variables, IO ##
         ## Data Types ##
-/*
-bool-boolean(True/False)
-int-integers(1,2,3...)
-float-floating point decimal(1.0,1.2,1.3....)
-str-string('Hello'...)
+        /*
+        bool-boolean(True/False)
+        int-integers(1,2,3...)
+        float-floating point decimal(1.0,1.2,1.3....)
+        str-string('Hello'...)
 
-  *Mutable objects can be changed after creation, immutable objects cannot*
-tuple-immutable()
-list-mutable()
-Both ^ hold multiple items. example for both data types [,1,2,3,4,5]
-*/
+          *Mutable objects can be changed after creation, immutable objects cannot*
+        tuple-immutable()
+        list-mutable()
+        Both ^ hold multiple items. example for both data types [,1,2,3,4,5]
+        */
 
         ## Mathematical Operations ##
-/*
-addition- +
-subtraction- -
-multiplication- *
-division- /
-integer division- //
-modulus- %
-exponent- **
-*/
+        /*
+        addition- +
+        subtraction- -
+        multiplication- *
+        division- /
+        integer division- //
+        modulus- %
+        exponent- **
+        */
 
                       ## Lesson Plan 112-SCRPY003: Flow Control - Branching ##
         ## Branching Statements ##
-/*
-if <condition>
-  <indented code block>
-elif <condition>
-  <indented code block>
-elif <condition>
-  <indented code block>
-else:
-  <indented code block>
-*/
+        /*
+        if <condition>
+          <indented code block>
+        elif <condition>
+          <indented code block>
+        elif <condition>
+          <indented code block>
+        else:
+          <indented code block>
+        */
+        
         ## Comparison Operators ##
-/*
-equal to- ==
-not equal to- !=
-less than- <
-less than or equal- <=
-greater than- >
-greater than or equal- >=
+        /*
+        equal to- ==
+        not equal to- !=
+        less than- <
+        less than or equal- <=
+        greater than- >
+        greater than or equal- >=
 
-value in collection- in
-object id match- is
+        value in collection- in
+        object id match- is
 
-logical AND- and 
-logical OR- or
-logical NOT- not
-*/
+        logical AND- and 
+        logical OR- or
+        logical NOT- not
+        */
 
         ## Functions ##
 
@@ -66,6 +67,12 @@ logical NOT- not
     # Global #
     # Local #
                       ## Lesson Plan 112-SCRPY004: Flow Control - Loops ##
+    ## Loops ##
+    ## While ##
+      # control variable #
+    ## For ##
+    ## Ranges ##
+    ## Break and Continue ##
 
                       ## Lesson Plan 112-SCRPY005: File IO ##
 

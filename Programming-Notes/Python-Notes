@@ -32,7 +32,17 @@ exponent- **
 */
 
                       ## Lesson Plan 112-SCRPY003: Flow Control - Branching ##
-
+## Branching Statements ##
+/*
+if <condition>
+  <indented code block>
+elif <condition>
+  <indented code block>
+elif <condition>
+  <indented code block>
+else:
+  <indented code block>
+*/
                       ## Lesson Plan 112-SCRPY004: Flow Control - Loops ##
 
                       ## Lesson Plan 112-SCRPY005: File IO ##

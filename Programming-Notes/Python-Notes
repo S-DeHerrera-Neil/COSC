@@ -64,28 +64,28 @@
   ## Scope ##
     # Global: #
     # Local: #
-## Lesson Plan 112-SCRPY004: Flow Control - Loops ##
-  ## Loops ##
-  ## While ##
-      # control variable 
-  ## For ##
-  ## Ranges ##
-  ## Break and Continue ##
+# Lesson Plan 112-SCRPY004: Flow Control - Loops 
+  # Loops 
+  # While 
+# control variable 
+  # For 
+# Ranges 
+  # Break and Continue 
     # The else clause and break
       # no break
-  ## Iterables and Sequences ##
+  # Iterables and Sequences 
       # Iterables 
       # Sequences 
       # List 
       # Tuple 
       # Range 
       # String
-  ## Slicing ##
-  ## List Comprehension ##
-## Lesson Plan 112-SCRPY005: File I/O ##
-  ## Opening Files ##
-  ## Writing Files ##
-  ## Reading Files ##
+  # Slicing 
+  # List Comprehension 
+# Lesson Plan 112-SCRPY005: File I/O 
+  # Opening Files 
+  # Writing Files 
+  # Reading Files 
   # File Position 
 # Lesson Plan 112-SCRPY006: Python Standard Library 
   # Importing Modules 

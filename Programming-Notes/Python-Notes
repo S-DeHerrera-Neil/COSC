@@ -91,13 +91,22 @@ print(email.slpit('a'))
     # Local: 
 # Lesson Plan 112-SCRPY004: Flow Control - Loops 
   # Loops 
-    #for loops
-    #while loops
+      #for loops (counting loops)
+      #while loops
   # While 
 # control variable 
   # For 
 # Ranges 
   # Break and Continue 
+    #return example
+/*
+Type 'Pass', 'Break', 'Continue' or 'Return':
+ 
+Return
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+*/
     # The else clause and break
       # no break
   # Iterables and Sequences 

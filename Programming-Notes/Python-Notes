@@ -98,15 +98,26 @@ print(email.slpit('a'))
   # For 
 # Ranges 
   # Break and Continue 
-    #return example
-/*
+                              #return example
+                                  /*
 Type 'Pass', 'Break', 'Continue' or 'Return':
  
 Return
 
 ** Process exited - Return Code: 0 **
 Press Enter to exit terminal
-*/
+                                  */
+                              #break example
+                                  /*
+Type 'Pass', 'Break', 'Continue' or 'Return':
+ 
+Break
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
+                                  */
+
     # The else clause and break
       # no break
   # Iterables and Sequences 

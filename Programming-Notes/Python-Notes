@@ -1,13 +1,13 @@
 # Day_1 Notes
 
-## Lesson Plan 112-SCRPY001: Describe Python ##
-  ## Course Standards ##
-  ## Describe Python ##
-  ## Read Evaluate Print Loop (REPL) ##
-  ## Python Scripts ##
-  ## String Manipulation ##
-## Lesson Plan 112-SCRPY002: Variables, I/O ##
-  ## Data Types ##
+# Lesson Plan 112-SCRPY001: Describe Python #
+  # Course Standards #
+  # Describe Python #
+  # Read Evaluate Print Loop (REPL) #
+  # Python Scripts #
+  # String Manipulation #
+# Lesson Plan 112-SCRPY002: Variables, I/O #
+  # Data Types #
         /*
         bool-boolean(True/False)
         int-integers(1,2,3...)
@@ -19,7 +19,7 @@
         list-mutable()
         Both ^ hold multiple items. example for both data types [1,2,3,4,5]
         */
-  ## Mathematical Operations ##
+  # Mathematical Operations #
         /*
         addition- +
         subtraction- -
@@ -29,10 +29,10 @@
         modulus- %
         exponent- **
         */
-  ## String Manipulation ##
-## Lesson Plan 112-SCRPY003: Flow Control - Branching ##
-  ## Branching ##        
-        ## Branching Statements ##
+  # String Manipulation #
+# Lesson Plan 112-SCRPY003: Flow Control - Branching #
+  # Branching #        
+        # Branching Statements #
         /*
         if <condition>
           <indented code block>
@@ -44,7 +44,7 @@
           <indented code block>
         */
         
-        ## Comparison Operators ##
+        # Comparison Operators #
         /*
         equal to- ==
         not equal to- !=
@@ -60,10 +60,10 @@
         logical OR- or
         logical NOT- not
         */
-  ## Functions ##
-  ## Scope ##
-    # Global: #
-    # Local: #
+  # Functions #
+  # Scope ##
+    # Global: 
+    # Local: 
 # Lesson Plan 112-SCRPY004: Flow Control - Loops 
   # Loops 
   # While 
@@ -98,7 +98,7 @@
   # Argument Unpacking 
   # *args, **kwargs 
   # sorted() & using key 
-  # Lambda #
+  # Lambda 
 # Lesson Plan 112-SCRPY012: Binary Data 
   # Number Systems - decimal, hexadecimal, binary 
   # Binary Literals, Binary Strings 

@@ -21,6 +21,7 @@
         print()
         type()
           * .split()
+              ^ if nothing is specified in the split parameters, it splits on spaces.
           * .join
         */
         

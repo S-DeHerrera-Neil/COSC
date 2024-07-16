@@ -17,7 +17,7 @@
           *Mutable objects can be changed after creation, immutable objects cannot*
         tuple-immutable()
         list-mutable()
-        Both ^ hold multiple items. example for both data types [,1,2,3,4,5]
+        Both ^ hold multiple items. example for both data types [1,2,3,4,5]
         */
 ## Mathematical Operations ##
         /*

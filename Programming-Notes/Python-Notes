@@ -71,12 +71,12 @@ print(email.slpit('a'))
         
         # Comparison Operators 
         /*
-        equal to- ==
-        not equal to- !=
-        less than- <
-        less than or equal- <=
-        greater than- >
-        greater than or equal- >=
+       * equal to- ==
+       * not equal to- !=
+       * less than- <
+       * less than or equal- <=
+       * greater than- >
+       * greater than or equal- >=
 
         value in collection- in
         object id match- is
@@ -91,6 +91,8 @@ print(email.slpit('a'))
     # Local: 
 # Lesson Plan 112-SCRPY004: Flow Control - Loops 
   # Loops 
+    #for loops
+    #while loops
   # While 
 # control variable 
   # For 

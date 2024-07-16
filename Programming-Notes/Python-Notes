@@ -112,11 +112,13 @@
 ## Bitwise Operations ##
                       ## Lesson Plan 112-SCRPY023: Object Oriented Programming ##
 ## 4 Principals of OOP ##
-  # Encapsulation #
-  # Abstraction #
-  # Inheritance #
-  # Polymorphism #
+    # Encapsulation #
+    # Abstraction #
+    # Inheritance #
+    # Polymorphism #
 ## Magic Methods ##
+    # Initialization #
+    # Context Managers #
                       ## Lesson Plan 112-SCRPY022: Error Handling and Troubleshooting ##
 
                       ## Lesson Plan 112-SCRPY024: Networking ##

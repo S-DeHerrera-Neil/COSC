@@ -1,12 +1,12 @@
 # Day_1 Notes
-                      ## Lesson Plan 112-SCRPY001: Describe Python ##
-## Course Standards ##
-## Describe Python ##
-## Read Evaluate Print Loop (REPL) ##
-## Python Scripts ##
-## String Manipulation ##
-                      ## Lesson Plan 112-SCRPY002: Variables, I/O ##
-## Data Types ##
+## Lesson Plan 112-SCRPY001: Describe Python ##
+  ## Course Standards ##
+  ## Describe Python ##
+  ## Read Evaluate Print Loop (REPL) ##
+  ## Python Scripts ##
+  ## String Manipulation ##
+## Lesson Plan 112-SCRPY002: Variables, I/O ##
+  ## Data Types ##
         /*
         bool-boolean(True/False)
         int-integers(1,2,3...)
@@ -18,7 +18,7 @@
         list-mutable()
         Both ^ hold multiple items. example for both data types [1,2,3,4,5]
         */
-## Mathematical Operations ##
+  ## Mathematical Operations ##
         /*
         addition- +
         subtraction- -
@@ -28,9 +28,9 @@
         modulus- %
         exponent- **
         */
-## String Manipulation ##
-                      ## Lesson Plan 112-SCRPY003: Flow Control - Branching ##
-## Branching ##        
+  ## String Manipulation ##
+## Lesson Plan 112-SCRPY003: Flow Control - Branching ##
+  ## Branching ##        
         ## Branching Statements ##
         /*
         if <condition>
@@ -59,68 +59,64 @@
         logical OR- or
         logical NOT- not
         */
-
-## Functions ##
-
-## Scope ##
+  ## Functions ##
+  ## Scope ##
     # Global #
     # Local #
-                      ## Lesson Plan 112-SCRPY004: Flow Control - Loops ##
-## Loops ##
-## While ##
+## Lesson Plan 112-SCRPY004: Flow Control - Loops ##
+  ## Loops ##
+  ## While ##
       # control variable 
-## For ##
-## Ranges ##
-## Break and Continue ##
+  ## For ##
+  ## Ranges ##
+  ## Break and Continue ##
     ## The else clause and break #
       # no break
-## Iterables and Sequences
+  ## Iterables and Sequences
       # Iterables 
       # Sequences 
       # List 
       # Tuple 
       # Range 
       # String
-## Slicing ##
-## List Comprehension ##
-      
-
-                      ## Lesson Plan 112-SCRPY005: File I/O ##
-## Opening Files ##
-## Writing Files ##
-## Reading Files ##
-## File Position ##
-                      ## Lesson Plan 112-SCRPY006: Python Standard Library ##
-## Importing Modules ##
-## if name == 'main': ##
-## Explore useful built-in functions ##
-                      ## Lesson Plan 112-SCRPY007: Data Structures ##
-## Sets ##
-## Dictionaries ##
-## Named vs Positional functional arguments ##
-## Argument Unpacking ##
-## *args, **kwargs ##
-## sorted() & using key ##
-## Lambda ##
-                      ## Lesson Plan 112-SCRPY012: Binary Data ##
-## Number Systems - decimal, hexadecimal, binary ##
-## Binary Literals, Binary Strings ##
-## bytes and bytearray ##
-## Character Encoding ##
-## struct Module ##
-## Bitwise Operations ##
-                      ## Lesson Plan 112-SCRPY023: Object Oriented Programming ##
-## 4 Principals of OOP ##
+  ## Slicing ##
+  ## List Comprehension ##
+## Lesson Plan 112-SCRPY005: File I/O ##
+  ## Opening Files ##
+  ## Writing Files ##
+  ## Reading Files ##
+  ## File Position ##
+## Lesson Plan 112-SCRPY006: Python Standard Library ##
+  ## Importing Modules ##
+  ## if name == 'main': ##
+  ## Explore useful built-in functions ##
+## Lesson Plan 112-SCRPY007: Data Structures ##
+  ## Sets ##
+  ## Dictionaries ##
+  ## Named vs Positional functional arguments ##
+  ## Argument Unpacking ##
+  ## *args, **kwargs ##
+  ## sorted() & using key ##
+  ## Lambda ##
+## Lesson Plan 112-SCRPY012: Binary Data ##
+  ## Number Systems - decimal, hexadecimal, binary ##
+  ## Binary Literals, Binary Strings ##
+  ## bytes and bytearray ##
+  ## Character Encoding ##
+  ## struct Module ##
+  ## Bitwise Operations ##
+## Lesson Plan 112-SCRPY023: Object Oriented Programming ##
+  ## 4 Principals of OOP ##
     # Encapsulation #
     # Abstraction #
     # Inheritance #
     # Polymorphism #
-## Magic Methods ##
+  ## Magic Methods ##
     # Initialization #
     # Context Managers #
-                      ## Lesson Plan 112-SCRPY022: Error Handling and Troubleshooting ##
-## Syntax Errors ##
-## Exceptions ##
-## Debugging ##
-                      ## Lesson Plan 112-SCRPY024: Networking ##
-## Sockets ##
+## Lesson Plan 112-SCRPY022: Error Handling and Troubleshooting ##
+  ## Syntax Errors ##
+  ## Exceptions ##
+  ## Debugging ##
+## Lesson Plan 112-SCRPY024: Networking ##
+  ## Sockets ##

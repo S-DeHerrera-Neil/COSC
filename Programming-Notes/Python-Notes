@@ -6,7 +6,24 @@
   # Read Evaluate Print Loop (REPL) 
     # annotated by >>> (Enter & Excecute line-by-line ) 
   # Python Scripts 
-  # String Manipulation 
+  # String Manipulation
+      #Type Casting
+        /*
+        str()
+        float()
+        int()
+        bool()
+          * tuple()
+          * list()
+        */
+      #Basic Functions
+        /*
+        print()
+        type()
+          * .split()
+          * .join
+        */
+        
 # Lesson Plan 112-SCRPY002: Variables, I/O 
   # Data Types 
         /*

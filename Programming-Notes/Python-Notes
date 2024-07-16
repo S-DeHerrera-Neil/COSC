@@ -16,8 +16,8 @@
         str-string('Hello'...)
 
           *Mutable objects can be changed after creation, immutable objects cannot*
-        tuple-immutable() ('1','2','3')
-        list-mutable() ['1','2','3']
+        tuple-immutable() ('1','2','3') *Annotated by parenthases*
+        list-mutable() ['1','2','3']    *Annotated by square brackest* 
             item [-1] (Last object)
             item [-2] (Second to last object)
         Both ^ hold multiple items. example for both data types [1,2,3,4,5]

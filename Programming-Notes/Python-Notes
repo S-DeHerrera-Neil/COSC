@@ -24,10 +24,10 @@
               ^ if nothing is specified in the split parameters, it splits on spaces.
           * .join
         */
-        #Brace expansion#
+        
 /*
 print(email.slpit('a'))
-*/
+    brace expansion^
 
 # Lesson Plan 112-SCRPY002: Variables, I/O 
   # Data Types 

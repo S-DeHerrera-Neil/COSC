@@ -102,7 +102,7 @@ print(email.slpit('a'))
                                   /*
 Type 'Pass', 'Break', 'Continue' or 'Return':
  
-Return
+          Return
 
 ** Process exited - Return Code: 0 **
 Press Enter to exit terminal
@@ -111,7 +111,7 @@ Press Enter to exit terminal
                                   /*
 Type 'Pass', 'Break', 'Continue' or 'Return':
  
-Break
+          Break
 
 
 ** Process exited - Return Code: 0 **
@@ -126,8 +126,11 @@ Press Enter to exit terminal
       # List 
       # Tuple 
       # Range 
+Can type cast into a list
+can specify starting points
       # String
-  # Slicing 
+  # Slicing
+start, stop, step
   # List Comprehension 
 # Lesson Plan 112-SCRPY005: File I/O 
   # Opening Files 

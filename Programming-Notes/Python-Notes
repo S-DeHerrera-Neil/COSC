@@ -126,12 +126,15 @@ Press Enter to exit terminal
       # List 
       # Tuple 
       # Range 
+
 Can type cast into a list
 can specify starting points
-      # String
-  # Slicing
+      mmString
+  
+*Slicing
 start, stop, step
-  # List Comprehension 
+  
+# List Comprehension 
 # Lesson Plan 112-SCRPY005: File I/O 
   # Opening Files 
   # Writing Files 

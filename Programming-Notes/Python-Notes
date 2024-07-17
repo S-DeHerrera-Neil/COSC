@@ -148,8 +148,27 @@ start, stop, step
   # Sets 
   # Dictionaries 
   # Named vs Positional functional arguments 
-  # Argument Unpacking 
-  # *args, **kwargs 
+# Argument Unpacking
+
+# *args, **kwargs 
+  https://www.geeksforgeeks.org/args-kwargs-python/
+    *  -args (tuple)
+def total(*args):
+  print(args)
+total(1,2,3,4,5)
+def total(*arg):
+  print(type(args))
+
+def total(*args):
+    total = 0
+    for num in args:
+            total += num
+    print(total)
+total(1,2,3,4,5)
+
+def total
+
+    ** -kwargs (looks like a dictionary)
   # sorted() & using key 
   # Lambda 
 # Lesson Plan 112-SCRPY012: Binary Data 

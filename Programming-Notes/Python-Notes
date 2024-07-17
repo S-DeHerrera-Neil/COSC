@@ -129,7 +129,7 @@ Press Enter to exit terminal
 
 Can type cast into a list
 can specify starting points
-      mmString
+      String
   
 *Slicing
 start, stop, step

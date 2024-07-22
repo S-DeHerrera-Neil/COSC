@@ -45,8 +45,7 @@ find -size(for finding files based off of it's size)
  find -group name
  find -gid<GID#>
 
-cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
- find -uid <UID#>
+
 
 find -maxdepth<#of directories deep>(telling find how deep find needs to look in a directory)
 
@@ -63,12 +62,6 @@ find $HOME -mtime 0
 
 find cmin -60
 
-cp <source> <destination> (copy)
-      /etc/shadow    ()
-      sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
-
-cat
-
 find -mmin -60
 
 find -empty
@@ -76,6 +69,15 @@ find -empty
 find -executable
 
 find -exec
+
+cp <source> <destination> (copy)
+      /etc/shadow    ()
+      sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
+
+cat
+
+cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
+ find -uid <UID#>
 
 # error code handling 
 find / perm /4000 -uid 0 -ls 2>/dev/null

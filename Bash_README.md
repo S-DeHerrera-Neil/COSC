@@ -108,4 +108,16 @@ egrep "student|root|bob" fake1passwd.txt
 # Brace Expansion
 mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
 
-Almost worked these out.
+# Cut (Cuts where specified)
+cat fake1passwd.txt | cut -d: -f1 
+                            ^(-d: [delimiter] -f1[Field 1])
+
+cat fake1passwd | cut -d: -f1 -s
+                     ^([-s strict, only from the delimiter])
+
+Chaining operators
+* & -runs process in background, && - AND
+* || -OR, ! -NOT, | -
+* () -looks at it first
+* > -creates file
+* >> -creates file and/or appends to file.

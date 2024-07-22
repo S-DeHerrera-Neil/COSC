@@ -53,4 +53,15 @@ find -maxdepth<#of directories deep>(telling find how deep find needs to look in
 find / -type d(finds directories)
 find / -type f(finds files)
 
+find -atime
+find -ctime
+find -mtime
+find $HOME -mtime 0
+find cmin -60
+find -mmin -60
+find -empty
+find -executable
+find -exec
+find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
+
 * find -exec example(url:https://linuxhandbook.com/find-exec-command/)

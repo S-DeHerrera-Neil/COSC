@@ -21,8 +21,10 @@ pwd (print working directory)sudo cat /etc/shadow >> fake1passwd.txt
 cp <source> <destination> (copy)
       /etc/shadow    ()
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
+# cat
+cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
+ find -uid <UID#>
 
-cat
 
 head (default first 10)
 
@@ -73,10 +75,6 @@ cp <source> <destination> (copy)
       /etc/shadow    ()
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 
-cat
-
-cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
- find -uid <UID#>
 
 # error code handling 
 find / perm /4000 -uid 0 -ls 2>/dev/null

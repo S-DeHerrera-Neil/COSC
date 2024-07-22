@@ -120,5 +120,5 @@ cat fake1passwd | cut -d: -f1 -s
 * || -OR, ! -NOT,
 * | -Pipes, redirects output
 * () -looks at it first
-* > -creates file
-* >> -creates file and/or appends to file.
+* "> -creates file"
+* ">> -creates file and/or appends to file"

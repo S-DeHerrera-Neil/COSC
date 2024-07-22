@@ -72,7 +72,7 @@ find -executable
 find -exec
 
 cp <source> <destination> (copy)
-      /etc/shadow    ()
+      /etc/shadow    (user:::::::::)
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 
 # error code handling 

@@ -47,6 +47,10 @@ Using the find command, list all files in $HOME/1123 that end in .txt.
 
 Be aware that if you use Pattern Matching to locate the files you may have unintended results based on if you use quotes around the pattern or not. If you do not quote the pattern, the Bash shell interprets the pattern. If you quote the pattern, it is passed to the command for it to interpret. You can have a properly functioning command, yet unintended output, based on which of these two gets to interpret the pattern.
 
-Helpful URLs 
+Helpful URLs:
+* https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching
+
+*https://www.gnu.org/software/bash/manual/bash.html#Quoting
+
 
 # 01.3(#2)

@@ -94,3 +94,6 @@ grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun refera
 cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
 * (cut and oct...)
 
+egrep "student|root|bob" fake1passwd.txt
+(egrep <student,root,bob> in the fake1passwd.txt file)
+

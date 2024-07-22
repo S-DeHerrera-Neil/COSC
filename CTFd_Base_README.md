@@ -18,7 +18,7 @@ Activity: Using Brace-Expansion, create the following directories within the $HO
 * 1156
     helpful url: https://www.gnu.org/software/bash/manual/bash.html#Brace-Expansion
 
-# Desired Result
+# Desired Input
 mkdir 11{23,34,45,56}
 
    # 01.2
@@ -43,7 +43,7 @@ Files to create:
 * 8~.txt
 * 9~.txt
 
-  # Desired Result
+# Desired Input
   touch $HOME/1123/{1,2,3,4,5,6~,7~,8~,9~}.txt
 
     # 01.3
@@ -58,7 +58,7 @@ Helpful URLs:
 
 *https://www.gnu.org/software/bash/manual/bash.html#Quoting
 
-# Desired Result
+# Desired Input
 find $HOME/1123 -name "*.txt"
 
 # 01.3(#2)
@@ -68,5 +68,5 @@ List all files in $HOME/1123 that end in .txt. Omit the files containing a tilde
 
 While this activity can be accomplished with only find, it can also be combined with grep as well.
 
-# Desired Result
+# Desired Input
 find $HOME/1123 -name "*.txt" | grep -v  "~"

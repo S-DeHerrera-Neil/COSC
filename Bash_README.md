@@ -16,7 +16,7 @@ rmdir (removes directory)
 ls -lisa 
   * can also do ls -1 (puts 1 item per line)
 
-pwd (print working directory)
+pwd (print working directory)sudo cat /etc/shadow >> fake1passwd.txt
 
 cp <source> <destination> (copy)
       /etc/shadow    ()
@@ -43,4 +43,12 @@ find -size(for finding files based off of it's size)
 /etc/passwd
  
  find -group name
- fin -gid<GID#>
+ find -gid<GID#>
+
+cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
+ find -uid <UID#>
+
+find -maxdepth<#of directories deep>(telling find how deep find needs to look in a directory)
+
+find / -type d(finds directories)
+find / -type f(finds files)

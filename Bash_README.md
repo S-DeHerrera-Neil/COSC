@@ -91,3 +91,6 @@ grep(grep lines that match a pattern/input)
 
 grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun referance
 
+cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
+* (cut and oct...)
+

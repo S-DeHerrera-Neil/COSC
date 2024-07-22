@@ -1,7 +1,6 @@
 # Bash CTFd Base challenges
   * 07/22/2024
-
-    # 01
+# 01
 Brace expansion is a mechanism by which arbitrary strings may be generated, for commands that will take multiple arguements. 
 For the below examples, the first example is equivalent to the second command.
 '''
@@ -21,7 +20,7 @@ Activity: Using Brace-Expansion, create the following directories within the $HO
 # Desired Input
 mkdir 11{23,34,45,56}
 
-   # 01.2
+# 01.2
 As we learned, the following example would create five files with one command.
 '''
 touch file1.txt file2.txt file3.txt passwd.txt shadow.txt
@@ -46,7 +45,7 @@ Files to create:
 # Desired Input
   touch $HOME/1123/{1,2,3,4,5,6~,7~,8~,9~}.txt
 
-    # 01.3
+# 01.3
 Activity:
 
 Using the find command, list all files in $HOME/1123 that end in .txt.

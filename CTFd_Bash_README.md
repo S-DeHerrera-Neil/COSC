@@ -1,5 +1,6 @@
 # Bash CTFd Base challenges
   * 07/22/2024
+
 # 01
 Brace expansion is a mechanism by which arbitrary strings may be generated, for commands that will take multiple arguements. 
 For the below examples, the first example is equivalent to the second command.
@@ -17,8 +18,9 @@ Activity: Using Brace-Expansion, create the following directories within the $HO
 * 1156
     helpful url: https://www.gnu.org/software/bash/manual/bash.html#Brace-Expansion
 
-* Desired Input
+# Desired Input
 "$ mkdir 11{23,34,45,56}"
+
 
 # 01.2
 As we learned, the following example would create five files with one command.
@@ -42,9 +44,10 @@ Files to create:
 * 8~.txt
 * 9~.txt
 
-* Desired Input
+# Desired Input
 "$ touch $HOME/1123/{1,2,3,4,5,6~,7~,8~,9~}.txt"
 
+ 
 # 01.3
 Activity:
 
@@ -57,8 +60,9 @@ Helpful URLs:
 
 *https://www.gnu.org/software/bash/manual/bash.html#Quoting
 
-* Desired Input
+# Desired Input
 "$ find $HOME/1123 -name "*.txt""
+
 
 # 01.3(#2)
 Challenge Activity:
@@ -67,8 +71,9 @@ List all files in $HOME/1123 that end in .txt. Omit the files containing a tilde
 
 While this activity can be accomplished with only find, it can also be combined with grep as well.
 
-* Desired Input
+# Desired Input
 "$ find $HOME/1123 -name "*.txt" | grep -v  "~""
+
 
 # 02
 Activity:
@@ -78,8 +83,10 @@ Copy all files in the $HOME/1123 directory, that end in ".txt", and omit files c
 Use only the find and cp commands. You will need to utilize the -exec option on find to accomplish this activity.
 
 The find command uses BOOLEAN "!" to designate that it does not want to find any files or directories that follows.
-* Desired Input
+# Desired Input
 find $HOME/1123 -type f -name "*.txt" ! -name "*~*" -exec cp {} $HOME/CUT  \;
+
+
 # 03
 Activity:
 
@@ -92,17 +99,20 @@ Example Output
 123 file1
 456 file2
 789 file3
-* Desired Input
+# Desired Input
  find /var -empty -printf "%i %f\n" 
+
+
 # 04
 Activity:
 
 Using ONLY the find command, find all files on the system with inode 4026532575 and print only the filename to the screen, not the absolute path to the file, separating each filename with a newline. Ensure unneeded output is not visible.
 
 Tip: The above inode is specific to this CTFd question and might not be in use on your Linux Opstation. Instead, you can test your command on your Linux OpStation against inode 999.
-* Desired Input
+# Desired Input
  find / -inum 4026532575 2>/dev/null -printf "%f\n" 
-* 
+
+  
 # 05
 Activity:
 
@@ -117,6 +127,9 @@ https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Output
 To read more on Simple Command Expansion, go to the following resource:
 
 https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
-* Desired Input
+# Desired Input
 #!/bin/bash
 ls -l $HOME/CUT | cut -d: -f2 -s| cut -d ' ' -f2 -s| cut -d. -f1-2 -s > $HOME/CUT/names  
+
+# Next
+

@@ -108,4 +108,4 @@ egrep "student|root|bob" fake1passwd.txt
 # Brace Expansion
 mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
 
-
+Almost worked these out.

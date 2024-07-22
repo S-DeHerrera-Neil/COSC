@@ -105,3 +105,5 @@ egrep "student|root|bob" fake1passwd.txt
 # CTF challenges <Rank, LName>
 10.50.26.116
 
+# Brace Expansion
+mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)

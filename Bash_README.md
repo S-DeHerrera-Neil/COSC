@@ -52,3 +52,5 @@ find -maxdepth<#of directories deep>(telling find how deep find needs to look in
 
 find / -type d(finds directories)
 find / -type f(finds files)
+
+* find -exec example(url:https://linuxhandbook.com/find-exec-command/)

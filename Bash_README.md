@@ -30,6 +30,7 @@ tail (default last 10)
 
 umask
 
+# Find
 find(shows the directory that the file is found)
 
 find -name (case sensative file)

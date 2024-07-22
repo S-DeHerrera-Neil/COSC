@@ -63,6 +63,12 @@ find $HOME -mtime 0
 
 find cmin -60
 
+cp <source> <destination> (copy)
+      /etc/shadow    ()
+      sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
+
+cat
+
 find -mmin -60
 
 find -empty
@@ -71,6 +77,8 @@ find -executable
 
 find -exec
 
+* error code handling *
 find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
+
 
 * find -exec example(url:https://linuxhandbook.com/find-exec-command/)

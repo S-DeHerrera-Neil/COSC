@@ -115,7 +115,7 @@ cat fake1passwd.txt | cut -d: -f1
 cat fake1passwd | cut -d: -f1 -s
                      ^([-s strict, only from the delimiter])
 
-Chaining operators
+# Chaining operators
 * & -runs process in background, && - AND
 * || -OR, ! -NOT, | -
 * () -looks at it first

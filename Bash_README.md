@@ -99,7 +99,9 @@ cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
 egrep "student|root|bob" fake1passwd.txt
 (egrep <student,root,bob> in the fake1passwd.txt file)
 
-differences between brackets (https://baeldung.com/linux/bash-single-vs-double-brackets)
+# differences between brackets 
+* (https://baeldung.com/linux/bash-single-vs-double-brackets)
 
-CTF challenges <Rank, LName>
+# CTF challenges <Rank, LName>
 10.50.26.116
+

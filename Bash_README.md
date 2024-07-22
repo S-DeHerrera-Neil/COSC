@@ -29,3 +29,18 @@ head (default first 10)
 tail (default last 10)
 
 umask
+
+find(shows the directory that the file is found)
+
+find -name (case sensative file)
+
+find -iname (case insensativity)
+
+find -inum(finds files off of the inode number)
+
+find -size(for finding files based off of it's size)
+
+/etc/passwd
+ 
+ find -group name
+ fin -gid<GID#>

@@ -1,7 +1,7 @@
 # Bash
 * Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
 
-We start CTFs this week, 
+       We start CTFs this week 
 
 07/15
 
@@ -40,7 +40,7 @@ find -inum(finds files off of the inode number)
 
 find -size(for finding files based off of it's size)
 
-/etc/passwd
+find /etc/passwd
  
  find -group name
  find -gid<GID#>

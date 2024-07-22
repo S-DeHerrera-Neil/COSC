@@ -5,11 +5,11 @@ Brace expansion is a mechanism by which arbitrary strings may be generated, for 
 For the below examples, the first example is equivalent to the second command.
 '''
 $ mkdir /var/log/{auth,syslog,dmesg}_log
-'''
+
 Results in
 '''
 $ mkdir /var/log/auth_log /var/log/syslog_log /var/log/dmesg_log
-'''
+
 Activity: Using Brace-Expansion, create the following directories within the $HOME directory:
 * 1123
 * 1134
@@ -24,11 +24,11 @@ mkdir 11{23,34,45,56}
 As we learned, the following example would create five files with one command.
 '''
 touch file1.txt file2.txt file3.txt passwd.txt shadow.txt
-'''
+
 But, with Brace Expansion it can be shortened to the following.
 '''
 touch file{1..3}.txt passwd.txt shadow.txt
-'''
+
 Activity:
 Use Brace-Expansion to create the following files within the $HOME/1123 directory. You may need to create the $HOME/1123 directory. Make the following files, but utilze Brace Expansion to make all nine files with one touch command.
 Files to create:

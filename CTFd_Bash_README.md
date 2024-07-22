@@ -129,6 +129,7 @@ To read more on Simple Command Expansion, go to the following resource:
 https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
 # Desired Input
 #!/bin/bash
+
 ls -l $HOME/CUT | cut -d: -f2 -s| cut -d ' ' -f2 -s| cut -d. -f1-2 -s > $HOME/CUT/names  
 
 # Next

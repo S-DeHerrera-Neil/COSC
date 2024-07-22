@@ -77,7 +77,7 @@ find -executable
 
 find -exec
 
-       * error code handling *
+* error code handling *
 find / perm /4000 -uid 0 -ls 2>/dev/null
   
 find /var/log -iname *.log -exec -l -al () 2>/dev/null \:

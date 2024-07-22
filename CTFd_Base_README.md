@@ -54,3 +54,8 @@ Helpful URLs:
 
 
 # 01.3(#2)
+Challenge Activity:
+
+List all files in $HOME/1123 that end in .txt. Omit the files containing a tilde (~) character.
+
+While this activity can be accomplished with only find, it can also be combined with grep as well.

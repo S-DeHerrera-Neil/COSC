@@ -75,7 +75,6 @@ cp <source> <destination> (copy)
       /etc/shadow    ()
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 
-
 # error code handling 
 find / perm /4000 -uid 0 -ls 2>/dev/null
   
@@ -84,3 +83,11 @@ find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
 find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows the inode# then the file)
 
 * find -exec example(url:https://linuxhandbook.com/find-exec-command/)
+
+# GREP
+grep(grep lines that match a pattern/input)
+* grep
+* egrep
+
+grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun referance
+

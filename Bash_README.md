@@ -117,7 +117,8 @@ cat fake1passwd | cut -d: -f1 -s
 
 # Chaining operators
 * & -runs process in background, && - AND
-* || -OR, ! -NOT, | -
+* || -OR, ! -NOT,
+* | -Pipes, redirects output
 * () -looks at it first
 * > -creates file
 * >> -creates file and/or appends to file.

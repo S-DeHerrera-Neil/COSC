@@ -45,8 +45,6 @@ find -size(for finding files based off of it's size)
  find -group name
  find -gid<GID#>
 
-
-
 find -maxdepth<#of directories deep>(telling find how deep find needs to look in a directory)
 
 find / -type d(finds directories)

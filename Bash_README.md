@@ -194,5 +194,24 @@ cat pizza.txt
 
 sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt
     
-    *replace chik with hamb ^/g = global so every instance       
+    *replace chiken with hamburger ^/g = global so every instance.       
     *replace pepperoni with sausage ^/ = not global so only the first occasion.
+
+sed -e 'chicken/d' pizza.txt
+
+    *delete chicken globally.
+
+# command substitution
+       *Script to replace the command (cat /etc/) 
+
+# script.sh
+#!/bin/bash
+A=$(cat /etc/passwd)
+echo $A
+
+# script comsub.sh
+#!bin/bash
+A=$(find /usr/bin -name passwd
+echo $A
+echo md5sum $A
+echo file $A

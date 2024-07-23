@@ -169,13 +169,13 @@ $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakep
        * -u
        * -uniq ^different than (has to have sort)
        
-"$" awk -F: '{print3}' fakepasswd | sort
+* $ awk -F: '{print3}' fakepasswd | sort
 
-"$" awk -F: '{print3}' fakepasswd | sort -n
+* $ awk -F: '{print3}' fakepasswd | sort -n
 
-"$" awk -F: '{print3}' fakepasswd | sort -nr
+* $ awk -F: '{print3}' fakepasswd | sort -nr
 
-"$" cat fakepasswd | sort -t : -k 2,4 
+* $ cat fakepasswd | sort -t : -k 2,4 
 
 $ ps aux  | sort -k 1 
 

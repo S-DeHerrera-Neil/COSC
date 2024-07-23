@@ -206,12 +206,19 @@ sed -e 'chicken/d' pizza.txt
 
 # script.sh
 #!/bin/bash
+
 A=$(cat /etc/passwd)
+
 echo $A
 
 # script comsub.sh
 #!bin/bash
+
 A=$(find /usr/bin -name passwd
+
+
 echo $A
+
 echo md5sum $A
+
 echo file $A

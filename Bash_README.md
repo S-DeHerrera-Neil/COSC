@@ -183,3 +183,14 @@ $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 
 # Regex
        *website URL: https://regex101.com/library
+
+# aliases(naming something else, to do something else)
+alais vim= 'nano'
+
+       * String editor utility
+ls -l
+
+cat pizza.txt
+
+sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt
+    *replace chik with hamb ^/g = global so every instance       *replace pepperoni with sausage ^/ = not global so only the first occasion.

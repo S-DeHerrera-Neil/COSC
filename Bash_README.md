@@ -133,4 +133,16 @@ $ awk -F: '($3 == 0){print $1}' fakepasswd
 $ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd
                ^ Output Filed Seperator
 $ cat /etc/passwd | awk -F: '($3 >= 150){print $0}'
+$ cat /etc/passwd | awk -F: '($3 >= 150){print $1, $6, $3}'
+$ cat /etc/passwd | awk -F: '($7 == "/bin/bash"){print $1, $6, $3}' fakepasswd
+$ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
+
+# sort ()
+$ awk -F: '{print3}' fakepasswd | sort
+$ awk -F: '{print3}' fakepasswd | sort -n
+$awk -F: '{print3}' fakepasswd | sort -nr
+$
+$
+$
+
 

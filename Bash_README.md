@@ -94,7 +94,7 @@ $ find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows th
 $ grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun referance
 
 $ cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
-* (cut and oct...)
+* (cut and awk)
 
 $ egrep "student|root|bob" fake1passwd.txt
 (egrep <student,root,bob> in the fake1passwd.txt file)
@@ -127,4 +127,4 @@ $ cat fake1passwd | cut -d: -f1 -s
 07/23
 
 # awk (advanced language w/in bash)
-$ awk fakepasswd 
+$ awk fakepasswd | awk -F: '{print $1}'

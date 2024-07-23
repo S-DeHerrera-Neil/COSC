@@ -74,7 +74,18 @@ $ find -executable
 $ find -exec
 
 cp <source> <destination> (copy)
-      /etc/passwd [7 lines]    (user:::::::::)
+      /etc/passwd [7 lines]    
+
+user:x:UID:GID:GECOS:Home_Dir:Command/Shell
+
+(1)user:
+(2)Password:
+(3)User ID(UID):
+(4)Group ID (GID):
+(5)User ID Info (GECOS):
+(6)Home Direcory:
+(7)Command/Shell):
+
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 
 # error code handling 

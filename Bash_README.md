@@ -77,7 +77,8 @@ cp <source> <destination> (copy)
       /etc/passwd [7 lines]    
 
 
-# Passwd : user:x:UID:GID:GECOS:Home_Dir:Command/Shell
+# Passwd : 
+       * user:x:UID:GID:GECOS:Home_Dir:Command/Shell
 
 (1) user:
 

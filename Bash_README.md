@@ -161,7 +161,7 @@ $ cat fake1passwd | cut -d: -f1 -s
 
 * $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
 
-# sort (have to generate output[file has to be before it])
+### sort (have to generate output[file has to be before it])
        * -n
        * -nr
        * -t

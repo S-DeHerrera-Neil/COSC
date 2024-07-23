@@ -128,3 +128,9 @@ $ cat fake1passwd | cut -d: -f1 -s
 
 # awk (advanced language w/in bash)
 $ awk fakepasswd | awk -F: '{print $1}'
+                            ^{print $NF}
+$ awk -F: '($3 == 0){print $1}' fakepasswd
+$ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd
+               ^ Output Filed Seperator
+$ cat /etc/passwd | awk -F: '($3 >= 150){print $0}'
+

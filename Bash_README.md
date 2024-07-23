@@ -130,11 +130,15 @@ $ cat fake1passwd | cut -d: -f1 -s
 $ awk fakepasswd | awk -F: '{print $1}'
                             ^{print $NF}
 $ awk -F: '($3 == 0){print $1}' fakepasswd
+
 $ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd
                ^ Output Filed Seperator
 $ cat /etc/passwd | awk -F: '($3 >= 150){print $0}'
+
 $ cat /etc/passwd | awk -F: '($3 >= 150){print $1, $6, $3}'
+
 $ cat /etc/passwd | awk -F: '($7 == "/bin/bash"){print $1, $6, $3}' fakepasswd
+
 $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
 
 # sort (have to generate output[file has to be before it])
@@ -146,10 +150,15 @@ $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakep
        * -uniq ^different than (has to have sort)
        
 $ awk -F: '{print3}' fakepasswd | sort
+
 $ awk -F: '{print3}' fakepasswd | sort -n
+
 $ awk -F: '{print3}' fakepasswd | sort -nr
+
 $ cat fakepasswd | sort -t : -k 2,4 
+
 $ ps aux  | sort -k 1 
+
 $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 
 # Regex

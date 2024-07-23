@@ -142,7 +142,8 @@ $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakep
        * -nr
        * -t
        * -k
-       * -uniq (has to have sort)
+       * -u
+       * -uniq ^different than (has to have sort)
        
 $ awk -F: '{print3}' fakepasswd | sort
 $ awk -F: '{print3}' fakepasswd | sort -n
@@ -151,4 +152,5 @@ $ cat fakepasswd | sort -t : -k 2,4
 $ ps aux  | sort -k 1 
 $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 
-
+# Regex
+       *website URL: https://regex101.com/library

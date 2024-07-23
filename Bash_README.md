@@ -193,4 +193,6 @@ ls -l
 cat pizza.txt
 
 sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt
-    *replace chik with hamb ^/g = global so every instance       *replace pepperoni with sausage ^/ = not global so only the first occasion.
+    
+    *replace chik with hamb ^/g = global so every instance       
+    *replace pepperoni with sausage ^/ = not global so only the first occasion.

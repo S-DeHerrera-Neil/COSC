@@ -83,7 +83,7 @@ Copy all files in the $HOME/1123 directory, that end in ".txt", and omit files c
 Use only the find and cp commands. You will need to utilize the -exec option on find to accomplish this activity.
 
 The find command uses BOOLEAN "!" to designate that it does not want to find any files or directories that follows.
-## Desired Input
+### Desired Input
 find $HOME/1123 -type f -name "*.txt" ! -name "*~*" -exec cp {} $HOME/CUT  \;
 
 

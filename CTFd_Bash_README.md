@@ -132,7 +132,7 @@ https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
  #### 3 Cuts: Every cut you get more specific with your results
  * 1) cut -d: -f2 -s
  * 2) cut -d ' ' -f2 -s
- * 3)cut -d. -f1-2 -s > $HOME/CUT/names
+ * 3) cut -d. -f1-2 -s > $HOME/CUT/names
 
 ### Desired Input
 #!/bin/bash

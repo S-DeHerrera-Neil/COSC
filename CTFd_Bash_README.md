@@ -100,7 +100,7 @@ Example Output
 456 file2
 789 file3
 ### Desired Input
- find /var -empty -printf "%i %f\n" 
+$ find /var -empty -printf "%i %f\n" 
 
 
 ## 04
@@ -109,8 +109,10 @@ Activity:
 Using ONLY the find command, find all files on the system with inode 4026532575 and print only the filename to the screen, not the absolute path to the file, separating each filename with a newline. Ensure unneeded output is not visible.
 
 Tip: The above inode is specific to this CTFd question and might not be in use on your Linux Opstation. Instead, you can test your command on your Linux OpStation against inode 999.
+ * ensure uneeded output is not visible (/dev/null)
+
 ### Desired Input
- find / -inum 4026532575 2>/dev/null -printf "%f\n" 
+ $ find / -inum 4026532575 2>/dev/null -printf "%f\n" 
 
   
 ## 05
@@ -127,10 +129,16 @@ https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Output
 To read more on Simple Command Expansion, go to the following resource:
 
 https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
+ #### 3 Cuts: Every cut you get more specific with your results
+ * 1) cut -d: -f2 -s
+ * 2) cut -d ' ' -f2 -s
+ * 3)cut -d. -f1-2 -s > $HOME/CUT/names
+
 ### Desired Input
 #!/bin/bash
 
-ls -l $HOME/CUT | cut -d: -f2 -s| cut -d ' ' -f2 -s| cut -d. -f1-2 -s > $HOME/CUT/names  
+$ ls -l $HOME/CUT | cut -d: -f2 -s| cut -d ' ' -f2 -s| cut -d. -f1-2 -s > $HOME/CUT/names  
+
 
 # Next
 

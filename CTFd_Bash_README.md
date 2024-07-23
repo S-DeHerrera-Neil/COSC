@@ -35,7 +35,7 @@ Activity:
 Use Brace-Expansion to create the following files within the $HOME/1123 directory. You may need to create the $HOME/1123 directory. Make the following files, but utilze Brace Expansion to make all nine files with one touch command.
 Files to create:
 * 1.txt
-* 2.txt
+* 2.txtdmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
 * 3.txt
 * 4.txt
 * 5.txt
@@ -192,5 +192,8 @@ Tip: As you may have noticed, when using grep you can simulate a logical AND by 
 ### Desired Input
 dmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
 
+## 09
+
+### Desired Input
 
 

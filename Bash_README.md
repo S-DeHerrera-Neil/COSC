@@ -129,6 +129,7 @@ $ find / perm /4000 -uid 0 -ls 2>/dev/null
 $ find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
 
 $ find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows the inode# then the file)
+                         
                          * printf example ^ :https://phoenixnap.com/kb/bash-printf
 
 
@@ -147,6 +148,7 @@ $ egrep "student|root|bob" fake1passwd.txt
 (egrep <student,root,bob> in the fake1passwd.txt file)
 
 ## differences between brackets 
+
 * (https://baeldung.com/linux/bash-single-vs-double-brackets)
 
 # CTF challenges <Rank, LName>
@@ -189,9 +191,10 @@ $ cat fake1passwd | cut -d: -f1 -s
 * $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
 
 ### sort (have to generate output[file has to be before it])
-       * -n
-       * -nr
-       * -t
+       * -n (numeric sort)
+       * -r (reverse the result of comparisons) 
+       * -nr (numeric reverse)
+       * -t 
        * -k
        * -u
        * -uniq ^different than (has to have sort)

@@ -241,7 +241,7 @@ To read more on the Shadow file format, go to the following resource:
 
 man shadow.5
 
-## /etc/shadow-> user:x:UID:GID:GECOS:Home_Dir:Command/Shell
+## /etc/passwd-> user:x:UID:GID:GECOS:Home_Dir:Command/Shell
 
 ## /etc/shadow-> user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
 

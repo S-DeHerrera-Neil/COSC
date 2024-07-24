@@ -190,7 +190,10 @@ Note: For security reasons, the dmesg command is being emulated on the CTFd back
 Tip: As you may have noticed, when using grep you can simulate a logical AND by piping the output of one grep command to the next. This will filter down your output to only what contains all your patterns. But, for this activity, you will need to use a logical OR to match on a wide range of strings. If you do not recall how to utilize that option in grep, go research it from the resources available to you.
 
 ### Desired Input
-dmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
+   
+   *My answer: dmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
+   
+   *Instructor: dmseg | grep -E 'CPU|BIOS' | grep -v -E 'usable|reversed' | cut -d] -f2-
 
 ## 09
 Activity:

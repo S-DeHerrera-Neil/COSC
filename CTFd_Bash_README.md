@@ -250,4 +250,4 @@ TIP: When designating a path in a sed command, you must escape the path characte
 sed '/\/bin/d' file.txt
 
 ### Desired Input
-sed -e '/\/bin\/sh/d' -e '/\/bin\/false/d' $HOME/passwd > $HOME/PASS/passwd.txt
+sed -e '/\/bin\/sh/d -e /\/bin\/false/d' $HOME/passwd > $HOME/PASS/passwd.txt

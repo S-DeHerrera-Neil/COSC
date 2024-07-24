@@ -259,6 +259,8 @@ sed -e '/\/bin\/sh/d -e /\/bin\/false/d' $HOME/passwd > $HOME/PASS/passwd.txt
 
 ### Desired Input
 
+| rev
+
 ## 12
 
 ### Desired Input

@@ -245,7 +245,7 @@ sed -e 'chicken/d' pizza.txt
 
 A=$(cat /etc/passwd)
 
-echo $A
+echo $Ahttps://linuxhandbook.com/find-exec-command/
 
 # script comsub.sh
 #!bin/bash

@@ -254,3 +254,43 @@ sed '/\/bin/d' file.txt
 
 ### Desired Input
 sed -e '/\/bin\/sh/d -e /\/bin\/false/d' $HOME/passwd > $HOME/PASS/passwd.txt
+
+## 11
+
+### Desired Input
+
+## 12
+
+### Desired Input
+
+## 13
+
+### Desired Input
+
+## 14
+
+### Desired Input
+
+## 15
+
+### Desired Input
+
+## 16
+
+### Desired Input
+
+## 17
+
+### Desired Input
+
+## 18
+
+### Desired Input
+
+## 19
+
+### Desired Input
+
+## 20
+
+### Desired Input

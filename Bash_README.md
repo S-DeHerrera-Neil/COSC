@@ -176,10 +176,13 @@ $ cat fake1passwd | cut -d: -f1 -s
 07/23
 
 # awk (advanced language w/in bash)
-       
+
+       * 
 
 * $ awk fakepasswd | awk -F: '{print $1}'
-                            ^{print $NF}
+
+                              ^{print $NF}($NF-"Number Of Fields"
+                                            
 * $ awk -F: '($3 == 0){print $1}' fakepasswd
 
 * $ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd

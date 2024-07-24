@@ -99,7 +99,7 @@ cp <source> <destination> (copy)
       * user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
  (1) user:
 
- (2) Password: $<Hashing_Algorithm>$<Salt>$<Password>:
+ (2) Password: "$<Hashing_Algorithm>$<Salt>$<Password>:"
 
  (3) Last Password Change (lastchanged):
 

@@ -76,10 +76,10 @@ $ find -exec
 cp <source> <destination> (copy)
       /etc/passwd [7 lines]    
 
-# find -exec {} + or \;
+## find -exec {} + or \;
 
 
-# /etc/passwd : 
+## /etc/passwd : 
        * user:x:UID:GID:GECOS:Home_Dir:Command/Shell
  
 (1) user:
@@ -96,7 +96,7 @@ cp <source> <destination> (copy)
 
 (7) Command/Shell):
 
-# /etc/passwd : 
+## /etc/passwd : 
 
       * user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
  (1) user:
@@ -141,7 +141,7 @@ $ cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
 $ egrep "student|root|bob" fake1passwd.txt
 (egrep <student,root,bob> in the fake1passwd.txt file)
 
-# differences between brackets 
+## differences between brackets 
 * (https://baeldung.com/linux/bash-single-vs-double-brackets)
 
 # CTF challenges <Rank, LName>
@@ -150,7 +150,7 @@ $ egrep "student|root|bob" fake1passwd.txt
 # Brace Expansion
 $ mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
 
-# Cut (Cuts where specified)
+## Cut (Cuts where specified)
 $ cat fake1passwd.txt | cut -d: -f1 
                             ^(-d: [delimiter] -f1[Field 1])
 
@@ -190,6 +190,7 @@ $ cat fake1passwd | cut -d: -f1 -s
        * -k
        * -u
        * -uniq ^different than (has to have sort)
+## awk
        
 * $ awk -F: '{print3}' fakepasswd | sort
 
@@ -247,3 +248,5 @@ echo file $A
 
 
 openssl, Password1234, bad4u
+
+       * tar -czf

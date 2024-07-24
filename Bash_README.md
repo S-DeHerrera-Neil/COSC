@@ -295,3 +295,8 @@ echo I will remain $A
 '''
 #### CTFs fo the rest of this day
 
+### wc (word count)
+wc -l 
+
+^(-l does a line count)
+

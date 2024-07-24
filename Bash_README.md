@@ -175,13 +175,15 @@ $ cat fake1passwd | cut -d: -f1 -s
 
 07/23
 
-# awk (advanced language w/in bash)
+# awk (advanced language in bash)
 
-       * 
+       * Pattern-Matching language. Matches data by regular expression and performs actions based on the data.
 
 * $ awk fakepasswd | awk -F: '{print $1}'
 
-                              ^{print $NF}($NF-"Number Of Fields"
+                              ^{print $NF}($NF-"Number Of Fields")
+
+                              ^{print
                                             
 * $ awk -F: '($3 == 0){print $1}' fakepasswd
 

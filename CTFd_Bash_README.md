@@ -240,6 +240,11 @@ https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html#Shell-E
 To read more on the Shadow file format, go to the following resource:
 
 man shadow.5
+
+## user:x:UID:GID:GECOS:Home_Dir:Command/Shell
+
+## user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
+
 ### Desired Input
 a=$(openssl passwd -1 -salt bad4u Password1234)
 awk -F: -v "awk_var=$a" 'BEGIN {OFS=":"} {$2=awk_var} {print $0}' $HOME/PASS/shadow.txt

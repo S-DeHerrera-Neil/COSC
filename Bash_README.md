@@ -283,3 +283,13 @@ else
        echo "no tax at commissary"
 fi
 '''
+
+'''
+#!/bin/bash
+
+A=him
+echo The story of Robert who is $A
+echo The $A was at the I am $A store so we could buy some $A sloth$
+echo I am $A
+echo I will remain $A
+'''

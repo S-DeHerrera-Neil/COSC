@@ -296,7 +296,10 @@ To read more on the Passwd file format, go to the following resource:
 
 man passwd.5
 ### Desired Input
-
+file=$1
+name=$2
+id=$3
+tail -1 $file | awk -F: -v "username=$name" -v "uid=$id" 'BEGIN {OFS=":"}{$1=username}{$3=uid}{$4=uid}{$6="/home/"username}{$7="/bin/bash"}{print $0}' >> $file
 ## 13
 Activity:
 

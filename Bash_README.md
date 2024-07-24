@@ -293,3 +293,5 @@ echo The $A was at the I am $A store so we could buy some $A sloth$
 echo I am $A
 echo I will remain $A
 '''
+#### CTFs fo the rest of this day
+

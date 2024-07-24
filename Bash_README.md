@@ -77,6 +77,11 @@ cp <source> <destination> (copy)
       /etc/passwd [7 lines]    
 
 ## find -exec {} + or \;
+       * find [path] [arguments] -exec [command] {} +
+                                                 
+                                                 ^ + executes all of the commands all at once, prints 1 line.
+                                                 
+                                                 ^ \; executes each found result, prints multiple lines.
 
 
 ## /etc/passwd : 

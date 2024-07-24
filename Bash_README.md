@@ -3,7 +3,7 @@
 
        We start CTFs this week 
 
-07/22
+# 07/22
 
 nano(better than vi/vim)
 
@@ -21,7 +21,7 @@ $ pwd (print working directory)sudo cat /etc/shadow >> fake1passwd.txt
 $ cp <source> <destination> (copy)
       /etc/shadow    ()
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
-# cat
+### cat
 $ cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
  find -uid <UID#>
 
@@ -32,7 +32,7 @@ $ tail (default last 10)
 
 $ umask
 
-# Find: (shows the directory that the file is found)
+### Find: (shows the directory that the file is found)
 
 $ find -name (case sensative file)
 
@@ -76,7 +76,7 @@ $ find -exec
 cp <source> <destination> (copy)
       /etc/passwd [7 lines]    
 
-## find -exec {} + or \;
+### find -exec {} + or \;
        * find [path] [arguments] -exec [command] {} +
                                                  
                                                  ^ + executes all of the commands all at once, prints 1 line.
@@ -84,7 +84,7 @@ cp <source> <destination> (copy)
                                                  ^ \; executes each found result, prints multiple lines.
 
 
-## /etc/passwd : 
+#### /etc/passwd : 
        * user:x:UID:GID:GECOS:Home_Dir:Command/Shell
  
 (1) user:
@@ -101,7 +101,7 @@ cp <source> <destination> (copy)
 
 (7) Command/Shell):
 
-## /etc/passwd : 
+#### /etc/passwd : 
 
       * user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
  (1) user:
@@ -123,7 +123,7 @@ cp <source> <destination> (copy)
       
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 
-# error code handling 
+### error code handling 
 $ find / perm /4000 -uid 0 -ls 2>/dev/null
   
 $ find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
@@ -135,7 +135,7 @@ $ find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows th
 
 * find -exec example(url:https://linuxhandbook.com/find-exec-command/)
 
-# GREP: (grep lines that match a pattern/input)
+### grep: (grep lines that match a pattern/input)
 * grep
 * egrep
 
@@ -147,17 +147,17 @@ $ cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
 $ egrep "student|root|bob" fake1passwd.txt
 (egrep <student,root,bob> in the fake1passwd.txt file)
 
-## differences between brackets 
+### differences between brackets 
 
 * (https://baeldung.com/linux/bash-single-vs-double-brackets)
 
-# CTF challenges <Rank, LName>
+## CTF challenges <Rank, LName>
 10.50.26.116
 
-# Brace Expansion
+### Brace Expansion
 $ mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
 
-## Cut (Cuts where specified)
+### Cut (Cuts where specified)
 $ cat fake1passwd.txt | cut -d: -f1 
                             ^(-d: [delimiter] -f1[Field 1])
 
@@ -173,9 +173,9 @@ $ cat fake1passwd | cut -d: -f1 -s
 * ">" -creates file
 * ">>" -creates file and/or appends to file
 
-07/23
+# 07/23
 
-# awk (advanced language in bash)
+### awk (advanced language in bash)
 
        * Pattern-Matching language. Matches data by regular expression and performs actions based on the data.
 
@@ -205,7 +205,7 @@ $ cat fake1passwd | cut -d: -f1 -s
        * -k
        * -u
        * -uniq ^different than (has to have sort)
-## awk
+### awk
        
 * $ awk -F: '{print3}' fakepasswd | sort
 
@@ -219,10 +219,10 @@ $ ps aux  | sort -k 1
 
 $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 
-# Regex
+## Regex
        *website URL: https://regex101.com/library
 
-# aliases(naming something else, to do something else)
+### aliases(naming something else, to do something else)
 alais vim= 'nano'
 
        * String editor utility
@@ -239,17 +239,17 @@ sed -e 'chicken/d' pizza.txt
 
     *delete chicken globally.
 
-# command substitution
+### command substitution
        *Script to replace the command (cat /etc/) 
 
-# script.sh
+## script.sh
 #!/bin/bash
 
 A=$(cat /etc/passwd)
 
 echo $Ahttps://linuxhandbook.com/find-exec-command/
 
-# script comsub.sh
+## script comsub.sh
 #!bin/bash
 
 A=$(find /usr/bin -name passwd
@@ -264,4 +264,22 @@ echo file $A
 
 openssl, Password1234, bad4u
 
+
+# 07/24
+
        * tar -czf
+#### Script: simpleifelifelse.sh
+
+#!/bin/bas
+'''
+contents=$(cat simple.txt)
+if [[ $contents == "tacos" ]]; then
+       echo "are so good on tuesday"
+elif [[ $contents == "cotsco is amazing" ]]; then
+       echo "and you will save money "
+elif [[ $contents == "chicken bake" ]]; then
+       echo "tasty but will make you fail ht/wt"
+else
+       echo "no tax at commissary"
+fi
+'''

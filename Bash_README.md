@@ -77,9 +77,9 @@ cp <source> <destination> (copy)
       /etc/passwd [7 lines]    
 
 
-# Passwd : 
+# /etc/passwd : 
        * user:x:UID:GID:GECOS:Home_Dir:Command/Shell
-
+ 
 (1) user:
 
 (2) Password:
@@ -94,6 +94,26 @@ cp <source> <destination> (copy)
 
 (7) Command/Shell):
 
+# /etc/passwd : 
+
+      * user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
+ (1) user:
+
+ (2) Password: $<Hashing_Algorithm>$<Salt>$<Password>:
+
+ (3) Last Password Change (lastchanged):
+
+ (4) Minimum:
+
+ (5) Maximum:
+
+ (6) Warn:
+
+ (7) Inactive:
+
+ (8) Expire:
+      
+      
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 
 # error code handling 

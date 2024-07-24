@@ -76,6 +76,8 @@ $ find -exec
 cp <source> <destination> (copy)
       /etc/passwd [7 lines]    
 
+# find -exec {} + or \;
+
 
 # /etc/passwd : 
        * user:x:UID:GID:GECOS:Home_Dir:Command/Shell

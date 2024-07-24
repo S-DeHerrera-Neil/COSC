@@ -101,7 +101,7 @@ cp <source> <destination> (copy)
 
 (7) Command/Shell):
 
-#### /etc/passwd : 
+#### /etc/shadow : 
 
       * user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
  (1) user:

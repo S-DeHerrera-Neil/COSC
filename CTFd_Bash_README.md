@@ -241,9 +241,9 @@ To read more on the Shadow file format, go to the following resource:
 
 man shadow.5
 
-## user:x:UID:GID:GECOS:Home_Dir:Command/Shell
+## /etc/shadow-> user:x:UID:GID:GECOS:Home_Dir:Command/Shell
 
-## user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
+## /etc/passwd-> user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
 
 ### Desired Input
 a=$(openssl passwd -1 -salt bad4u Password1234)

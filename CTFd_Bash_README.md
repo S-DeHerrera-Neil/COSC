@@ -275,6 +275,7 @@ Utilizing the rev and cut commands creatively.
 
 ### Desired Input
 find ./ -type f -iname "*.bin" | awk -F./ '{print$0}' | rev | cut -d/ -f2- | rev | sort -u
+
 ## 12
 Activity:
 
@@ -300,6 +301,7 @@ file=$1
 name=$2
 id=$3
 tail -1 $file | awk -F: -v "username=$name" -v "uid=$id" 'BEGIN {OFS=":"}{$1=username}{$3=uid}{$4=uid}{$6="/home/"username}{$7="/bin/bash"}{print $0}' >> $file
+
 ## 13
 Activity:
 
@@ -335,7 +337,8 @@ In the above example, an error is returned because we are applying the directory
 [chris@localhost ~]$ echo "/home/chris" | md5sum
 fd1a05901ce7150f82abd7f7d76f2827  -
 ### Desired Input
-
+GID=$(cut /etc/passwd -d: -f4- | sort -n | head | tail -1 | cut -d: -f3) 
+echo $GID | md5sum | cut -d" " -f1
 ## 15
 Activity:
 
@@ -371,7 +374,8 @@ Activity:
 Write a script that determines your default gateway ip address. Assign that address to a variable using command substitution.
 NOTE: Networking on the CTFd is limited for security reasons. ip route and route are emulated. Use either of those with no switches.
 Have your script determine the absolute path of the ping application. Assign the absolute path to a variable using command substitution.
-Have your script send six ping packets to your default gateway, utilizing the path discovered in the previous step, and assign the response to a variable using command substitution.
+Have your script send six MD5=$(find /bin /sbin /usr/bin /usr/sbin -executable -type f | sort | head | tail -1)
+md5sum $MD5 | cut -d" " -f1ping packets to your default gateway, utilizing the path discovered in the previous step, and assign the response to a variable using command substitution.
 Evaluate the response as being either successful or failure, and print an appropriate message to the screen.
 Pseudo Example:
 

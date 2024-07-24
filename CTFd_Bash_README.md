@@ -316,7 +316,8 @@ Tip: In the below example, you can see the different uses of md5sum. While not w
 [chris@localhost ~]$ md5sum /etc/passwd
 62f5fa5100adcee3305cf979b5734a3e  /etc/passwd
 ### Desired Input
-
+MD5=$(find /bin /sbin /usr/bin /usr/sbin -executable -type f | sort | head | tail -1)
+md5sum $MD5 | cut -d" " -f1
 ## 14
 Activity:
 

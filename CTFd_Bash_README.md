@@ -355,7 +355,11 @@ Successfully Hashed Files: 105
 Unsuccessfully Hashed Directories: 23
 
 ### Desired Input
-
+find /bin /etc /var -maxdepth 3 ! -type p -exec md5sum {} 1>output.txt 2>errors.txt \;
+Out=$(wc -l < output.txt)
+Err=$(grep -c "Is a directory" errors.txt)
+echo "Successfully Hashed Files: $Out"
+echo "Unsuccessfully Hashed Directories: $Err"
 ## 16
 Activity:
 

@@ -65,7 +65,7 @@ $ find $HOME -mtime 0
 
 $ find cmin -60
 
-$ find -mmin -60
+$ find -mmin -60 (60 minutes in an hour)
 
 $ find -empty
 
@@ -201,7 +201,7 @@ $ cat fake1passwd | cut -d: -f1 -s
        * -n (numeric sort)
        * -r (reverse the result of comparisons) 
        * -nr (numeric reverse)
-       * -t 
+       * -t (for delimters)
        * -k
        * -u
        * -uniq ^different than (has to have sort)

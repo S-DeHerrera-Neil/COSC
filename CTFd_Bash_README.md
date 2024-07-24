@@ -126,7 +126,7 @@ NOTE: The output should only be the file names with no additional information. A
 To read more on Redirecting Output, go to the following resource:
 
 https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Output
-To read more on Simple Command Expansion, go to the following resource:
+To read more on Simple Command Expansion, go to the fouser:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::llowing resource:
 
 https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
  #### 3 Cuts: Every cut you get more specific with your results
@@ -243,7 +243,7 @@ man shadow.5
 
 ## /etc/shadow-> user:x:UID:GID:GECOS:Home_Dir:Command/Shell
 
-## /etc/passwd-> user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
+## /etc/shadow-> user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
 
 ### Desired Input
 a=$(openssl passwd -1 -salt bad4u Password1234)

@@ -1,9 +1,9 @@
 # Bash
 Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
 CTF challenges <Rank, LName>
-10.50.26.116
+IP Address: 10.50.26.116
 
-## Date 07/22
+# Date 07/22
        Commands covered:
        $nano(text editor like vi/vim)
        $ mkdir -p (makes a parent directory)
@@ -71,13 +71,12 @@ CTF challenges <Rank, LName>
        (6) Warn:
        (7) Inactive:
        (8) Expire:
-sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
+$ sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 ###### error code handling 
        $ find / perm /4000 -uid 0 -ls 2>/dev/null
        $ find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
        $ find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows the inode# then the file)
-                         
-                         * printf example ^ :https://phoenixnap.com/kb/bash-printf
+                                                 ^printf example > (https://phoenixnap.com/kb/bash-printf)
 #### grep: (grep lines that match a pattern/input)
        $ grep
        $ egrep
@@ -85,7 +84,7 @@ sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch th
        $ cat /fake1passwd.txt | grep /bin/bash (look at what the users shell is)
        $ egrep "student|root|bob" fake1passwd.txt
               ^(egrep <student,root,bob> in the fake1passwd.txt file)
-* cut and awk: (helps with filtering)
+commands cut and awk help with filtering
 #### differences between brackets 
        (https://baeldung.com/linux/bash-single-vs-double-brackets)
 

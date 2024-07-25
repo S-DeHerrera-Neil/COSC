@@ -41,17 +41,16 @@ IP Address: 10.50.26.116
        $ find -maxdepth<#of directories deep>(telling find how deep find needs to look in a directory)
        $ find / -type d(finds directories)
        $ find / -type f(finds files)
-       $ find -atime
-       $ find -ctime
-       $ find -mtime
+       $ find -atime ()
+       $ find -ctime ()
+       $ find -mtime ()
        $ find $HOME -mtime 0
        $ find cmin -60
        $ find -mmin -60 (60 minutes in an hour)
        $ find -empty
        $ find -executable
        $ find -exec
-#### find -exec {} + or \; (more examples at > https://linuxhandbook.com/find-exec-command/)
-       $ find [path] [arguments] -exec [command] {} + or \;
+       $ find [path] [arguments] -exec [command] {} + or \; (more examples at > https://linuxhandbook.com/find-exec-command/)
                                                     ^+ executes all of the commands all at once, prints 1 line.
                                                     ^\; executes each found result, prints multiple lines.
 #### cp command:(used to copy From:<src> To:<dst>)

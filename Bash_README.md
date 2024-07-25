@@ -369,11 +369,53 @@ Utilizing the rev and cut commands creatively.
 
        find ./ -type f -iname "*.bin" | awk -F./ '{print$0}' | rev | cut -d/ -f2- | rev | sort -u
 ## 12 Write a script to copy lines by parameter (tail, awk)
+Write a script which will copy the last entry/line in the passwd-like file specified by the $1 positional parameter
+Modify the copied line to change:
+User name to the value specified by $2 positional parameter
+Used id and group id to the value specified by $3 positional parameter
+Home directory to a directory matching the user name specified by $2 positional parameter under the /home directory
+The default shell to `/bin/bash'
+Append the modified line to the end of the file
+Tip: awk provides the simplest method for completing this activity. Refer back to your notes on "09 - BASH Activity" if you are in need of starting point on this activity.
+Note: The contents of the passwd-like file will be randomly generated on each submission. It is intended to read the last line once and store it in a variable.
+To read more on Positional Parameters, go to the following resource:
+https://www.gnu.org/software/bash/manual/bash.html#Positional-Parameters
+To read more on the Passwd file format, go to the following resource:
+man passwd.5
 
+       file=$1
+       name=$2
+       id=$3
+       tail -1 $file | awk -F: -v "username=$name" -v "uid=$id" 'BEGIN {OFS=":"}{$1=username}{$3=uid}{$4=uid}{$6="/home/"username}{$7="/bin/bash"}{print $0}' >> $file
 ## 13 Find all file in specified DIRs, then try hashing them (find, sort, head, tail, md5sum, cut) 
+Find all executable files under the following four directories:
+/bin
+/sbin
+/usr/bin
+/usr/sbin
+Sort the filenames with absolute path, and get the md5sum of the 10th file from the top of the list.
+Tip: In the below example, you can see the different uses of md5sum. While not wrong, the first command is hashing the string output of the the find command. In the second, md5sum is hashing the file contents of the given file, which is what is intended for this activity. You can also tell the second method hashed the file as the file name is listed in the hash output; the first only lists a hyphen indicating a string was hashed. For this activity, to provide md5sum with the 10th file of the sorted output, it is recommended to use Command Subtitution.
+[chris@localhost ~]$ find /etc -maxdepth 1 -name passwd | md5sum
+9231fb35b4431d59eae53a8c0d673231  -
+[chris@localhost ~]$ md5sum /etc/passwd
+62f5fa5100adcee3305cf979b5734a3e  /etc/passwd
 
+       MD5=$(find /bin /sbin /usr/bin /usr/sbin -executable -type f | sort | head | tail -1)
+       md5sum $MD5 | cut -d" " -f1
 ## 14 Sort /etc/passwd numerically by GID, hash the 10th entry in the DIR, output md5 hash stdout (cut, sort, head, tail, md5sum) 
+Using any BASH command complete the following:
+Sort the /etc/passwd file numerically by the GID field.
+For the 10th entry in the sorted passwd file, get an md5 hash of that entry’s home directory.
+Output ONLY the MD5 hash of the directory's name to standard output.
+Note: Since we are dealing with a directory, which is both a string and an absolute path, it matters how we get the md5sum of our intended output.
+[chris@localhost ~]$ md5sum /home/chris
+md5sum: /home/chris: Is a directory
+In the above example, an error is returned because we are applying the directory /home/chris as the first argument of the above command. Since /home/chris is a directory, likely with additional files within it, we cannot assign this as an argument. However, we have the string /home/chris as STDIN for a command, as seen in the below example.
+[chris@localhost ~]$ echo "/home/chris" | md5sum
+fd1a05901ce7150f82abd7f7d76f2827  -
 
+       GID=$(cut /etc/passwd -d: -f4- | sort -n | head | tail -1 | cut -d: -f3) 
+       echo $GID | md5sum | cut -d" " -f1
 ## 15 Write a Script that looks 3 levels deep in specified DIRs, exclude pipes, redirect to stdout & stderr, get count of "Successfully" hashed files/"Unsuccessfully" hashed files (find -maxdepth, -exec, md5sum, echo) 
 
 #

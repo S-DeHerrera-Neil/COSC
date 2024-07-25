@@ -3,43 +3,38 @@
 
        We start CTFs this week 
 
-# Date 07/22
-
-nano(better than vi/vim)
-
-$ mkdir -p (makes a parent directory)
-
-$ rm -rf(removes forceably)
-
-$ rmdir (removes directory)
-
-$ ls -lisa 
-  * can also do ls -1 (puts 1 item per line)
-
-$ pwd (print working directory)sudo cat /etc/shadow >> fake1passwd.txt
-
-$ cp <source> <destination> (copy)
-      /etc/shadow    ()
+## Date 07/22
+       Commands covered:
+       $nano(text editor like vi/vim)
+       $ mkdir -p (makes a parent directory)
+       $ rm -rf(removes forceably)
+       $ rmdir (removes directory)
+       $ ls -lisa(list: l-long ) 
+              ^can also do ls -1 (puts 1 item per line)
+       $ pwd (print working directory)sudo cat /etc/shadow >> fake1passwd.txt
+       $ cp <source> <destination> (copy)
+      ^(/etc/shadow)  ^(fake1passwd.txt)
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
-### cat
-$ cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
- find -uid <UID#>
-
-$ head (default first 10)
-
-$ tail (default last 10)
-
-$ umask
-
-### find command: (shows the directory that the file is found)
-
+#### cat command:
+       $ cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
+       find -uid <UID#>
+#### head command:(outputs the first 10 lines)
+       $ head
+#### tail command:(outputs the last 10 lines)
+       $ tail
+#### umask command:(allows modification of permisions. New files/folders that do not exist yet)
+       $ umask [-p] [-S]
+              ^ -p (current mask as a symbolic value)
+              ^ -S (current mask along with the umask command, allowing it to to be copy/pasted)
+#### find command: (shows the directory that the file is found)
        $ find -name (case sensative file)
-       $ find -iname (case insensativity)
+       $ find -iname (case insensative file)
        $ find -inum(finds files off of the inode number)
        $ find -size(for finding files based off of it's size)
-       $ find /etc/passwd
-       $ find -group name
-       $ find -gid<GID#>
+       $ find /etc/passwd (syntax- user:x:UID:GID:GECOS:Home_Dir:Command/Shell)
+                                               ^$ find -group name (the 4th field after the : delimiter)
+                                               or
+                                               ^$ find -gid<GID#> (when looking for a specific GID)
        $ find -maxdepth<#of directories deep>(telling find how deep find needs to look in a directory)
        $ find / -type d(finds directories)
        $ find / -type f(finds files)
@@ -257,12 +252,11 @@ echo The $A was at the I am $A store so we could buy some $A sloth$
 echo I am $A
 echo I will remain $A
 '''
-#### CTFs fo the rest of this day
+#### CTFs for the rest of this day
 
 ### wc (word count)
-wc -l 
-
-^(-l does a line count)
+       $ wc -l 
+             ^(-l does a line count)
 
 
 #### Commands to study:

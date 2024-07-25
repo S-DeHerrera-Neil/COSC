@@ -219,3 +219,6 @@ commands cut and awk help with filtering
        $ if,elif,else: (branching statements)
        $ pkill (kills processes)
        $ tar -czf (compresses via 'Archiving')
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# CTFs Q/A

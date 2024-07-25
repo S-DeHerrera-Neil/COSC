@@ -73,13 +73,12 @@ IP Address: 10.50.26.116
        (6) Warn:
        (7) Inactive:
        (8) Expire:
-$ sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 ###### error code handling 
        $ find / perm /4000 -uid 0 -ls 2>/dev/null
        $ find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
        $ find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows the inode# then the file)
                                                  ^printf example > (https://phoenixnap.com/kb/bash-printf)
-#### grep command:(){grep lines that match a pattern/input}
+#### grep command:(used for searching and manipulating text patterns in files){grep lines that match a pattern/input}
        options:
        -i(case insensative)
        -n(line numbers)

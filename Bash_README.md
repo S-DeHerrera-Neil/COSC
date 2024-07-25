@@ -47,16 +47,16 @@
        $ find -empty
        $ find -executable
        $ find -exec
+#### find -exec {} + or \;
+       $ find [path] [arguments] -exec [command] {} + or \;
+                                                    ^+ executes all of the commands all at once, prints 1 line.
+                                                    ^\; executes each found result, prints multiple lines.
 
-cp <source> <destination> (copy)
-      /etc/passwd [7 lines]    
+#### cp command:(used to copy From:<src> To:<dst>)
+       $ cp <source> <destination> (copy)
+             /etc/passwd [7 lines](IDK what this is from/for)
 
-### find -exec {} + or \;
-       * find [path] [arguments] -exec [command] {} +
-                                                 
-                                                 ^ + executes all of the commands all at once, prints 1 line.
-                                                 
-                                                 ^ \; executes each found result, prints multiple lines.
+
 
 
 #### /etc/passwd file structure: 

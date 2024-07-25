@@ -226,11 +226,12 @@ commands cut and awk help with filtering
 ## Brace Expansion 01.2
 ## Pattern Matching 01.3
 ## List file (find,grep) 01.3(2)
-## 03
-## 04
-## 05
-## 06
-## 07
+## Copy files (find -exec) 02
+## Finding empty files/directories (find -printf) 03
+## Finding inode Number (find -printf) 04
+## bash script show all filenames/ extensions (ls -l, cut)05
+## bash script to GREP ipAddresses(cat, grep, sort, uniq) 06 
+## bash 1-liner script extracting UIDs, shells (cat, awk) 07
 ## 08
 ## 09
 ## 10

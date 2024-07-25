@@ -28,7 +28,8 @@ IP Address: 10.50.26.116
        $ umask [-p] [-S]
               ^ -p (current mask as a symbolic value)
               ^ -S (current mask along with the umask command, allowing it to to be copy/pasted)
-#### find command: (shows the directory that the file is found)
+#### find command:(comprehensive file and directory searches) {shows the directory that the file is found}
+       $ find [path] [options] [expression]
        $ find -name (case sensative file)
        $ find -iname (case insensative file)
        $ find -inum(finds files off of the inode number)

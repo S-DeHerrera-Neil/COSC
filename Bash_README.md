@@ -119,16 +119,17 @@ $ cat fake1passwd.txt | cut -d: -f1
        $ cat /etc/passwd | awk -F: '($7 == "/bin/bash"){print $1, $6, $3}' fakepasswd
        $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
 ------------------------------------------------------------------------------------------------------------------------------------------
-#### sort command:()
+#### sort command:(used to sort a file, arranging the records in a particular order)
+       
        "have to generate output file has to be before it"
         options:
-       * -n (numeric sort)
-       * -r (reverse the result of comparisons) 
-       * -nr (numeric reverse)
+       * -n (sorts a file numerically{interprets data as numbers})
+       * -r (sorts data in reverse order{descending}) 
+       * -nr (sorts a file with numeric data in reverse order. Combines -n and -r options)
        * -t (for delimters)
-       * -k ()
-       * -u ()
-       * -uniq () 
+       * -k (sorts a table based on a specific column or number)
+       * -u (sorts and removes duplicate lines, providing a unique sorted list)
+       * -uniq (?) 
            ^different than (has to have sort)
        
        $ awk -F: '{print3}' fakepasswd | sort

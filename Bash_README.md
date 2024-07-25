@@ -223,24 +223,51 @@ commands cut and awk help with filtering
 
 # CTFs Q/A 01-15
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Brace Expansion 01
-## Brace Expansion 01.2
-## Pattern Matching 01.3
-## List file (find, grep) 01.3(2)
-## Copy files (find -exec) 02
-## Finding empty files/directories (find -printf) 03
-## Finding inode Number (find -printf) 04
+## 01 Brace Expansion 
+Brace expansion is a mechanism by which arbitrary strings may be generated, for commands that will take multiple arguements. 
+For the below examples, the first example is equivalent to the second command.
+$ mkdir /var/log/{auth,syslog,dmesg}_log
+$ mkdir /var/log/auth_log /var/log/syslog_log /var/log/dmesg_log
+create the following directories within the $HOME directory:
+* 1123
+* 1134
+* 1145
+* 1156
+
+       mkdir 11{23,34,45,56} 
+## 01.2 Brace Expansion 
+
+## 01.3 Pattern Matching 
+
+## 01.3(2) List file (find, grep) 
+
+## 02 Copy files (find -exec) 
+
+## 03 Finding empty files/directories (find -printf) 
+
+## 04 Finding inode Number (find -printf) 
+
 ## bash script show all filenames/ extensions (ls -l, cut) 05
+
 ## bash script to GREP ipAddresses(cat, grep, sort, uniq) 06 
+
 ## bash 1-liner script extracting UIDs, shells (cat, awk) 07
+
 ## Finding kernel messages "CPU|BIOS" "Unusable|Reserved" (dmesg, cut, grep) 08
+
 ## Command Subtitution Script (awk) 09
+
 ## Writing lines from/to (sed) 10
+
 ## Finding all files .bin (find -printf, rev, cut, sort) 11
+
 ## Write a script to copy lines by parameter (tail, awk)12
+
 ## Find all file in specified DIRs, then try hashing them (find, sort, head, tail, md5sum, cut) 13
+
 ## Sort /etc/passwd numerically by GID, hash the 10th entry in the DIR, output md5 hash stdout (cut, sort, head, tail, md5sum) 14
-## Write a Script that looks 3 levels deep in specified DIRs, exclude pipes, redirect to stdout & stderr, get count of "uccessfully"files hashed/"Unsuccessfully"files hashed () 15
+
+## Write a Script that looks 3 levels deep in specified DIRs, exclude pipes, redirect to stdout & stderr, get count of "Successfully" hashed files/"Unsuccessfully" hashed files (find -maxdepth, -exec, md5sum, echo) 15
 
 #
 #

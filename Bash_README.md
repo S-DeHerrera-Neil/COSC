@@ -2,7 +2,7 @@
 Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
 CTF challenges <Rank, LName>
 IP Address: 10.50.26.116
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Date 07/22
        Commands covered:
        $ nano(text editor like vi/vim)
@@ -18,7 +18,6 @@ IP Address: 10.50.26.116
 #### cat command:(Reads, Writes and ConCATenates files) 
        $ cat [options] [File] 
        $ cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
-       
 #### head command:(outputs the first 10 lines)
        $ head [option]... [file]...
 #### tail command:(outputs the last 10 lines)
@@ -59,6 +58,7 @@ IP Address: 10.50.26.116
        $ cp <source> <destination> (copy)
              /etc/passwd [7 lines](IDK what this is from/for)
 ##### /etc/passwd file structure: user:x:UID:GID:GECOS:Home_Dir:Command/Shell 
+                                   ^1  ^2 ^3  ^4  ^5    ^6        ^7
        (1) user:
        (2) Password:
        (3) User ID(UID):
@@ -67,6 +67,7 @@ IP Address: 10.50.26.116
        (6) Home Direcory:
        (7) Command/Shell):
 ##### /etc/shadow  file structure: user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7::: 
+                                    ^1   ^2                         ^3    ^4 ^5   ^6^7-8  
        (1) user:
        (2) Password: $ "<Hashing_Algorithm>" $ "<_Salt>" $ "<_Password>" :"
        (3) Last Password Change (lastchanged):

@@ -2,8 +2,6 @@
 Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
 CTF challenges <Rank, LName>
 IP Address: 10.50.26.116
-
-commands cut and awk help with filtering
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Date 07/22
        Commands covered:
@@ -91,16 +89,18 @@ commands cut and awk help with filtering
        $ egrep "student|root|bob" fake1passwd.txt
           ^(egrep <student,root,bob> in the fake1passwd.txt file)
 
-#### differences between brackets 
+###### differences between brackets 
        (https://baeldung.com/linux/bash-single-vs-double-brackets)
-### Brace Expansion
-$ mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
-
-### Cut (Cuts where specified)
-$ cat fake1passwd.txt | cut -d: -f1 
+###### Brace Expansion
+       $ mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
+#### cut command:(Cuts where specified)
+              options:
+              -d: (delimiter)
+              -f1 (Field)
+              -s (strict) -only from the delimiter
+       $ cut option... [file]...
+       $ cat fake1passwd.txt | cut -d: -f1 
                             
-                            ^(-d: [delimiter] -f1[Field 1])
-                            ^([-s strict, only from the delimiter])
 #### Chaining operators
        & -runs process in background
        && -AND
@@ -148,9 +148,10 @@ $ cat fake1passwd.txt | cut -d: -f1
 ###### aliases(user-defined shorthand for a longer command or sequence of commands)
        $ alais vim= 'nano'
               ^ String editor utility
-              
        $ ls -l
        $ cat pizza.txt
+
+commands cut and awk help with filtering   
 #### sed command:(stream editor[can perform lots of functions like searching, find and replace, insertion and deletion])
        $ sed options... [script] [inputfile...]
        $ sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt

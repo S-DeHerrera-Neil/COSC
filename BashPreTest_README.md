@@ -25,8 +25,10 @@ function q1()
 
 ### Script
 
-  sed -e "s/cat/dog/g" -e "s/Navy/Army/g" $1 >> $2
+sed -e "s/cat/dog/g" -e "s/Navy/Army/g" $1 >> $2
 
+    * instructor:
+sed -e "s/cat/dog/g" -e "s/Navy/Army/g" $1 >> $2
 
 
 
@@ -49,6 +51,9 @@ function q1()
 ### Script
 
 awk -F: '{print $1}' /etc/passwd names.txt
+
+    * instructor:
+cut -d':' -f1 /etc/passwd 
 
 
 
@@ -74,6 +79,9 @@ function q1()
 
 ### Script
 
+
+*
+sort -n -t: -k3 $filename | cut -d':' -f1
 
 
 
@@ -102,8 +110,8 @@ function q1()
 ### Script
 
 
-
-
+    * instructor:
+ls -1 $dirname | wc -l
 
 ## 05
 
@@ -128,7 +136,8 @@ function q1()
 ### Script
 
 
-
+    * instructor:
+    
 
 
 ## 06

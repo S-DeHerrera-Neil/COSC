@@ -1,6 +1,5 @@
 # Bash CTFd Base challenges
   * 07/22/2024
-
 ## 01
 Brace expansion is a mechanism by which arbitrary strings may be generated, for commands that will take multiple arguements. 
 For the below examples, the first example is equivalent to the second command.
@@ -114,7 +113,7 @@ Tip: The above inode is specific to this CTFd question and might not be in use o
 ### Desired Input
  $ find / -inum 4026532575 2>/dev/null -printf "%f\n" 
 
-  
+
 ## 05 (maybe?)
 Activity:
 
@@ -165,6 +164,7 @@ man regex.7
 ### Desired Input
 cat StoryHiddenIPs | grep -E -o "([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})" | sort -n | uniq -c | sort -nr
 
+
 ## 07 (May need help on)
 Activity:
 
@@ -180,6 +180,7 @@ awk -F: '($1 == "root") {print $0}' /etc/passwd
 ### Desired Input
 cat $HOME/passwd | awk -F: '($3>3)' | awk -F: '($7 == "/bin/bash") {print $1}' > $HOME/SED/names.txt
 
+
 ## 08
 Activity:
 
@@ -194,6 +195,7 @@ Tip: As you may have noticed, when using grep you can simulate a logical AND by 
    *My answer: dmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
    
    *Instructor: dmseg | grep -E 'CPU|BIOS' | grep -v -E 'usable|reversed' | cut -d] -f2-
+
 
 ## 09 (I need Help!!!!!)
 Activity:
@@ -249,6 +251,7 @@ man shadow.5
 a=$(openssl passwd -1 -salt bad4u Password1234)
 awk -F: -v "awk_var=$a" 'BEGIN {OFS=":"} {$2=awk_var} {print $0}' $HOME/PASS/shadow.txt
 
+
 ## 10
 Activity:
 
@@ -259,6 +262,7 @@ sed '/\/bin/d' file.txt
 
 ### Desired Input
 sed -e '/\/bin\/sh/d -e /\/bin\/false/d' $HOME/passwd > $HOME/PASS/passwd.txt
+
 
 ## 11
 Activity:
@@ -275,6 +279,7 @@ Utilizing the rev and cut commands creatively.
 
 ### Desired Input
 find ./ -type f -iname "*.bin" | awk -F./ '{print$0}' | rev | cut -d/ -f2- | rev | sort -u
+
 
 ## 12
 Activity:
@@ -302,6 +307,7 @@ name=$2
 id=$3
 tail -1 $file | awk -F: -v "username=$name" -v "uid=$id" 'BEGIN {OFS=":"}{$1=username}{$3=uid}{$4=uid}{$6="/home/"username}{$7="/bin/bash"}{print $0}' >> $file
 
+
 ## 13
 Activity:
 
@@ -320,6 +326,8 @@ Tip: In the below example, you can see the different uses of md5sum. While not w
 ### Desired Input
 MD5=$(find /bin /sbin /usr/bin /usr/sbin -executable -type f | sort | head | tail -1)
 md5sum $MD5 | cut -d" " -f1
+
+
 ## 14
 Activity:
 
@@ -339,6 +347,8 @@ fd1a05901ce7150f82abd7f7d76f2827  -
 ### Desired Input
 GID=$(cut /etc/passwd -d: -f4- | sort -n | head | tail -1 | cut -d: -f3) 
 echo $GID | md5sum | cut -d" " -f1
+
+
 ## 15
 Activity:
 
@@ -360,6 +370,8 @@ Out=$(wc -l < output.txt)
 Err=$(grep -c "Is a directory" errors.txt)
 echo "Successfully Hashed Files: $Out"
 echo "Unsuccessfully Hashed Directories: $Err"
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 16
 Activity:
 

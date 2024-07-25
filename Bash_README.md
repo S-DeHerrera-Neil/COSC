@@ -57,7 +57,6 @@ IP Address: 10.50.26.116
 #### cp command:(used to copy From:<src> To:<dst>)
        $ cp <source> <destination> (copy)
              /etc/passwd [7 lines](IDK what this is from/for)
-                                  1    2 3    4  5     6         7     
 ##### /etc/passwd file structure: user:x:UID:GID:GECOS:Home_Dir:Command/Shell 
        (1) user:
        (2) Password:
@@ -66,8 +65,7 @@ IP Address: 10.50.26.116
        (5) User ID Info (GECOS):
        (6) Home Direcory:
        (7) Command/Shell):
-##### /etc/shadow  file structure: user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7::: 
-                                    ^1   ^2                         ^3    ^4 ^5   ^6^7-8  
+##### /etc/shadow  file structure: user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
        (1) user:
        (2) Password: $ "<Hashing_Algorithm>" $ "<_Salt>" $ "<_Password>" :"
        (3) Last Password Change (lastchanged):

@@ -124,18 +124,15 @@ IP Address: 10.50.26.116
        $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
 ------------------------------------------------------------------------------------------------------------------------------------------
 #### sort command:(used to sort a file, arranging the records in a particular order)
-       
        "have to generate output file has to be before it"
-        options:
-       * -n (sorts a file numerically{interprets data as numbers})
-       * -r (sorts data in reverse order{descending}) 
-       * -nr (sorts a file with numeric data in reverse order. Combines -n and -r options)
-       * -t (for delimters)
-       * -k (sorts a table based on a specific column or number)
-       * -u (sorts and removes duplicate lines, providing a unique sorted list)
-       * -uniq (?) 
-           ^different than (has to have sort)
-       
+              options:
+              -n (sorts a file numerically{interprets data as numbers})
+              -r (sorts data in reverse order{descending}) 
+              -nr (sorts a file with numeric data in reverse order. Combines -n and -r options)
+              -t (for delimters)
+              -k (sorts a table based on a specific column or number)
+              -u (sorts and removes duplicate lines, providing a unique sorted list)
+              -uniq (?) -different than {has to have sort}
        $ awk -F: '{print3}' fakepasswd | sort
        $ awk -F: '{print3}' fakepasswd | sort -n
        $ awk -F: '{print3}' fakepasswd | sort -nr

@@ -141,7 +141,7 @@ $ cat fake1passwd.txt | cut -d: -f1
 ------------------------------------------------------------------------------------------------------------------------------------------
 ###### Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pettern in text)
        helpful website > URL: https://regex101.com/library
-###### aliases(naming something else, to do something else)
+###### aliases(user-defined shorthand for a longer command or sequence of commands)
        $ alais vim= 'nano'
               ^ String editor utility
               
@@ -171,14 +171,14 @@ $ cat fake1passwd.txt | cut -d: -f1
        openssl, Password1234, bad4u
 --------------------------------------------------------------------------------------------------------------------------------------------       
 # 07/24
-#### tar command:()       
+#### tar command:(used to create Archive and extract Archive files)       
        $ tar [options] [archive-file] [file or Dir to be archived]
        $ tar -czf
               options:
               -c:(creates an archive by bundling files and directories together)
               -z:(uses gzip compression when creating a tar file, resulting in a compressed archive with the '.tar.gz' extension)
               -f:(specifies the filename of the archive to be created or extracted)
-#### wc comand: (word count)
+#### wc comand: (word count-counts words)
        $ wc [option]... [file]
        $ wc -l 
              ^(-l does a line count)              
@@ -207,9 +207,11 @@ $ cat fake1passwd.txt | cut -d: -f1
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Commands to study:
        $ grep: grab strings, look in file 
-       $ find -exec, printf: finds filename, extenstions, outside the file
-       $ rm
-       $ touch
-       $ if(branching statement)
-       $ pkill
-       $ tar -czf
+       $ find: (finds filename, extenstions, outside the file)
+              ^ -exec 
+              ^ printf: 
+       $ rm: (removes files or directories)
+       $ touch: (creates or modifies)
+       $ if,elif,else: (branching statements)
+       $ pkill (kills processes)
+       $ tar -czf (compresses via 'Archiving')

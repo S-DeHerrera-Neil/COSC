@@ -278,3 +278,5 @@ function q1()
 }
 
 ### Script
+
+find $dirpath -type f -mtime -1 | sort

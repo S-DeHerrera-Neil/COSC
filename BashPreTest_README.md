@@ -137,7 +137,7 @@ function q1()
 
 
     * instructor:
-    
+rm -r $dirdel
 
 
 ## 06
@@ -163,7 +163,8 @@ function q1()
 
 ### Script
 
-
+      * Instructor:
+touch -t "$filedate"1730 $newfile
 
 
 ## 07
@@ -193,6 +194,16 @@ function q1()
 }
 
 ### Script
+
+cont='cat $fname'
+if [[ $cont -lt 10 ]]; then 
+  echo "single digit" 
+elif [[ $cont -lt 100 ]]; then 
+  echo "double digit" 
+elif [[ $cont -lt 1000 ]]; then 
+  echo "triple digit" 
+else 
+  echo "Error"
 
 ## 08
 

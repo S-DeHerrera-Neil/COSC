@@ -16,12 +16,13 @@ IP Address: 10.50.26.116
       ^(/etc/shadow)  ^(fake1passwd.txt)
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 #### cat command:(Reads, Writes and ConCATenates files) 
+       $ cat [options] [File] 
        $ cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
        
 #### head command:(outputs the first 10 lines)
-       $ head
+       $ head [option]... [file]...
 #### tail command:(outputs the last 10 lines)
-       $ tail
+       $ tail 
 #### umask command:(allows modification of permisions. New files/folders that do not exist yet)
        $ umask [-p] [-S]
               ^ -p (current mask as a symbolic value)

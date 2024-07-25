@@ -115,7 +115,7 @@ Tip: The above inode is specific to this CTFd question and might not be in use o
  $ find / -inum 4026532575 2>/dev/null -printf "%f\n" 
 
   
-## 05
+## 05 (maybe?)
 Activity:
 
 Using only the ls -l and cut Commands, write a BASH script that shows all filenames with extensions ie: 1.txt, etc., but no directories, in $HOME/CUT.
@@ -165,7 +165,7 @@ man regex.7
 ### Desired Input
 cat StoryHiddenIPs | grep -E -o "([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})" | sort -n | uniq -c | sort -nr
 
-## 07
+## 07 (May need help on)
 Activity:
 
 Using ONLY the awk command, write a BASH one-liner script that extracts ONLY the names of all the system and user accounts that are not UIDs 0-3.
@@ -195,7 +195,7 @@ Tip: As you may have noticed, when using grep you can simulate a logical AND by 
    
    *Instructor: dmseg | grep -E 'CPU|BIOS' | grep -v -E 'usable|reversed' | cut -d] -f2-
 
-## 09
+## 09 (I need Help!!!!!)
 Activity:
 
 Write a Bash script using "Command Substitution" to replace all passwords, using openssl, from the file $HOME/PASS/shadow.txt with the MD5 encrypted password: Password1234, with salt: bad4u

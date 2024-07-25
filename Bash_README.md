@@ -3,7 +3,7 @@
 
        We start CTFs this week 
 
-# 07/22
+# Date 07/22
 
 nano(better than vi/vim)
 
@@ -25,14 +25,13 @@ $ cp <source> <destination> (copy)
 $ cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
  find -uid <UID#>
 
-
 $ head (default first 10)
 
 $ tail (default last 10)
 
 $ umask
 
-### Find: (shows the directory that the file is found)
+### find command: (shows the directory that the file is found)
 
 $ find -name (case sensative file)
 
@@ -51,7 +50,6 @@ $ find -gid<GID#>
 $ find -maxdepth<#of directories deep>(telling find how deep find needs to look in a directory)
 
 $ find / -type d(finds directories)
-
 
 $ find / -type f(finds files)
 
@@ -84,41 +82,29 @@ cp <source> <destination> (copy)
                                                  ^ \; executes each found result, prints multiple lines.
 
 
-#### /etc/passwd : 
+#### /etc/passwd file structure: 
        * user:x:UID:GID:GECOS:Home_Dir:Command/Shell
  
-(1) user:
+       (1) user:
+       (2) Password:
+       (3) User ID(UID):
+       (4) Group ID (GID):
+       (5) User ID Info (GECOS):
+       (6) Home Direcory:
+       (7) Command/Shell):
 
-(2) Password:
-
-(3) User ID(UID):
-
-(4) Group ID (GID):
-
-(5) User ID Info (GECOS):
-
-(6) Home Direcory:
-
-(7) Command/Shell):
-
-#### /etc/shadow : 
+#### /etc/shadow  file structure: 
 
       * user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
- (1) user:
 
- (2) Password: $ "<Hashing_Algorithm>" $ "<_Salt>" $ "<_Password>" :"
-
- (3) Last Password Change (lastchanged):
-
- (4) Minimum:
-
- (5) Maximum:
-
- (6) Warn:
-
- (7) Inactive:
-
- (8) Expire:
+       (1) user:
+       (2) Password: $ "<Hashing_Algorithm>" $ "<_Salt>" $ "<_Password>" :"
+       (3) Last Password Change (lastchanged):
+       (4) Minimum:
+       (5) Maximum:
+       (6) Warn:
+       (7) Inactive:
+       (8) Expire:
       
       
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)

@@ -239,8 +239,8 @@ commands cut and awk help with filtering
 ## Finding all files .bin (find -printf, rev, cut, sort) 11
 ## Write a script to copy lines by parameter (tail, awk)12
 ## Find all file in specified DIRs, then try hashing them (find, sort, head, tail, md5sum, cut) 13
-##  Sort /etc/passwd numerically by GID, hash the 10th entry in the DIR, output md5 hash stdout (cut, sort, head, tail, md5sum) 14
-## 15
+## Sort /etc/passwd numerically by GID, hash the 10th entry in the DIR, output md5 hash stdout (cut, sort, head, tail, md5sum) 14
+## Write a Script that looks 3 levels deep in specified DIRs, exclude pipes, redirect to stdout & stderr, get count of "uccessfully"files hashed/"Unsuccessfully"files hashed () 15
 
 #
 #

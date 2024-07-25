@@ -45,7 +45,7 @@ function q1()
   #none
   
   #You code here
-
+no tax at commissary" fi '''
 }
 
 ### Script
@@ -205,6 +205,7 @@ elif [[ $cont -lt 1000 ]]; then
 else 
   echo "Error"
 
+
 ## 08
 
 Copy all lines from the file specified by src variable to the file specified by dst variable which DO NOT contain the text specified by match variable.
@@ -227,6 +228,7 @@ function q1()
 ### Script
 
 
+cat $src | grep -v $match > $dst
 
 
 ## 09

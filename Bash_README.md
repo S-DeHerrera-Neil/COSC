@@ -147,11 +147,11 @@ $ cat fake1passwd.txt | cut -d: -f1
        $ ls -l
        $ cat pizza.txt
        $ sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt
-                  ^replace chiken with hamburger ^/g = global so every instance.       
+                  ^replace chicken with hamburger ^/g = global so every instance.       
                   ^replace pepperoni with sausage ^/ = not global so only the first occasion.
 
        $ sed -e 'chicken/d' pizza.txt
-                ^deletes chicken globally.
+                         ^/d(deletes chicken globally.)
 ------------------------------------------------------------------------------------------------------------------------------------------
 ### command substitution
        *Script to replace the command (cat /etc/) 

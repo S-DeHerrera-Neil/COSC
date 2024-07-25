@@ -153,6 +153,7 @@ $ cat fake1passwd.txt | cut -d: -f1
 
        $ sed -e 'chicken/d' pizza.txt
                 ^deletes chicken globally.
+------------------------------------------------------------------------------------------------------------------------------------------
 ### command substitution
        *Script to replace the command (cat /etc/) 
 ###### script.sh
@@ -168,6 +169,7 @@ $ cat fake1passwd.txt | cut -d: -f1
        echo md5sum $A
        echo file $A
        openssl, Password1234, bad4u
+--------------------------------------------------------------------------------------------------------------------------------------------       
 # 07/24
 #### tar command:()       
        $ tar [options] [archive-file] [file or Dir to be archived]

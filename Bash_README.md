@@ -417,6 +417,22 @@ fd1a05901ce7150f82abd7f7d76f2827  -
        GID=$(cut /etc/passwd -d: -f4- | sort -n | head | tail -1 | cut -d: -f3) 
        echo $GID | md5sum | cut -d" " -f1
 ## 15 Write a Script that looks 3 levels deep in specified DIRs, exclude pipes, redirect to stdout & stderr, get count of "Successfully" hashed files/"Unsuccessfully" hashed files (find -maxdepth, -exec, md5sum, echo) 
+Write a script which will find and hash the contents 3 levels deep from each of these directories: /bin /etc /var
+Your script should:
+Exclude named pipes. These can break your script.
+Redirect STDOUT and STDERR to separate files.
+Determine the count of files hashed in the file with hashes.
+Determine the count of unsuccessfully hashed directories.
+Have both counts output to the screen with an appropriate title for each count.
+Example Output:
+Successfully Hashed Files: 105
+Unsuccessfully Hashed Directories: 23
+
+       find /bin /etc /var -maxdepth 3 ! -type p -exec md5sum {} 1>output.txt 2>errors.txt \;
+       Out=$(wc -l < output.txt)
+       Err=$(grep -c "Is a directory" errors.txt)
+       echo "Successfully Hashed Files: $Out"
+       echo "Unsuccessfully Hashed Directories: $Err"
 
 #
 #

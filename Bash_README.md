@@ -221,4 +221,34 @@ commands cut and awk help with filtering
        $ tar -czf (compresses via 'Archiving')
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# CTFs Q/A
+# CTFs Q/A 01-15
+## Brace Expansion 01
+## Brace Expansion 01.2
+## Pattern Matching 01.3
+## List file (find,grep) 01.3(2)
+## 03
+## 04
+## 05
+## 06
+## 07
+## 08
+## 09
+## 10
+## 11
+## 12
+## 13
+## 14
+## 15
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+

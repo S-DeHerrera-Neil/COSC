@@ -553,38 +553,24 @@ fname=$1
 
 # 08
 Copy all lines from the file specified by src variable to the file specified by dst variable which DO NOT contain the text specified by match variable.
-
 function q1()
-
 {
-
-  #Valid Variables are:
-  
-  src=$1
-  
-  dst=$2
-  
-  match=$3
-  
-  #Your code here
-
+#Valid Variables are:
+src=$1
+dst=$2
+match=$3
+#Your code here
 }
 
        cat $src | grep -v $match > $dst
 
 # 09
 Terminate the process that has the randomly assigned name specified by procname variable. procname does not contain path information.
-
 function q1()
-
 {
-
-  #Valid Variables are:
-  
-  procname=$1
-  
-  #Your code here
-
+#Valid Variables are:
+procname=$1
+#Your code here
 }
 
        killall $procname
@@ -595,21 +581,13 @@ function q1()
 
 # 10
 Create a sorted full-path list of all files in the directory dirpath that were modified within the previous day. Directories should not be included in the output. Print the list to the screen, one item per line.
-
 NOTE: The full paths to files should be in your output. (i.e. /etc/passwd would be included)
-
 NOTE: Directory entries should not be included. (i.e. /etc would NOT be included)
-
 function q1()
-
 {
-
-  #Valid Variables are:
-  
-  dirpath=$1
-  
-  #Your code here
-
+#Valid Variables are:
+dirpath=$1
+#Your code here
 }
 
        find $dirpath -type f -mtime -1 | sort

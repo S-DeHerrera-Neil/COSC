@@ -125,19 +125,20 @@ $ mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
 
 ### Cut (Cuts where specified)
 $ cat fake1passwd.txt | cut -d: -f1 
+                            
                             ^(-d: [delimiter] -f1[Field 1])
+                            ^([-s strict, only from the delimiter])
 
-$ cat fake1passwd | cut -d: -f1 -s
-                     ^([-s strict, only from the delimiter])
+                   
 
 # Chaining operators
-* & -runs process in background
-* && - AND
-* || -OR, ! -NOT,
-* | -Pipes, redirects output
-* () -looks at it first
-* ">" -creates file
-* ">>" -creates file and/or appends to file
+       * & -runs process in background
+       * && - AND
+       * || -OR, ! -NOT,
+       * | -Pipes, redirects output
+       * () -looks at it first
+       * ">" -creates file
+       * ">>" -creates file and/or appends to file
 
 # 07/23
 

@@ -57,8 +57,8 @@ IP Address: 10.50.26.116
 #### cp command:(used to copy From:<src> To:<dst>)
        $ cp <source> <destination> (copy)
              /etc/passwd [7 lines](IDK what this is from/for)
+                                  1    2 3    4  5     6         7     
 ##### /etc/passwd file structure: user:x:UID:GID:GECOS:Home_Dir:Command/Shell 
-                                   ^1  ^2 ^3  ^4  ^5    ^6        ^7
        (1) user:
        (2) Password:
        (3) User ID(UID):

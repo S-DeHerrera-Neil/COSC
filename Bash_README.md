@@ -120,6 +120,7 @@ $ cat fake1passwd.txt | cut -d: -f1
        $ cat /etc/passwd | awk -F: '($3 >= 150){print $1, $6, $3}'
        $ cat /etc/passwd | awk -F: '($7 == "/bin/bash"){print $1, $6, $3}' fakepasswd
        $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
+------------------------------------------------------------------------------------------------------------------------------------------
 #### sort command:()
        "have to generate output file has to be before it"
         options:
@@ -137,9 +138,7 @@ $ cat fake1passwd.txt | cut -d: -f1
        $ cat fakepasswd | sort -t : -k 2,4 
        $ ps aux  | sort -k 1 
        $ cat fake1passwd.txt | sort -t : -k 1 | uniq
-
-#### cat command
--------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 ###### Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pettern in text)
        helpful website > URL: https://regex101.com/library
 ###### aliases(naming something else, to do something else)
@@ -154,11 +153,9 @@ $ cat fake1passwd.txt | cut -d: -f1
 
        $ sed -e 'chicken/d' pizza.txt
                 ^deletes chicken globally.
-
 ### command substitution
        *Script to replace the command (cat /etc/) 
-
-## script.sh
+###### script.sh
        #!/bin/bash
 
        A=$(cat /etc/passwd)

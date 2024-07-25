@@ -1,3 +1,6 @@
+Ask about:
+-exec
+
 # Bash CTFd Base challenges
   * 07/22/2024
 ## 01

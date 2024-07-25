@@ -103,10 +103,9 @@ cp <source> <destination> (copy)
 * find -exec example(url:https://linuxhandbook.com/find-exec-command/)
 
 ### grep: (grep lines that match a pattern/input)
-* grep
-* egrep
-
-$ grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun referance
+       $ grep
+       $ egrep
+       $ grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun referance
 
 $ cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
  * cut and awk: (helps with filtering)

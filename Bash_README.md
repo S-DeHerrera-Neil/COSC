@@ -300,3 +300,10 @@ wc -l
 
 ^(-l does a line count)
 
+grep: grab strings, look in file 
+find -exec, printf: finds filename, extenstions, outside the file
+rm
+touch
+if(branching statement)
+pkill
+tar -czf

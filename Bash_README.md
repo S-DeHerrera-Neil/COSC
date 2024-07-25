@@ -226,7 +226,7 @@ commands cut and awk help with filtering
 ## Brace Expansion 01
 ## Brace Expansion 01.2
 ## Pattern Matching 01.3
-## List file (find,grep) 01.3(2)
+## List file (find, grep) 01.3(2)
 ## Copy files (find -exec) 02
 ## Finding empty files/directories (find -printf) 03
 ## Finding inode Number (find -printf) 04
@@ -236,10 +236,10 @@ commands cut and awk help with filtering
 ## Finding kernel messages "CPU|BIOS" "Unusable|Reserved" (dmesg, cut, grep) 08
 ## Command Subtitution Script (awk) 09
 ## Writing lines from/to (sed) 10
-## 11
-## 12
-## 13
-## 14
+## Finding all files .bin (find -printf, rev, cut, sort) 11
+## Write a script to copy lines by parameter (tail, awk)12
+## Find all file in specified DIRs, then try hashing them (find, sort, head, tail, md5sum, cut) 13
+##  Sort /etc/passwd numerically by GID, hash the 10th entry in the DIR, output md5 hash stdout (cut, sort, head, tail, md5sum) 14
 ## 15
 
 #

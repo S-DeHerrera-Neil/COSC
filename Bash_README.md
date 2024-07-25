@@ -222,6 +222,7 @@ commands cut and awk help with filtering
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # CTFs Q/A 01-15
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Brace Expansion 01
 ## Brace Expansion 01.2
 ## Pattern Matching 01.3
@@ -229,12 +230,12 @@ commands cut and awk help with filtering
 ## Copy files (find -exec) 02
 ## Finding empty files/directories (find -printf) 03
 ## Finding inode Number (find -printf) 04
-## bash script show all filenames/ extensions (ls -l, cut)05
+## bash script show all filenames/ extensions (ls -l, cut) 05
 ## bash script to GREP ipAddresses(cat, grep, sort, uniq) 06 
 ## bash 1-liner script extracting UIDs, shells (cat, awk) 07
-## 08
-## 09
-## 10
+## Finding kernel messages "CPU|BIOS" "Unusable|Reserved" (dmesg, cut, grep) 08
+## Command Subtitution Script (awk) 09
+## Writing lines from/to (sed) 10
 ## 11
 ## 12
 ## 13

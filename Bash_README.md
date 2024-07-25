@@ -127,9 +127,10 @@ $ cat fake1passwd.txt | cut -d: -f1
        * -r (reverse the result of comparisons) 
        * -nr (numeric reverse)
        * -t (for delimters)
-       * -k
-       * -u
-       * -uniq ^different than (has to have sort)
+       * -k ()
+       * -u ()
+       * -uniq () 
+           ^different than (has to have sort)
        
        $ awk -F: '{print3}' fakepasswd | sort
        $ awk -F: '{print3}' fakepasswd | sort -n

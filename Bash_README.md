@@ -5,7 +5,7 @@ IP Address: 10.50.26.116
 
 # Date 07/22
        Commands covered:
-       $nano(text editor like vi/vim)
+       $ nano(text editor like vi/vim)
        $ mkdir -p (makes a parent directory)
        $ rm -rf(removes forceably)
        $ rmdir (removes directory)
@@ -87,9 +87,6 @@ $ sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch 
 commands cut and awk help with filtering
 #### differences between brackets 
        (https://baeldung.com/linux/bash-single-vs-double-brackets)
-
-
-
 ### Brace Expansion
 $ mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
 
@@ -98,9 +95,6 @@ $ cat fake1passwd.txt | cut -d: -f1
                             
                             ^(-d: [delimiter] -f1[Field 1])
                             ^([-s strict, only from the delimiter])
-
-                   
-
 #### Chaining operators
        & -runs process in background
        && -AND
@@ -140,18 +134,11 @@ $ cat fake1passwd.txt | cut -d: -f1
        $ ps aux  | sort -k 1 
        $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 
- #### cat command:() 
-       
-
-#### sort ()
-       
-
+#### cat command:(Reads, Writes and ConCATenates files) 
 -------------------------------------------------------
-* 
-
-## Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pettern in text)
+###### Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pettern in text)
        helpful website > URL: https://regex101.com/library
-#### aliases(naming something else, to do something else)
+###### aliases(naming something else, to do something else)
        $ alais vim= 'nano'
               ^ String editor utility
               
@@ -180,15 +167,16 @@ $ cat fake1passwd.txt | cut -d: -f1
        echo md5sum $A
        echo file $A
        openssl, Password1234, bad4u
-## 07/24
+# 07/24
 #### tar command:()       
        $ tar -czf
               options:
               -c:
               -z:
               -f:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------              
 ###### Script: simpleifelifelse.sh
-       #!/bin/bas
+       #!/bin/bash
 
        contents=$(cat simple.txt)
        if [[ $contents == "tacos" ]]; then
@@ -211,7 +199,7 @@ $ cat fake1passwd.txt | cut -d: -f1
 #### wc comand: (word count)
        $ wc -l 
              ^(-l does a line count)
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Commands to study:
        $ grep: grab strings, look in file 
        $ find -exec, printf: finds filename, extenstions, outside the file

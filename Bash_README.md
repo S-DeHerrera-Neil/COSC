@@ -187,10 +187,10 @@ $ cat fake1passwd.txt | cut -d: -f1
        *Script to replace the command (cat /etc/) 
 
 ## script.sh
-#!/bin/bash
+       #!/bin/bash
 
-A=$(cat /etc/passwd)
-echo $Ahttps://linuxhandbook.com/find-exec-command/
+       A=$(cat /etc/passwd)
+       echo $Ahttps://linuxhandbook.com/find-exec-command/
 ###### script comsub.sh
        #!bin/bash
        A=$(find /usr/bin -name passwd
@@ -220,13 +220,13 @@ echo $Ahttps://linuxhandbook.com/find-exec-command/
               echo "no tax at commissary"
        fi
 ###### Other Script: *.sh
-#!/bin/bash
+       #!/bin/bash
 
-A=him
-echo The story of Robert who is $A
-echo The $A was at the I am $A store so we could buy some $A sloth$
-echo I am $A
-echo I will remain $A
+       A=him
+       echo The story of Robert who is $A
+       echo The $A was at the I am $A store so we could buy some $A sloth$
+       echo I am $A
+       echo I will remain $A
 #### wc comand: (word count)
        $ wc -l 
              ^(-l does a line count)

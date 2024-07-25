@@ -15,9 +15,9 @@ IP Address: 10.50.26.116
        $ cp <source> <destination> (copy)
       ^(/etc/shadow)  ^(fake1passwd.txt)
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
-#### cat command:
+#### cat command:(Reads, Writes and ConCATenates files) 
        $ cat /etc/passwd | grep " student " (gets /etc/passwd file then greps to student) 
-       find -uid <UID#>
+       
 #### head command:(outputs the first 10 lines)
        $ head
 #### tail command:(outputs the last 10 lines)
@@ -35,6 +35,7 @@ IP Address: 10.50.26.116
                                                ^$ find -group name (the 4th field after the : delimiter)
                                                or
                                                ^$ find -gid<GID#> (when looking for a specific GID)
+                                               ^$ find -uid <UID#>
        $ find -maxdepth<#of directories deep>(telling find how deep find needs to look in a directory)
        $ find / -type d(finds directories)
        $ find / -type f(finds files)
@@ -134,7 +135,7 @@ $ cat fake1passwd.txt | cut -d: -f1
        $ ps aux  | sort -k 1 
        $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 
-#### cat command:(Reads, Writes and ConCATenates files) 
+#### cat command
 -------------------------------------------------------
 ###### Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pettern in text)
        helpful website > URL: https://regex101.com/library

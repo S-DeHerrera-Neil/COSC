@@ -142,17 +142,16 @@ $ cat fake1passwd.txt | cut -d: -f1
 
 # 07/23
 
-### awk (Advanced Pattern-Matching language in bash. Matches data by regular expression and performs actions based on the data.
-
-* $ awk fakepasswd | awk -F: '{print $1}'
+### awk (Advanced Pattern-Matching language in bash. Matches data by regular expression and performs actions based on the data.)
+       $ awk fakepasswd | awk -F: '{print $1}'
 
                               ^{print $NF}($NF-"Number Of Fields")
 
                               ^{print
                                             
-* $ awk -F: '($3 == 0){print $1}' fakepasswd
+       $ awk -F: '($3 == 0){print $1}' fakepasswd
 
-* $ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd
+       $ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd
                ^ Output Field Seperator
 
  ### cat command: 

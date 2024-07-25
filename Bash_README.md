@@ -266,6 +266,7 @@ wc -l
 
 
 #### Commands to study:
+
        - grep: grab strings, look in file 
        - find -exec, printf: finds filename, extenstions, outside the file
        - rm

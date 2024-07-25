@@ -2,6 +2,8 @@
 Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
 CTF challenges <Rank, LName>
 IP Address: 10.50.26.116
+
+commands cut and awk help with filtering
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Date 07/22
        Commands covered:
@@ -87,8 +89,8 @@ IP Address: 10.50.26.116
        $ egrep
        $ cat /fake1passwd.txt | grep /bin/bash (look at what the users shell is)
        $ egrep "student|root|bob" fake1passwd.txt
-              ^(egrep <student,root,bob> in the fake1passwd.txt file)
-commands cut and awk help with filtering
+          ^(egrep <student,root,bob> in the fake1passwd.txt file)
+
 #### differences between brackets 
        (https://baeldung.com/linux/bash-single-vs-double-brackets)
 ### Brace Expansion
@@ -149,6 +151,8 @@ $ cat fake1passwd.txt | cut -d: -f1
               
        $ ls -l
        $ cat pizza.txt
+#### sed command:(stream editor[can perform lots of functions like searching, find and replace, insertion and deletion])
+       $ sed options... [script] [inputfile...]
        $ sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt
                   ^replace chicken with hamburger ^/g = global so every instance.       
                   ^replace pepperoni with sausage ^/ = not global so only the first occasion.

@@ -279,21 +279,95 @@ Example Outputs:
 
        find /var -empty -printf "%i %f\n" 
 ## 04 Finding inode Number (find -printf) 
+Using ONLY the find command, find all files on the system with inode 4026532575 and print only the filename to the screen, not the absolute path to the file, separating each filename with a newline. Ensure unneeded output is not visible.
+Tip: The above inode is specific to this CTFd question and might not be in use on your Linux Opstation. Instead, you can test your command on your Linux OpStation against inode 999.
+* ensure uneeded output is not visible (/dev/null)
 
+       find / -inum 4026532575 2>/dev/null -printf "%f\n"
 ## 05 bash script show all filenames/ extensions (ls -l, cut) 
+Using only the ls -l and cut Commands, write a BASH script that shows all filenames with extensions ie: 1.txt, etc., but no directories, in $HOME/CUT.
+Write those to a text file called names in $HOME/CUT directory.
+Omit the names filename from your output.
+NOTE: The output should only be the file names with no additional information. Additionally, your code will be executed twice. This is to ensure you have taken into account how file redirection and command execution works.
+
+       #!/bin/bash
+
+       $ ls -l $HOME/CUT | cut -d: -f2 -s| cut -d ' ' -f2 -s| cut -d. -f1-2 -s > $HOME/CUT/names  
+
 
 ## 06 bash script to GREP ipAddresses(cat, grep, sort, uniq)  
+Write a basic bash script that greps ONLY the IP addresses in the text file provided (named StoryHiddenIPs in the current directory); sort them uniquely by number of times they appear.
+t is not important to have a regular expression that only catches fully valid IP addresses. It is more important that you become familiar with creating and using regular expressions. Below, there are some useful websites that you can use to visually see what your regular expression pattern is matching on.
+Bracket Expression: [1-4] = 1 or 2 or 3 or 4
+Repetitions: {0,5} = above numbers (1,2,3,4) appear from 0 to 5 times, meaning our number can be between 1 and 44444
+Interpreted BASH Chars: . | $ ` \ ! must be escaped with \ in a regex. I.E. to match on a backslash, you must use \\ in your pattern.
+Note: The basics of regular expressions are assumed knowledge for this module, and you will need to call back to prior learning. If you are in need of a quick refresher, the following man pages could be useful.
+man egrep
+man regex.7
 
+       cat StoryHiddenIPs | grep -E -o "([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})" | sort -n | uniq -c | sort -nr
 ## 07 bash 1-liner script extracting UIDs, shells (cat, awk) 
+Using ONLY the awk command, write a BASH one-liner script that extracts ONLY the names of all the system and user accounts that are not UIDs 0-3.
+Only display those that use /bin/bash as their default shell.
+The input file is named $HOME/passwd and is located in the current directory.
+Output the results to a file called $HOME/SED/names.txt
+Tip: awk can use conditional statements, e.g. print only the line in /etc/passwd that has "root" as its first field.
 
+       cat $HOME/passwd | awk -F: '($3>3)' | awk -F: '($7 == "/bin/bash") {print $1}' > $HOME/SED/names.txt
 ## 08 Finding kernel messages "CPU|BIOS" "Unusable|Reserved" (dmesg, cut, grep) 
+Find all dmesg kernel messages that contain CPU or BIOS (uppercase) in the string, but not usable or reserved (case-insensitive)
+Print only the msg itself, omitting the bracketed numerical expressions ie: [1.132775]
+Note: For security reasons, the dmesg command is being emulated on the CTFd backend. You can still use it as normal on your Linux OpStation, but to get a similar output, do not use any dmesg switches. The intent of this activity is to take raw dmesg output and combine it with grep and either awk or cut to manipulate the output into a desired end state.
+Tip: As you may have noticed, when using grep you can simulate a logical AND by piping the output of one grep command to the next. This will filter down your output to only what contains all your patterns. But, for this activity, you will need to use a logical OR to match on a wide range of strings. If you do not recall how to utilize that option in grep, go research it from the resources available to you.
 
+       dmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
 ## 09 Command Subtitution Script (awk) 
+Write a Bash script using "Command Substitution" to replace all passwords, using openssl, from the file $HOME/PASS/shadow.txt with the MD5 encrypted password: Password1234, with salt: bad4u
+Output of this command should go to the screen/standard output.
+You are not limited to a particular command, however you must use openssl. Type man openssl passwd for more information.
+TIP: While not required, using awk is possibly the most straightforward method of accomplishing this activity. Keep in mind that awk is its own programming language. It can not use Bash variables unless you import them in. Below is a break down of applicable parts of an awk command, with descriptions of each part. See if you can use this example as a jumping off point to accomplish the end state of the activity.
+#!/bin/bash 
+a=”New name to place in field one” 
+awk -F: -v "awk_var=$a" 'BEGIN {OFS=":"} {$1=awk_var} {print $1,$NF}' /etc/passwd
+* '-F' is used to change the default field seperator of " ".  In this example, it	\
+* now designates ':'
+* '-v' designates or imports a variable into AWK.  In the above example, 'awk_var' is 	\
+* declared with the Bash variable of '$a'.
+* The 'BEGIN' pattern(s) tells AWK to execute action parts of the pattern before any of	\
+* the input is read.  In this case, the 'OFS', or 'Output Field Seperator' will place	\
+* colons between the firelds being printed in the output.  As well, it will replace the	\
+* first field (i.e. '$1') with whatever data is contained in the AWK variable declared	\
+* previously.
+* The '{print}' statement designates whatever the desired fields are to print.  '$0' is	\
+* the variable for the entire line.  The first field is '$1', the second field is '$2',	\
+* and so on.  AWK has a builtin variable, '$NF' which evaluates to the number of fields	\
+* on a line.  Use this as a shortcut if you need to print the last field on the line.
+To read more on Shell Expansion, go to the following resource:
+https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html#Shell-Expansions
+To read more on the Shadow file format, go to the following resource:
+man shadow.5
+/etc/passwd-> user:x:UID:GID:GECOS:Home_Dir:Command/Shell
+/etc/shadow-> user:$1$fnfffc$qzwexrecdtvryu#21:13064:0:99999:7:::
 
+       a=$(openssl passwd -1 -salt bad4u Password1234)
+       awk -F: -v "awk_var=$a" 'BEGIN {OFS=":"} {$2=awk_var} {print $0}' $HOME/PASS/shadow.txt
 ## 10 Writing lines from/to (sed) 
+Using ONLY sed, write all lines from $HOME/passwd into $HOME/PASS/passwd.txt that do not end with either /bin/sh or /bin/false.
+TIP: When designating a path in a sed command, you must escape the path characters if they are to be interpreted as part of the string
+sed '/\/bin/d' file.txt
 
+       sed -e '/\/bin\/sh/d -e /\/bin\/false/d' $HOME/passwd > $HOME/PASS/passwd.txt
 ## 11 Finding all files .bin (find -printf, rev, cut, sort) 
+Using find, find all files under the $HOME directory with a .bin extension ONLY.
+Once the file(s) and their path(s) have been found, remove the file name from the absolute path output.
+Ensure there is no trailing / at the end of the directory path when outputting to standard output.
+You may need to sort the output depending on the command(s) you use.
+Tip: For stripping the filename out of the output, there are different ways that this can be accomplished based on what you have learned so far.
+Utilizing -printf options on find.
+Utilizing awk to manipulate the fields. This may leave the trailing / if you don't take that into account.
+Utilizing the rev and cut commands creatively.
 
+       find ./ -type f -iname "*.bin" | awk -F./ '{print$0}' | rev | cut -d/ -f2- | rev | sort -u
 ## 12 Write a script to copy lines by parameter (tail, awk)
 
 ## 13 Find all file in specified DIRs, then try hashing them (find, sort, head, tail, md5sum, cut) 

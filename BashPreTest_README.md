@@ -25,7 +25,7 @@ function q1()
 
 ### Script
 
-  sed -e 's/cat/dog/g' -e 's/Navy/Army/g' $1 >> $2
+  sed -e "s/cat/dog/g" -e "s/Navy/Army/g" $1 >> $2
 
 
 

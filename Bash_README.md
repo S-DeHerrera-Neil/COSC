@@ -259,11 +259,25 @@ Be aware that if you use Pattern Matching to locate the files you may have unint
 
        find $HOME/1123 -name "*.txt"
 ## 01.3(2) List file (find, grep) 
+List all files in $HOME/1123 that end in .txt. Omit the files containing a tilde (~) character.
+While this activity can be accomplished with only find, it can also be combined with grep as well.
 
+       find $HOME/1123 -name "*.txt" | grep -v  "~"
 ## 02 Copy files (find -exec) 
+Copy all files in the $HOME/1123 directory, that end in ".txt", and omit files containing a tilde "~" character, to directory $HOME/CUT.
+Use only the find and cp commands. You will need to utilize the -exec option on find to accomplish this activity.
+The find command uses BOOLEAN "!" to designate that it does not want to find any files or directories that follows.
 
+       find $HOME/1123 -type f -name "*.txt" ! -name "*~*" -exec cp {} $HOME/CUT  \;
 ## 03 Finding empty files/directories (find -printf) 
+Using ONLY the find command, find all empty files/directories in directory /var and print out ONLY the filename (not absolute path), and the inode number, separated by newlines.
+Tip: When using the man pages, it is better to focus your search then to visually scan 1000+ lines of text. Combining the output with the grep command, possibly with its -A, -B, or -C options, can help drive context driven searches of those manual pages.
+Example Outputs:
+123 file1
+456 file2
+789 file3
 
+       find /var -empty -printf "%i %f\n" 
 ## 04 Finding inode Number (find -printf) 
 
 ## 05 bash script show all filenames/ extensions (ls -l, cut) 

@@ -80,9 +80,12 @@ $ sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch 
        $ find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows the inode# then the file)
                                                  ^printf example > (https://phoenixnap.com/kb/bash-printf)
 #### grep command:(){grep lines that match a pattern/input}
-       $ grep
+       options:
+       -i(case insensative)
+       -n(line numbers)
+       -v(inverts your search)-TopGun referance
+       $ grep [options] pattern [files]
        $ egrep
-       $ grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun referance
        $ cat /fake1passwd.txt | grep /bin/bash (look at what the users shell is)
        $ egrep "student|root|bob" fake1passwd.txt
               ^(egrep <student,root,bob> in the fake1passwd.txt file)

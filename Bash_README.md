@@ -142,9 +142,7 @@ $ cat fake1passwd.txt | cut -d: -f1
 
 # 07/23
 
-### awk (advanced language in bash)
-
-       * Pattern-Matching language. Matches data by regular expression and performs actions based on the data.
+### awk (Advanced Pattern-Matching language in bash. Matches data by regular expression and performs actions based on the data.
 
 * $ awk fakepasswd | awk -F: '{print $1}'
 

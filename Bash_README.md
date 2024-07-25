@@ -22,8 +22,9 @@ IP Address: 10.50.26.116
 #### head command:(outputs the first 10 lines)
        $ head [option]... [file]...
 #### tail command:(outputs the last 10 lines)
-       $ tail 
+       $ tail [option]... [file]...
 #### umask command:(allows modification of permisions. New files/folders that do not exist yet)
+       $ umask [value] 
        $ umask [-p] [-S]
               ^ -p (current mask as a symbolic value)
               ^ -S (current mask along with the umask command, allowing it to to be copy/pasted)

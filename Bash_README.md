@@ -1,7 +1,7 @@
 # Bash
-* Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
-
-       We start CTFs this week 
+Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
+CTF challenges <Rank, LName>
+10.50.26.116
 
 ## Date 07/22
        Commands covered:
@@ -47,7 +47,7 @@
        $ find -empty
        $ find -executable
        $ find -exec
-#### find -exec {} + or \;
+#### find -exec {} + or \; (more examples at > https://linuxhandbook.com/find-exec-command/)
        $ find [path] [arguments] -exec [command] {} + or \;
                                                     ^+ executes all of the commands all at once, prints 1 line.
                                                     ^\; executes each found result, prints multiple lines.
@@ -71,38 +71,25 @@
        (6) Warn:
        (7) Inactive:
        (8) Expire:
-      
-      
-      sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
-
-#### error code handling 
-
+sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
+###### error code handling 
        $ find / perm /4000 -uid 0 -ls 2>/dev/null
        $ find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
        $ find /var/log -iname *.log 2>/dev/null -printf "%i %f\n" (%i and %f - shows the inode# then the file)
                          
                          * printf example ^ :https://phoenixnap.com/kb/bash-printf
-
-
-* find -exec example(url:https://linuxhandbook.com/find-exec-command/)
-
-### grep: (grep lines that match a pattern/input)
+#### grep: (grep lines that match a pattern/input)
        $ grep
        $ egrep
        $ grep -i(case insensative) -n(line numbers) -v(inverts your search)-TopGun referance
+       $ cat /fake1passwd.txt | grep /bin/bash (look at what the users shell is)
+       $ egrep "student|root|bob" fake1passwd.txt
+              ^(egrep <student,root,bob> in the fake1passwd.txt file)
+* cut and awk: (helps with filtering)
+#### differences between brackets 
+       (https://baeldung.com/linux/bash-single-vs-double-brackets)
 
-$ cat /fake1passwd.txt |grep /bin/bash (look at what the users shell is)
- * cut and awk: (helps with filtering)
 
-$ egrep "student|root|bob" fake1passwd.txt
-(egrep <student,root,bob> in the fake1passwd.txt file)
-
-### differences between brackets 
-
-* (https://baeldung.com/linux/bash-single-vs-double-brackets)
-
-## CTF challenges <Rank, LName>
-10.50.26.116
 
 ### Brace Expansion
 $ mkdir cosc11{23,45,67} (makes mutiple directories in the same directory)
@@ -115,26 +102,21 @@ $ cat fake1passwd.txt | cut -d: -f1
 
                    
 
-# Chaining operators
-       * & -runs process in background
-       * && - AND
-       * || -OR, ! -NOT,
-       * | -Pipes, redirects output
-       * () -looks at it first
-       * ">" -creates file
-       * ">>" -creates file and/or appends to file
-
+#### Chaining operators
+       & -runs process in background
+       && -AND
+       || -OR, 
+       ! -NOT,
+       | -Pipes, redirects output
+       () -looks at it first
+       > -creates file
+       >> -creates file and/or appends to file
 # 07/23
-
 #### awk (Advanced Pattern-Matching language in bash. Matches data by regular expression and performs actions based on the data.)
        $ awk fakepasswd | awk -F: '{print $1}'
-
-                              ^{print $NF}($NF-"Number Of Fields")
-
-                              ^{print
-                                            
+                                   ^{print $NF}($NF-"Number Of Fields")
+                                   ^{print}
        $ awk -F: '($3 == 0){print $1}' fakepasswd
-
        $ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd
                ^ Output Field Seperator
        $ cat /etc/passwd | awk -F: '($3 >= 150){print $0}'

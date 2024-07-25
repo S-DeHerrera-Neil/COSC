@@ -247,27 +247,27 @@ create the following directories within the $HOME directory:
 
 ## 04 Finding inode Number (find -printf) 
 
-## bash script show all filenames/ extensions (ls -l, cut) 05
+## 05 bash script show all filenames/ extensions (ls -l, cut) 
 
-## bash script to GREP ipAddresses(cat, grep, sort, uniq) 06 
+## 06 bash script to GREP ipAddresses(cat, grep, sort, uniq)  
 
-## bash 1-liner script extracting UIDs, shells (cat, awk) 07
+## 07 bash 1-liner script extracting UIDs, shells (cat, awk) 
 
-## Finding kernel messages "CPU|BIOS" "Unusable|Reserved" (dmesg, cut, grep) 08
+## 08 Finding kernel messages "CPU|BIOS" "Unusable|Reserved" (dmesg, cut, grep) 
 
-## Command Subtitution Script (awk) 09
+## 09 Command Subtitution Script (awk) 
 
-## Writing lines from/to (sed) 10
+## 10 Writing lines from/to (sed) 
 
-## Finding all files .bin (find -printf, rev, cut, sort) 11
+## 11 Finding all files .bin (find -printf, rev, cut, sort) 
 
-## Write a script to copy lines by parameter (tail, awk)12
+## 12 Write a script to copy lines by parameter (tail, awk)
 
-## Find all file in specified DIRs, then try hashing them (find, sort, head, tail, md5sum, cut) 13
+## 13 Find all file in specified DIRs, then try hashing them (find, sort, head, tail, md5sum, cut) 
 
-## Sort /etc/passwd numerically by GID, hash the 10th entry in the DIR, output md5 hash stdout (cut, sort, head, tail, md5sum) 14
+## 14 Sort /etc/passwd numerically by GID, hash the 10th entry in the DIR, output md5 hash stdout (cut, sort, head, tail, md5sum) 
 
-## Write a Script that looks 3 levels deep in specified DIRs, exclude pipes, redirect to stdout & stderr, get count of "Successfully" hashed files/"Unsuccessfully" hashed files (find -maxdepth, -exec, md5sum, echo) 15
+## 15 Write a Script that looks 3 levels deep in specified DIRs, exclude pipes, redirect to stdout & stderr, get count of "Successfully" hashed files/"Unsuccessfully" hashed files (find -maxdepth, -exec, md5sum, echo) 
 
 #
 #

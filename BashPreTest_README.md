@@ -250,7 +250,11 @@ function q1()
 ### Script
 
 
+killall $procname
 
+  or
+
+pkill $procname
 
 
 ## 10

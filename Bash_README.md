@@ -170,11 +170,16 @@ $ cat fake1passwd.txt | cut -d: -f1
        openssl, Password1234, bad4u
 # 07/24
 #### tar command:()       
+       $ tar [options] [archive-file] [file or Dir to be archived]
        $ tar -czf
               options:
-              -c:
-              -z:
-              -f:
+              -c:(creates an archive by bundling files and directories together)
+              -z:(uses gzip compression when creating a tar file, resulting in a compressed archive with the '.tar.gz' extension)
+              -f:(specifies the filename of the archive to be created or extracted)
+#### wc comand: (word count)
+       $ wc [option]... [file]
+       $ wc -l 
+             ^(-l does a line count)              
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------              
 ###### Script: simpleifelifelse.sh
        #!/bin/bash
@@ -197,9 +202,6 @@ $ cat fake1passwd.txt | cut -d: -f1
        echo The $A was at the I am $A store so we could buy some $A sloth$
        echo I am $A
        echo I will remain $A
-#### wc comand: (word count)
-       $ wc -l 
-             ^(-l does a line count)
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Commands to study:
        $ grep: grab strings, look in file 

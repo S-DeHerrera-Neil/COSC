@@ -75,7 +75,7 @@
       
       sudo cat /etc/shadow >> fake1passwd.txt (can work from the directory of touch the desired directory)
 
-### error code handling 
+#### error code handling 
 
        $ find / perm /4000 -uid 0 -ls 2>/dev/null
        $ find /var/log -iname *.log -exec -l -al () 2>/dev/null \:
@@ -126,7 +126,7 @@ $ cat fake1passwd.txt | cut -d: -f1
 
 # 07/23
 
-### awk (Advanced Pattern-Matching language in bash. Matches data by regular expression and performs actions based on the data.)
+#### awk (Advanced Pattern-Matching language in bash. Matches data by regular expression and performs actions based on the data.)
        $ awk fakepasswd | awk -F: '{print $1}'
 
                               ^{print $NF}($NF-"Number Of Fields")
@@ -137,15 +137,13 @@ $ cat fake1passwd.txt | cut -d: -f1
 
        $ awk -F 'BEGIN {OFS="@"} {print $1, $3}' fakepasswd
                ^ Output Field Seperator
-
- ### cat command: 
        $ cat /etc/passwd | awk -F: '($3 >= 150){print $0}'
        $ cat /etc/passwd | awk -F: '($3 >= 150){print $1, $6, $3}'
        $ cat /etc/passwd | awk -F: '($7 == "/bin/bash"){print $1, $6, $3}' fakepasswd
        $ cat /etc/passwd | awk -F: '($7 == "usr/sbin/nologin"){print $1, $6, $3}' fakepasswd
-
-### sort (have to generate output[file has to be before it])
-       * options:
+#### sort command:()
+       "have to generate output file has to be before it"
+        options:
        * -n (numeric sort)
        * -r (reverse the result of comparisons) 
        * -nr (numeric reverse)
@@ -153,39 +151,37 @@ $ cat fake1passwd.txt | cut -d: -f1
        * -k
        * -u
        * -uniq ^different than (has to have sort)
-### awk
        
-* $ awk -F: '{print3}' fakepasswd | sort
+       $ awk -F: '{print3}' fakepasswd | sort
+       $ awk -F: '{print3}' fakepasswd | sort -n
+       $ awk -F: '{print3}' fakepasswd | sort -nr
+       $ cat fakepasswd | sort -t : -k 2,4 
+       $ ps aux  | sort -k 1 
+       $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 
-* $ awk -F: '{print3}' fakepasswd | sort -n
+ #### cat command:() 
+       
 
-* $ awk -F: '{print3}' fakepasswd | sort -nr
+#### sort ()
+       
 
-* $ cat fakepasswd | sort -t : -k 2,4 
+-------------------------------------------------------
+* 
 
-$ ps aux  | sort -k 1 
+## Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pettern in text)
+       helpful website > URL: https://regex101.com/library
+#### aliases(naming something else, to do something else)
+       $ alais vim= 'nano'
+              ^ String editor utility
+              
+       $ ls -l
+       $ cat pizza.txt
+       $ sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt
+                  ^replace chiken with hamburger ^/g = global so every instance.       
+                  ^replace pepperoni with sausage ^/ = not global so only the first occasion.
 
-$ cat fake1passwd.txt | sort -t : -k 1 | uniq
-
-## Regex
-       *website URL: https://regex101.com/library
-
-### aliases(naming something else, to do something else)
-alais vim= 'nano'
-
-       * String editor utility
-ls -l
-
-cat pizza.txt
-
-sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage/' pizza.txt
-    
-    *replace chiken with hamburger ^/g = global so every instance.       
-    *replace pepperoni with sausage ^/ = not global so only the first occasion.
-
-sed -e 'chicken/d' pizza.txt
-
-    *delete chicken globally.
+       $ sed -e 'chicken/d' pizza.txt
+                ^deletes chicken globally.
 
 ### command substitution
        *Script to replace the command (cat /etc/) 
@@ -194,45 +190,36 @@ sed -e 'chicken/d' pizza.txt
 #!/bin/bash
 
 A=$(cat /etc/passwd)
-
 echo $Ahttps://linuxhandbook.com/find-exec-command/
+###### script comsub.sh
+       #!bin/bash
+       A=$(find /usr/bin -name passwd
 
-## script comsub.sh
-#!bin/bash
+       echo $A
+       echo md5sum $A
+       echo file $A
+       openssl, Password1234, bad4u
+## 07/24
+#### tar command:()       
+       $ tar -czf
+              options:
+              -c:
+              -z:
+              -f:
+###### Script: simpleifelifelse.sh
+       #!/bin/bas
 
-A=$(find /usr/bin -name passwd
-
-
-echo $A
-
-echo md5sum $A
-
-echo file $A
-
-
-openssl, Password1234, bad4u
-
-
-# 07/24
-
-       * tar -czf
-#### Script: simpleifelifelse.sh
-
-#!/bin/bas
-'''
-contents=$(cat simple.txt)
-if [[ $contents == "tacos" ]]; then
-       echo "are so good on tuesday"
-elif [[ $contents == "cotsco is amazing" ]]; then
-       echo "and you will save money "
-elif [[ $contents == "chicken bake" ]]; then
-       echo "tasty but will make you fail ht/wt"
-else
-       echo "no tax at commissary"
-fi
-'''
-
-'''
+       contents=$(cat simple.txt)
+       if [[ $contents == "tacos" ]]; then
+              echo "are so good on tuesday"
+       elif [[ $contents == "cotsco is amazing" ]]; then
+              echo "and you will save money "
+       elif [[ $contents == "chicken bake" ]]; then
+              echo "tasty but will make you fail ht/wt"
+       else
+              echo "no tax at commissary"
+       fi
+###### Other Script: *.sh
 #!/bin/bash
 
 A=him
@@ -240,20 +227,15 @@ echo The story of Robert who is $A
 echo The $A was at the I am $A store so we could buy some $A sloth$
 echo I am $A
 echo I will remain $A
-'''
-#### CTFs for the rest of this day
-
-### wc (word count)
+#### wc comand: (word count)
        $ wc -l 
              ^(-l does a line count)
 
-
-#### Commands to study:
-
-       - grep: grab strings, look in file 
-       - find -exec, printf: finds filename, extenstions, outside the file
-       - rm
-       - touch
-       - if(branching statement)
-       - pkill
-       - tar -czf
+### Commands to study:
+       $ grep: grab strings, look in file 
+       $ find -exec, printf: finds filename, extenstions, outside the file
+       $ rm
+       $ touch
+       $ if(branching statement)
+       $ pkill
+       $ tar -czf

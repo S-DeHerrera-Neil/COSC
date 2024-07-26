@@ -541,7 +541,7 @@ fname=$1
 #Your code here
 }
 
-       cont='cat $fname'
+       cont=$(cat $fname)
        if [[ $cont -lt 10 ]]; then 
          echo "single digit" 
        elif [[ $cont -lt 100 ]]; then 

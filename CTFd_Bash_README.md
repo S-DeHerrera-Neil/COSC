@@ -1,6 +1,3 @@
-Ask about:
--exec
-
 # Bash CTFd Base challenges
   * 07/22/2024
 ## 01
@@ -114,7 +111,7 @@ Tip: The above inode is specific to this CTFd question and might not be in use o
  * ensure uneeded output is not visible (/dev/null)
 
 ### Desired Input
- $ find / -inum 4026532575 2>/dev/null -printf "%f\n" 
+ $ find / -inum 4026532575 -printf "%f\n" 2>/dev/null
 
 
 ## 05 (maybe?)
@@ -139,7 +136,7 @@ https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
 ### Desired Input
 #!/bin/bash
 
-$ ls -l $HOME/CUT | cut -d: -f2 -s| cut -d ' ' -f2 -s| cut -d. -f1-2 -s > $HOME/CUT/names  
+$ ls -l $HOME/CUT | cut -s -d: -f2- | cut -s -d ' ' -f2- | cut -d. -f1-2 -s > $HOME/CUT/names  
 
 
 ## 06

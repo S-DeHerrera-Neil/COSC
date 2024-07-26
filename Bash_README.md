@@ -4,6 +4,7 @@ Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/gu
 #### Helpful URLs:
        - https://ss64.com/
        - https://tldp.org/
+       - https://devhints.io/bash
        - https://linuxhandbook.com/find-exec-command/
        - https://phoenixnap.com/kb/bash-printf
        - https://baeldung.com/linux/bash-single-vs-double-brackets

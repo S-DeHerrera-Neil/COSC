@@ -8,6 +8,12 @@ Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/gu
        - https://phoenixnap.com/kb/bash-printf
        - https://baeldung.com/linux/bash-single-vs-double-brackets
        - https://regex101.com/library
+       - https://www.gnu.org/software/bash/manual/bash.html#Brace-Expansion
+       - https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching
+       - https://www.gnu.org/software/bash/manual/bash.html#Quoting
+       - https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Output
+       - https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
+       - https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html#Shell-Expansions
 
        
 

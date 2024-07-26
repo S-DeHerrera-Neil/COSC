@@ -7,7 +7,7 @@ Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/gu
        - https://linuxhandbook.com/find-exec-command/
        - https://phoenixnap.com/kb/bash-printf
        - https://baeldung.com/linux/bash-single-vs-double-brackets
-       - 
+       - https://regex101.com/library
 
        
 
@@ -143,7 +143,7 @@ IP Address: 10.50.26.116
               -t (for delimters)
               -k (sorts a table based on a specific column or number)
               -u (sorts and removes duplicate lines, providing a unique sorted list)
-              -uniq (?) -different than {has to have sort}
+              -uniq (?) -different than the -u option {has to have output from sort}
        $ awk -F: '{print3}' fakepasswd | sort
        $ awk -F: '{print3}' fakepasswd | sort -n
        $ awk -F: '{print3}' fakepasswd | sort -nr
@@ -151,7 +151,7 @@ IP Address: 10.50.26.116
        $ ps aux  | sort -k 1 
        $ cat fake1passwd.txt | sort -t : -k 1 | uniq
 ------------------------------------------------------------------------------------------------------------------------------------------
-###### Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pettern in text)
+###### Regex: (Regular Expression[rational expression] a sequence of characters that specifies a match pattern in text)
        helpful website > URL: https://regex101.com/library
 ###### aliases(user-defined shorthand for a longer command or sequence of commands)
        $ alais vim= 'nano'
@@ -175,7 +175,7 @@ commands cut and awk help with filtering
        #!/bin/bash
 
        A=$(cat /etc/passwd)
-       echo $Ahttps://linuxhandbook.com/find-exec-command/
+       echo $A
 ###### script comsub.sh
        #!bin/bash
        A=$(find /usr/bin -name passwd
@@ -236,7 +236,7 @@ commands cut and awk help with filtering
 # CTFs Q/A 01-15
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 01 Brace Expansion 
-Brace expansion is a mechanism by which arbitrary strings may be generated, for commands that will take multiple arguements. 
+Brace expansion is a mechanism by which arbitrary strings may be generated, for commands that will take multiple arguments. 
 For the below examples, the first example is equivalent to the second command.
 $ mkdir /var/log/{auth,syslog,dmesg}_log
 $ mkdir /var/log/auth_log /var/log/syslog_log /var/log/dmesg_log
@@ -255,7 +255,7 @@ touch file{1..3}.txt passwd.txt shadow.txt
 Use Brace-Expansion to create the following files within the $HOME/1123 directory. You may need to create the $HOME/1123 directory. Make the following files, but utilze Brace Expansion to make all nine files with one touch command.
 Files to create:
 * 1.txt
-* 2.txtdmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
+* 2.txt dmesg | grep -E 'CPU|BIOS' | cut -d] -f2- | grep -v -E 'usable|reserved'
 * 3.txt
 * 4.txt
 * 5.txt

@@ -16,13 +16,10 @@ Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/gu
        - https://www.gnu.org/software/bash/manual/bash.html#Simple-Command-Expansion
        - https://www.gnu.org/software/bash/manual/html_node/Shell-Expansions.html#Shell-Expansions
        - https://www.gnu.org/software/bash/manual/bash.html#Positional-Parameters
-       - 
-
-       
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------       
 CTF challenges <Rank, LName>
 IP Address: 10.50.26.116
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Date 07/22
        Commands covered:
        $ nano(text editor like vi/vim)

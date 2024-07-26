@@ -1,5 +1,16 @@
 # Bash
 Student Guide is at: https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html
+
+#### Helpful URLs:
+       - https://ss64.com/
+       - https://tldp.org/
+       - https://linuxhandbook.com/find-exec-command/
+       - https://phoenixnap.com/kb/bash-printf
+       - https://baeldung.com/linux/bash-single-vs-double-brackets
+       - 
+
+       
+
 CTF challenges <Rank, LName>
 IP Address: 10.50.26.116
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

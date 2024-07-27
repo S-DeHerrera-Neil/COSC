@@ -8,32 +8,44 @@
   - BASH: man(Same as Get-Help)
   - CMD: cmd /c help(Display cmd commands)
 
-## Cmdlet syntax:
+  ## Cmdlet syntax:
   - (indicates a parameter)
 
   <> (Indicates Arguments)
 
   [] (Argument accepts multiple values)
 
-
 # Aliases
   Get-Alias (display full list of alaises)
   Set-Alias (Creates a new alias)
   del alais (Deletes the alias)
   
-
-  # Variables
-    $False
-    $True
-    $Null
-    $$
-    $?
-    $^
-    $_ or $PSItem
-
+# Variables
+    $False ()
+    $True ()
+    $Null ()
+    $$ ()
+    $? ()
+    $^ ()
+    $_ or $PSItem ()
+    $ Args ()
+    $ Error ()
+    $ Home ()
+    $ Host ()
+    $Input ()
+    $LastExitCode ()
+    $Matches ()
+    $PID ()
+    $Profile ()
+    $PSVersionTable ()
+    $PSHome ()
+    $Pwd ()
+    
 
     
-  # Data Types
+
+
+# Data Types
   # Arrays
   # The Pipeline
   # Comparison Operators

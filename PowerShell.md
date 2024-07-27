@@ -275,11 +275,75 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
       
 
 # Functions
-  Basic Function
-  Function with Optional Parameters
-  Function with Mandatory Parameters
-  Function with Help Message
-  Function with Strongly-Typed Mandatory Parameters
-  Function with Switch Parameter
-  Advanced Function
-  Filter
+  ## Basic Function
+      functon get-sum($num1, $num2){
+        $num1 + $num2
+      }
+      get-sum 5 5
+  ## Function with Optional Parameters
+      function get-test {
+      param($param1='some value',$param2='some value')
+      "The value $param1 and $param2 are parameters"
+  ## Function with Mandatory Parameters
+      function get-test {
+        param(
+          [Parameter(Mandatory=$true)]
+          $name
+          )
+          "Hello, $name"
+      }
+  ## Function with Help Message
+      function get-test {
+        param(
+          [Parameter(Mandatory=$true, HelpMessage='Enter your name')]
+          $name
+          )
+          "Hello, $name"
+      }
+  ## Function with Strongly-Typed Mandatory Parameters
+      function get-conversion
+        [parameter(Mandatory-$True, HelpMessage='Enter weight')]
+        [double]
+        $pounds
+        )
+        $kilos = $pounds * (1/2.2)
+        $kilos
+  ## Function with Switch Parameter
+      function get-switch
+        param(
+        [Switch]
+        $special
+        )
+        if ($special) {
+          'This is the switch'
+        } else {
+          'This is not the switch'
+        }
+      }
+   ## Advanced Function
+      function Get-compinfo {
+      [CmdletBinding()]
+      BEGIN {
+        $name = $env:COMPUTERNAME
+      }
+      PROCESS {
+        Write-Verbose -Message "$name"
+        $system = gwmi -class Win32_computerSystem -ComputerName $name
+        $os = gwmi -class Win32_OperationSystem -ComputerName $name
+        $bios = gwmi -class win32_BIOS -ComputerName $name
+        $properties = @{
+          ComputerName = $name
+          Model
+          OS
+          SerialNumber
+        }
+      }
+      End {
+        New-Object -TypeName PSobject -Property $properties
+      }
+    }
+  ## Filter
+      filter namedthis {
+        if ($_.name -match "file.txt") {$_}
+      }
+      gci | gc | ?{$_ | namedthis}

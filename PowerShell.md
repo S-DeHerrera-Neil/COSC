@@ -46,13 +46,13 @@
 
 
 # Data Types
-  # Arrays
-  # The Pipeline
-  # Comparison Operators
-  # Loops
-  # Conditional Statements
-  # Flow Control
-  # RegEx
-  # String Operators
-  # String Methods
-  # Functions
+# Arrays
+# The Pipeline
+# Comparison Operators
+# Loops
+# Conditional Statements
+# Flow Control
+# RegEx
+# String Operators
+# String Methods
+# Functions

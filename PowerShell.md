@@ -249,29 +249,29 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
           +            One or many occurances
   Anchor:             Description:
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
-      $
-      ^
-      \b
-      \B
-      \G
+          $            End of text
+          ^            Start of Text
+          \b           Word boundary
+          \B           No word boundary
+          \G           After last match 
 
 # String Operators
   Operator:       Definition:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-      -f
-      -replace
-      -split
-      -join
+      -f          Format String Expression
+      -replace    replaces strings
+      -split      Splits a string
+      -join       Joins multiple strings
 
 # String Methods
   Method:          Definition:
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
-      .Split()
-      .Replace()
-      .StartsWith()
-      .EndsWith
-      .ToLower()
-      .ToUpper
+    .Split()        splits strings
+    .Replace()      replaces strings
+    .StartsWith()   Detrmines weather this string instance starts with the specified character
+    .EndsWith       Determines wether the end of this string instance matches the specified character
+    .ToLower()      Convert string to lower case
+    .ToUpper        Convert String to upper case
       
 
 # Functions

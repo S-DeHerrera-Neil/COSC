@@ -7,22 +7,21 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 
 # Getting Help (Asking for help via supported CLI inputs:)
-  - PWSH: Get-Help(Displays help)
-  - BASH: man(Same as Get-Help)
-  - CMD: cmd /c help(Display cmd commands)
-
-    ## Cmdlet syntax:
+    - PWSH: Get-Help(Displays help)
+    - BASH: man(Same as Get-Help)
+    - CMD: cmd /c help(Display cmd commands)
+## Cmdlet syntax:
     - (indicates a parameter)
-
     <> (Indicates Arguments)
-
     [] (Argument accepts multiple values)
 
+
 # Aliases
-  - Get-Alias (display full list of alaises)
-  - Set-Alias (Creates a new alias)
-  - del alais (Deletes the alias)
+    - Get-Alias (display full list of alaises)
+    - Set-Alias (Creates a new alias)
+    - del alais (Deletes the alias)
   
+
 # Variables
     $False (False)
     $True (True)
@@ -56,6 +55,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
   - [datetime] (Date and Time)
   - [array] (array of values)
   
+
 # Arrays
 
 # The Pipeline

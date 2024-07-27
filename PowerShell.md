@@ -225,28 +225,28 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
   
   Placeholder:        Description:
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
-      .
-      [^abc]
-      [a-z]
-      [abc]
-      [a-z]
-      \d
-      \D
-      \n
-      \r
-      \s
-      \S
-      \t
-      \w
-      W
+          .            Any character except newline            
+          [^abc]       All characters except one specified 
+          [a-z]        All characters except one in range specified
+          [abc]        One of the characters
+          [a-z]        One of the characters in range
+          \d           Any number [0-9]
+          \D           Any non-number
+          \n           Line breaker
+          \r           Carriage return
+          \s           Any whitespace(space,tab,newline)
+          \S           Any non-whitespace
+          \t           tab
+          \w           Letter, number or underline
+          W            Non-letter, number, or underline
   Quantifer:          Description:
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
-      *
-      ?
-     {n,}
-     {n,m}
-     {n}
-      +
+          *            Any                
+          ?            None or one occurance
+         {n,}          At least n occurances
+         {n,m}         At least n occurances, maximum m occurnaces
+         {n}           Exactly n occurnaces
+          +            One or many occurances
   Anchor:             Description:
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
       $

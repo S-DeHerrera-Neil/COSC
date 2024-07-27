@@ -10,7 +10,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     - PWSH: Get-Help(Displays help)
     - BASH: man(Same as Get-Help)
     - CMD: cmd /c help(Display cmd commands)
-  ## Cmdlet syntax:
+  ### Cmdlet syntax:
     - (indicates a parameter)
     <> (Indicates Arguments)
     [] (Argument accepts multiple values)
@@ -54,13 +54,13 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     - [double] (64-bit floating point number)
     - [datetime] (Date and Time)
     - [array] (array of values)
-  ## Getting Data Types
+  ### Getting Data Types
     Command:                        Result:
     ------------------------------------------------------------------------------------------------------------------------------------------------------------
     ("Hello").gettype().name        String
     (77.564).gettype().name         Double
     (0xFF).gettype().name           Int32
-  ## Casting
+  ### Casting
     Command:            Result:
     ------------------------------------------------------------------------------------------------------------------------------------------------------------
     [int](5.5)          6
@@ -77,7 +77,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
       $myarray[0]  Hello
       $myarray[-1]  77.65
       $myarray += 'new elemant'
-  ## Mutlidimensional Arrays
+  ### Mutlidimensional Arrays
     $multiarray = @((1,2,3,4),(5,6,7,8))
     $multiarray[0][1]  2
     $multiarray[1][3] 8
@@ -110,8 +110,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     Sort-Object         Sorts results
     Tee-Object          Copies the pipeline's contents and saves it to a file or a variable
     Where-Object        Filters results according to a criterion
-
-## Pipeline Examples
+  ### Pipeline Examples
     gci * .txt | ?{$_.length -lt 100} | ft name
     ps | ft PSResources
     ps | gm -Membertype PropertySet
@@ -143,40 +142,45 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 
 # Loops
-  ## While Loop
+  ### While Loop
     $x = 0
     while($x -lt 10) {
       Write-Host $x
       $x++
     {
-  ## Do While
+  
+  ### Do While
     $x = 0
     Do {
       Write-Host $x
       $x++
       }while ($x -lt 10)
-  ## Do Until Loop
+  
+  ### Do Until Loop
     $x = 0
     Do {
       Write-Host $x
       $x++
       }until ($x -gt 10)
-  ## ForEach Loop
+  
+  ### ForEach Loop
     $teams = "Lions", "Tigers", "Red Wings", "Pistons"
     ForEach($team in $teams){
     $team.insert(0, "Detroit ")
     }
-  ## ForEach-Object
+  
+  ### ForEach-Object
     gci | % -process {$_/Length / 1024}
 
+
 # Conditional Statements
-  ## If/Else
+  ### If/Else
     $x = 6
     if (4x -le 5) {
       Write-Host "Less than 5"
     } else {
       Write-Host "Greater than 5"
-  ## If/Elseif/Else
+  ### If/Elseif/Else
     $x =5
     if ($x -lt 5) {
       Write-host "Less than 5"
@@ -185,7 +189,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     } else {
       Write-Host "Greater then 5"
     }
-  ## Switch
+  ### Switch
     $time = 12
     Switch($time) {
     6 {"Morning"; break}
@@ -193,16 +197,17 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     18 {"Evening"; break}
     22 {"Night"; break}
     }
+
   
 # Flow Control
-  ## Break
+  ### Break
     $x = 0
     while($x -lt 10) {
     $x += 1
     if($x -eq 5) {break}
     Write-Output $x
     }
-  ## Continue
+  ### Continue
     $x = 0
     while ($x -lt 10) {
     $x += 1
@@ -255,6 +260,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
           \B           No word boundary
           \G           After last match 
 
+
 # String Operators
   Operator:       Definition:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -262,6 +268,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
       -replace    replaces strings
       -split      Splits a string
       -join       Joins multiple strings
+
 
 # String Methods
   Method:          Definition:
@@ -275,16 +282,16 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
       
 
 # Functions
-  ## Basic Function
+  ### Basic Function
       functon get-sum($num1, $num2){
         $num1 + $num2
       }
       get-sum 5 5
-  ## Function with Optional Parameters
+  ### Function with Optional Parameters
       function get-test {
       param($param1='some value',$param2='some value')
       "The value $param1 and $param2 are parameters"
-  ## Function with Mandatory Parameters
+  ### Function with Mandatory Parameters
       function get-test {
         param(
           [Parameter(Mandatory=$true)]
@@ -292,7 +299,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
           )
           "Hello, $name"
       }
-  ## Function with Help Message
+  ### Function with Help Message
       function get-test {
         param(
           [Parameter(Mandatory=$true, HelpMessage='Enter your name')]
@@ -300,7 +307,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
           )
           "Hello, $name"
       }
-  ## Function with Strongly-Typed Mandatory Parameters
+  ### Function with Strongly-Typed Mandatory Parameters
       function get-conversion
         [parameter(Mandatory-$True, HelpMessage='Enter weight')]
         [double]
@@ -308,7 +315,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
         )
         $kilos = $pounds * (1/2.2)
         $kilos
-  ## Function with Switch Parameter
+  ### Function with Switch Parameter
       function get-switch
         param(
         [Switch]
@@ -320,7 +327,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
           'This is not the switch'
         }
       }
-   ## Advanced Function
+   ### Advanced Function
       function Get-compinfo {
       [CmdletBinding()]
       BEGIN {
@@ -342,7 +349,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
         New-Object -TypeName PSobject -Property $properties
       }
     }
-  ## Filter
+  ### Filter
       filter namedthis {
         if ($_.name -match "file.txt") {$_}
       }

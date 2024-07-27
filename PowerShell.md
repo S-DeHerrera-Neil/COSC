@@ -16,9 +16,9 @@
   [] (Argument accepts multiple values)
 
 # Aliases
-  Get-Alias (display full list of alaises)
-  Set-Alias (Creates a new alias)
-  del alais (Deletes the alias)
+  - Get-Alias (display full list of alaises)
+  - Set-Alias (Creates a new alias)
+  - del alais (Deletes the alias)
   
 # Variables
     $False ()

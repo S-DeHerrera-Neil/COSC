@@ -56,11 +56,13 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     - [array] (array of values)
   ## Getting Data Types
     Command:                        Result:
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
     ("Hello").gettype().name        String
     (77.564).gettype().name         Double
     (0xFF).gettype().name           Int32
   ## Casting
     Command:            Result:
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
     [int](5.5)          6
     [float](5.5)        5.5
     [int](0xFF)         255
@@ -89,6 +91,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     
 # The Pipeline
     Cmdlet:                  Description:
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
     Compare-Object
     ConvertTo-Html
     Export-Csv

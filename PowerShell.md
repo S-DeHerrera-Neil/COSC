@@ -45,16 +45,28 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     
 
 # Data Types
-  - [string] (Fixed-length string of unicode characters)
-  - [char] (16-bit unicode character)
-  - [byte] (8-bit unsigned character)
-  - [int] (32-bit signed integer)
-  - [long] (64-bit signed integer) 
-  - [single] (32-bit floating point number)
-  - [double] (64-bit floating point number)
-  - [datetime] (Date and Time)
-  - [array] (array of values)
-  
+    - [string] (Fixed-length string of unicode characters)
+    - [char] (16-bit unicode character)
+    - [byte] (8-bit unsigned character)
+    - [int] (32-bit signed integer)
+    - [long] (64-bit signed integer) 
+    - [single] (32-bit floating point number)
+    - [double] (64-bit floating point number)
+    - [datetime] (Date and Time)
+    - [array] (array of values)
+## Getting Data Types
+    Command:                        Result:
+    ("Hello").gettype().name        String
+    (77.564).gettype().name         Double
+    (0xFF).gettype().name           Int32
+## Casting
+    Command:            Result:
+    [int](5.5)          6
+    [float](5.5)        5.5
+    [int](0xFF)         255
+*Note:
+  0xFF is hexadecimal for 255
+
 
 # Arrays
 

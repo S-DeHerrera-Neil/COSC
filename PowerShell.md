@@ -186,11 +186,29 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
       Write-Host "Greater then 5"
     }
   ## Switch
-
+    $time = 12
+    Switch($time) {
+    6 {"Morning"; break}
+    12 {"Noon"; break}
+    18 {"Evening"; break}
+    22 {"Night"; break}
+    }
   
 # Flow Control
   ## Break
+    $x = 0
+    while($x -lt 10) {
+    $x += 1
+    if($x -eq 5) {break}
+    Write-Output $x
+    }
   ## Continue
+    $x = 0
+    while ($x -lt 10) {
+    $x += 1
+    if ($x -eq 5) {continue}
+    Write-Output $x
+    }
   
 
 # RegEx

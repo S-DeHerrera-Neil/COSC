@@ -144,15 +144,47 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 # Loops
   ## While Loop
+    $x = 0
+    while($x -lt 10) {
+      Write-Host $x
+      $x++
+    {
   ## Do While
+    $x = 0
+    Do {
+      Write-Host $x
+      $x++
+      }while ($x -lt 10)
   ## Do Until Loop
+    $x = 0
+    Do {
+      Write-Host $x
+      $x++
+      }until ($x -gt 10)
   ## ForEach Loop
+    $teams = "Lions", "Tigers", "Red Wings", "Pistons"
+    ForEach($team in $teams){
+    $team.insert(0, "Detroit ")
+    }
   ## ForEach-Object
-
+    gci | % -process {$_/Length / 1024}
 
 # Conditional Statements
   ## If/Else
+    $x = 6
+    if (4x -le 5) {
+      Write-Host "Less than 5"
+    } else {
+      Write-Host "Greater than 5"
   ## If/Elseif/Else
+    $x =5
+    if ($x -lt 5) {
+      Write-host "Less than 5"
+    } elseif ($x -eq 5) {
+      Write-host "It is 5"
+    } else {
+      Write-Host "Greater then 5"
+    }
   ## Switch
 
   

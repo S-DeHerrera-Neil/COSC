@@ -8,12 +8,12 @@
   - BASH: man(Same as Get-Help)
   - CMD: cmd /c help(Display cmd commands)
 
-  ## Cmdlet syntax:
-  - (indicates a parameter)
+    ## Cmdlet syntax:
+    - (indicates a parameter)
 
-  <> (Indicates Arguments)
+    <> (Indicates Arguments)
 
-  [] (Argument accepts multiple values)
+    [] (Argument accepts multiple values)
 
 # Aliases
   - Get-Alias (display full list of alaises)

@@ -46,15 +46,15 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     
 
 # Data Types
-  - [string] ()
-  - [char] ()
-  - [byte] ()
-  - [int] ()
-  - [long] () 
-  - [single] ()
-  - [double] ()
-  - [datetime] ()
-  - [array] ()
+  - [string] (Fixed-length string of unicode characters)
+  - [char] (16-bit unicode character)
+  - [byte] (8-bit unsigned character)
+  - [int] (32-bit signed integer)
+  - [long] (64-bit signed integer) 
+  - [single] (32-bit floating point number)
+  - [double] (64-bit floating point number)
+  - [datetime] (Date and Time)
+  - [array] (array of values)
   
 # Arrays
 

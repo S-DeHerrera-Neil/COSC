@@ -42,11 +42,19 @@
     $Pwd ()
     
 
-    
-
-
 # Data Types
+  - [string] ()
+  - [char] ()
+  - [byte] ()
+  - [int] ()
+  - [long] () 
+  - [single] ()
+  - [double] ()
+  - [datetime] ()
+  - [array] ()
+  
 # Arrays
+
 # The Pipeline
 # Comparison Operators
 # Loops

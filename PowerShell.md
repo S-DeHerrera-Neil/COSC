@@ -127,6 +127,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     
 # Comparison Operators
     Operator:      Description:
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
         -eq            Equals
         -ne            Not Equal
         -gt            Greater Than
@@ -180,4 +181,16 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 
 # String Methods
+  Method:          Definition:
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Functions
+  Basic Function
+  Function with Optional Parameters
+  Function with Mandatory Parameters
+  Function with Help Message
+  Function with Strongly-Typed Mandatory Parameters
+  Function with Switch Parameter
+  Advanced Function
+  Filter

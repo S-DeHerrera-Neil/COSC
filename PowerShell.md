@@ -123,6 +123,21 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
       
     
 # Comparison Operators
+    Operator:      Description:
+        -eq            Equals
+        -ne            Not Equal
+        -gt            Greater Than
+        -lt            Less Than
+        -ge            Greater Than or Equal To
+        -le            Less Than or Equal To
+        -contains      Contains (used for a collection of items)
+        -match         Matches anywhere in the string
+        -like          Both sides of expression are identical
+        -in            Returns true when value is contained within a collection
+        -replace       Replaces a string pattern
+        -is            Returns true if both objects are the same type
+
+
 # Loops
 # Conditional Statements
 # Flow Control

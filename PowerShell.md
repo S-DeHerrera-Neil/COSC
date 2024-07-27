@@ -90,26 +90,26 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
     
 # The Pipeline
-    Cmdlet:                  Description:
+    Cmdlet:               Description:
     ------------------------------------------------------------------------------------------------------------------------------------------------------------
-    Compare-Object
-    ConvertTo-Html
-    Export-Csv
-    ForEach-Object
-    Format-list
-    Format-Table
-    Format-Wide
-    Get-Unique
-    Group-Object
-    Measure-Object
-    Out-File
-    Out-Host
-    Out-Null
-    Out-String
-    Select-String
-    Sort-Object
-    Tee-Object
-    Where-Object
+    Compare-Object      Compares two objects and marks their differences          
+    ConvertTo-Html      Converts object into HTML
+    Export-Csv          Saves object in a csv file
+    ForEach-Object      Returns each pipeline object one after the other  
+    Format-list         Outputs results as a list
+    Format-Table        Outputs resultas as a table
+    Format-Wide         Outputs results in several columns
+    Get-Unique          Removes duplicates from a list of values
+    Group-Object        Groups results according to a criterion
+    Measure-Object      Calculates the statistical frequency distribution of object values or texts
+    Out-File            Writes results to a file
+    Out-Host            Outputs results in the console
+    Out-Null            Deletes results
+    Out-String          Converts Converts results to plain text
+    Select-String       Filters properties of an object and limits number of results as requested
+    Sort-Object         Sorts results
+    Tee-Object          Copies the pipeline's contents and saves it to a file or a variable
+    Where-Object        Filters results according to a criterion
 
 ## Pipeline Examples
     gci * .txt | ?{$_.length -lt 100} | ft name

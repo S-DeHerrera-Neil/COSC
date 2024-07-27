@@ -10,7 +10,7 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     - PWSH: Get-Help(Displays help)
     - BASH: man(Same as Get-Help)
     - CMD: cmd /c help(Display cmd commands)
-## Cmdlet syntax:
+  ## Cmdlet syntax:
     - (indicates a parameter)
     <> (Indicates Arguments)
     [] (Argument accepts multiple values)
@@ -54,12 +54,12 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
     - [double] (64-bit floating point number)
     - [datetime] (Date and Time)
     - [array] (array of values)
-## Getting Data Types
+  ## Getting Data Types
     Command:                        Result:
     ("Hello").gettype().name        String
     (77.564).gettype().name         Double
     (0xFF).gettype().name           Int32
-## Casting
+  ## Casting
     Command:            Result:
     [int](5.5)          6
     [float](5.5)        5.5
@@ -139,6 +139,13 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 
 # Loops
+  ## While Loop
+  ## Do While
+  ## Do Until Loop
+  ## ForEach Loop
+  ## ForEach-Object
+
+
 # Conditional Statements
 # Flow Control
 # RegEx

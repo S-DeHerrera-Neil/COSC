@@ -69,8 +69,59 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 
 # Arrays
+  ## Arrays
+      $myarray = 'Hello' , 12, (Get-Date), $true, 77.65
+      $myarray.count  5
+      $myarray[0]  Hello
+      $myarray[-1]  77.65
+      $myarray += 'new elemant'
+  ## Mutlidimensional Arrays
+    $multiarray = @((1,2,3,4),(5,6,7,8))
+    $multiarray[0][1]  2
+    $multiarray[1][3] 8
+    $nonjaggedarray = New-Object "int32[,]"  2,4
+    $nonjaggedarray = 2
+    $nonjaggedarray = 8
+    $nonjaggedarray    2
+    $nonjaggedarray    8
+    $multiarray = @(); $multiarray += , @(1,2,3)
 
+    
 # The Pipeline
+    Cmdlet:                  Description:
+    Compare-Object
+    ConvertTo-Html
+    Export-Csv
+    ForEach-Object
+    Format-list
+    Format-Table
+    Format-Wide
+    Get-Unique
+    Group-Object
+    Measure-Object
+    Out-File
+    Out-Host
+    Out-Null
+    Out-String
+    Select-String
+    Sort-Object
+    Tee-Object
+    Where-Object
+
+## Pipeline Examples
+    gci * .txt | ?{$_.length -lt 100} | ft name
+    ps | ft PSResources
+    ps | gm -Membertype PropertySet
+    gs | Group Status
+    gci | Sort Length, Name -descending
+    gs | ?{$_.status -eq "Running"}
+    gci | Sort Length -descending | Select -first 5
+    ps | Sort StartTine | Select -first 5 | ft ProcessName, StartTime
+    1,2,3,1,2,3,1,2,3,1,2,3 | Sort | Get-Unique
+    gci | Measure-Object Lentgh
+    gcm -Type Cmdlet | %{$_.Parameters} | %{$_.Keys} | group -NoElement | Sort Count, Name -Descending | Select -Skip 11 | ?{$_.Count -gt 1} | Out_Grindview
+      
+    
 # Comparison Operators
 # Loops
 # Conditional Statements

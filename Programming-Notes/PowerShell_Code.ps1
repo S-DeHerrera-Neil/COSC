@@ -30,3 +30,8 @@ Write-Output "Pear"
 $x = 10
 Get-Variable x
 Get-ChildItem variable:x`
+
+$x, $y, $z = "this", "that", "third"
+test-path variable:x
+remove-variable x
+del variable:x

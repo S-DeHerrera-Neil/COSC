@@ -1,6 +1,10 @@
 Student Guide:
 https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
+Good URLs:
+https://www.red-gate.com/simple-talk/sysadmin/powershell/when-to-qoute-in-powershell/
+
+
 # Date 07/26
   - objectives
 ![img_8214.jpg](https://github.com/user-attachments/assets/aa39370b-d107-4e8a-9326-4496d911012e)

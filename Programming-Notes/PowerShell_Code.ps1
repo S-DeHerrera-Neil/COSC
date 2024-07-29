@@ -97,6 +97,8 @@ Write-Host "`n$grp" - ForegroundColor red
 }
 
 #
+get-ciminstance win32_service | Sort-Object -Property state | ft -Poperty ProcessID,Name,State,pathname
+
 
 
 

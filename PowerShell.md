@@ -364,47 +364,54 @@ From Ubuntu terminal:
    $ xfreerdp /u:student /v:10.50.39.134 -dynamic-resolution +glyph-cache +clipboard
   * Find Cmdlets
 
-1.Ensure that you have the latest copy of help by updating your help system.
-  > update-help
-2.Which cmdlets deal with the viewing/manipulating of processes?
-  > get-process or show-process or get-command -noun process get-help *process*
-3.Display a list of services installed on your local computer.
-  > Get-Service or get-help *service*
-4.What cmdlets are used to write or output objects or text to the screen?
-  > get-help *write*
-  > Write-Host 
-5.What cmdlets can be used to create, modify, list, and delete variables?
-  > get-help -noun variable
-  > get-command -noun variable
-6.What cmdlet can be used, other than Get-Help, to find and list other cmdlets?
-  > get-command 
-7.Find the cmdlet that is used to prompt the user for input.
-  > read-host
+  ## Excercises 
+    1.Ensure that you have the latest copy of help by updating your help system.
+      > update-help
+    2.Which cmdlets deal with the viewing/manipulating of processes?
+      > get-process or show-process or get-command -noun process get-help *process*
+    3.Display a list of services installed on your local computer.
+      > Get-Service or get-help *service*
+    4.What cmdlets are used to write or output objects or text to the screen?
+      > get-help *write*
+      > Write-Host 
+    5.What cmdlets can be used to create, modify, list, and delete variables?
+      > get-help -noun variable
+      > get-command -noun variable
+    6.What cmdlet can be used, other than Get-Help, to find and list other cmdlets?
+      > get-command 
+    7.Find the cmdlet that is used to prompt the user for input.
+      > read-host
+        
+      * Exercise Running Cmdlets
     
-  * Exercise Running Cmdlets
+    1.Display a list of running processes.
+       > get-process 
+    
+    2. Display a list of all running processes that start with the letter "s".
+       > get-process -name s*
+    
+    3. Find the cmdlet and its purpose for the following aliases:
+       gal alias= 
+       > Get-Alias 
+       dir alias=
+       > Get-ChildItem
+       echo alias=
+       > Write-Output
+       ? alias=
+       > Where-Object
+       % alias=
+       > ForEach-Object
+       ft alias=
+       > Format-Table
+    
+    5. Display a list of Windows Firewall Rules.
+       > Get-NetFirewallRule 
+    
+    6. Create a new alias called "gh" for the cmdlet "Get-Help"
+       > New-Alias -name "gh" get-help
 
-1.Display a list of running processes.
-   > get-process 
+> Get-ChiltItem or gci
+  same as dir or ls
 
-2. Display a list of all running processes that start with the letter "s".
-   > get-process -name s*
-
-3. Find the cmdlet and its purpose for the following aliases:
-   gal alias= 
-   > Get-Alias 
-   dir alias=
-   > Get-ChildItem
-   echo alias=
-   > Write-Output
-   ? alias=
-   > Where-Object
-   % alias=
-   > ForEach-Object
-   ft alias=
-   > Format-Table
-
-5. Display a list of Windows Firewall Rules.
-   > Get-NetFirewallRule 
-
-6. Create a new alias called "gh" for the cmdlet "Get-Help"
-   > New-Alias -name "gh" get-help 
+$cols =@{Label="KB"; Expression = { [int] ($_./Length/1KB) }}
+Get-ChildItem _ Format-Table name, $cols

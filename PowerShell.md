@@ -497,3 +497,20 @@ $employee3["Last"] = "Marley"
 $employee3.ID = "20"
 employee2["Username"] = "jwilliams002"
 $employee3["Job"] = "accountant"
+
+
+# The Pipeline
+
+# Custom Object
+
+# Comparison and Condition
+
+# Looping and Iteration
+
+# Create Functions
+
+# Functions Parameters
+
+# Advanced Functions
+
+# Regex

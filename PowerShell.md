@@ -358,5 +358,45 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 # Date: 07/29
 
+get-ChildItem -path C:\Windows -filter *.exe -recurse -name
+
 From Ubuntu terminal:
    $ xfreerdp /u:student /v:10.50.39.134 -dynamic-resolution +glyph-cache +clipboard
+  * Find Cmdlets
+
+1.Ensure that you have the latest copy of help by updating your help system.
+
+2.Which cmdlets deal with the viewing/manipulating of processes?
+
+3.Display a list of services installed on your local computer.
+
+4.What cmdlets are used to write or output objects or text to the screen?
+
+5.What cmdlets can be used to create, modify, list, and delete variables?
+
+6.What cmdlet can be used, other than Get-Help, to find and list other cmdlets?
+
+7.Find the cmdlet that is used to prompt the user for input.
+
+    
+  * Exercise Running Cmdlets
+
+1.Display a list of running processes.
+   get-process 
+
+2. Display a list of all running processes that start with the letter "s".
+   get-process -name s*
+
+3. Find the cmdlet and its purpose for the following aliases:
+   gal- Get-Alias gal
+   dir- Get-Alias dir
+   echo- Get-Alias echo
+   ?- Get-Alias ?
+   %- Get-Alias %
+   ft- Get-Alias ft
+
+4. Display a list of Windows Firewall Rules.
+   Get-NetFirewallRule 
+
+5. Create a new alias called "gh" for the cmdlet "Get-Help"
+   get-process 

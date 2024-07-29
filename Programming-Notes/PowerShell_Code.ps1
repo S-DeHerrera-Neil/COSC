@@ -72,3 +72,7 @@ $employee2.ID = "002"
 $employee2["Job"] = "Web Developer"
 
 employee2
+
+employee1.Username = "mhoppper001"
+employee2["Username"] = "jwilliams002"
+

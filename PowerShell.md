@@ -3,6 +3,8 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
 Good URLs:
 https://www.red-gate.com/simple-talk/sysadmin/powershell/when-to-qoute-in-powershell/
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about_hash_tables?view=powershell-7.4
+https://www.tutorialspoint.com/powershell/powershell_brackets.htm
 
 
 # Date 07/26
@@ -456,3 +458,12 @@ Get-ChildItem _ Format-Table name, $cols
 $revarray = -3..15:3
 $reverse = $revarray[($revarray.length-1)..0]
 $reverse 
+
+$revarray = -3..15:3
+$reverse = $revarray
+#SSgt. Matson playing with it [$reverse]::reverse
+[array]::reverse($revarray)
+write-output $revarray
+
+# Hash tables
+

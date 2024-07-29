@@ -69,4 +69,6 @@ employee1
 $employee2.First = "John"
 $employee2["Last"] = "Williams"
 $employee2.ID = "002"
-$employee2["Job"] = ""
+$employee2["Job"] = "Web Developer"
+
+employee2

@@ -375,14 +375,29 @@ From Ubuntu terminal:
 
   ## Excercises 
     1.Ensure that you have the latest copy of help by updating your help system.
-      > update-help
+      > update-help       Didn't wanna work for me
     2.Which cmdlets deal with the viewing/manipulating of processes?
-      > get-process or show-process or get-command -noun process get-help *process*
+      > get-process 
+      or 
+      > show-process        show-process not recognized as cmdlet, function, script file or operable program
+      or 
+      > get-command -noun process get-help *process*      get-command outputs as:
+            ^ CommandType      Name                              Version     Source
+              -----------      ----                              --------   -------
+              
     3.Display a list of services installed on your local computer.
-      > Get-Service or get-help *service*
+      > Get-Service   outputs as:
+         ^ Status   Name         DisplayName
+           ------   ----         -----------
+      or 
+      > Get-Help *service*   output as:
+         ^ Name      Category      Module      Synopsis
+           -----     ---------     ------      --------
     4.What cmdlets are used to write or output objects or text to the screen?
-      > get-help *write*
-      > Write-Host 
+      > get-help *write* outputs as:
+         ^ Name      Category      Module      Synopsis
+         ------      ---------    -------      ----------
+      > Write-Host <User Input>      Prints to the screen 
     5.What cmdlets can be used to create, modify, list, and delete variables?
       > get-help -noun variable
       > get-command -noun variable

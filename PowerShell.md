@@ -1,3 +1,6 @@
+From Ubuntu terminal:
+   $ xfreerdp /u:student /v:10.50.39.134 -dynamic-resolution +glyph-cache +clipboard
+
 Student Guide:
 https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
 
@@ -423,199 +426,199 @@ $cols =@{Label="KB"; Expression = { [int] ($_./Length/1KB) }}
 Get-ChildItem _ Format-Table name, $cols
 
 # Variables
-1. Create a variable called "var1" that holds a random number between 25-50.
-   *> $var1 = get-random -minimum 25 -maximum 50
-2. Create a variable called "var2" that holds a random number between 1-10.
-  *> $var2 = get-random -minimum 1 -maximum 10
-3. Create a variable called "sum" that holds the sum of var1 and var2.
-  *> $sum = $var1 + $var2
-4. Create a variable called "sub" that holds the difference of var1 and var2.
-  *> $sub = $var1 - $var2
-5. Create a variable called "prod" that holds the product of var1 and var2.
-  *> $prod = $var1 * $var2
-6. Create a variable called "quo" that holds the quotient of var1 and var2.
-  *> $quo = $var1 / $ var2
-7. Replace the variables in text with their values in the following format:
-   "var1" + "var2" = "sum"
-        > "$var1 + $var2 = $sum"
-        {0} + {1} = {2}" -f $var1, $var2, $sum
-9. Replace the variables in text with their values in the following format:
-   "var1" - "var2" = "sub"
-        >"$var1 + $var2 = $sum"
-        {0} + {1} = {2}" -f $var1, $var2, $sum
-10. Replace the variables in text with their values in the following format:
-   "var1" * "var2" = "prod"
-        >"$var1 + $var2 = $prod"
-        {0} * {1} = {2}" -f $var1, $var2, $prod
-11. Replace the variables in text with their values in the following format:
-  "var1" / "var2" = "quo"
-        >"$var1 + $var2 = $quo"
-        {0} / {1} = {2}" -f $var1, $var2, $quo
+    1. Create a variable called "var1" that holds a random number between 25-50.
+       *> $var1 = get-random -minimum 25 -maximum 50
+    2. Create a variable called "var2" that holds a random number between 1-10.
+      *> $var2 = get-random -minimum 1 -maximum 10
+    3. Create a variable called "sum" that holds the sum of var1 and var2.
+      *> $sum = $var1 + $var2
+    4. Create a variable called "sub" that holds the difference of var1 and var2.
+      *> $sub = $var1 - $var2
+    5. Create a variable called "prod" that holds the product of var1 and var2.
+      *> $prod = $var1 * $var2
+    6. Create a variable called "quo" that holds the quotient of var1 and var2.
+      *> $quo = $var1 / $ var2
+    7. Replace the variables in text with their values in the following format:
+       "var1" + "var2" = "sum"
+            > "$var1 + $var2 = $sum"
+            {0} + {1} = {2}" -f $var1, $var2, $sum
+    9. Replace the variables in text with their values in the following format:
+       "var1" - "var2" = "sub"
+            >"$var1 + $var2 = $sum"
+            {0} + {1} = {2}" -f $var1, $var2, $sum
+    10. Replace the variables in text with their values in the following format:
+       "var1" * "var2" = "prod"
+            >"$var1 + $var2 = $prod"
+            {0} * {1} = {2}" -f $var1, $var2, $prod
+    11. Replace the variables in text with their values in the following format:
+      "var1" / "var2" = "quo"
+            >"$var1 + $var2 = $quo"
+            {0} / {1} = {2}" -f $var1, $var2, $quo
 
   # You can highlight lines of code and press F8, which will run that specified line of code
 
 # Reverse Array
-Create an array containing a range with a random starting and stopping point. The starting point will be a random number from -10 through 0. The ending point will be a random number from 1 through 20.
-
-For example, if the first random number is -3, and the second random number is 2, your array will be -3, -2, -1, 0, 1, 2
-Create a variable that contains the contents of the array in reverse
-
-Using the above example, your reversed array will be 2, 1, 0, -1, -2, -3
-
-* Code starts here
-$revarray = -3..15:3
-$reverse = $revarray[($revarray.length-1)..0]
-$reverse 
-
-$revarray = -3..15:3
-$reverse = $revarray
-#SSgt. Matson playing with it [$reverse]::reverse
-[array]::reverse($revarray)
-write-output $revarray
+    Create an array containing a range with a random starting and stopping point. The starting point will be a random number from -10 through 0. The ending point will be a random number from 1 through 20.
+    
+    For example, if the first random number is -3, and the second random number is 2, your array will be -3, -2, -1, 0, 1, 2
+    Create a variable that contains the contents of the array in reverse
+    
+    Using the above example, your reversed array will be 2, 1, 0, -1, -2, -3
+    
+    * Code starts here
+    $revarray = -3..15:3
+    $reverse = $revarray[($revarray.length-1)..0]
+    $reverse 
+    
+    $revarray = -3..15:3
+    $reverse = $revarray
+    #SSgt. Matson playing with it [$reverse]::reverse
+    [array]::reverse($revarray)
+    write-output $revarray
 
 # Arrays and Hash Tables
-  Create two empty hash tables with the following names:
-    -employee1
-    -employee2
-Using the following table of key-value pairs, apply each key-value to the empty hash tables.
-Table 1. keys and values
-First	Last	ID	Job
-Mary
-Hopper
-001
-Software Developer;
-John
-Williams
-002
-Web Developer
-The keys on the first row of the table while the values are on the first column of the table
-Now add a new key called Username which holds a contraction of the employee’s first initial then last name then ID. (i.e. mhopper001).
-Mary got promoted to "Software Lead" so the job key for Mary needs to be changed to "Software Lead"
-Create a new hash table called "employee3" that contains the following values with the respective keys.
-Table 2. employee3
-First	Last	ID	Job
-Alex
-Moran
-003
-Software Developer
-Add a new key called "Status" that holds the values:
-Table 3. Status
-Mary	John	Alex
-Management
-Intermediate
-Entry Level
-Make sure you use both dot notation and square brackets to manipulate your hash tables.
+      Create two empty hash tables with the following names:
+        -employee1
+        -employee2
+    Using the following table of key-value pairs, apply each key-value to the empty hash tables.
+    Table 1. keys and values
+    First	Last	ID	Job
+    Mary
+    Hopper
+    001
+    Software Developer;
+    John
+    Williams
+    002
+    Web Developer
+    The keys on the first row of the table while the values are on the first column of the table
+    Now add a new key called Username which holds a contraction of the employee’s first initial then last name then ID. (i.e. mhopper001).
+    Mary got promoted to "Software Lead" so the job key for Mary needs to be changed to "Software Lead"
+    Create a new hash table called "employee3" that contains the following values with the respective keys.
+    Table 2. employee3
+    First	Last	ID	Job
+    Alex
+    Moran
+    003
+    Software Developer
+    Add a new key called "Status" that holds the values:
+    Table 3. Status
+    Mary	John	Alex
+    Management
+    Intermediate
+    Entry Level
+    Make sure you use both dot notation and square brackets to manipulate your hash tables.
 
 * Code starts here
-$employee1 = [ordered]@{}
-$employee2 = [ordered]@{}
-
-$employee1.First = "Mary"
-$employee1["Last"] = "Hopper"
-$employee1.ID = "001"
-$employee1["Job"] = "Software Developer"
-
-employee1
-
-$employee2.First = "John"
-$employee2["Last"] = "Williams"
-$employee2.ID = "002"
-$employee2["Job"] = "Web Developer"
-
-employee2
-
-employee1.Username = "mhoppper001"
-employee2["Username"] = "jwilliams002"
-
-$employee1
-$employee2
-
-employee1.job = "software lead"
-
-$employee3 = [ordered]@{}
-$employee3.First = "Bob"
-$employee3["Last"] = "Marley"
-$employee3.ID = "20"
-employee2["Username"] = "jwilliams002"
-$employee3["Job"] = "accountant"
+      $employee1 = [ordered]@{}
+      $employee2 = [ordered]@{}
+      
+      $employee1.First = "Mary"
+      $employee1["Last"] = "Hopper"
+      $employee1.ID = "001"
+      $employee1["Job"] = "Software Developer"
+      
+      employee1
+      
+      $employee2.First = "John"
+      $employee2["Last"] = "Williams"
+      $employee2.ID = "002"
+      $employee2["Job"] = "Web Developer"
+      
+      employee2
+      
+      employee1.Username = "mhoppper001"
+      employee2["Username"] = "jwilliams002"
+      
+      $employee1
+      $employee2
+      
+      employee1.job = "software lead"
+      
+      $employee3 = [ordered]@{}
+      $employee3.First = "Bob"
+      $employee3["Last"] = "Marley"
+      $employee3.ID = "20"
+      employee2["Username"] = "jwilliams002"
+      $employee3["Job"] = "accountant"
 
 # The Pipeline
-1.Display the start time of the earliest and latest running processes
+    1.Display the start time of the earliest and latest running processes
+    
+    2.Identify a cmdlet that returns the current date and time then using this cmdlet and Select-object, display only the current day of the week
+    
+    3.Identify a cmdlet that displays a list of installed hotfixes.
+    
+    4.Extend the expression to sort the list by install date, and display only the install date and hotfix ID.
+    
+    5.Extend the expression further, but this time sort by description, include description, hotfix ID, and install Date.
 
-2.Identify a cmdlet that returns the current date and time then using this cmdlet and Select-object, display only the current day of the week
-
-3.Identify a cmdlet that displays a list of installed hotfixes.
-
-4.Extend the expression to sort the list by install date, and display only the install date and hotfix ID.
-
-5.Extend the expression further, but this time sort by description, include description, hotfix ID, and install Date.
-
-# Custom Object
-Create a custom object that contains information about the host system using the following:
-Win32_ComputerSystem
-Win32_BIOS
-Win32_OperatingSystem
-Win32_LogicalDisk
-Use the cmdlet Get-WmiObject to obtain the needed information
-Store the objects results into variables to be used in the custom object
-The custom object will only contain properties not methods
-The final output of this exercise should look like the following:
-Endstate
-ComputerName    : DESKTOP-5KJDVS2
-OperatingSystem : Microsoft Windows 10 Pro
-Version         : 10.0.17134
-Manufacturer    : Dell Inc.
-Disks           : {\\DESKTOP-                          5KJDVS2\root\cimv2:Win32_LogicalDisk.DeviceID="C:",
-                  \\DESKTOP-5KJDVS2\root\cimv2:Win32_LogicalDisk.DeviceID="D:"}
+    # Custom Object
+    Create a custom object that contains information about the host system using the following:
+    Win32_ComputerSystem
+    Win32_BIOS
+    Win32_OperatingSystem
+    Win32_LogicalDisk
+    Use the cmdlet Get-WmiObject to obtain the needed information
+    Store the objects results into variables to be used in the custom object
+    The custom object will only contain properties not methods
+    The final output of this exercise should look like the following:
+    Endstate
+    ComputerName    : DESKTOP-5KJDVS2
+    OperatingSystem : Microsoft Windows 10 Pro
+    Version         : 10.0.17134
+    Manufacturer    : Dell Inc.
+    Disks           : {\\DESKTOP-                          5KJDVS2\root\cimv2:Win32_LogicalDisk.DeviceID="C:",
+                      \\DESKTOP-5KJDVS2\root\cimv2:Win32_LogicalDisk.DeviceID="D:"}
 
 * Code starts here                  
 
 # Comparison and Condition
-1.Find and extract the model number from the provided lines of text. If there isn’t a model number then display to the user that a model number wasn’t found
-
-2.Check both lines for model numbers and report individually the line and model number if found.
-
-Use the following variables for your script
-$line1 = "Do you have model number: MT5437 for john.doe@sharklasers.com?"
-$line2 = "What model number for john.doe@sharklasers.com?"
-Exercise Criteria
-Must use at least ONE comparison operator
-Must use at least ONE If Condition OR Switch Statement
-Reminder of options available
-Switch Statement
-If/IfElse/Else Condition
-match, contains, in, -eq, -le, etc…​
-Comparison combinations
-# Looping and Iteration
-**Part 1
-*Use an array to iterate and open the following
--Notepad
--MS Edge
--MSpaint
-*Query the processes
-*Kill the processes from PowerShell
-
-**Part 2
-*Use an array to iterate and open the following
--Notepad
--MS Edge
--MSpaint
-*Query the processes
-*Save the ProcessIDs to a text file called procs.txt
-*Iterate through the ProcessIDs in the text file and kill them
-
-**Part 3
-
-*Use an array to iterate and open the following
--Notepad
--MS Edge
--MSpaint
-*Query the processes and display only the following information in order by process ID
--Process ID
--Process Name
--The time the process started
--The amount of time the process has spent on the processor
--The amount of memory assigned to the process
+    1.Find and extract the model number from the provided lines of text. If there isn’t a model number then display to the user that a model number wasn’t found
+    
+    2.Check both lines for model numbers and report individually the line and model number if found.
+    
+    Use the following variables for your script
+    $line1 = "Do you have model number: MT5437 for john.doe@sharklasers.com?"
+    $line2 = "What model number for john.doe@sharklasers.com?"
+    Exercise Criteria
+    Must use at least ONE comparison operator
+    Must use at least ONE If Condition OR Switch Statement
+    Reminder of options available
+    Switch Statement
+    If/IfElse/Else Condition
+    match, contains, in, -eq, -le, etc…​
+    Comparison combinations
+    # Looping and Iteration
+    **Part 1
+    *Use an array to iterate and open the following
+    -Notepad
+    -MS Edge
+    -MSpaint
+    *Query the processes
+    *Kill the processes from PowerShell
+    
+    **Part 2
+    *Use an array to iterate and open the following
+    -Notepad
+    -MS Edge
+    -MSpaint
+    *Query the processes
+    *Save the ProcessIDs to a text file called procs.txt
+    *Iterate through the ProcessIDs in the text file and kill them
+    
+    **Part 3
+    
+    *Use an array to iterate and open the following
+    -Notepad
+    -MS Edge
+    -MSpaint
+    *Query the processes and display only the following information in order by process ID
+    -Process ID
+    -Process Name
+    -The time the process started
+    -The amount of time the process has spent on the processor
+    -The amount of memory assigned to the process
 
 # Create Functions
 

@@ -410,7 +410,7 @@ From Ubuntu terminal:
     6. Create a new alias called "gh" for the cmdlet "Get-Help"
        > New-Alias -name "gh" get-help
 
-> Get-ChiltItem or gci
+> Get-ChildItem or gci
   same as dir or ls
 
 $cols =@{Label="KB"; Expression = { [int] ($_./Length/1KB) }}

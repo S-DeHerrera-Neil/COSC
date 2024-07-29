@@ -1,3 +1,4 @@
+                        * Keep getting the error "cannot be loaded because running scripts is disabled on this system"
 From Ubuntu terminal:
    $ xfreerdp /u:student /v:10.50.39.134 -dynamic-resolution +glyph-cache +clipboard
 

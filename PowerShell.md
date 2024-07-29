@@ -455,6 +455,14 @@ Get-ChildItem _ Format-Table name, $cols
   # You can highlight lines of code and press F8, which will run that specified line of code
 
 # Reverse Array
+Create an array containing a range with a random starting and stopping point. The starting point will be a random number from -10 through 0. The ending point will be a random number from 1 through 20.
+
+For example, if the first random number is -3, and the second random number is 2, your array will be -3, -2, -1, 0, 1, 2
+Create a variable that contains the contents of the array in reverse
+
+Using the above example, your reversed array will be 2, 1, 0, -1, -2, -3
+
+* Code starts here
 $revarray = -3..15:3
 $reverse = $revarray[($revarray.length-1)..0]
 $reverse 
@@ -466,6 +474,39 @@ $reverse = $revarray
 write-output $revarray
 
 # Arrays and Hash Tables
+  Create two empty hash tables with the following names:
+    -employee1
+    -employee2
+Using the following table of key-value pairs, apply each key-value to the empty hash tables.
+Table 1. keys and values
+First	Last	ID	Job
+Mary
+Hopper
+001
+Software Developer;
+John
+Williams
+002
+Web Developer
+The keys on the first row of the table while the values are on the first column of the table
+Now add a new key called Username which holds a contraction of the employee’s first initial then last name then ID. (i.e. mhopper001).
+Mary got promoted to "Software Lead" so the job key for Mary needs to be changed to "Software Lead"
+Create a new hash table called "employee3" that contains the following values with the respective keys.
+Table 2. employee3
+First	Last	ID	Job
+Alex
+Moran
+003
+Software Developer
+Add a new key called "Status" that holds the values:
+Table 3. Status
+Mary	John	Alex
+Management
+Intermediate
+Entry Level
+Make sure you use both dot notation and square brackets to manipulate your hash tables.
+
+* Code starts here
 $employee1 = [ordered]@{}
 $employee2 = [ordered]@{}
 

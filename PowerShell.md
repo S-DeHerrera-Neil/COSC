@@ -452,4 +452,5 @@ Get-ChildItem _ Format-Table name, $cols
 
 # Reverse Array
 $revarray = -3..15:3
-$revarray = 
+$reverse = $revarray[($revarray.length-1)..0]
+$reverse 

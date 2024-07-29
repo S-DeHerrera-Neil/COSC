@@ -94,3 +94,9 @@ Write-Host "`n$grp" - ForegroundColor red
 '======================================='
 (Get-LocalGroupMember -Name $grp).name`
 -replace("$env:computername\\",'')
+}
+
+#
+
+
+

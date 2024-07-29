@@ -369,37 +369,39 @@ From Ubuntu terminal:
 2.Which cmdlets deal with the viewing/manipulating of processes?
   > get-process or show-process or get-command -noun process get-help *process*
 3.Display a list of services installed on your local computer.
-  > Get-Service
+  > Get-Service or get-help *service*
 4.What cmdlets are used to write or output objects or text to the screen?
-  >
+  > get-help *write*
+  > Write-Host 
 5.What cmdlets can be used to create, modify, list, and delete variables?
-  >
+  > get-help -noun variable
+  > get-command -noun variable
 6.What cmdlet can be used, other than Get-Help, to find and list other cmdlets?
-  >
+  > get-command 
 7.Find the cmdlet that is used to prompt the user for input.
-  >
+  > read-host
     
   * Exercise Running Cmdlets
 
 1.Display a list of running processes.
-   get-process 
+   > get-process 
 
 2. Display a list of all running processes that start with the letter "s".
-   get-process -name s*
+   > get-process -name s*
 
 3. Find the cmdlet and its purpose for the following aliases:
-   gal alias
-   > Get-Alias gal
-   dir-alias
-   > Get-Alias dir
-   echo-alias
-   > Get-Alias echo
-   ? alias
-   > Get-Alias ? or  > Get-Command ?
-   % alias
-   > Get-Alias % or > Get-Command %
-   ft alias
-   > Get-Alias ft or > Get-Command ft
+   gal alias= 
+   > Get-Alias 
+   dir alias=
+   > Get-ChildItem
+   echo alias=
+   > Write-Output
+   ? alias=
+   > Where-Object
+   % alias=
+   > ForEach-Object
+   ft alias=
+   > Format-Table
 
 5. Display a list of Windows Firewall Rules.
    > Get-NetFirewallRule 

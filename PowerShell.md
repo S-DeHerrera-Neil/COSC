@@ -419,3 +419,31 @@ From Ubuntu terminal:
 
 $cols =@{Label="KB"; Expression = { [int] ($_./Length/1KB) }}
 Get-ChildItem _ Format-Table name, $cols
+
+1. Create a variable called "var1" that holds a random number between 25-50.
+
+2. Create a variable called "var2" that holds a random number between 1-10.
+
+3. Create a variable called "sum" that holds the sum of var1 and var2.
+
+4. Create a variable called "sub" that holds the difference of var1 and var2.
+
+5. Create a variable called "prod" that holds the product of var1 and var2.
+
+6. Create a variable called "quo" that holds the quotient of var1 and var2.
+
+7. Replace the variables in text with their values in the following format:
+
+"var1" + "var2" = "sum"
+
+8. Replace the variables in text with their values in the following format:
+
+"var1" - "var2" = "sub"
+
+9. Replace the variables in text with their values in the following format:
+
+"var1" * "var2" = "prod"
+
+10. Replace the variables in text with their values in the following format:
+
+"var1" / "var2" = "quo"

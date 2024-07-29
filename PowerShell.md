@@ -465,5 +465,35 @@ $reverse = $revarray
 [array]::reverse($revarray)
 write-output $revarray
 
-# Hash tables
+# Arrays and Hash Tables
+$employee1 = [ordered]@{}
+$employee2 = [ordered]@{}
 
+$employee1.First = "Mary"
+$employee1["Last"] = "Hopper"
+$employee1.ID = "001"
+$employee1["Job"] = "Software Developer"
+
+employee1
+
+$employee2.First = "John"
+$employee2["Last"] = "Williams"
+$employee2.ID = "002"
+$employee2["Job"] = "Web Developer"
+
+employee2
+
+employee1.Username = "mhoppper001"
+employee2["Username"] = "jwilliams002"
+
+$employee1
+$employee2
+
+employee1.job = "software lead"
+
+$employee3 = [ordered]@{}
+$employee3.First = "Bob"
+$employee3["Last"] = "Marley"
+$employee3.ID = "20"
+employee2["Username"] = "jwilliams002"
+$employee3["Job"] = "accountant"

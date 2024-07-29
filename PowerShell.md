@@ -365,19 +365,19 @@ From Ubuntu terminal:
   * Find Cmdlets
 
 1.Ensure that you have the latest copy of help by updating your help system.
-
+  > update-help
 2.Which cmdlets deal with the viewing/manipulating of processes?
-
+  > get-process or show-process or get-command -noun process get-help *process*
 3.Display a list of services installed on your local computer.
-
+  > Get-Service
 4.What cmdlets are used to write or output objects or text to the screen?
-
+  >
 5.What cmdlets can be used to create, modify, list, and delete variables?
-
+  >
 6.What cmdlet can be used, other than Get-Help, to find and list other cmdlets?
-
+  >
 7.Find the cmdlet that is used to prompt the user for input.
-
+  >
     
   * Exercise Running Cmdlets
 
@@ -388,15 +388,21 @@ From Ubuntu terminal:
    get-process -name s*
 
 3. Find the cmdlet and its purpose for the following aliases:
-   gal- Get-Alias gal
-   dir- Get-Alias dir
-   echo- Get-Alias echo
-   ?- Get-Alias ?
-   %- Get-Alias %
-   ft- Get-Alias ft
+   gal alias
+   > Get-Alias gal
+   dir-alias
+   > Get-Alias dir
+   echo-alias
+   > Get-Alias echo
+   ? alias
+   > Get-Alias ? or  > Get-Command ?
+   % alias
+   > Get-Alias % or > Get-Command %
+   ft alias
+   > Get-Alias ft or > Get-Command ft
 
-4. Display a list of Windows Firewall Rules.
-   Get-NetFirewallRule 
+5. Display a list of Windows Firewall Rules.
+   > Get-NetFirewallRule 
 
-5. Create a new alias called "gh" for the cmdlet "Get-Help"
-   get-process 
+6. Create a new alias called "gh" for the cmdlet "Get-Help"
+   > New-Alias -name "gh" get-help 

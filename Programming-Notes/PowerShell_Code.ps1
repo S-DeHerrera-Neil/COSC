@@ -31,7 +31,15 @@ Write-Output "Pear"
 fruit-host | sort
 fruit-output | sort
 
-#
+#function fruit-Output {
+Write-Output "Apple"
+Write-Output "Orange"
+Write-Output "Bannana"
+Write-Output "Pear"
+}
+
+fruit-host | sort
+fruit-output | sort
 $x = 10
 Get-Variable x
 Get-ChildItem variable:x`
@@ -45,6 +53,4 @@ del variable:x
 #
 $var1 = "Jon"
 write-host "Hello $var1"
-write-host 'Hello $var1
-
-'
+write-host 'Hello $var1'

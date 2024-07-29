@@ -450,3 +450,6 @@ Get-ChildItem _ Format-Table name, $cols
         >"$var1 + $var2 = $quo"
         {0} / {1} = {2}" -f $var1, $var2, $quo
 
+# Reverse Array
+$revarray = -3..15:3
+$revarray = 

@@ -450,6 +450,8 @@ Get-ChildItem _ Format-Table name, $cols
         >"$var1 + $var2 = $quo"
         {0} / {1} = {2}" -f $var1, $var2, $quo
 
+  # You can highlight lines of code and press F8, which will run that specified line of code
+
 # Reverse Array
 $revarray = -3..15:3
 $reverse = $revarray[($revarray.length-1)..0]

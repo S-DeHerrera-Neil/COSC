@@ -404,9 +404,9 @@ From Ubuntu terminal:
     6.What cmdlet can be used, other than Get-Help, to find and list other cmdlets?
       > get-command 
     7.Find the cmdlet that is used to prompt the user for input.
-      > read-host
+      > read-host <Prompt displayed on screen>
         
-      * Exercise Running Cmdlets
+# Exercise Running Cmdlets
     
     1.Display a list of running processes.
        > get-process 
@@ -459,8 +459,8 @@ Get-ChildItem _ Format-Table name, $cols
             {0} + {1} = {2}" -f $var1, $var2, $sum
     9. Replace the variables in text with their values in the following format:
        "var1" - "var2" = "sub"
-            >"$var1 + $var2 = $sum"
-            {0} + {1} = {2}" -f $var1, $var2, $sum
+            >"$var1 + $var2 = $sub"
+            {0} - {1} = {2}" -f $var1, $var2, $sub
     10. Replace the variables in text with their values in the following format:
        "var1" * "var2" = "prod"
             >"$var1 + $var2 = $prod"

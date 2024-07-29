@@ -44,7 +44,7 @@ $x = 10
 Get-Variable x
 Get-ChildItem variable:x`
 
-#
+# 
 $x, $y, $z = "this", "that", "third"
 test-path variable:x
 remove-variable x
@@ -54,3 +54,19 @@ del variable:x
 $var1 = "Jon"
 write-host "Hello $var1"
 write-host 'Hello $var1'
+
+# Hash Tables
+$employee1 = [ordered]@{}
+$employee2 = [ordered]@{}
+
+$employee1.First = "Mary"
+$employee1["Last"] = "Hopper"
+$employee1.ID = "001"
+$employee1["Job"] = "Software Developer"
+
+employee1
+
+$employee2.First = "John"
+$employee2["Last"] = "Williams"
+$employee2.ID = "002"
+$employee2["Job"] = ""

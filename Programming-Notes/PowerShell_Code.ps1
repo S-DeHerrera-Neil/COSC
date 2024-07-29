@@ -76,3 +76,14 @@ employee2
 employee1.Username = "mhoppper001"
 employee2["Username"] = "jwilliams002"
 
+$employee1
+$employee2
+
+employee1.job = "software lead"
+
+$employee3 = [ordered]@{}
+$employee3.First = "Bob"
+$employee3["Last"] = "Marley"
+$employee3.ID = "003"
+employee2["Username"] = "jwilliams002"
+$employee3["Job"] = "accountant"

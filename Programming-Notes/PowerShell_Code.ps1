@@ -87,3 +87,10 @@ $employee3["Last"] = "Marley"
 $employee3.ID = "20"
 employee2["Username"] = "jwilliams002"
 $employee3["Job"] = "accountant"
+
+# Coloring groups and group members
+foreach ($grp in (get-localgroup).name) {
+Write-Host "`n$grp" - ForegroundColor red
+'======================================='
+(Get-LocalGroupMember -Name $grp).name`
+-replace("$env:computername\\",'')

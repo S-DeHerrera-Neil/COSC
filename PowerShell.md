@@ -354,3 +354,9 @@ https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/ps_sg.html
         if ($_.name -match "file.txt") {$_}
       }
       gci | gc | ?{$_ | namedthis}
+
+
+# Date: 07/29
+
+From Ubuntu terminal:
+   $ xfreerdp /u:student /v:10.50.39.134 -dynamic-resolution +glyph-cache +clipboard

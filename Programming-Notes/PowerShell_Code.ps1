@@ -46,7 +46,57 @@ Get-ChildItem variable:x`
 
 # 
 $x, $y, $z = "this", "that", "third"
-test-path variable:x
+test-path variable:xPart 1
+
+Use an array to iterate and open the following
+
+Notepad
+
+MS Edge
+
+MSpaint
+
+Query the processes
+
+Kill the processes from PowerShell
+
+Part 2
+
+Use an array to iterate and open the following
+
+Notepad
+
+MS Edge
+
+MSpaint
+
+Query the processes
+
+Save the ProcessIDs to a text file called procs.txt
+
+Iterate through the ProcessIDs in the text file and kill them
+
+Part 3
+
+Use an array to iterate and open the following
+
+Notepad
+
+MS Edge
+
+MSpaint
+
+Query the processes and display only the following information in order by process ID
+
+Process ID
+
+Process Name
+
+The time the process started
+
+The amount of time the process has spent on the processor
+
+The amount of memory assigned to the process
 remove-variable x
 del variable:x
 
@@ -88,6 +138,7 @@ $employee3.ID = "20"
 employee2["Username"] = "jwilliams002"
 $employee3["Job"] = "accountant"
 
+#System Enumeration
 # Coloring groups and group members
 foreach ($grp in (get-localgroup).name) {
 Write-Host "`n$grp" - ForegroundColor red
@@ -96,7 +147,7 @@ Write-Host "`n$grp" - ForegroundColor red
 -replace("$env:computername\\",'')
 }
 
-#
+# pipping exercise
 get-ciminstance win32_service | Sort-Object -Property state | ft -Poperty ProcessID,Name,State,pathname
 
 

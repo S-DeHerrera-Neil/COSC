@@ -177,6 +177,7 @@ Get-process | where-Object processname -ne "Idle" | Sort-Object starttime | sele
 
 Get-Childitem C:\ | Measure-Object Length
 
+#Mid example
 'what is the awnser to life, the universe, and everything?' > test.txt
 $before = Get-ChildItem
 
@@ -184,3 +185,44 @@ $before = Get-ChildItem
 $after = Get-ChildItem
 
 compare-object $before $after -Property Length, Name
+#------------------------------------------------------------------------------
+$Mytruck  = New-Object object
+Add-Member -MemberType NoteProperty -Name Color -Value White -InputObject $MyTruck
+Add-Member -Me NoteProperty -in $Mytruck -Na Make -Value Toyotas
+
+Add-Member -InputObject $MyTruck NoteProperty Model "sr5technically"
+$Mytruck
+
+#Properties
+$Mytruck | Add-Member NoteProperty Cab doublecab
+$Mytruck.color
+#--------------------------------------------------------------------------------------------------
+#Methods
+#method .drive
+Add-Member -MemberType ScriptMethod -InputObject $MyTruck -Name Drive -Value {"Going on a roadtrip"}
+$Mytruck.Drive
+#method .Accelerate
+Add-Member -InputObject $MyTruck ScriptMethod Accelerate {"Skinny Pedal on Right"}
+$Mytruck.Accelerate
+#method .park
+Add-Member -MemberType ScriptMethod -InputObject $MyTruck -Name Drive -Value {"Going on a roadtrip"}
+#method .park
+$Mytruck | Add-Member ScriptMethod park {"Finding a spot is impossible"}
+$Mytruck.park
+#-------------------------------------------------
+#
+2 -eq 3
+"abc" -eq "abc"
+"abc" -ne "abq"
+# Outputs the value that is greater than 8
+7, 8, 9, -gt 8
+#------------------------------------------------
+"powershell" -like "*shell"
+$fruit = 'mango', 'watermelon', 'tomatoes'
+$fruit -contains 'tomatoes'
+#-----------------------------------------------
+regex
+$text = "Your account username is ACE4495"
+$pattern = '([A-F]{3}(\d{4}))'
+$text -match $pattern
+#-----------------------------------------------

@@ -559,83 +559,9 @@ Get-ChildItem _ Format-Table name, $cols
       employee2["Username"] = "jwilliams002"
       $employee3["Job"] = "accountant"
 
-# The Pipeline
-    1.Display the start time of the earliest and latest running processes
-    
-    2.Identify a cmdlet that returns the current date and time then using this cmdlet and Select-object, display only the current day of the week
-    
-    3.Identify a cmdlet that displays a list of installed hotfixes.
-    
-    4.Extend the expression to sort the list by install date, and display only the install date and hotfix ID.
-    
-    5.Extend the expression further, but this time sort by description, include description, hotfix ID, and install Date.
+# Date 07/30
+  Script Blocks
 
-    # Custom Object
-    Create a custom object that contains information about the host system using the following:
-    Win32_ComputerSystem
-    Win32_BIOS
-    Win32_OperatingSystem
-    Win32_LogicalDisk
-    Use the cmdlet Get-WmiObject to obtain the needed information
-    Store the objects results into variables to be used in the custom object
-    The custom object will only contain properties not methods
-    The final output of this exercise should look like the following:
-    Endstate
-    ComputerName    : DESKTOP-5KJDVS2
-    OperatingSystem : Microsoft Windows 10 Pro
-    Version         : 10.0.17134
-    Manufacturer    : Dell Inc.
-    Disks           : {\\DESKTOP-                          5KJDVS2\root\cimv2:Win32_LogicalDisk.DeviceID="C:",
-                      \\DESKTOP-5KJDVS2\root\cimv2:Win32_LogicalDisk.DeviceID="D:"}
-
-* Code starts here                  
-
-# Comparison and Condition
-    1.Find and extract the model number from the provided lines of text. If there isn’t a model number then display to the user that a model number wasn’t found
-    
-    2.Check both lines for model numbers and report individually the line and model number if found.
-    
-    Use the following variables for your script
-    $line1 = "Do you have model number: MT5437 for john.doe@sharklasers.com?"
-    $line2 = "What model number for john.doe@sharklasers.com?"
-    Exercise Criteria
-    Must use at least ONE comparison operator
-    Must use at least ONE If Condition OR Switch Statement
-    Reminder of options available
-    Switch Statement
-    If/IfElse/Else Condition
-    match, contains, in, -eq, -le, etc…​
-    Comparison combinations
-    # Looping and Iteration
-    **Part 1
-    *Use an array to iterate and open the following
-    -Notepad
-    -MS Edge
-    -MSpaint
-    *Query the processes
-    *Kill the processes from PowerShell
-    
-    **Part 2
-    *Use an array to iterate and open the following
-    -Notepad
-    -MS Edge
-    -MSpaint
-    *Query the processes
-    *Save the ProcessIDs to a text file called procs.txt
-    *Iterate through the ProcessIDs in the text file and kill them
-    
-    **Part 3
-    
-    *Use an array to iterate and open the following
-    -Notepad
-    -MS Edge
-    -MSpaint
-    *Query the processes and display only the following information in order by process ID
-    -Process ID
-    -Process Name
-    -The time the process started
-    -The amount of time the process has spent on the processor
-    -The amount of memory assigned to the process
 
 # Create Functions
 

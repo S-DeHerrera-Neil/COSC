@@ -284,3 +284,51 @@ while($var -ne "MUHRINS"){
             $var = Read-Host "Which branch is the best?"
 }
 #-------------------------------------------------------------------
+#until
+#until example(til false)
+$num = 0
+do {
+    $num
+    $num++
+}until($num -gt 3)
+
+#while example
+$num = 0
+do {
+    $num
+    $num++
+}while($num -le 10)
+
+#while example
+$num = 40
+do {
+    $num
+    $num++
+}while($num -gt 50 -and $num -lt 40)
+#------------------------------------------
+#For loop
+#for loop example
+for($num = 1; $num -le 3; $num++){$num}
+
+#for loop exapmle IPs
+for($i = 0; $i -le 255; $i++){
+            Write-Host 192.168.0.$i
+}
+#--------------------------------------------
+#Flow Control (Break/Continue)
+#break example
+$num = 0
+While($num -lt 4){
+     $num += 1
+     if(){
+  break
+ }
+}
+#continue example
+$num = 0
+While($num -lt 4){
+     $num += 1
+     if(){
+  continue
+ }
+}

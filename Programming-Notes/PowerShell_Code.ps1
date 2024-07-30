@@ -136,9 +136,9 @@ $myblock = {get-service | format-table name, status}
 invoke-command $myblock
 # ^invoking a command
 
-# Gets items and sorts them descending by size
-get-childitem <Insert Path Here> | sort-object -Property length -Descending
-
+# Gets items{from specified path} and sorts them descending by size
+get-childitem  | sort-object -Property length -Descending | ft -GroupBy Extension
+            # ^ <Insert Path Here>
 
 # F8 whole script
 # F5 just the line

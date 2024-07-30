@@ -353,3 +353,28 @@ If, Elseif
 Conditionals
 Write To File
 #>
+#-----------------------------------
+#Comparison & Conditions exercise
+            #I need help with this script
+#---------------------------------------------
+#Looping & Iterantions example
+#step 1
+$array = "notepad", "msedge", "mspaint"
+$array | ForEach-Object {Start-Process $_}
+
+#step 2
+Get-Process
+
+#step 3
+$array = "notepad", "msedge", "mspaint"
+$array | ForEach-Object {Stop-Process -name $_}
+
+#step 4
+$array = "notepad", "msedge", "mspaint"
+#$file = $pwd\procs.txt
+foreach($array in $array){
+Get-Process | Where-Object{$_.name -like $array} | Format-Table -Property id, name, StartTime, TotalProcessSortTime, VirtualMemorySize, WorkingSet64
+
+#step 5
+foreach($array in $array){
+Get-Process | Where-Object{$_.Name -like $array} | Format-Table -Property id, name, starttime, totalprocesssorttime, virtualmemorysize, workingset64 }

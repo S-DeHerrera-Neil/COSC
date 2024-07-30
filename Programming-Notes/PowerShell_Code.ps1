@@ -127,6 +127,8 @@ Write-Host "`n$grp" - ForegroundColor red
 # pipping exercise
 get-ciminstance win32_service | Sort-Object -Property state | ft -Poperty ProcessID,Name,State,pathname
 
+# 07/30
+
 # F8 whole script
 # F5 just the line
 
@@ -155,3 +157,30 @@ Get-Process
 
 # Does something I'm sure
 Get-Process | select-object -ExpandProperty name
+
+#
+get-service | where-object{$_.status -eq 'running'}
+
+#
+get-childitem *.txt 'C:Windows' | where-object{$_.length -gt 1000}
+
+#
+Get-process | where-Object {$_.company -like 'micro*'} | format-table name, description, company
+
+#
+Get-process | where-Object {$_.Name -notlike 'powershell*'} | Sort-Object id -Descending
+
+#
+Get-process | where-Object processname -ne "Idle" | Sort-Object starttime | select-object -last 10 | format-table processname, starttime
+
+1,2,3,1,2,3,1,2,3,1,2,3,1,2,3 | Sort-Object | Get-Unique
+
+Get-Childitem C:\ | Measure-Object Length
+
+'what is the awnser to life, the universe, and everything?' > test.txt
+$before = Get-ChildItem
+
+'42' > test.txt
+$after = Get-ChildItem
+
+compare-object $before $after -Property Length, Name

@@ -129,4 +129,17 @@ get-ciminstance win32_service | Sort-Object -Property state | ft -Poperty Proces
 
 
 
+# Script block into variable
+$myblock = {get-service | format-table name, status}
+& $myblock
+# ^dot-sourcing?
+invoke-command $myblock
+# ^invoking a command
+
+# Gets items and sorts them descending by size
+get-childitem <Insert Path Here> | sort-object -Property length -Descending
+
+
+# F8 whole script
+# F5 just the line
 

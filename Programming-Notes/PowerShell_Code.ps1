@@ -153,4 +153,5 @@ Get-Process | Select-Object -Last 10
 # Like ps -elf in bash
 Get-Process
 
+# Does something I'm sure
 Get-Process | select-object -ExpandProperty name

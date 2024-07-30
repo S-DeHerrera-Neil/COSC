@@ -526,6 +526,7 @@ Get-ChildItem _ Format-Table name, $cols
     Make sure you use both dot notation and square brackets to manipulate your hash tables.
 
 * Code starts here
+
       $employee1 = [ordered]@{}
       $employee2 = [ordered]@{}
       

@@ -226,3 +226,61 @@ $text = "Your account username is ACE4495"
 $pattern = '([A-F]{3}(\d{4}))'
 $text -match $pattern
 #-----------------------------------------------
+#Conditionals
+$x = 11
+if($x -gt 10){"$x is larger than 10"}
+else{"11 is larger than 10"}
+
+#conditional example
+$x = 6
+if($x -eq 5){
+            Write-Host "Bob"
+}
+elseif($x -eq 4){
+            Write-Host "Sue"
+}
+elseif($x -eq 2){
+            Write-Host "Tom"
+}
+elseif($x -eq 6){
+            Write-Host "Mary"
+}
+else{
+            Write-Host "Who Am I?"
+#---------------------------------------------
+#Foreach
+#Foreach Example
+$nums = 1, 2, 3, 4, 5
+$nums | foreach-object{$_ * 2}
+
+$list = 'a', 'b', 'c', 'd'
+$list | Foreach-Object{$_.toupper()}
+
+$list = 'A', 'B', 'C', 'D'
+$list | Foreach-Object{$_.tolower()}
+
+$nums = 1, 2, 3, 4, 5
+$sum = 0
+$nums | ForEach-Object { $sum += $_ }
+$nums
+
+#ForEach example
+ForEach ($item in Get-Childitem C:\ -recurse){$item.name}
+
+#ForEach example
+#appends sportsball to the front of every item in the list
+$teams = 'Yankees', 'FSU', 'Tigers', 'GreenJackets'
+ForEach($teams in $teams){"sportsball $teams"}
+#--------------------------------------------------
+#pipelinning
+#pipeline example
+Get-Process | Select-Object -First 10 | ForEach-Object {$_.Name} | ForEach-Object {$_.toupper}
+#----------------------------------------------------------------------------------------------
+#While
+#while example
+While
+$var = ''
+while($var -ne "MUHRINS"){
+            $var = Read-Host "Which branch is the best?"
+}
+#-------------------------------------------------------------------

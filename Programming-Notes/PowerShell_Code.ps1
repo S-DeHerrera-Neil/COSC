@@ -127,7 +127,8 @@ Write-Host "`n$grp" - ForegroundColor red
 # pipping exercise
 get-ciminstance win32_service | Sort-Object -Property state | ft -Poperty ProcessID,Name,State,pathname
 
-
+# F8 whole script
+# F5 just the line
 
 # Script block into variable
 $myblock = {get-service | format-table name, status}
@@ -138,8 +139,18 @@ invoke-command $myblock
 
 # Gets items{from specified path} and sorts them descending by size
 get-childitem  | sort-object -Property length -Descending | ft -GroupBy Extension
-            # ^ <Insert Path Here>
+            # ^ <Insert Path Here> outputs as:
+# Mode            LastWriteTime            Length (measurement in Bytes)            Name
+------            -------------            -----------------------------            -----
 
-# F8 whole script
-# F5 just the line
+# Get ChildItem, then groups the objects (script block for grouping with length < 1KB = True, length < 1KB = False)
+Get-Childitem | Group-Object {$_.length -lt 1kb}
 
+# Like head in bash
+Get-Process | Select-Object -First 10
+# Like tail in bash 
+Get-Process | Select-Object -Last 10
+# Like ps -elf in bash
+Get-Process
+
+Get-Process | select-object -ExpandProperty name

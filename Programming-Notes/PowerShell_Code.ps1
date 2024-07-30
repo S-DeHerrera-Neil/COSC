@@ -332,3 +332,13 @@ While($num -lt 4){
   continue
  }
 }
+#---------------------------------------------
+#Set/Get/Add-Content
+#Set-Content example
+Set-Content -Path C:\Users\Student\example.txt -value "a string"
+
+#Get-Content example
+Get-Content -Path C:\Users\Student\example.txt
+
+#Add-Content example
+Add-Content -Path C:\Users\Student\example.txt -value "another one!"

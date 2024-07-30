@@ -342,3 +342,14 @@ Get-Content -Path C:\Users\Student\example.txt
 
 #Add-Content example
 Add-Content -Path C:\Users\Student\example.txt -value "another one!"
+#------------------------------------------------------------------------
+<#
+Important Concepts:
+For Each
+Do
+Until
+While
+If, Elseif
+Conditionals
+Write To File
+#>

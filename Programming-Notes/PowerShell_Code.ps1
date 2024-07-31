@@ -275,9 +275,40 @@ ForEach ($item in Get-Childitem C:\ -recurse){$item.name}
 $teams = 'Yankees', 'FSU', 'Tigers', 'GreenJackets'
 ForEach($teams in $teams){"sportsball $teams"}
 #--------------------------------------------------
-#pipelinning
+#pipelining
 #pipeline example
-Get-Process | Select-Object -First 10 | ForEach-Object {$_.Name} | ForEach-Object {$_.toupper}
+Get-Process | Select-Object -First 10 | ForEach-Object {$_.Name} | `
+ForEach-Object {$_.toupper}
+
+#Pipelining Exercise
+# 1
+get-process | sort-object -Property Starttime | select-object -First 1 -Last 1
+get-process | sort-object -Property time | select-object -Last 1
+# 2
+get-date | select-object -expandproperty dayofweek
+# 3
+get-hotfix
+# 4
+get-hotfix | format-list InstallOn,HotFixID
+get-hotfic | sort-object -property installedon | format-table installedon, hotfixid, description
+# 5
+get-hotfix | format-description InstalledOn,HotFixID,Description | sort description
+
+
+
+# Instructor answers
+
+#1
+get-process | where-object Starttime | sort-object -proprty starttime | select-object -first 1 -last 1 -property starttime
+#2
+Get-Date
+#3
+get-hotfix
+#4
+get-hotfix | sort -Property installedon | select installedon, hotfixid
+#5
+
+
 #----------------------------------------------------------------------------------------------
 #While
 #while example

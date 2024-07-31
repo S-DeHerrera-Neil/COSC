@@ -386,8 +386,20 @@ Write To File
 #-----------------------------------
 #Comparison & Conditions exercise
 
+$line1 = "Do you have model number: MT5437 for john.doe@sharklasers.com?"
+$line2 = "What model number for john.doe@sharklasers.com"
+$pattern = '[A-Za-z]{2}\d{2,5}'
 
-
+$line1, $line2 | ForEach-Object {
+            if('[A-Za-z]{2}\d{2,5}'){
+                        Write-Host $matches[0]":$_;
+                        ================================================================================================="
+            }
+            else{
+                        Write-Host "No matches found on:$_;
+                        ================================================================================================="
+                        }
+}
 #---------------------------------------------------------------------------------------------------------------------------
 #Looping & Iterantions example
 #step 1

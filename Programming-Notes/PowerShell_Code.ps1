@@ -381,8 +381,12 @@ Get-Process | Where-Object{$_.Name -like $array} | Format-Table -Property id, na
 
 #gets process where th
 get-process | where-object -Property Name -like *MS*
-#.name gets the value out of the property, -like(case insensative) -c(case insensative)
-#-like (strings) -match(based on expressions)
+<#
+.name gets the value out of the "name" property 
+-like(case insensative) 
+-c(case sensative) -clike(case sensative like)
+#>
+-like (strings) -match(based on expressions)
 get-process | where-object{$_.name -like Powershell}
 
 msedge -like '*MS*'
@@ -404,5 +408,7 @@ Maximum  :
 Minimum  : 
 Property :
 
-#
+<#Per the last example^. We are looking at the value in the property called average with the .average command; 
+as well as using the GetType() Method
+#>
 ((1, 2, 3, 4, 5 |measure-object -average).Average).GetType()

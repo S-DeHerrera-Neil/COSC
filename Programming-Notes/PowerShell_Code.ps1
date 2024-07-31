@@ -49,31 +49,34 @@ Get-ChildItem variable:x`
 $x, $y, $z = "this", "that", "third"
 test-path variable:xPart 1
 
-# Use an array to iterate and open the following
-#Notepad
-#MS Edge
-#MSpaint
-#Query the processes
-#Kill the processes from PowerShell
-#Part 2
-#Use an array to iterate and open the following
-#Notepad
-#MS Edge
-#MSpaint
-#Query the processes
-#Save the ProcessIDs to a text file called procs.txt
-#Iterate through the ProcessIDs in the text file and kill them
-#Part 3
-#Use an array to iterate and open the following
-#Notepad
-#MS Edge
-#MSpaint
-#Query the processes and display only the following information in order by process ID
-#Process ID
-#Process Name
-#The time the process started
-#The amount of time the process has spent on the processor
-#The amount of memory assigned to the process
+<# 
+Use an array to iterate and open the following
+Notepad
+MS Edge
+MSpaint
+Query the processes
+Kill the processes from PowerShell
+Part 2
+Use an array to iterate and open the following
+Notepad
+MS Edge
+MSpaint
+Query the processes
+Save the ProcessIDs to a text file called procs.txt
+Iterate through the ProcessIDs in the text file and kill them
+Part 3
+Use an array to iterate and open the following
+Notepad
+MS Edge
+MSpaint
+Query the processes and display only the following information in order by process ID
+Process ID
+Process Name
+The time the process started
+The amount of time the process has spent on the processor
+The amount of memory assigned to the process
+#>
+#IDK where this belongs
 remove-variable x
 del variable:x
 

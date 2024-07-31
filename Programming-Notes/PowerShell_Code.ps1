@@ -307,8 +307,6 @@ get-hotfix
 #4
 get-hotfix | sort -Property installedon | select installedon, hotfixid
 #5
-
-
 #----------------------------------------------------------------------------------------------
 #While
 #while example
@@ -392,7 +390,7 @@ Write To File
 
 
 
-#---------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------
 #Looping & Iterantions example
 #step 1
 $array = "notepad", "msedge", "mspaint"
@@ -417,7 +415,7 @@ foreach($array in $array){
             Get-Process | Where-Object{$_.Name -like $array} | `
             Format-Table -Property id, name, starttime, totalprocesssorttime, virtualmemorysize, workingset64 }
 
-#
+#----------------------------------------------------------------------------------------------------------------------------
 #gets process where th
 get-process | where-object -Property Name -like *MS*
 <#

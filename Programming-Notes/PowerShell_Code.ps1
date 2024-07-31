@@ -394,3 +394,15 @@ msedge -clike '*MS*'
 Where-Object: for filtering
 Select-Object: selecting objects
 Measure-Object: gives you the count, use the . to see the value
+#---------------------------------------------------------------
+1, 2, 3, 4, 5 |measure-object -average
+    #outputs as:
+Count    : 5
+Average  : 3
+Sum      : 
+Maximum  :  
+Minimum  : 
+Property :
+
+#
+((1, 2, 3, 4, 5 |measure-object -average).Average).GetType()

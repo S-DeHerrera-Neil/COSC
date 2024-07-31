@@ -486,3 +486,44 @@ function Get-longestName{
 Insert the following into the CLI below.
 PS> Get-LongestName
 #>
+
+function Get-NetInfo {
+        #Regex pattern
+    $pattern = '.*?((\d{1,3}\.){3}\d{1,3})'
+    $netinfo = ipconfig
+    
+    ### Create the matches for IP, Subnet, and gateway
+    $ip = $netinfo -match "IPV4$pattern" | `
+    
+    #Matching with IPV4 and Pattern; Checking the match for the specific pattern
+    ForEach-Object{if($_ -match $pattern){$matches[1]}}
+    
+    #Matching with Subnet and Pattern; Checking the match for the specific pattern
+    $subnet = $netinfo -match "Subnet$pattern" |`
+    ForEach-Object{if($_ -match $pattern){$matches[1]}}
+    
+    #Matching with Gateway and Pattern; Checking the match for the specific pattern
+    $gateway = $netinfo -match "Gateway$pattern" | `
+    ForEach-Object{if($_ -match $pattern){$matches[1]}}
+    
+    #Format string; Every element in the array gets matched at their respective index position(on a new line).
+    "IP: {0}`nSubnet: {1}`nGateway: {2}" -f $ip, $subnet, $gateway
+}
+
+Function Get-UrlInfo{
+$file = Get-Content .\dns.txt
+$regex = '(www\.[a-zA-Z0-9]\+\.(com|org|net))'
+#$regex = (w{3}\.)(?<=[a-z]\.)(c-m){3}
+    foreach($line in $file){
+        if($line -match $regex){
+        $matches[1]
+        }
+    }
+}
+
+
+
+<#
+Insert the following into the CLI below.
+PS> Add-Content -path .\dns.txt -value battle.com
+#>

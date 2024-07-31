@@ -140,7 +140,7 @@ $myblock = {get-service | format-table name, status}
 & $myblock
 # ^dot-sourcing?
 invoke-command $myblock
-# ^invoking a command
+# ^invoking a command$Age = Read-Host "Please enter your age"
 
 # Gets items{from specified path} and sorts them descending by size
 get-childitem  | sort-object -Property length -Descending | ft -GroupBy Extension
@@ -207,7 +207,7 @@ $Mytruck.Drive
 #method .Accelerate
 Add-Member -InputObject $MyTruck ScriptMethod Accelerate {"Skinny Pedal on Right"}
 $Mytruck.Accelerate
-#method .park
+#method .park$Age = Read-Host "Please enter your age"
 Add-Member -MemberType ScriptMethod -InputObject $MyTruck -Name Drive -Value {"Going on a roadtrip"}
 #method .park
 $Mytruck | Add-Member ScriptMethod park {"Finding a spot is impossible"}
@@ -415,3 +415,38 @@ Property :
 as well as using the GetType() Method
 #>
 ((1, 2, 3, 4, 5 |measure-object -average).Average).GetType()
+#----------------------------------------------------------------
+#` back tick + enter is like newline
+    #Get-Process |`
+    #Select-Object Name
+#F5 runs script, F8 runs line
+
+#"If you see elements provided on the pipeline"
+
+#Ask for help!!!!!
+#function Get-Sum{
+    #Begin {$sum = 0}
+    #Process {$sum += $_; $_}
+    #End {$sum = 5}
+#}
+
+function Print-PSitem{
+    Begin/End optional
+Begin {}
+Process {foreach($i in $PSitem){$i}}
+End {}
+}
+
+function Print-Input {
+    Begin {}
+    Process {foreach($i in $input){$i}}
+    End {}
+}
+
+#$matches
+
+function get-sum($num1, $num2) {
+  $num1 + $num2
+}
+get-sum 5 5
+#--------------------------------------------------------

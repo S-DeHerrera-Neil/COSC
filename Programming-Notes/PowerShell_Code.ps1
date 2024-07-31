@@ -390,30 +390,6 @@ Write To File
 #-----------------------------------
 #Comparison & Conditions exercise
 
-#step1
-$array = "notepad", "msedge", "mspaint"
-$
-#----------
-#step2
-Get-Process
-#----------
-#step3
-$array = "notepad", "msedge", "mspaint"
-$
-#------------
-#step4
-$array = "notepad", "msedge", "mspaint"
-$
-foreach
-Get-Process
-Format-Table
-#-----------
-#step5
-foreach
-            Get-Process
-            Format-Table
-
-
 
 
 #---------------------------------------------
@@ -427,18 +403,21 @@ Get-Process
 
 #step 3
 $array = "notepad", "msedge", "mspaint"
-$array | ForEach-Object {Stop-Process -name $_}
+$file = "$pwd\procs.txt"
+foreach($proc in $array){
+            Get-Process | Where-Object{$_.name -like $proc} | `
+            Format-Table -Property id, name, StartTime, TotalProcessSortTime, VirtualMemorySize, WorkingSet64 }
 
 #step 4
 $array = "notepad", "msedge", "mspaint"
-#$file = $pwd\procs.txt
-foreach($array in $array){
-Get-Process | Where-Object{$_.name -like $array} | Format-Table -Property id, name, StartTime, TotalProcessSortTime, VirtualMemorySize, WorkingSet64
+$array | ForEach-Object {Stop-Process -name $_}
 
 #step 5
 foreach($array in $array){
-Get-Process | Where-Object{$_.Name -like $array} | Format-Table -Property id, name, starttime, totalprocesssorttime, virtualmemorysize, workingset64 }
+            Get-Process | Where-Object{$_.Name -like $array} | `
+            Format-Table -Property id, name, starttime, totalprocesssorttime, virtualmemorysize, workingset64 }
 
+#
 #gets process where th
 get-process | where-object -Property Name -like *MS*
 <#

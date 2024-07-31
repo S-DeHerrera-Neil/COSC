@@ -558,3 +558,12 @@ $regex = '(www\.[a-zA-Z0-9]\+\.(com|org|net))'
 Insert the following into the CLI below.
 PS> Add-Content -path .\dns.txt -value battle.com
 #>
+
+#split example
+'8.8.8.8'.split(".")
+
+#split example 2
+'1.8.2.44'.split(".")[0]
+
+#join example
+1,2,3,4,5 -join ""

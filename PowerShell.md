@@ -564,6 +564,16 @@ Get-ChildItem _ Format-Table name, $cols
 
 # Date 07/31
 
+# Automatic variables
+
+$matches
+$input
+$PSitem
+$True
+$False
+
+# Jagged Arrays...
+
 # Create Functions
 
 # Functions Parameters

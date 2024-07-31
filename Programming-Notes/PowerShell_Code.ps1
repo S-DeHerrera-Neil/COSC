@@ -378,3 +378,6 @@ Get-Process | Where-Object{$_.name -like $array} | Format-Table -Property id, na
 #step 5
 foreach($array in $array){
 Get-Process | Where-Object{$_.Name -like $array} | Format-Table -Property id, name, starttime, totalprocesssorttime, virtualmemorysize, workingset64 }
+
+
+get-process | where-object -Property Name -like *MS*

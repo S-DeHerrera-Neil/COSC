@@ -379,5 +379,18 @@ Get-Process | Where-Object{$_.name -like $array} | Format-Table -Property id, na
 foreach($array in $array){
 Get-Process | Where-Object{$_.Name -like $array} | Format-Table -Property id, name, starttime, totalprocesssorttime, virtualmemorysize, workingset64 }
 
-
+#gets process where th
 get-process | where-object -Property Name -like *MS*
+#.name gets the value out of the property, -like(case insensative) -c(case insensative)
+#-like (strings) -match(based on expressions)
+get-process | where-object{$_.name -like Powershell}
+
+msedge -like '*MS*'
+msedge -clike '*MS*'
+'msedge' -match '*MS*'
+'msedge' -match '^m.*$'
+        #'msedge' -match (^m.*$|^$)
+
+Where-Object: for filtering
+Select-Object: selecting objects
+Measure-Object: gives you the count, use the . to see the value

@@ -389,7 +389,33 @@ Write To File
 #>
 #-----------------------------------
 #Comparison & Conditions exercise
-            #I need help with this script
+
+#step1
+$array = "notepad", "msedge", "mspaint"
+$
+#----------
+#step2
+Get-Process
+#----------
+#step3
+$array = "notepad", "msedge", "mspaint"
+$
+#------------
+#step4
+$array = "notepad", "msedge", "mspaint"
+$
+foreach
+Get-Process
+Format-Table
+#-----------
+#step5
+foreach
+            Get-Process
+            Format-Table
+
+
+
+
 #---------------------------------------------
 #Looping & Iterantions example
 #step 1

@@ -552,7 +552,7 @@ $regex = '(www\.[a-zA-Z0-9\-\._]\+\.(com|org|net))'
     }
 }
 
-
+Add-Content .\dns.txt -value 'www.blah_blah_wah.com'
 
 <#
 Insert the following into the CLI below.

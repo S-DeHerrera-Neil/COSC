@@ -279,7 +279,7 @@ ForEach($teams in $teams){"sportsball $teams"}
 #pipeline example
 Get-Process | Select-Object -First 10 | ForEach-Object {$_.Name} | `
 ForEach-Object {$_.toupper}
-
+#-------------------------------------------------------------------------------------------------------------------------
 #Pipelining Exercise
 # 1
 get-process | sort-object -Property Starttime | select-object -First 1 -Last 1
@@ -294,8 +294,6 @@ get-hotfic | sort-object -property installedon | format-table installedon, hotfi
 # 5
 get-hotfix | format-description InstalledOn,HotFixID,Description | sort description
 
-
-
 # Instructor answers
 
 #1
@@ -307,7 +305,7 @@ get-hotfix
 #4
 get-hotfix | sort -Property installedon | select installedon, hotfixid
 #5
-#----------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------
 #While
 #while example
 While

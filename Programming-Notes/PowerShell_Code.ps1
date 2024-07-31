@@ -543,7 +543,7 @@ function Get-NetInfo {
 
 Function Get-UrlInfo{
 $file = Get-Content .\dns.txt
-$regex = '(www\.[a-zA-Z0-9]\+\.(com|org|net))'
+$regex = '(www\.[a-zA-Z0-9\-\._]\+\.(com|org|net))'
 #$regex = (w{3}\.)(?<=[a-z]\.)(c-m){3}
     foreach($line in $file){
         if($line -match $regex){

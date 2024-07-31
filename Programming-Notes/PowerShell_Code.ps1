@@ -450,3 +450,39 @@ function get-sum($num1, $num2) {
 }
 get-sum 5 5
 #--------------------------------------------------------
+
+function Get-longestName{
+    #Begin: for declaring variables
+    Begin{
+            #keep track of how many states are entered
+        $count = 0
+            #make an array to store the states
+        $states = @() 
+    }
+    Process{
+              #Trap the user to type 3 states
+        while($count -lt 3){
+                #variable $usr Storing user input    
+            $usr = Read-Host "Enter a U.S. State"
+                #Appendsthe user input to the list
+            $states += $usr
+                #Adds 1 to our count of states
+            $count += 1
+        }
+
+    }
+    End{
+            #Stores the sorted array to $list
+       $list = $states | sort -Property Length -Descending 
+       foreach($state in $list){
+            #prints the state and number of characters
+        "$state`:" + $state.length
+        }
+
+    }
+}
+
+<#
+Insert the following into the CLI below.
+PS> Get-LongestName
+#>

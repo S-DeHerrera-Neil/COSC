@@ -99,20 +99,34 @@ function q8($adjective) {
  return "PowerShell is " + "$adjective"
 
 }
-function q9($addr) {
-	<# Return `$true when the given argument is a valid IPv4 address,
+function q9($addr){
+	
+<# Return `$true when the given argument is a valid IPv4 address,
 	   otherwise return `$false. For the purpose of this function, regard
 	   addresses where all octets are in the range 0-255 inclusive to
 	   be valid.
-	#>
-  #$argument = '.*?((\d{1,3}\.){3}\d{1,3})'
-    
-            #if($argument -eq $argument){
-                        #Write-Host $true[0]":$_;
-                        #================================================================================================="
-            #}
-            #else{
-                        #Write-Host false:$_;"
-                        #================================================================================================="
-                        #}
+#>
+
+
+    foreach($octet in $addr.split(".")){
+        if([int]$octet -lt 0 -or [int]$octet -gt 255){
+            return $false
+        }
+    }
+    return $true    
+}
+<#
+
+#>
+
+function q10 ($filepath,$lasthash) {
+    <# Return `$true if the contents of the file given in the
+       `$filepath argument have changed since `$lasthash was
+       computed. `$lasthash is the previously computed SHA256
+       hash (as a string) of the contents of the file. #>
+
+#specify hash
+
+    Return (Get-FileHash -Path $filepath -Algorithm SHA256).hash -ne $lasthash
+
 }

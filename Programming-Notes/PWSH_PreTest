@@ -1,0 +1,87 @@
+<# 1 #>
+function q1($var1,$var2,$var3,$var4) {
+    <# Return the product of the arguments #>
+    
+    return $var1*$var2*$var3*$var4
+    
+}
+function q2($arr,$rows,$cols,$key) {
+    <# Search the 2 dimensional array for the first occurance of key at column index 0
+       and return the value at column index 9 of the same row.
+       Return -1 if the key is not found.
+    #>
+
+    foreach($row in $arr) {
+    if($row[0] -eq $key){
+        return $row[9]
+    }
+    }
+        return -1
+
+}
+function q3 {
+    <# In a loop, prompt the user to enter positive integers one at time.
+       Stop when the user enters a -1. Return the maximum positive
+       value that was entered."
+	#>
+        $vals = @()
+        do {
+        $val = Read-Host
+        if($val -ne -1){
+        $vals += $val
+        }
+        } until($val -eq -1)
+        return ($vals | Measure-Object -Maximum).Maximum
+}   
+   <# Begin{
+        $count = 0
+        $list = @()
+    }
+    Process{
+    while($count -ne -1){
+    $count = Read-Host "Enter a number"
+    $count += $list
+    }
+    End{
+    foreach($count in $list){
+    sort -Property Length
+    return -maxlength $count 
+    }
+   }
+}
+}
+#>
+function q4($filename,$whichline) {
+    <# Return the line of text from the file given by the `$filename
+	   argument that corresponds to the line number given by `$whichline.
+	   The first line in the file corresponds to line number 0."
+	#>
+    $content = Get-Content $filename
+    return $content[$whichline]
+    #return (Get-Content $filename)[$whichline]
+}
+function q5($path) {
+    <# Return the child items from the given path sorted
+       ascending by their Name
+	#>
+ return Get-ChildItem -Path $path | Sort-Object -Property Name
+
+ #return Get-ChildItem -Path $path | Sort-Object -Property Name
+}
+function q6 {
+    <# Return the sum of all elements provided on the pipeline
+	#>
+ 
+    $sum = 0
+    foreach($a in $input){
+        $sum += $a
+    }
+    return $sum
+
+
+ <#
+   begin{$sum = 0}
+   process{$sum += $_}
+   end{Return $sum}
+    
+}

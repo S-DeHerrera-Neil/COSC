@@ -13,3 +13,5 @@ Student Guide:
 https://os.cybbh.io/public/os/latest/index.html
 
 Need a 70% 
+
+admin number: (Stack Number 1) 10.50.40.106

@@ -1,5 +1,7 @@
 Operating Systems discussed: Linux & Windows
 
+Test is open Internet
+
 This command will login to our linops as student:
 # 10.50.27.61(linux/lin-ops) 10.50.39.134(Windows/)
 # command: terminator (opens a terminal that allows you to split screens)

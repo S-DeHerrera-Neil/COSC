@@ -14,4 +14,6 @@ https://os.cybbh.io/public/os/latest/index.html
 
 Need a 70% 
 
-admin number: (Stack Number 1) 10.50.40.106
+admin_station: (Stack Number 1) 10.50.40.106
+
+To access any of the workstations on the network map, you need to use the admin_station.

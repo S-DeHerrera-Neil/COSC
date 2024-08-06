@@ -47,3 +47,27 @@ To access any of the workstations on the network map, you need to use the admin_
     [19:33:52:471] [2949:2950] [ERROR][com.freerdp.core] - freerdp_tcp_connect:freerdp_set_last_error_ex ERRCONNECT_CONNECT_FAILED [0x00020006]
     [19:33:52:471] [2949:2950] [ERROR][com.freerdp.core] - failed to connect to 10.50.40.106
 #------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Failure to connect to the CTFs via Chromium/Firefox
+
+# Firefox
+    The connection has timed out
+    
+    The server at 10.50.22.197 is taking too long to respond.
+    
+        The site could be temporarily unavailable or too busy. Try again in a few moments.
+        If you are unable to load any pages, check your computer’s network connection.
+        If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the web.
+    
+                                                                                                   [Try Again]
+ # Chromium                                                                                               
+
+This site can’t be reached10.50.22.197 took too long to respond.
+Try:
+
+Checking the connection
+Checking the proxy and the firewall
+ERR_CONNECTION_TIMED_OUT
+
+(Details)                              (Reload)
+#--------------------------------------------------------------------------------------------------------------------------------------------

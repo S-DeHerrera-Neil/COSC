@@ -71,3 +71,34 @@ To access any of the workstations on the network map, you need to use the admin_
     
     (Details)                              (Reload)
 #--------------------------------------------------------------------------------------------------------------------------------------------
+
+# Windows_PowerShell_Profiles
+
+    Question 1-2: Level of Precendence Powershell Profiles
+    1.All Users, All Hosts            $PsHome\Profile.ps1
+    2.All Users, Currnet Host         $PsHome\Microsoft.PowerShell_profile.ps1
+    3.Current User, All Hosts         $Home\[My]Documents\Profile.ps1
+    4.Current User, Current Host      $Home\[My ]Documents\WindowsPowerShell\Profile.ps1
+
+    Question 3: Which PowerShell variable stores the current user's home directory?
+      $home
+
+    Question 4:
+    
+    
+    Question 5:
+    
+    
+    Question 6:
+    
+    
+    Question 7:
+    
+    
+    Question 8:
+
+# Day 2 (Date 08/06/2024)
+
+Registry Hive Keys: HKLM, HKU, HKCU
+  Registry SubKeys: HKCC(HKLM), HKCR(HKLM)
+  

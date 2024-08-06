@@ -51,9 +51,9 @@
     9.Get-PSDrive
     10.regedit
     Level 5:
-    1.
-    2.
-    3.
+    1.HKLM
+    2.HKU
+    3.HKCU
     4.
     5.
     6.

@@ -62,12 +62,12 @@ To access any of the workstations on the network map, you need to use the admin_
                                                                                                    [Try Again]
  # Chromium                                                                                               
 
-This site can’t be reached10.50.22.197 took too long to respond.
-Try:
-
-Checking the connection
-Checking the proxy and the firewall
-ERR_CONNECTION_TIMED_OUT
-
-(Details)                              (Reload)
+    This site can’t be reached10.50.22.197 took too long to respond.
+    Try:
+    
+    Checking the connection
+    Checking the proxy and the firewall
+    ERR_CONNECTION_TIMED_OUT
+    
+    (Details)                              (Reload)
 #--------------------------------------------------------------------------------------------------------------------------------------------

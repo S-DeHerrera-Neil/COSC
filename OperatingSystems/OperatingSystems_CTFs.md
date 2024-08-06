@@ -45,11 +45,11 @@
     3.HKLM\SYSTEM\CurrentControlSet\Services 
     4.0x0
     5.HKLM\SYSTEM\CurrentControlSet\Services
-    6.
-    7.
+    6.0x2
+    7.0x3
     8.
-    9.
-    10.
+    9.Get-PSDrive
+    10.regedit
     Level 5:
     1.
     2.

@@ -47,7 +47,7 @@
     5.HKLM\SYSTEM\CurrentControlSet\Services
     6.0x2
     7.0x3
-    8.
+    8.HKLM, HKU
     9.Get-PSDrive
     10.regedit
     Level 5:

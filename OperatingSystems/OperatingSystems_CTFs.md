@@ -58,7 +58,7 @@
     5.Get-ChilItem
     6.
     Level 10:
-    7.
+    7.HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run *All CAPS*
     8.
     9.
     10.

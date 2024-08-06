@@ -102,3 +102,10 @@ To access any of the workstations on the network map, you need to use the admin_
 Registry Hive Keys: HKLM, HKU, HKCU
 Less Important Registry Hive Keys: HKCC, HKCR
   
+    *Command in PWSh to disable Microsoft Defender:
+    Set-MpPreference -DisableRealtimeMonitoring $TRUE
+
+    *Command to run the End User License Agreement:
+    Type *autoruns -accepteula*
+
+    *Adding an alternate Data Stream (ADS) to a file will not affect the Hash of a file. 

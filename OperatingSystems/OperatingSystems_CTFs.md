@@ -2,27 +2,37 @@
 # Windows_PowerShell_Profiles
 
     Question 1-2: Level of Precendence Powershell Profiles
+    
     1.All Users, All Hosts            $PsHome\Profile.ps1
     2.All Users, Currnet Host         $PsHome\Microsoft.PowerShell_profile.ps1
     3.Current User, All Hosts         $Home\[My]Documents\Profile.ps1
     4.Current User, Current Host      $Home\[My ]Documents\WindowsPowerShell\Profile.ps1
 
     Question 3: Which PowerShell variable stores the current user's home directory?
-      $home
+    
+    $home
 
-    Question 4:
+    Question 4: Which PowerShell variable stores the installation directory for PowerShell?
     
     
-    Question 5:
+    Question 5: Which PowerShell variable stores the path to the "Current User, Current Host" profile?
+
+    
+    Question 6: What command would you run to view the help for PowerShell Profiles?
+
+
+    
+    Question 7: What command would tell you if there was a profile loaded for All Users All Hosts?
+    Flag is the full command syntax
+
+
     
     
-    Question 6:
-    
-    
-    Question 7:
-    
-    
-    Question 8:
+    Question 8: Challenge only allows ONE attempt
+    Malware is running on the primary PowerShell profile on the File-Server. Based on PowerShell profile order of precedence (what is read first), find the correct flag.
+    The flag is the string after the #, without the preceding space.
+
+
 
 #--------------------------------------------------------------------------------------------
 

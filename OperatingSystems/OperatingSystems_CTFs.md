@@ -23,3 +23,28 @@
     
     
     Question 8:
+
+#--------------------------------------------------------------------------------------------
+
+# Linux_Basics
+
+#---------------------------------------------------------------------------------------------
+
+# Windows_Registry
+
+#---------------------------------------------------------------------------------------------
+
+# Start_Windows_Alternate_Data_Stream
+
+#---------------------------------------------------------------------------------------------
+
+# Start _Windows_Boot_Process
+# Start_Linux_Boot_Process
+# Start_Windows_Process
+# Start_Windows_UAC
+# Start_Windows_Services
+# Start_Linux_Process
+# Start_Windows_Auditing_and_Logging
+# Start_Linux_Auditing_and_Logging
+# Start_Windows_Analysis
+# Start_Windows_active_Directory

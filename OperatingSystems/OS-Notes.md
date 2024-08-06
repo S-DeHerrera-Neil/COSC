@@ -100,5 +100,5 @@ To access any of the workstations on the network map, you need to use the admin_
 # Day 2 (Date 08/06/2024)
 
 Registry Hive Keys: HKLM, HKU, HKCU
-  Registry SubKeys: HKCC(HKLM), HKCR(HKLM)
+Less Important Registry Hive Keys: HKCC(HKLM), HKCR(HKLM)
   

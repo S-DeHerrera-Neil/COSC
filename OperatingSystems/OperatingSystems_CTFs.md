@@ -43,8 +43,8 @@
     1.HKLM\HARWARE
     2.HKLM\SOFTWARE
     3.HKLM\SYSTEM\CurrentControlSet\Services 
-    4.
-    5.
+    4.0x0
+    5.HKLM\SYSTEM\CurrentControlSet\Services
     6.
     7.
     8.

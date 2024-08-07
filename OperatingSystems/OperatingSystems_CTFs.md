@@ -127,7 +127,8 @@
     3./bin :(Directory containing executable programs(binaries) needed in single user mode)
     4./usr/bin
     5./sbin :(binaries only root can access)
-    6.
+    6.> man --path cat
+        Answer: /usr/share/man/man1/cat.1.gz
     Level 10:
     Linux basics(10)
     5.

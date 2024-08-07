@@ -10,16 +10,16 @@
 
     Question 3: Which PowerShell variable stores the current user's home directory?
     
-    $home
+    > $home
     Question 4: Which PowerShell variable stores the installation directory for PowerShell?
     
-    $PSHome
+    > $PSHome
     Question 5: Which PowerShell variable stores the path to the "Current User, Current Host" profile?
 
-    $profile
+    > $profile
     Question 6: What command would you run to view the help for PowerShell Profiles?
 
-
+    > get-help about_profiles
     Question 7: What command would tell you if there was a profile loaded for All Users All Hosts?
     Flag is the full command syntax
 

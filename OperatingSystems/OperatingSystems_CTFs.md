@@ -37,9 +37,9 @@
     0.
     Level 5:
     Linux Basics(5)
-    1.
-    2.
-    3.
+    1.ls
+    2.ls -hl
+    3.| -pipe
     4.
     Linux Basics LFS Hierarchy(5)
     _.

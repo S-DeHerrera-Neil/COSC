@@ -54,17 +54,24 @@ Windows_PowerShell_Logic(10)
     Answer: 5254 words
 4. > (Get-ChildItem | Measure-Object).count
     Answer: 925 files
-5.
-6.
-7.
+5. > Compare-Object -referanceobject (Get-Object old.txt) -differenceobject (get-content new.txt)
+    Answer: Popeye
+6. > Get-Content words.txt | Sort-Object -descending | Selct-Object -index 21
+    Answer: ZzZp
+7. > (Get-Content words.txt | Sort-Object | Get-Unique).count
+    Answer: 456976
 Windows_PowerShell_Basics(10)
-9.
+9. > (Get-Process | Get-Member -membertype method).count
 Windows_PowerShell_Logic(10)
-8.
+8. > (Get-ChildItem -recurse | Where-Object {$_.PSIsContainer}).count
+    Answer: 411
 Windows_PowerShell_REGEX(10)
-2.
-3.
-4.
+2.> (Get-Content words.txt |  select-string -allmatches "gaab").count
+    Answer: 1
+3.> (Get-Content words.txt | Where-Object {$_ -match '(a|z)'}).count
+    Answer: 160352
+4.(Get-Content words.txt | Where-Object {$_ -match '(az)'}).count
+    Answer: 2754
 Windows_PowerShell_Logic(15)
 9.
 Windows_PowerShell_REGEX(15)

@@ -13,7 +13,7 @@
     > $home
     Question 4: Which PowerShell variable stores the installation directory for PowerShell?
     
-    > -$PSHome-
+    > $PSHome
     Question 5: Which PowerShell variable stores the path to the "Current User, Current Host" profile?
 
     > $profile

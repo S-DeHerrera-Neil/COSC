@@ -125,7 +125,7 @@
     _./ :(absolute path of the root(main) directory)
     2./etc :(absolute path to the default location for configuration files)
     3./bin :(Directory containing executable programs(binaries) needed in single user mode)
-    4.
+    4./usr/bin
     5./sbin :(binaries only root can access)
     6.
     Level 10:

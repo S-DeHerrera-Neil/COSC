@@ -70,12 +70,13 @@ Windows_PowerShell_REGEX(10)
     Answer: 1
 3.> (Get-Content words.txt | Where-Object {$_ -match '(a|z)'}).count
     Answer: 160352
-4.(Get-Content words.txt | Where-Object {$_ -match '(az)'}).count
+4.> (Get-Content words.txt | Where-Object {$_ -match '(az)'}).count
     Answer: 2754
 Windows_PowerShell_Logic(15)
 9.
 Windows_PowerShell_REGEX(15)
-5.
+5.> (Get-Content words.txt | Where-Object {$_ -match '((aa)[a-g])'}).count
+    Answer: 357
 #-----------------------------------------------------------------------------------------------
 
 # Windows_PowerShell_Profiles

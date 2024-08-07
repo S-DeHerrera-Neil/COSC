@@ -85,3 +85,11 @@ Less Important Registry Hive Keys: HKCC, HKCR
     Type *autoruns -accepteula*
 
     *Adding an alternate Data Stream (ADS) to a file will not affect the Hash of a file. 
+
+# Day 3 (Date 08/07/2024)
+
+Sticky bit can be set, only the owning user/group can modify the file.
+
+    grep -R '<string>' :(greping recursively)
+    awk :(allows you to reformat or select selections of text based on delimiters)
+    sed :(allows you to edit strings(s) in text)

@@ -132,6 +132,10 @@
     Level 10:
     Linux basics(10)
     5.
+    > man -k digest
+    > echo "OneWayBestWay" | sha512sum
+        Answer: a81bc463469ee1717fc9e388e3799c653f63a3de5e9496b5707b56488b046cbf75665235d316c
+        5c0053a597dc7d40c917a2d9006fe35e9cb47766c05ac71989b
     6.
     Linux Basics LFS Hierarchy(10)
     7.

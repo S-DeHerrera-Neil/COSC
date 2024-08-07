@@ -40,12 +40,13 @@
     1.ls
     2.ls -hl
     3.| -pipe
-    4.
+    4.man -k
     Linux Basics LFS Hierarchy(5)
-    _.
-    2.
-    3.
-    5.
+    _./ :(absolute path of the root(main) directory)
+    2./etc :(absolute path to the default location for configuration files)
+    3./bin :(Directory containing executable programs(binaries) needed in single user mode)
+    4.
+    5./sbin :(binaries only root can access)
     6.
     Level 10:
     Linux basics(10)

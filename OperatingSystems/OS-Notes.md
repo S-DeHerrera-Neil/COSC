@@ -93,3 +93,4 @@ Sticky bit can be set, only the owning user/group can modify the file.
     grep -R '<string>' :(greping recursively)
     awk :(allows you to reformat or select selections of text based on delimiters)
     sed :(allows you to edit strings(s) in text)
+    

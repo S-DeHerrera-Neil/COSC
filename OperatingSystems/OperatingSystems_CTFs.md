@@ -35,7 +35,31 @@
 #--------------------------------------------------------------------------------------------
 
 # Linux_Basics
-
+    Level 0:
+    0.
+    Level 5:
+    Linux Basics(5)
+    1.2.3.4.
+    Linux Basics LFS Hierarchy(5)
+    _.2.3.5.6.
+    Level 10:
+    Linux basics(10)
+    5.6.
+    Linux Basics LFS Hierarchy(10)
+    7.
+    Linux Basics users and Groups(10)
+    1.2.3.4.
+    Linux Basics Permisions(10)
+    1.2.3.4.5.6.7.8.9.10.
+    Linux Basics Regular Expressions(10)
+    1.2.3.4
+    Linux Basics Reformat(10)
+    1.2.
+    Linux Basics Bash Logic(10)
+    1.2.
+    Level 15:
+    Linux Basics Regular Expressions(15)
+    1.2.
 #---------------------------------------------------------------------------------------------
 
 # Windows_Registry

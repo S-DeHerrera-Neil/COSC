@@ -23,14 +23,12 @@
     Question 7: What command would tell you if there was a profile loaded for All Users All Hosts?
     Flag is the full command syntax
 
-
-    
-    
+    > Test-Path -Path $PROFILE.AllUsersAllHosts
     Question 8: Challenge only allows ONE attempt
-    Malware is running on the primary PowerShell profile on the File-Server. Based on PowerShell profile order of precedence (what is read first), find the correct flag.
+    Malware is running on the primary PowerShell profile on the File-Server. Based on PowerShell          profile order of precedence (what is read first), find the correct flag.
     The flag is the string after the #, without the preceding space.
 
-
+    > 
 
 #--------------------------------------------------------------------------------------------
 

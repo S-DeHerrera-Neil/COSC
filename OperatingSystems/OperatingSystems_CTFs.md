@@ -1,3 +1,75 @@
+# Windows_PowerShell
+Level 1:
+Primer_CLI(1)
+1.conhost.exe
+2.WSL
+3.Windows Terminal
+4.cmd.exe
+5.string
+6.(.NET)
+7.PowerShell version
+8.pwsh.exe
+9.PowerShell.exe
+Level 5:
+Windows_PowerShell_Basics(5)
+1.verb-noun
+2.get-command
+3.get-verb
+4.objects
+5.properties,methods
+6.get-member
+Windows_PowerShell_Alias(5)
+1.get-alias
+2.get-childitem {gci}
+Windows_PowerShell_Help(5)
+1.get-help
+2.-full
+3.update-help
+4.-online
+Windows_PowerShell_Interaction(5)
+1.start chrome
+2.(get-process chrome).kill()
+3.stop-process -name chrome
+Windows_PowerShell_CIMClasses(5)
+1.get-WMIobjectWin32_processor
+Windows_PowerShell_Logic(5)
+1.get-content
+2.measure-object
+Windows_PowerShell_REGEX(5)
+1.select-string
+Windows_PowerShell_Basics(5)
+7.(C:\Users\)
+Windows_PowerShell_Basics(10)
+8.> (get-process | get-member -membertype property).count
+    value is: 52
+Windows_PowerShell_Alias(10)
+3. 3
+Windows_PowerShell_Help(10)
+5. > Get-Process Powershell
+Windows_PowerShell_CIMClasses(10)
+2. > Get-WMIObject WIN32_service | ?{$_.Name -like "legoland"} | select Description
+answer: i_love_legos
+Windows_PowerShell_Logic(10)
+3. > Get-Content words2.txt | Measure-Object -Word
+    Answer: 5254 words
+4. > (Get-ChildItem | Measure-Object).count
+    Answer: 925 files
+5.
+6.
+7.
+Windows_PowerShell_Basics(10)
+9.
+Windows_PowerShell_Logic(10)
+8.
+Windows_PowerShell_REGEX(10)
+2.
+3.
+4.
+Windows_PowerShell_Logic(15)
+9.
+Windows_PowerShell_REGEX(15)
+5.
+#-----------------------------------------------------------------------------------------------
 
 # Windows_PowerShell_Profiles
 
@@ -28,8 +100,7 @@
     Malware is running on the primary PowerShell profile on the File-Server. Based on PowerShell          profile order of precedence (what is read first), find the correct flag.
     The flag is the string after the #, without the preceding space.
 
-    > 
-
+    > I wasted my attemt.
 #--------------------------------------------------------------------------------------------
 
 # Linux_Basics

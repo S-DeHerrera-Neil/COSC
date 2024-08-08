@@ -295,9 +295,9 @@
     Level 5:
     Windows_Boot_INIT(5)
     1.System
-    2.4
-    3.
-    4.
+    2. 4
+    3.smss
+    4. 0
     5.
     6.
     7.

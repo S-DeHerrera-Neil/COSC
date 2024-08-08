@@ -228,7 +228,7 @@
     8.0x80
     9.1024 bytes
     10.Explicit
-    11.
+    11.Inherited
     12.read
     13.List Folder Contents (folders only)
     14.modify

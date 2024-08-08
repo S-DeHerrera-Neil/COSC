@@ -238,7 +238,7 @@
     Level 5:
     1.directory
     2.hidden
-    3.
+    3.Get-ChildItem -Force
     4.Get-FileHash -Algorithm sha512
     5.Get-Acl
     6.

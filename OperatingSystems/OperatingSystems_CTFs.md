@@ -266,10 +266,10 @@
     7.driver
     8.UEFI and BIOS
     9.ntoskrnl.exe
-    10.
-    11.
-    12.
-    13.
+    10.bootmgr and winload.exe
+    11.bootmgr
+    12.BCD
+    13.TPM
     14.
     15.
     16.

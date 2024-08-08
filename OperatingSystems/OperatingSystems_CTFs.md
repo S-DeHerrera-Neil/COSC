@@ -221,6 +221,9 @@
      > reg query hkcu\software\microsoft\windows\currentversion\runonce
      Answer: C:\worm.exe
     15.
+        *As student
+    > reg query HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USBSTOR
+        Answer: SanDisk9834
     16.
     17.
 #---------------------------------------------------------------------------------------------

@@ -270,9 +270,9 @@
     11.bootmgr
     12.BCD
     13.TPM
-    14.
-    15.
-    16.
+    14.Winload.exe
+    15.Ntoskrnl.exe
+    16.0x2
     17.
     18.
     19.

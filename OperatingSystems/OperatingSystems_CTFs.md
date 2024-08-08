@@ -258,7 +258,7 @@
     Level 1:
     Primer_Boot_Process(1)
     1.sector
-    2.
+    2.partition
     3.
     4.
     5.

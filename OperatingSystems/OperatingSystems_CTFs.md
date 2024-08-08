@@ -227,7 +227,7 @@
     7.$SECURITY_DESCRIPTOR
     8.0x80
     9.1024 bytes
-    10.
+    10.Explicit
     11.
     12.read
     13.List Folder Contents (folders only)
@@ -259,10 +259,10 @@
     Primer_Boot_Process(1)
     1.sector
     2.partition
-    3.
+    3.volume
     4.diskpart
-    5.
-    6.
+    5. ?(multiple choice)
+    6.HAL(multiple choice)
     7.driver
     8.UEFI and BIOS
     9.ntoskrnl.exe

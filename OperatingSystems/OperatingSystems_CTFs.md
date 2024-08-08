@@ -260,11 +260,11 @@
     1.sector
     2.partition
     3.
-    4.
+    4.diskpart
     5.
     6.
-    7.
-    8.
+    7.driver
+    8.UEFI and BIOS
     9.
     10.
     11.

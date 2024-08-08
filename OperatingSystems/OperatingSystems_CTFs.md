@@ -226,11 +226,11 @@
     6.$LOGGED_UTILITY_STREAM
     7.$SECURITY_DESCRIPTOR
     8.0x80
-    9.1024
+    9.1024 bytes
     10.
     11.
-    12.
-    13.
+    12.read
+    13.List Folder Contents (folders only)
     14.
     15.
     16.
@@ -243,7 +243,7 @@
     5.Get-Acl
     6.hosts
     Level 10:
-    7.
+    7.BUILTIN\Users
     8.
     9.
     10.

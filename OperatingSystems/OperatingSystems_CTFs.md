@@ -265,7 +265,7 @@
     6.
     7.driver
     8.UEFI and BIOS
-    9.
+    9.ntoskrnl.exe
     10.
     11.
     12.

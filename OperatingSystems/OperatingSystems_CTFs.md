@@ -207,8 +207,12 @@
     9.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     10.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     Level 15:
-    11.malware.exe
-    12.C:\botnet.exe
+    11.
+     > reg query hklm\software\microsoft\windows\currentversion\run
+     Answer: malware.exe
+    12.
+     > reg query hkcu\software\microsoft\windows\currentversion\run
+     Answer: C:\botnet.exe
     13.
     14.
     15.

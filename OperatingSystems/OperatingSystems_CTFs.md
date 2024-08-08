@@ -301,8 +301,8 @@
     5.lsass
     6.services
     7.winlogon
-    8.
-    9.
+    8.userinit
+    9.winload.exe
     10.
     11.
     12.

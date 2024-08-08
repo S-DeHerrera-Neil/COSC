@@ -18,8 +18,10 @@ Need a 70%
 
 admin_station: (Stack Number 1) 10.50.40.106
   
-    *andy.dwyer
-    *BurtMacklinFBI
+    *User:
+    andy.dwyer
+    *Pass:
+    BurtMacklinFBI
 
 To access any of the workstations on the network map, you need to use the admin_station.
 

@@ -254,7 +254,7 @@
     14.
 #---------------------------------------------------------------------------------------------
 
-# Start _Windows_Boot_Process
+# Windows_Boot_Process
     Level 1:
     Primer_Boot_Process(1)
     1.sector

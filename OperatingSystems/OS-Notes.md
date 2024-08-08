@@ -97,12 +97,16 @@ Sticky bit can be set, only the owning user/group can modify the file.
     sed :(allows you to edit strings(s) in text)
     
 # Day 4 ()
+
+      * winload.efi (UEFI)
+      * winload.exe (BIOS)
+
       * How to tell if your machine is running BIOS or UEFI
     findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
     Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot     
     environment"
 
-    * bcedit command
+    * bcedit command to see if machine is running BIOS or UEFI
     bcdedit | findstr /i winload
 
     * checking the GUI

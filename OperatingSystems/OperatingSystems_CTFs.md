@@ -223,8 +223,8 @@
     3.MFT-(Master File Table)
     4.attributes
     5.$DATA
-    6.
-    7.
+    6.$LOGGED_UTILITY_STREAM
+    7.$SECURITY_DESCRIPTOR
     8.
     9.
     10.

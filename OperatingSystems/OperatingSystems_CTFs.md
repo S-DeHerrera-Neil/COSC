@@ -221,8 +221,8 @@
     1.file system
     2.Clusters
     3.MFT-(Master File Table)
-    4...
-    5.
+    4.attributes
+    5.$DATA
     6.
     7.
     8.

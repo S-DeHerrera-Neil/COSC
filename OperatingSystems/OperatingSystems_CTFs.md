@@ -234,7 +234,7 @@
     14.modify
     15.full control
     16.$STANDARD_INFORMATION
-    17.
+    17.fsutil fsinfo drives
     Level 5:
     1.directory
     2.hidden

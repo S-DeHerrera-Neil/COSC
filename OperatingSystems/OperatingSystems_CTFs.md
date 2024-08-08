@@ -239,7 +239,7 @@
     1.directory
     2.hidden
     3.
-    4.
+    4.Get-FileHash -Algorithm sha512
     5.Get-Acl
     6.
     Level 10:

@@ -202,13 +202,13 @@
     5.Get-ChilItem
     6.Get-Item
     Level 10:
-    7.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN *All CAPS*
+   * 7.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN *All CAPS*
     8.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN
     9.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     10.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     Level 15:
-    11.
-    12.
+    11.malware.exe
+    12.C:\botnet.exe
     13.
     14.
     15.
@@ -277,7 +277,7 @@
     18.session 0
     19.secure boot
     20.
-    21.
+    21.HKLM\Software\Microsoft\Windows\CurrentVersion\RunServices
     22.local logon
     23.userinit.exe
     24.Winlogon.exe
@@ -285,7 +285,7 @@
     26.Last Known Good Configuration
     27.Kerberos
     28.Key Distribution Center
-    29.
+    29.logon
     Primer_Kernel(1)
     1.hybrid
     2.monolithic

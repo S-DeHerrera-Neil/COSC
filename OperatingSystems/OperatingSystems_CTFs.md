@@ -275,11 +275,11 @@
     16.0x2
     17.smss.exe
     18.session 0
-    19.
+    19.secure boot
     20.
     21.
-    22.
-    23.
+    22.local logon
+    23.userinit.exe
     24.
     25.
     26.

@@ -231,8 +231,8 @@
     11.
     12.read
     13.List Folder Contents (folders only)
-    14.
-    15.
+    14.modify
+    15.full control
     16.
     17
     Level 5:

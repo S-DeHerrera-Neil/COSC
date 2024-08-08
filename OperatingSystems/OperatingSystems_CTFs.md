@@ -305,7 +305,7 @@
     9.winload.exe
     10.BIOS
     11.hiberfil.sys
-    12.
+    12.winresume.exe
     Level 10:
     windows_Boot_Remediate(10)
     1.

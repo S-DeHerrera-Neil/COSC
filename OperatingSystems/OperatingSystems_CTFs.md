@@ -202,7 +202,7 @@
     5.Get-ChilItem
     6.Get-Item
     Level 10:
-   * 7.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN *All CAPS*
+    7.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN *All CAPS*
     8.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN
     9.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     10.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
@@ -217,6 +217,9 @@
      Answer: C:\botnet.exe
     13.
     14.
+    *As student
+     > reg query hkcu\software\microsoft\windows\currentversion\runonce
+     Answer: C:\worm.exe
     15.
     16.
     17.

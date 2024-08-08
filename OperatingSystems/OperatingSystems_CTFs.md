@@ -233,8 +233,8 @@
     13.List Folder Contents (folders only)
     14.modify
     15.full control
-    16.
-    17
+    16.$STANDARD_INFORMATION
+    17.
     Level 5:
     1.directory
     2.hidden

@@ -303,8 +303,8 @@
     7.winlogon
     8.userinit
     9.winload.exe
-    10.
-    11.
+    10.BIOS
+    11.hiberfil.sys
     12.
     Level 10:
     windows_Boot_Remediate(10)

@@ -236,11 +236,11 @@
     16.
     17
     Level 5:
-    1.
-    2.
+    1.directory
+    2.hidden
     3.
     4.
-    5.
+    5.Get-Acl
     6.
     Level 10:
     7.

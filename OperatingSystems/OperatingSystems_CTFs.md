@@ -257,7 +257,7 @@
 # Start _Windows_Boot_Process
     Level 1:
     Primer_Boot_Process(1)
-    1.
+    1.sector
     2.
     3.
     4.
@@ -294,7 +294,7 @@
     5.
     Level 5:
     Windows_Boot_INIT(5)
-    1.
+    1.System
     2.
     3.
     4.

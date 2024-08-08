@@ -273,8 +273,8 @@
     14.Winload.exe
     15.Ntoskrnl.exe
     16.0x2
-    17.
-    18.
+    17.smss.exe
+    18.session 0
     19.
     20.
     21.

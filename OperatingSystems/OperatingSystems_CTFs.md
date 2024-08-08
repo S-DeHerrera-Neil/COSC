@@ -241,7 +241,7 @@
     3.Get-ChildItem -Force
     4.Get-FileHash -Algorithm sha512
     5.Get-Acl
-    6.
+    6.hosts
     Level 10:
     7.
     8.

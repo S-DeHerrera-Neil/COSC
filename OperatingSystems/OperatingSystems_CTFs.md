@@ -208,9 +208,11 @@
     10.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     Level 15:
     11.
+            *As andy.dwyer
      > reg query hklm\software\microsoft\windows\currentversion\run
      Answer: malware.exe
     12.
+        *As student
      > reg query hkcu\software\microsoft\windows\currentversion\run
      Answer: C:\botnet.exe
     13.

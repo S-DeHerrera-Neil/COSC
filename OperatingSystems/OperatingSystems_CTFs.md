@@ -225,8 +225,8 @@
     5.$DATA
     6.$LOGGED_UTILITY_STREAM
     7.$SECURITY_DESCRIPTOR
-    8.
-    9.
+    8.0x80
+    9.1024
     10.
     11.
     12.

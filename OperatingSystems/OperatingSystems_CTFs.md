@@ -287,8 +287,8 @@
     28.Key Distribution Center
     29.
     Primer_Kernel(1)
-    1.
-    2.
+    1.hybrid
+    2.monolithic
     3.
     4.
     5.

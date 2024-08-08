@@ -96,3 +96,16 @@ Sticky bit can be set, only the owning user/group can modify the file.
     awk :(allows you to reformat or select selections of text based on delimiters)
     sed :(allows you to edit strings(s) in text)
     
+# Day 4 ()
+      * How to tell if your machine is running BIOS or UEFI
+    findstr /C:"Detected boot environment" "C:\Windows\Panther\Setupact.log"
+    Get-Content C:\Windows\Panther\Setupact.log | Select-String "Detected boot     
+    environment"
+
+    * bcedit command
+    bcdedit | findstr /i winload
+
+    * checking the GUI
+    Msinfo32.exe
+
+    

@@ -280,9 +280,9 @@
     21.
     22.local logon
     23.userinit.exe
-    24.
-    25.
-    26.
+    24.Winlogon.exe
+    25.Lsass.exe
+    26.Last Known Good Configuration
     27.
     28.
     29.

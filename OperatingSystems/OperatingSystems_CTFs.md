@@ -289,8 +289,8 @@
     Primer_Kernel(1)
     1.hybrid
     2.monolithic
-    3.
-    4.
+    3. 6.1
+    4. 10
     5.
     Level 5:
     Windows_Boot_INIT(5)

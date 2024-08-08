@@ -283,8 +283,8 @@
     24.Winlogon.exe
     25.Lsass.exe
     26.Last Known Good Configuration
-    27.
-    28.
+    27.Kerberos
+    28.Key Distribution Center
     29.
     Primer_Kernel(1)
     1.

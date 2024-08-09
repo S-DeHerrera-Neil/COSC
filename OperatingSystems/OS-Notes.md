@@ -96,7 +96,7 @@ Sticky bit can be set, only the owning user/group can modify the file.
     awk :(allows you to reformat or select selections of text based on delimiters)
     sed :(allows you to edit strings(s) in text)
     
-# Day 4 ()
+# Day 4 (Date 08/08/2024)
 
       * winload.efi (UEFI)
       * winload.exe (BIOS)
@@ -112,4 +112,28 @@ Sticky bit can be set, only the owning user/group can modify the file.
     * checking the GUI
     Msinfo32.exe
 
-    
+  # Day 4 (Date 08/09/2024)
+  
+                BIOS vs UEFI
+              MBR^        ^GPT
+              grub^      ^grub.efi
+                Linux Kernel
+                    Init
+            Sysv Init^  ^Systemd Init
+                  
+# First Stage Boot loaders
+    MBR 512 bytes
+      55 aa(magic number, if it is not 55 aa something is wrong)
+    GPT Partition Table is not in the first 512 bytes
+
+VDA (Virtual Drive)
+SDA (Sata Device)
+
+0-9a-f(hex)
+
+Examining the contents of the MBR with xxd
+sudo xxd -l 512 -g 1 /dev/vda
+
+Making a copy of the MBR with dd — Run this on Ops Station
+dd if=/dev/vda of=MBRcopy bs=512 count=1 
+

@@ -119,7 +119,7 @@ Sticky bit can be set, only the owning user/group can modify the file.
               grub^      ^grub.efi
                 Linux Kernel
                     Init
-            Sysv Init^  ^Systemd Init
+            SysV Init^  ^Systemd Init
                   
 # First Stage Boot loaders
     MBR 512 bytes

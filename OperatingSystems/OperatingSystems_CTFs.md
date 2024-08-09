@@ -329,7 +329,7 @@
 # Start_Linux_Boot_Process
     Level 5:
     linux Boot Hex(5)
-    1.
+    1.0xFF
     Linux Boot Bits and Bytes(5)
     1.
     2.

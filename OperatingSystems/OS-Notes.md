@@ -114,9 +114,9 @@ Sticky bit can be set, only the owning user/group can modify the file.
 
   # Day 4 (Date 08/09/2024)
   
-                BIOS vs UEFI
+              BIOS  vs    UEFI
               MBR^        ^GPT
-              grub^      ^grub.efi
+            grub^          ^grub.efi
                 Linux Kernel
                     Init
             SysV Init^  ^Systemd Init

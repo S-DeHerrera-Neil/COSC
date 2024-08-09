@@ -345,6 +345,8 @@
     Level 10:
     Linux Boot Bits and Bytes(10)
     4.
+    $sudo cat /dev/vda | xxd -l 32 -c 0x10 -g 1
+        Answer: 63,90,8e,d0,31,e4,8e,d8
     Linux Boot MBR(10)
     2.
     3.

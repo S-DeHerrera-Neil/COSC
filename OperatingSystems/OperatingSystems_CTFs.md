@@ -331,17 +331,17 @@
     linux Boot Hex(5)
     1.0xFF
     Linux Boot Bits and Bytes(5)
-    1.
-    2.
-    3.
+    1. 4,8
+    2. 4
+    3. 
     Linux Boot MBR(5)
     1.
     Linux Boot SysV(5)
     1.
     linux Boot Hex(5)
-    2.
+    2. 0x0-0xF
     3.
-    4.
+    4.0x35D
     Level 10:
     Linux Boot Bits and Bytes(10)
     4.

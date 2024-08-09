@@ -146,4 +146,25 @@ Linux Kernel (Mololithic)
   Every System goes to the Kernel
   ^Moduals: work directly with the kernel (extensions to base functionality of the Linux Operating System)
 
+# Systemv (loads sequentially)
+     -> is a symbolic link.
+       $ls -l
+    
+      If a symbolic link is going anywhere but init.d/.. NOT good
+
+  # Systemd (loads simultaneously)
+    
+    Wants & Requires
+    Wants(will run w/out, may be degraded)
+    Requires(Cannot run w/out)
+
+    sbin/init/
+    etc/init/
+
+    etc/profile
+      -interactive shell
+      -noninteractive shell
   
+    .bash_profile & .bashrc (like PowerShell Profile)
+    
+      

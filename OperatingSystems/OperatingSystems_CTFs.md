@@ -327,42 +327,42 @@
     5.
 #---------------------------------------------------------------------------------------------
 # Start_Linux_Boot_Process
-Level 5:
-linux Boot Hex(5)
-1.
-Linux Boot Bits and Bytes(5)
-1.
-2.
-3.
-Linux Boot MBR(5)
-1.
-Linux Boot SysV(5)
-1.
-linux Boot Hex(5)
-2.
-3.
-4.
-Level 10:
-Linux Boot Bits and Bytes(10)
-4.
-Linux Boot MBR(10)
-2.
-3.
-4.
-5.
-Linux Boot SysV(10)
-2.
-3.
-4.
-Linux Boot SysD(5)
-1.
-2.
-3.
-4.
-5.
-6.
-Linux Boot GRUB
-_.
+    Level 5:
+    linux Boot Hex(5)
+    1.
+    Linux Boot Bits and Bytes(5)
+    1.
+    2.
+    3.
+    Linux Boot MBR(5)
+    1.
+    Linux Boot SysV(5)
+    1.
+    linux Boot Hex(5)
+    2.
+    3.
+    4.
+    Level 10:
+    Linux Boot Bits and Bytes(10)
+    4.
+    Linux Boot MBR(10)
+    2.
+    3.
+    4.
+    5.
+    Linux Boot SysV(10)
+    2.
+    3.
+    4.
+    Linux Boot SysD(5)
+    1.
+    2.
+    3.
+    4.
+    5.
+    6.
+    Linux Boot GRUB
+    _.
 
 #---------------------------------------------------------------------------------------------
 # Start_Windows_Process

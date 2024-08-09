@@ -129,8 +129,10 @@ Sticky bit can be set, only the owning user/group can modify the file.
 VDA (Virtual Drive)
 SDA (Sata Device)
 
-0-9a-f(hex)
+0-9a-f(hex) 0x0-0xF
 
+Locate the hard drive and partition in Linux
+lsblk
 Examining the contents of the MBR with xxd
 sudo xxd -l 512 -g 1 /dev/vda
 

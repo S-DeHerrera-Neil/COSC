@@ -158,8 +158,9 @@ Linux Kernel (Mololithic)
     Wants(will run w/out, may be degraded)
     Requires(Cannot run w/out)
 
-    sbin/init/
-    etc/init/
+    /sbin/init/
+    /etc/init
+    /etc/inittab
 
     etc/profile
       -interactive shell

@@ -124,13 +124,14 @@ Sticky bit can be set, only the owning user/group can modify the file.
 # First Stage Boot loaders
     MBR 512 bytes
       55 aa(magic number, if it is not 55 aa something is wrong)
-    GPT Partition Table is not in the first 512 bytes
+    GPT Partition Table is not in the first 512 bytes *redundancy
 
 VDA (Virtual Drive)
 SDA (Sata Device)
 
 0-9a-f(hex) 0x0-0xF
 
+MBR 6 partitions. Has dependencies
 Locate the hard drive and partition in Linux
 lsblk
 Examining the contents of the MBR with xxd
@@ -139,3 +140,10 @@ sudo xxd -l 512 -g 1 /dev/vda
 Making a copy of the MBR with dd — Run this on Ops Station
 dd if=/dev/vda of=MBRcopy bs=512 count=1 
 
+GPT 128 partitions, up to 9 Zettabytes. Doesn't have dependencies.
+
+Linux Kernel (Mololithic)
+  Every System goes to the Kernel
+  ^Moduals: work directly with the kernel (extensions to base functionality of the Linux Operating System)
+
+  

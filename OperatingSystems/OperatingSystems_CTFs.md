@@ -41,7 +41,7 @@
     7.(C:\Users\)
     Windows_PowerShell_Basics(10)
     8.> (get-process | get-member -membertype property).count
-        value is: 52
+        display value: 52
     Windows_PowerShell_Alias(10)
     3. 3
     Windows_PowerShell_Help(10)

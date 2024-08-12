@@ -396,9 +396,9 @@ Windows)_Process_Basics(5)
 10.ListDLLs
 Level 10:
 Windows_Hidden_Processes(10)
-1.
-2.
-3.
+1. libmingwex-0.dll
+2. McAfeeFireTray.exe
+3. 
 4.
 5.
 6.
@@ -434,11 +434,11 @@ Windows_UAC_Basics(5)
 2. sc queryex type=service state=all
 3. Get-Service
 4. HKLM\System\CurrentControlSet\Services
-5.
+5. parameters
 Level 10:
 Windows_UAC_Basics(10)
-6.
 7.
+8.
 #---------------------------------------------------------------------------------------------
 # Linux_Process
 

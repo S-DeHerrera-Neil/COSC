@@ -367,8 +367,51 @@
     _.
 
 #---------------------------------------------------------------------------------------------
-# Start_Windows_Process
-
+# Windows_Process_Validity
+Level 1:
+Primer_Process(1)
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+Level 5:
+Windows)_Process_Basics(5)
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+Level 10:
+Windows_Hidden_Processes(10)
+1.
+2.
+3.
+4.
+5.
+6.
+WIN_Process_Sistuational_Awareness
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
 #---------------------------------------------------------------------------------------------
 # Start_Windows_UAC
 Level 5:
@@ -384,7 +427,7 @@ Windows_UAC_Basics(10)
 7.
 8.
 #---------------------------------------------------------------------------------------------
-# Start_Windows_Services
+# Windows_Services
 Level 5:
 Windows_UAC_Basics(5)
 1.
@@ -397,17 +440,17 @@ Windows_UAC_Basics(10)
 6.
 7.
 #---------------------------------------------------------------------------------------------
-# Start_Linux_Process
+# Linux_Process
 
 #---------------------------------------------------------------------------------------------
-# Start_Windows_Auditing_and_Logging
+# Windows_Auditing_and_Logging
 
 #---------------------------------------------------------------------------------------------
-# Start_Linux_Auditing_and_Logging
+# Linux_Auditing_and_Logging
 
-hello
+
 #---------------------------------------------------------------------------------------------
-# Start_Windows_Analysis
-this is a random input(It Merged)
+# Windows_Analysis
+
 #---------------------------------------------------------------------------------------------
-# Start_Windows_active_Directory
+# Windows_active_Directory

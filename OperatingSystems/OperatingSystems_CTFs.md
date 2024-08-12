@@ -388,12 +388,12 @@ Windows)_Process_Basics(5)
 2. Process Explorer
 3. TCPView 
 4. 
-5.
-6.
+5. Handle
+6. 
 7.
-8.
-9.
-10.
+8.LoadOrder
+9.MpsSvc
+10.ListDLLs
 Level 10:
 Windows_Hidden_Processes(10)
 1.

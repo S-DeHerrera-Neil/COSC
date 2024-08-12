@@ -168,4 +168,5 @@ Linux Kernel (Mololithic)
   
     .bash_profile & .bashrc (like PowerShell Profile)
     
-      
+Day 5 (Date )
+- Scheduled Tasks: Good way to establish Persistance.

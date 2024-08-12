@@ -430,7 +430,7 @@ Windows_UAC_Basics(10)
 # Windows_Services
 Level 5:
 Windows_UAC_Basics(5)
-1.
+1. sc query
 2.
 3.
 4.

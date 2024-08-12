@@ -398,10 +398,10 @@ Level 10:
 Windows_Hidden_Processes(10)
 1. libmingwex-0.dll
 2. McAfeeFireTray.exe
-3. 
-4.
-5.
-6.
+3. McAfeeFireTray.exe
+4. 
+5. GwlkK3sa
+6. 
 WIN_Process_Sistuational_Awareness
 1.
 2.

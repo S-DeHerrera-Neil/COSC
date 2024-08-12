@@ -185,7 +185,7 @@
 # Windows_Registry
     Level 1:
     1.HKLM\HARWARE
-    2.HKLM\SOFTWARE
+    2.HKLM\SOFTWARErequireAdministrator
     3.HKLM\SYSTEM\CurrentControlSet\Services 
     4.0x0
     5.HKLM\SYSTEM\CurrentControlSet\Services
@@ -385,7 +385,17 @@ Windows_UAC_Basics(10)
 8.
 #---------------------------------------------------------------------------------------------
 # Start_Windows_Services
-
+Level 5:
+Windows_UAC_Basics(5)
+1.
+2.
+3.
+4.
+5.
+Level 10:
+Windows_UAC_Basics(10)
+6.
+7.
 #---------------------------------------------------------------------------------------------
 # Start_Linux_Process
 

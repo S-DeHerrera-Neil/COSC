@@ -168,5 +168,36 @@ Linux Kernel (Mololithic)
   
     .bash_profile & .bashrc (like PowerShell Profile)
     
-Day 5 (Date )
+Day 5 (Date 08/12/2024)
+
+# Windows Prrocess Validity
 - Scheduled Tasks: Good way to establish Persistance.
+- Autoruns: can be very helpful
+- Base64: ends in an "="
+- Repeating/Sequntial ports are suspicious
+- What directory are processes running out of?
+- Multiple processes with same name
+- System proccesses with high PID
+-  Windows machine w/ GUI port:3389 RDP
+
+# User Account Control
+- Multiple Color-coded consent prompts
+- File manifest
+- 3 Levels of execution levels in a File's Manifest
+  - asInvoker
+  - requireAdministrator
+  - highestAvailable
+- Autoelevate setting
+- Sysinternals (suite)
+- Procmon (Process Monitor)
+- Autoruns
+- Procexp (process Explorer)
+- TCPView: Allows you to view TCP/UDP connections
+- PsExec (): Analyze privileges
+- PsLoggedon: Analyze Windows logon using PsLoggedon
+- LogonSessions: Shows who is logged on and what thime they're logged on, loggonsessions shows how the user logged on.
+- PsList: Analyze Windows processes using PsList on local or remote systems
+- PsInfo: Analyze Windows system information using Psinfo
+- Strings: Analyze Windows files using Strings
+- Handle: Analyze Windows hanfles process using Handle
+- 

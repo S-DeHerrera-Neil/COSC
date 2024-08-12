@@ -370,18 +370,18 @@
 # Windows_Process_Validity
 Level 1:
 Primer_Process(1)
-1.
+1. C:\Windows\SysWOW64
 2. smss.exe
 3. lsass.exe
-4. *Multiple choice. User-mode service
-5. *Multiple choice. Server-mode service
+4. *Multiple choice: User-mode service
+5. *Multiple choice: Server-mode service
 6. MS Internet Information Server (IIS)
-7. 
-8.
-9.
-10.
-11.
-12.
+7. *Multiple choice: user pc
+8. Client
+9. System Call
+10. Baselining
+11. thread
+12. 32 process priority levels 
 Level 5:
 Windows)_Process_Basics(5)
 1.

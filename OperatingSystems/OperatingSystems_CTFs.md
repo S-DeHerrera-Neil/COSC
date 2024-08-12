@@ -431,7 +431,7 @@ Windows_UAC_Basics(10)
 Level 5:
 Windows_UAC_Basics(5)
 1. sc query
-2.
+2. sc queryex type=service state=all
 3. Get-Service
 4. HKLM\System\CurrentControlSet\Services
 5.

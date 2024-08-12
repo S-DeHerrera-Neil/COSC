@@ -18,7 +18,7 @@
     4.objects
     5.properties,methods
     6.get-member
-    Windows_PowerShell_Alias(5)
+    Windows_PowerShell_Alias(5)C:\Windows\SysWOW64
     1.get-alias
     2.get-childitem {gci}
     Windows_PowerShell_Help(5)
@@ -384,10 +384,10 @@ Primer_Process(1)
 12. 32 process priority levels 
 Level 5:
 Windows)_Process_Basics(5)
-1.
-2.
-3.
-4.
+1. Autoruns
+2. Process Explorer
+3. TCPView 
+4. 
 5.
 6.
 7.

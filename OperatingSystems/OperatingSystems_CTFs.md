@@ -166,7 +166,18 @@
     $ find / -type d -name "Bibliotheca" 2>/dev/null
         Answer: /media/Bibliotheca
     2.
+    $ cd /media
+    $ ls -l
+    $ cat /etc/passwd | grep "sh"
+    $ cat /etc/passwd | grep "bash"
+       Then count 
+       answer: 15 
     3.
+    $ cat /etc/group | grep "chapter"
+    $ cat /etc/group | grep "chapter"
+        mephiston
+    Just look in every dir till you see a file that homie has write permissions on
+        answer: Codex_Astartes
     4.
     5.
     6.

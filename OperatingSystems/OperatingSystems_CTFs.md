@@ -417,9 +417,9 @@ WIN_Process_Sistuational_Awareness
 Level 5:
 Windows_UAC_Basics(5)
 1.
-2.
+2. asInvoker
 3. requireAdministrator
-4.
+4. HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
 Level 10:
 Windows_UAC_Basics(10)
 5.

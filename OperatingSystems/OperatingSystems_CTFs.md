@@ -406,7 +406,7 @@ WIN_Process_Sistuational_Awareness
 1.
 2.
 3.
-4.
+4. ntdll.dll
 5.
 6.
 7.

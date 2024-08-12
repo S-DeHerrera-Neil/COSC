@@ -150,9 +150,16 @@
     Linux Basics LFS Hierarchy(10)
     7.
     Linux Basics users and Groups(10)
-    1.
+    1. 
+    $ cat /etc/passwd | cut -d: -f5-6 | sort
+        answer: Traitor 
     2.
+    $ cat /etc/group | grep "lodge"
+    answer: aximand,erebus,ezekyle,garviel,sejanus,tarik
     3.
+    $  cat /etc/passwd | cut -d: -f7 | sort | uniq
+    $ cat /etc/passwd | grep "/bin/sh"
+        answer: nobody
     4.
     Linux Basics Permisions(10)
     1.

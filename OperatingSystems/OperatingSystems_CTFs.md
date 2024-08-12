@@ -401,7 +401,7 @@ Windows_Hidden_Processes(10)
 3. McAfeeFireTray.exe
 4. 
 5. GwlkK3sa
-6. 
+6. StrongBad
 WIN_Process_Sistuational_Awareness
 1.
 2.

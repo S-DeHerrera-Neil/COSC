@@ -163,6 +163,8 @@
     4.
     Linux Basics Permisions(10)
     1.
+    $ find / -type d -name "Bibliotheca" 2>/dev/null
+        Answer: /media/Bibliotheca
     2.
     3.
     4.

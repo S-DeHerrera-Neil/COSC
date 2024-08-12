@@ -371,12 +371,12 @@
 Level 1:
 Primer_Process(1)
 1.
-2.
-3.
-4.
-5.
-6.
-7.
+2. smss.exe
+3. lsass.exe
+4. *Multiple choice. User-mode service
+5. *Multiple choice. Server-mode service
+6. MS Internet Information Server (IIS)
+7. 
 8.
 9.
 10.
@@ -432,8 +432,8 @@ Level 5:
 Windows_UAC_Basics(5)
 1. sc query
 2.
-3.
-4.
+3. Get-Service
+4. HKLM\System\CurrentControlSet\Services
 5.
 Level 10:
 Windows_UAC_Basics(10)

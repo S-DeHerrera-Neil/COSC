@@ -477,12 +477,12 @@ $ ps -elf | grep bash
 $ ps -elf | grep <PPID>
     match IDs
   answer: sshd
-7.
+6.
 $ sudo lsof | grep cron | sort
     answer: /run/crond.pid
+7.
+8.
 9.
-10.
-11.
 Linux_Process_Proc_Dir
 1.
 2.

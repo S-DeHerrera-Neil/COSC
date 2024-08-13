@@ -13,7 +13,7 @@
     Level 5:
     Windows_PowerShell_Basics(5)
     1.verb-noun
-    2.get-command
+    2.get-commandCreate a new branch for this commit and start a pull request Learn more about pull requests
     3.get-verb
     4.objects
     5.properties,methods
@@ -40,7 +40,7 @@
     Windows_PowerShell_Basics(5)lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
                 single ORed set before participating in AND option selectio
     7.(C:\Users\)
-    Windows_PowerShell_Basics(10)
+    Windows_PowerShell_Basics(10)Create a new branch for this commit and start a pull request Learn more about pull requests
     8.> (get-process | get-member -membertype property).count
         display value: 52
     Windows_PowerShell_Alias(10)
@@ -274,7 +274,7 @@
     3.Get-ChildItem -Force
     4.Get-FileHash -Algorithm sha512
     5.Get-Acl
-    6.hosts
+    6.hostsCreate a new branch for this commit and start a pull request Learn more about pull requests
     Level 10:
     7.BUILTIN\Users
     8.
@@ -469,19 +469,21 @@ Linux_Processes(5)
 Level 10:
 Linux_Processes(10)
 2.
-3.
-4.
 $ ps -elf | grep ntpd
 answer: -p /var/run/ntpd.pid -g -u 105:109
-5.
+3.
 $ ps -elf | grep bash
     Grab the PID for the Parent Process(PPID) 
 $ ps -elf | grep <PPID>
     match IDs
   answer: sshd
-6.
+4.
 $ sudo lsof | grep cron | sort
     answer: /run/crond.pid
+5.
+
+6.
+
 7.
 8.
 9.

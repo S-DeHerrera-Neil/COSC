@@ -489,9 +489,11 @@ $ ls -l /run/crond.pid
 $ htop
 Aragorn,BruceWayne,Eowyn,Tolkien
 8.
+$ htop
 bin/funk
 9.
-
+$ htop
+/bin/netcat -lp 9999
 Linux_Process_Proc_Dir
 1.
 2.

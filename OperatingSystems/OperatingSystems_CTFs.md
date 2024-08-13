@@ -486,10 +486,12 @@ $ ls -l /run/crond.pid
 $ sudo lsof | grep cron | sort
 $ ls -l /run/crond.pid
 7.
-
+$ htop
+Aragorn,BruceWayne,Eowyn,Tolkien
 8.
-
+bin/funk
 9.
+
 Linux_Process_Proc_Dir
 1.
 2.

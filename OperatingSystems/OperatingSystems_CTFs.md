@@ -463,11 +463,11 @@ Windows_UAC_Basics(10)
 # Linux_Process_Validity
 Level 5:
 Linux_Processes(5)
-1.
+1. 1
 Level 10:
 Linux_Processes(10)
 2.
-3.
+3. systemv vs systemd
 4.
 5.
 6.

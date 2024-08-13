@@ -37,7 +37,8 @@
     2.measure-object
     Windows_PowerShell_REGEX(5)
     1.select-string
-    Windows_PowerShell_Basics(5)
+    Windows_PowerShell_Basics(5)lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
+                single ORed set before participating in AND option selectio
     7.(C:\Users\)
     Windows_PowerShell_Basics(10)
     8.> (get-process | get-member -membertype property).count
@@ -442,7 +443,8 @@ Windows_UAC_Basics(5)
 4. HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
 Level 10:
 Windows_UAC_Basics(10)
-5.
+5.lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
+                single ORed set before participating in AND option selectio
 6. 
 7.
 8.

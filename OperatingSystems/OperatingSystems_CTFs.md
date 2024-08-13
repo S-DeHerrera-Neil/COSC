@@ -180,11 +180,11 @@
     Just look in every dir till you see a file that homie has write permissions on
         answer: Codex_Astartes
     4.
-    5.
-    6.
-    7.
-    8.
-    9.
+    5. Codex_Heriticus
+    6. GHOSTS
+    7. execute
+    8. 
+    9. Expand your mind
     10.
     Linux Basics Regular Expressions(10)
     1.

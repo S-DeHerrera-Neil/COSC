@@ -245,4 +245,12 @@ $ htop
 
 ### Signals (Sending information to a process) 1-30
   * Key Points kill -9 <> or pkill -9 <process name>
--
+Listing the singal variations
+'''
+$ kill -l
+'''
+- 1
+- ...
+- 30
+
+

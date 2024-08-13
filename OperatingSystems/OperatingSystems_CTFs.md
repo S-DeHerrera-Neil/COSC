@@ -483,7 +483,8 @@ $ sudo lsof | grep cron | sort
 5.
 
 6.
-
+$ sudo lsof | grep cron | sort
+$ ls -l /run/crond.pid
 7.
 8.
 9.

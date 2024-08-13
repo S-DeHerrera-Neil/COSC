@@ -460,8 +460,34 @@ Windows_UAC_Basics(10)
 7.
 8.
 #---------------------------------------------------------------------------------------------
-# Linux_Process
-
+# Linux_Process_Validity
+Level 5:
+Linux_Processes(5)
+1.
+Level 10:
+Linux_Processes(10)
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+Linux_Process_Proc_Dir
+1.
+2.
+Level 15:
+Linux_Processes(15)
+10.
+Linux_Process_Proc_Dir(15)
+3.
+Linux_Process_Find_Evil(15)
+1.
+2.
+3.
+4.
+5.
 #---------------------------------------------------------------------------------------------
 # Windows_Auditing_and_Logging
 

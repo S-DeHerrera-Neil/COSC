@@ -486,7 +486,9 @@ $ ls -l /run/crond.pid
 $ sudo lsof | grep cron | sort
 $ ls -l /run/crond.pid
 7.
+
 8.
+
 9.
 Linux_Process_Proc_Dir
 1.

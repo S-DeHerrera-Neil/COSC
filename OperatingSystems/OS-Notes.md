@@ -201,3 +201,48 @@ Day 5 (Date 08/12/2024)
 - Strings: Analyze Windows files using Strings
 - Handle: Analyze Windows hanfles process using Handle
 - 
+
+- ProcMon
+
+Day 6 (Date 08/13/2024)
+# Linux Process Validity
+
+  ## Finding Evil is option
+ps: Unix/Linux utility for viewing information about running processes
+'''
+$ ps
+'''
+top: provides dynamic real-time view of running system
+'''
+$ top
+'''
+htop: human friendly variant of top^
+'''
+$ htop
+'''
+
+"deamon's are orphans" - Sgt. landry
+
+2 Primary processes after setup
+  - user-space processes /sbin/init(systemv)            (PID=1)
+                       or /lib/systemd/systemd(systemd) (PID=1)
+  - kernel-space processes [kthreadd] (PID=2)
+
+# Concepts of Virtual Memory
+  ### Kernel Space
+  ### User Space
+
+ ### UIDs
+  100-999(system)
+  1000-60000(user)
+
+  EUID(Effective User ID) and RUID(Real User ID) are the same thing
+
+ ### System Calls
+  Fork() and Exec()
+  - Fork(): Creates a new process by duplicating the calling process
+  - Exec(): The kernel starts program, replacing the current process
+
+### Signals (Sending information to a process) 1-30
+  * Key Points kill -9 <> or pkill -9 <process name>
+-

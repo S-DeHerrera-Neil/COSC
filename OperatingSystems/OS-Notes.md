@@ -253,4 +253,33 @@ $ kill -l
 - ...
 - 30
 
+Orphan Process vs Zombie Process
+Orphan Process: live, parent process is gone but still requesting resources
+Zombie Process: Idle waiting to be terminated. Holds PID.
 
+### Daemons: intentionally orpahaned "all Daemons are orphans, not all orphans are Daemons"
+ *** 
+  '''
+$ man cron
+  '''
+***
+  '''
+  ps --ppid 1 -lf
+  '''
+
+  ### Job Control (user jobs)
+  **
+  '''
+  fg
+  '''
+  **
+  '''
+  $ jobs
+  '''
+  **
+  '''
+  $ kill -9 %1
+  '''
+
+  ## Cron Jobs
+  

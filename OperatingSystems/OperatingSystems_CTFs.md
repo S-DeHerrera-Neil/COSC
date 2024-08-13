@@ -467,7 +467,7 @@ Linux_Processes(5)
 Level 10:
 Linux_Processes(10)
 2.
-3. systemv vs systemd
+3. -p /var/run/ntpd.pid -g -u 105:109
 4.
 5.
 6.

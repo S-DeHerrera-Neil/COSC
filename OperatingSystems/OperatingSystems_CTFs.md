@@ -467,13 +467,22 @@ Linux_Processes(5)
 Level 10:
 Linux_Processes(10)
 2.
-3. -p /var/run/ntpd.pid -g -u 105:109
+3.
 4.
+$ ps -elf | grep ntpd
+answer: -p /var/run/ntpd.pid -g -u 105:109
 5.
-6.
+$ ps -elf | grep bash
+    Grab the PID for the Parent Process(PPID) 
+$ ps -elf | grep <PPID>
+    match IDs
+  answer: sshd
 7.
-8.
+$ sudo lsof | grep cron | sort
+    answer: /run/crond.pid
 9.
+10.
+11.
 Linux_Process_Proc_Dir
 1.
 2.

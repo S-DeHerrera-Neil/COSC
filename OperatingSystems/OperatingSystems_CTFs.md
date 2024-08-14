@@ -116,6 +116,7 @@ ls -l /proc/1904
 #--------------------------------------------------------------------------------------------
     *Fuck Linux
 # Linux_Basics
+    
     Level 0:
     0.
     Level 5:
@@ -123,100 +124,100 @@ ls -l /proc/1904
     1.ls
     2.ls -hl
     3.| -pipeps -elf | grep sshd
-ls -l /proc/1904
-/proc/1904/exe,/usr/sbin/sshd
-    4.man -k
-    Linux Basics LFS Hierarchy(5)
-    _./ :(absolute path of the root(main) directory)
-    2./etc :(absolute path to the default location for configuration files)
-    3./bin :(Directory containing executable programs(binaries) needed in single user mode)
-    4./usr/bin
-    5./sbin :(binaries only root can access)
-    6.> man --path cat
-        Answer: /usr/share/man/man1/cat.1.gz
-    Level 10:
-    Linux basics(10)
-    5.
-    > man -k digest
-    > echo "OneWayBestWay" | sha512sum
-        Answer: a81bc463469ee1717fc9e388e3799c653f63a3de5e9496b5707b56488b046cbf75665235d316c
-        5c0053a597dc7d40c917a2d9006fe35e9cb47766c05ac71989b
-    6. 
-    $ file Encrypted
-    $ unzip Encrypted
-    $ file cipher
-    $ file symmetric
-    $ cat cipher
-    $ cat symmetric
-        gives you the key & the Hashing Algoritm
-    $ openssl AES128 -d -in cipher
-        ^use the key that was enumerated from the symmetric file
-            Anwser: DeCrypt
-    Linux Basics LFS Hierarchy(10)
-    7.
-    Linux Basics users and Groups(10)
-    1. 
-    $ cat /etc/passwd | cut -d: -f5-6 | sort
-        answer: Traitor 
-    2.
-    $ cat /etc/group | grep "lodge"
-    answer: aximand,erebus,ezekyle,garviel,sejanus,tarik
-    3.
-    $  cat /etc/passwd | cut -d: -f7 | sort | uniq
-    $ cat /etc/passwd | grep "/bin/sh"
-        answer: nobody
-    4.
-    Linux Basics Permisions(10)
-    1.
-    $ find / -type d -name "Bibliotheca" 2>/dev/null
-        Answer: /media/Bibliotheca
-    2.
-    $ cd /media
-    $ ls -l
-    $ cat /etc/passwd | grep "sh"
-    $ cat /etc/passwd | grep "bash"
-       Then count 
-       answer: 15 
-    3.
-    $ cat /etc/group | grep "chapter"
-    $ cat /etc/group | grep "chapter"
-        mephistonAuditing
-    Just look in every dir till you see a file that homie has write permissions on
-        answer: Codex_Astartes
-    4.
-    Codex_Heriticus
-    5. 
-    Codex_Imperium
-    6. GHOSTS
-    7. execute
-    8. 
-    9. Expand your mind
-    10. Ph'nglui mglw'nafh Cthulhu
-    Linux Basics Regular Expressions(10)
-    1. 
-    $ ls -l /etc | grep '^d.*\.d$'
-        answer: 28
-    2.
-    $ cat /home/garviel/numbers 
-    $ grep '^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$' numbers | wc -l
-        Answer: 78
-    
-    3.
-    
-    4
-    Linux Basics Reformat(10)
-    1.
-    
-    2.
-    Linux Basics Bash Logic(10)
-    1.
-    
-    2.
-    Level 15:
-    Linux Basics Regular Expressions(15)
-    1.
-    
-    2.
+    ls -l /proc/1904
+    /proc/1904/exe,/usr/sbin/sshd
+        4.man -k
+        Linux Basics LFS Hierarchy(5)
+        _./ :(absolute path of the root(main) directory)
+        2./etc :(absolute path to the default location for configuration files)
+        3./bin :(Directory containing executable programs(binaries) needed in single user mode)
+        4./usr/bin
+        5./sbin :(binaries only root can access)
+        6.> man --path cat
+            Answer: /usr/share/man/man1/cat.1.gz
+        Level 10:
+        Linux basics(10)
+        5.
+        > man -k digest
+        > echo "OneWayBestWay" | sha512sum
+            Answer: a81bc463469ee1717fc9e388e3799c653f63a3de5e9496b5707b56488b046cbf75665235d316c
+            5c0053a597dc7d40c917a2d9006fe35e9cb47766c05ac71989b
+        6. 
+        $ file Encrypted
+        $ unzip Encrypted
+        $ file cipher
+        $ file symmetric
+        $ cat cipher
+        $ cat symmetric
+            gives you the key & the Hashing Algoritm
+        $ openssl AES128 -d -in cipher
+            ^use the key that was enumerated from the symmetric file
+                Anwser: DeCrypt
+        Linux Basics LFS Hierarchy(10)
+        7.
+        Linux Basics users and Groups(10)
+        1. 
+        $ cat /etc/passwd | cut -d: -f5-6 | sort
+            answer: Traitor 
+        2.
+        $ cat /etc/group | grep "lodge"
+        answer: aximand,erebus,ezekyle,garviel,sejanus,tarik
+        3.
+        $  cat /etc/passwd | cut -d: -f7 | sort | uniq
+        $ cat /etc/passwd | grep "/bin/sh"
+            answer: nobody
+        4.
+        Linux Basics Permisions(10)
+        1.
+        $ find / -type d -name "Bibliotheca" 2>/dev/null
+            Answer: /media/Bibliotheca
+        2.
+        $ cd /media
+        $ ls -l
+        $ cat /etc/passwd | grep "sh"
+        $ cat /etc/passwd | grep "bash"
+           Then count 
+           answer: 15 
+        3.
+        $ cat /etc/group | grep "chapter"
+        $ cat /etc/group | grep "chapter"
+            mephistonAuditing
+        Just look in every dir till you see a file that homie has write permissions on
+            answer: Codex_Astartes
+        4.
+        Codex_Heriticus
+        5. 
+        Codex_Imperium
+        6. GHOSTS
+        7. execute
+        8. 
+        9. Expand your mind
+        10. Ph'nglui mglw'nafh Cthulhu
+        Linux Basics Regular Expressions(10)
+        1. 
+        $ ls -l /etc | grep '^d.*\.d$'
+            answer: 28
+        2.
+        $ cat /home/garviel/numbers 
+        $ grep '^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$' numbers | wc -l
+            Answer: 78
+        
+        3.
+        
+        4
+        Linux Basics Reformat(10)
+        1.
+        
+        2.
+        Linux Basics Bash Logic(10)
+        1.
+        
+        2.
+        Level 15:
+        Linux Basics Regular Expressions(15)
+        1.
+        
+        2.
 #---------------------------------------------------------------------------------------------
 
 # Windows_Registry
@@ -405,186 +406,189 @@ ls -l /proc/1904
 
 #---------------------------------------------------------------------------------------------
 # Windows_Process_Validity
-Level 1:
-Primer_Process(1)
-1. C:\Windows\SysWOW64
-2. smss.exe
-3. lsass.exe
-4. *Multiple choice: User-mode service
-5. *Multiple choice: Server-mode service
-6. MS Internet Information Server (IIS)
-7. *Multiple choice: user pc
-8. Client
-9. System Call
-10. Baselining
-11. thread
-12. 32 process priority levels 
-Level 5:
-Windows)_Process_Basics(5)
-1. Autoruns
-2. Process Explorer
-3. TCPView 
-4. AccessChk
-5. Handle
-6. downloads
-7. C:\users\public\downloads
-8.LoadOrder
-9.MpsSvc
-10.ListDLLs
-Level 10:
-Windows_Hidden_Processes(10)
-1. libmingwex-0.dll
-2. McAfeeFireTray.exe
-3. McAfeeFireTray.exe
-4. 
-5. GwlkK3sa
-6. StrongBad
-WIN_Process_Sistuational_Awareness
-1.
-2.
-3.
-4. 76aGreX5 | ntdll.dll
-5.
-Windows_Hidden_Processes(10)
-7. 6666
-8.
-9.
+    Level 1:
+    Primer_Process(1)
+    1. C:\Windows\SysWOW64
+    2. smss.exe
+    3. lsass.exe
+    4. *Multiple choice: User-mode service
+    5. *Multiple choice: Server-mode service
+    6. MS Internet Information Server (IIS)
+    7. *Multiple choice: user pc
+    8. Client
+    9. System Call
+    10. Baselining
+    11. thread
+    12. 32 process priority levels 
+    Level 5:
+    Windows)_Process_Basics(5)
+    1. Autoruns
+    2. Process Explorer
+    3. TCPView 
+    4. AccessChk
+    5. Handle
+    6. downloads
+    7. C:\users\public\downloads
+    8.LoadOrder
+    9.MpsSvc
+    10.ListDLLs
+    Level 10:
+    Windows_Hidden_Processes(10)
+    1. libmingwex-0.dll
+    2. McAfeeFireTray.exe
+    3. McAfeeFireTray.exe
+    4. 
+    5. GwlkK3sa
+    6. StrongBad
+    WIN_Process_Sistuational_Awareness
+    1.
+    2.
+    3.
+    4. 76aGreX5 | ntdll.dll
+    5.
+    Windows_Hidden_Processes(10)
+    7. 6666
+    8.
+    9.
 #---------------------------------------------------------------------------------------------
 # Start_Windows_UAC
-Level 5:
-Windows_UAC_Basics(5)
-1. sigcheck
-2. asInvoker
-3. requireAdministrator
-4. HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
-Level 10:
-Windows_UAC_Basics(10)
-5.lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
-                single ORed set before participating in AND option selectio
-6. 
-7.
-8.
+    Level 5:
+    Windows_UAC_Basics(5)
+    1. sigcheck
+    2. asInvoker
+    3. requireAdministrator
+    4. HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+    Level 10:
+    Windows_UAC_Basics(10)
+    5.lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
+                    single ORed set before participating in AND option selectio
+    6. 
+    7.
+    8.
 #---------------------------------------------------------------------------------------------
 # Windows_Services
-Level 5:Monitoring
-Windows_UAC_Basics(5)
-1. sc query
-2. sc queryex type=service state=all
-3. Get-Service
-4. HKLM\System\CurrentControlSet\Services
-5. parameters
-Level 10:
-Windows_UAC_Basics(10)
-7.
-8.
+    Level 5:Monitoring
+    Windows_UAC_Basics(5)
+    1. sc query
+    2. sc queryex type=service state=all
+    3. Get-Service
+    4. HKLM\System\CurrentControlSet\Services
+    5. parameters
+    Level 10:
+    Windows_UAC_Basics(10)
+    7.
+    8.
 #---------------------------------------------------------------------------------------------
 # Linux_Process_Validity
-Level 5:
-Linux_Processes(5)
-1. 1
-Level 10:
-Linux_Processes(10)
-2.
-$ htop
-    - sort by ppid
-    - count
-answer: 24
-#count
-3.
-$ ps -elf | grep ntpd
-answer: -p /var/run/ntpd.pid -g -u 105:109
-4.
-$ ps -elf | grep bash
-    Grab the PID for the Parent Process(PPID) 
-$ ps -elf | grep <PPID>
-    match IDs
-  answer: sshd
-5.
-$ sudo lsof | grep cron | sort
-$ ls -l /run/crond.pid
-6.
-$ sudo lsof | grep cron | sort
-$ ls -l /run/crond.pid
-7.
-$ htop
-Aragorn,BruceWayne,Eowyn,Tolkien
-8.
-$ htop
-bin/funk
-9.
-$ htop
-/bin/netcat -lp 9999
-Linux_Process_Proc_Dir
-1.
-$ ps -elf | grep sshd
-$ ls -l /proc/1904
-    answer: /proc/1904/exe,/usr/sbin/sshd
-2.
-$ sudo lsof | grep UDP 
-    answer: ntp,17,u
-Level 15:
-Linux_Processes(15)
-10.
-Linux_Process_Proc_Dir(15)
-3.
-Linux_Process_Find_Evil(15)
-1.
-2.
-3. and in the darkness bind them
-4.
-5.
+    Level 5:
+    Linux_Processes(5)
+    1. 1
+    Level 10:
+    Linux_Processes(10)
+    2.
+    $ htop
+        - sort by ppid
+        - count
+    answer: 24
+    #count
+    3.
+    $ ps -elf | grep ntpd
+    answer: -p /var/run/ntpd.pid -g -u 105:109
+    4.
+    $ ps -elf | grep bash
+        Grab the PID for the Parent Process(PPID) 
+    $ ps -elf | grep <PPID>
+        match IDs
+      answer: sshd
+    5.
+    $ sudo lsof | grep cron | sort
+    $ ls -l /run/crond.pid
+    6.
+    $ sudo lsof | grep cron | sort
+    $ ls -l /run/crond.pid
+    7.
+    $ htop
+    Aragorn,BruceWayne,Eowyn,Tolkien
+    8.
+    $ htop
+    bin/funk
+    9.
+    $ htop
+    /bin/netcat -lp 9999
+    Linux_Process_Proc_Dir
+    1.
+    $ ps -elf | grep sshd
+    $ ls -l /proc/1904
+        answer: /proc/1904/exe,/usr/sbin/sshd
+    2.
+    $ sudo lsof | grep UDP 
+        answer: ntp,17,u
+    Level 15:
+    Linux_Processes(15)
+    10.
+    Linux_Process_Proc_Dir(15)
+    3.
+    Linux_Process_Find_Evil(15)
+    1.
+    2.
+    3. and in the darkness bind them
+    4.
+    5.
 #---------------------------------------------------------------------------------------------
 # Windows_Auditing_and_Logging
-Level 1:
-Primer_Auditing(1)
-1. Monitoring
-2. Auditing
-3. WinEvt\Logs\System.evtx
-4. Security
-5. SYSTEM
-6. SACL
-7. HKLM\SECURITY\Policy\PolAdtEv
-8. PsLogList
-Level 5:
-Windows_Browser_Artifacts(5)
-1. Strings
-Windows_Recent_Files(5)
-1. HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
-Windows_BAM(5)
-1. 1803
-Last_Access(5)
-_.
-Prefetch(5)
-1. C:\Windows\Prefetch
-Recycle_Bin(5)
-1. $R
-2. $I
-UsserAssist(5)
-1. CEBFF5CD
-2. ROT13
-Logs(5)
-1. Security
-2. System
-3. -wrap
-Level 10:
-Browser_Artifacts(10)
-2.
-  > get-content 'C:\users\student\AppData\Local\Google\Chrome\User Data\Default\History'
-  Answer: https://www.exploit-db.com
-Recent_Files(10)
-2.
-BAM(10)
-2.
-Prefetch(10)
-2.
-3.
-Recycle_Bin(10)
-3.
-Jump_Lists(10)
-_.
-Level 15:
-Logs(15)
-4.
+    Level 1:
+    Primer_Auditing(1)
+    1. Monitoring
+    2. Auditing
+    3. WinEvt\Logs\System.evtx
+    4. Security
+    5. SYSTEM
+    6. SACL
+    7. HKLM\SECURITY\Policy\PolAdtEv
+    8. PsLogList
+    Level 5:
+    Windows_Browser_Artifacts(5)
+    1. Strings
+    Windows_Recent_Files(5)
+    1. HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+    Windows_BAM(5)
+    1. 1803
+    Last_Access(5)
+    _. 
+    > (Get-Item "C:\Windows\System32\drivers\etc\hosts").LastAccessTime
+            Output - Wednesday, August 14, 2024 12:11:09 PM
+        Answer : 08/14/2024
+    Prefetch(5)
+    1. C:\Windows\Prefetch
+    Recycle_Bin(5)
+    1. $R
+    2. $I
+    UsserAssist(5)
+    1. CEBFF5CD
+    2. ROT13
+    Logs(5)
+    1. Security
+    2. System
+    3. -wrap
+    Level 10:
+    Browser_Artifacts(10)
+    2.
+      > get-content 'C:\users\student\AppData\Local\Google\Chrome\User Data\Default\History'
+      Answer: https://www.exploit-db.com
+    Recent_Files(10)
+    2.
+    BAM(10)
+    2.
+    Prefetch(10)
+    2.
+    3.
+    Recycle_Bin(10)
+    3.
+    Jump_Lists(10)
+    _.
+    Level 15:
+    Logs(15)
+    4.
 #---------------------------------------------------------------------------------------------
 # Linux_Auditing_and_Logging
 

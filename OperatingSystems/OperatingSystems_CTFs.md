@@ -180,7 +180,7 @@ ls -l /proc/1904
     3.
     $ cat /etc/group | grep "chapter"
     $ cat /etc/group | grep "chapter"
-        mephiston
+        mephistonAuditing
     Just look in every dir till you see a file that homie has write permissions on
         answer: Codex_Astartes
     4.
@@ -530,8 +530,8 @@ Primer_Auditing(1)
 1. Monitoring
 2. Auditing
 3. 
-4.
-5.
+4. Security
+5. SYSTEM
 6.
 7.
 8.

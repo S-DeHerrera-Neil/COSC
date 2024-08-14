@@ -510,6 +510,8 @@ $ ps -elf | grep sshd
 $ ls -l /proc/1904
     answer: /proc/1904/exe,/usr/sbin/sshd
 2.
+$ sudo lsof | grep UDP 
+    answer: ntp,17,u
 Level 15:
 Linux_Processes(15)
 10.

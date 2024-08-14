@@ -184,9 +184,9 @@ ls -l /proc/1904
     Just look in every dir till you see a file that homie has write permissions on
         answer: Codex_Astartes
     4.
-    
-    5. 
     Codex_Heriticus
+    5. 
+    Codex_Imperium
     6. GHOSTS
     7. execute
     8. 

@@ -187,7 +187,9 @@
     9. Expand your mind
     10. Ph'nglui mglw'nafh Cthulhu
     Linux Basics Regular Expressions(10)
-    1.
+    1. 
+    $ ls -l /etc | grep '^d.*\.d$'
+        answer: 28
     2.
     3.
     4

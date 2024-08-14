@@ -10,7 +10,7 @@
     7.PowerShell version
     8.pwsh.exe
     9.PowerShell.exe
-    Level 5:
+    Level 5:Codex_Heriticus
     Windows_PowerShell_Basics(5)
     1.verb-noun
     2.get-commandCreate a new branch for this commit and start a pull request Learn more about pull requests
@@ -184,8 +184,9 @@ ls -l /proc/1904
     Just look in every dir till you see a file that homie has write permissions on
         answer: Codex_Astartes
     4.
-    Codex_Heriticus
+    
     5. 
+    Codex_Heriticus
     6. GHOSTS
     7. execute
     8. 

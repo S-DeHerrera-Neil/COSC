@@ -272,7 +272,7 @@
     17.fsutil fsinfo drives
     Level 5:
     1.directory
-    2.hidden
+    2.hidden#count
     3.Get-ChildItem -Force
     4.Get-FileHash -Algorithm sha512
     5.Get-Acl
@@ -369,7 +369,7 @@
     Linux Boot Bits and Bytes(10)
     4.
     $sudo cat /dev/vda | xxd -l 32 -c 0x10 -g 1
-        Answer: 63,90,8e,d0,31,e4,8e,d8
+        Answer: 63,90,8e,d0,31,e4,8e,d8#count
     Linux Boot MBR(10)
     2.
     3.
@@ -471,7 +471,11 @@ Linux_Processes(5)
 Level 10:
 Linux_Processes(10)
 2.
-
+$ htop
+    - sort by ppid
+    - count
+answer: 24
+#count
 3.
 $ ps -elf | grep ntpd
 answer: -p /var/run/ntpd.pid -g -u 105:109

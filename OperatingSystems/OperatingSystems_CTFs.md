@@ -36,7 +36,74 @@
     1.get-content
     2.measure-object
     Windows_PowerShell_REGEX(5)
-    1.select-string
+    1.select-stringls -l /proc/1904
+            ^use the key that was enumerated from the symmetric file
+                Anwser: DeCrypt
+        Linux Basics LFS Hierarchy(10)
+        7.
+        Linux Basics users and Groups(10)
+        1. 
+        $ cat /etc/passwd | cut -d: -f5-6 | sort
+            answer: Traitor 
+        2.
+        $ cat /etc/group | grep "lodge"
+        answer: aximand,erebus,ezekyle,garviel,sejanus,tarik
+        3.
+        $  cat /etc/passwd | cut -d: -f7 | sort | uniq
+        $ cat /etc/passwd | grep "/bin/sh"
+            answer: nobody
+        4.
+        Linux Basics Permisions(10)
+        1.
+        $ find / -type d -name "Bibliotheca" 2>/dev/null
+            Answer: /media/Bibliotheca
+        2.
+        $ cd /media
+        $ ls -l
+        $ cat /etc/passwd | grep "sh"
+        $ cat /etc/passwd | grep "bash"
+           Then count 
+           answer: 15 
+        3.
+        $ cat /etc/group | grep "chapter"
+        $ cat /etc/group | grep "chapter"
+            mephistonAuditing
+        Just look in every dir till you see a file that homie has write permissions on
+            answer: Codex_Astartes
+        4.
+        Codex_Heriticus
+        5. 
+        Codex_Imperium
+        6. GHOSTS
+        7. execute
+        8. 
+        9. Expand your mind
+        10. Ph'nglui mglw'nafh Cthulhu
+        Linux Basics Regular Expressions(10)
+        1. 
+        $ ls -l /etc | grep '^d.*\.d$'
+            answer: 28
+        2.
+        $ cat /home/garviel/numbers 
+        $ grep '^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$' numbers | wc -l
+            Answer: 78
+        
+        3.
+        
+        4
+        Linux Basics Reformat(10)
+        1.
+        
+        2.
+        Linux Basics Bash Logic(10)
+        1.
+        
+        2.
+        Level 15:
+        Linux Basics Regular Expressions(15)
+        1.
+        
+        2.
     Windows_PowerShell_Basics(5)lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
                 single ORed set before participating in AND option selectio
     7.(C:\Users\)
@@ -436,7 +503,7 @@ ls -l /proc/1904
     Windows_Hidden_Processes(10)
     1. libmingwex-0.dll
     2. McAfeeFireTray.exe
-    3. McAfeeFireTray.exe
+    3. McAfeeFireTray.exeGet-Itemproperty 'HKLM:\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings\S-1-5-21-1584283910-3275287195-1754958050-1005'
     4. 
     5. GwlkK3sa
     6. StrongBad
@@ -579,6 +646,8 @@ ls -l /proc/1904
     2.
     BAM(10)
     2.
+    > Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\bam\UserSettings\*
+        Aswer: C:\Windows\Temp\bad_intentions.exe 
     Prefetch(10)
     2.
     3.

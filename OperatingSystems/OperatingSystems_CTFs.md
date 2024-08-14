@@ -543,8 +543,11 @@ ls -l /proc/1904
     5. parameters
     Level 10:
     Windows_UAC_Basics(10)
-    7.
-    8.
+    6.
+    > get-services
+    >  get-service Totally-Legit | Format-list *
+        Anwser: Legit
+    7. 
 #---------------------------------------------------------------------------------------------
 # Linux_Process_Validity
     Level 5:
@@ -633,7 +636,7 @@ ls -l /proc/1904
     UsserAssist(5)
     1. CEBFF5CD
     2. ROT13
-    Logs(5)
+    Logs(5)google
     1. Security
     2. System
     3. -wrap

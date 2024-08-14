@@ -197,17 +197,25 @@ ls -l /proc/1904
     $ ls -l /etc | grep '^d.*\.d$'
         answer: 28
     2.
+    $ cat /home/garviel/numbers 
+    $ grep '^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$' numbers | wc -l
+        Answer: 78
+    
     3.
+    
     4
     Linux Basics Reformat(10)
     1.
+    
     2.
     Linux Basics Bash Logic(10)
     1.
+    
     2.
     Level 15:
     Linux Basics Regular Expressions(15)
     1.
+    
     2.
 #---------------------------------------------------------------------------------------------
 

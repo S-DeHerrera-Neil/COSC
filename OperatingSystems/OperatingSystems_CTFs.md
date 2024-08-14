@@ -75,7 +75,9 @@
         Answer: 2754
     Windows_PowerShell_Logic(15)
     9.
-    Windows_PowerShell_REGEX(15)
+    Windows_PowerShell_REGEX(15)ps -elf | grep sshd
+ls -l /proc/1904
+/proc/1904/exe,/usr/sbin/sshd
     5.> (Get-Content words.txt | Where-Object {$_ -match '((aa)[a-g])'}).count
         Answer: 357
 #-----------------------------------------------------------------------------------------------
@@ -120,7 +122,9 @@
     Linux Basics(5)
     1.ls
     2.ls -hl
-    3.| -pipe
+    3.| -pipeps -elf | grep sshd
+ls -l /proc/1904
+/proc/1904/exe,/usr/sbin/sshd
     4.man -k
     Linux Basics LFS Hierarchy(5)
     _./ :(absolute path of the root(main) directory)
@@ -502,6 +506,9 @@ $ htop
 /bin/netcat -lp 9999
 Linux_Process_Proc_Dir
 1.
+$ ps -elf | grep sshd
+$ ls -l /proc/1904
+    answer: /proc/1904/exe,/usr/sbin/sshd
 2.
 Level 15:
 Linux_Processes(15)

@@ -537,9 +537,9 @@ Primer_Auditing(1)
 8. PsLogList
 Level 5:
 Windows_Browser_Artifacts(5)
-1. 
+1. Strings
 Windows_Recent_Files(5)
-1.
+1. 
 Windows_BAM(5)
 1.
 Last_Access(5)

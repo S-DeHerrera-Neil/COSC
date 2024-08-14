@@ -292,3 +292,8 @@ $ man cron
   ## Cron Jobs
   
 # Day 7 (Date 08/14/2024)
+
+    - "Course is based off of a SANS course" Gunny Martinez
+
+Windows Artifacts: objects or areas within a computer system that contains important information relevent to the activities performed on the computer system by user.
+

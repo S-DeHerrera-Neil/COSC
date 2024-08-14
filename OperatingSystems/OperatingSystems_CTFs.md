@@ -142,14 +142,14 @@ ls -l /proc/1904
         Answer: a81bc463469ee1717fc9e388e3799c653f63a3de5e9496b5707b56488b046cbf75665235d316c
         5c0053a597dc7d40c917a2d9006fe35e9cb47766c05ac71989b
     6. 
-    > file Encrypted
-    > unzip Encrypted
-    > file cipher
-    > file symmetric
-    > cat cipher
-    > cat symmetric
+    $ file Encrypted
+    $ unzip Encrypted
+    $ file cipher
+    $ file symmetric
+    $ cat cipher
+    $ cat symmetric
         gives you the key & the Hashing Algoritm
-    > openssl AES128 -d -in cipher
+    $ openssl AES128 -d -in cipher
         ^use the key that was enumerated from the symmetric file
             Anwser: DeCrypt
     Linux Basics LFS Hierarchy(10)
@@ -558,7 +558,9 @@ Logs(5)
 3. -wrap
 Level 10:
 Browser_Artifacts(10)
-2. https://www.exploit-db.com
+2.
+  > get-content 'C:\users\student\AppData\Local\Google\Chrome\User Data\Default\History'
+  Answer: https://www.exploit-db.com
 Recent_Files(10)
 2.
 BAM(10)

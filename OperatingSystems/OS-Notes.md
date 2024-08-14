@@ -7,8 +7,10 @@ This command will login to our linops as student:
 # command: terminator (opens a terminal that allows you to split screens)
 
 ## command to run OpenVPN via debian CLI
+    - no path in the command because it is being run from the directory that the configration file is currently in.
 '''
-sudo openvpn --config config.ovpn
+syntax sudo <VPN> <configuration file path,> 
+$ sudo openvpn config.ovpn
 '''
 ## SSH Command ##
 'ssh student@10.50.27.61 -X'

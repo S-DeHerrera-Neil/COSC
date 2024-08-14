@@ -185,7 +185,7 @@
     7. execute
     8. 
     9. Expand your mind
-    10.
+    10. Ph'nglui mglw'nafh Cthulhu
     Linux Basics Regular Expressions(10)
     1.
     2.

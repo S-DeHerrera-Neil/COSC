@@ -18,7 +18,7 @@
     4.objects
     5.properties,methods
     6.get-member
-    Windows_PowerShell_Alias(5)C:\Windows\SysWOW64
+    Windows_PowerShell_Alias(5)C:\Windows\SysWOW64WinEvt\Logs\System.evtx
     1.get-alias
     2.get-childitem {gci}
     Windows_PowerShell_Help(5)
@@ -529,7 +529,7 @@ Level 1:
 Primer_Auditing(1)
 1. Monitoring
 2. Auditing
-3. 
+3. WinEvt\Logs\System.evtx
 4. Security
 5. SYSTEM
 6. SACL

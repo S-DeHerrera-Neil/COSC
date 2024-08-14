@@ -539,16 +539,16 @@ Level 5:
 Windows_Browser_Artifacts(5)
 1. Strings
 Windows_Recent_Files(5)
-1. 
+1. HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 Windows_BAM(5)
 1. 1803
 Last_Access(5)
 _.
 Prefetch(5)
-1.
+1. C:\Windows\Prefetch
 Recycle_Bin(5)
-1.
-2.
+1. $R
+2. $I
 UsserAssist(5)
 1.
 2.

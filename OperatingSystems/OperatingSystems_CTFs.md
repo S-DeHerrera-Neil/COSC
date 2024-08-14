@@ -456,7 +456,7 @@ Windows_UAC_Basics(10)
 8.
 #---------------------------------------------------------------------------------------------
 # Windows_Services
-Level 5:
+Level 5:Monitoring
 Windows_UAC_Basics(5)
 1. sc query
 2. sc queryex type=service state=all
@@ -525,10 +525,56 @@ Linux_Process_Find_Evil(15)
 5.
 #---------------------------------------------------------------------------------------------
 # Windows_Auditing_and_Logging
-
+Level 1:
+Primer_Auditing(1)
+1. Monitoring
+2. Auditing
+3. 
+4.
+5.
+6.
+7.
+8.
+Level 5:
+Windows_Browser_Artifacts(5)
+1.
+Windows_Recent_Files(5)
+1.
+Windows_BAM(5)
+1.
+Last_Access(5)
+_.
+Prefetch(5)
+1.
+Recycle_Bin(5)
+1.
+2.
+UsserAssist(5)
+1.
+2.
+Logs(5)
+1.
+2.
+3.
+Level 10:
+Browser_Artifacts(10)
+2.
+Recent_Files(10)
+2.
+BAM(10)
+2.
+Prefetch(10)
+2.
+3.
+Recycle_Bin(10)
+3.
+Jump_Lists(10)
+_.
+Level 15:
+Logs(15)
+4.
 #---------------------------------------------------------------------------------------------
 # Linux_Auditing_and_Logging
-
 
 #---------------------------------------------------------------------------------------------
 # Windows_Analysis

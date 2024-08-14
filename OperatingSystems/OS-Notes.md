@@ -211,7 +211,8 @@ Day 5 (Date 08/12/2024)
 
 - ProcMon
 
-Day 6 (Date 08/13/2024)
+# Day 6 (Date 08/13/2024)
+
 # Linux Process Validity
 
   ## Finding Evil is option
@@ -290,3 +291,4 @@ $ man cron
 
   ## Cron Jobs
   
+# Day 7 (Date 08/14/2024)

@@ -553,9 +553,9 @@ UsserAssist(5)
 1. CEBFF5CD
 2. ROT13
 Logs(5)
-1.
-2.
-3.
+1. Security
+2. System
+3. -wrap
 Level 10:
 Browser_Artifacts(10)
 2.

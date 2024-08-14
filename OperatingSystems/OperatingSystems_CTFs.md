@@ -656,6 +656,9 @@ ls -l /proc/1904
     3.
     Recycle_Bin(10)
     3.
+    > Get-Childitem 'C:\$RECYCLE.BIN' -Recurse -Verbose -Force | select FullName
+    > get-content 'C:\$RECYCLE.BIN\S-1-5-21-2881336348-3190591231-4063445930-1003\$RZDAQ4U.txt'
+        Anwser: $RZDAQ4U.txt,DontTrashMeyo
     Jump_Lists(10)
     _.
     Level 15:

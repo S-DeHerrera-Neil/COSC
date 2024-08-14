@@ -532,12 +532,12 @@ Primer_Auditing(1)
 3. 
 4. Security
 5. SYSTEM
-6.
-7.
-8.
+6. SACL
+7. HKLM\SECURITY\Policy\PolAdtEv
+8. PsLogList
 Level 5:
 Windows_Browser_Artifacts(5)
-1.
+1. 
 Windows_Recent_Files(5)
 1.
 Windows_BAM(5)

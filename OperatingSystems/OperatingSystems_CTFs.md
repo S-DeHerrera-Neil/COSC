@@ -39,7 +39,9 @@
     1.select-stringls -l /proc/1904
             ^use the key that was enumerated from the symmetric file
                 Anwser: DeCrypt
-        Linux Basics LFS Hierarchy(10)
+        
+        
+Linux Basics LFS Hierarchy(10)
         7.
         Linux Basics users and Groups(10)
         1. 
@@ -53,7 +55,7 @@
         $ cat /etc/passwd | grep "/bin/sh"
             answer: nobody
         4.
-        Linux Basics Permisions(10)
+Linux Basics Permisions(10)
         1.
         $ find / -type d -name "Bibliotheca" 2>/dev/null
             Answer: /media/Bibliotheca
@@ -79,32 +81,10 @@
         8. 
         9. Expand your mind
         10. Ph'nglui mglw'nafh Cthulhu
-        Linux Basics Regular Expressions(10)
-        1. 
-        $ ls -l /etc | grep '^d.*\.d$'
-            answer: 28
-        2.
-        $ cat /home/garviel/numbers 
-        $ grep '^[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}$' numbers | wc -l
-            Answer: 78
-        3.
-         $ cat numbers | grep -oP '\b(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|            [01]?[0-9][0-9]?)\b' | wc -l
-                Answer: 18
-        4
-        Linux Basics Reformat(10)
-        1.
         
-        2.
-        Linux Basics Bash Logic(10)
-        1.
-        
-        2.
-        Level 15:
-        Linux Basics Regular Expressions(15)
-        1.
-        
-        2.
-    Windows_PowerShell_Basics(5)lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
+
+
+  Windows_PowerShell_Basics(5)lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
                 single ORed set before participating in AND option selectio
     7.(C:\Users\)
     Windows_PowerShell_Basics(10)Create a new branch for this commit and start a pull request Learn more about pull requests
@@ -270,6 +250,8 @@ ls -l /proc/1904
             Answer: 78
         
         3.
+         $ cat numbers | grep -oP '\b(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|            [01]?[0-9][0-9]?)\b' | wc -l
+                Answer: 18
         
         4
         Linux Basics Reformat(10)

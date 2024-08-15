@@ -654,9 +654,7 @@ ls -l /proc/1904
     Level 10:
     XML(10)
     3.
-    4.How many severity codes are defined in the standard that defines syslog?
-
-
+    4.
     JSON(10)
     1.
     2.

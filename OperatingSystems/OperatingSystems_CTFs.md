@@ -645,8 +645,8 @@ ls -l /proc/1904
     2. 8(priorities)
     3. (line 10) 4.4 -/var/log/4min.log
         Answer: Emergency,Alert,Critical,Error,Warning -(0,1,2,3,4)
-              
-    4.
+    4. 4.!4 -/var/log/4sig.log
+        Answer:  Notice,Informational,Debug -(5,6,7) 
     5.
     6.
     7.How many severity codes are defined in the standard that defines syslog?

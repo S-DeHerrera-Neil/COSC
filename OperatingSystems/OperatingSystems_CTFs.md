@@ -644,11 +644,14 @@ ls -l /proc/1904
     1. kern
     2. 8(priorities)
     3. (line 10) 4.4 -/var/log/4min.log
-        Answer: Emergency,Alert,Critical,Error,Warning -(0,1,2,3,4)
-    4. 4.!4 -/var/log/4sig.log
-        Answer:  Notice,Informational,Debug -(5,6,7) 
-    5. 2,9,12.=5 /var/log/not.log
-        Answer: mail,clock,ntp,notice    -(mail system{2},clock daemon{9},ntp subsystem{12},notice{.=15})
+        -(0,1,2,3,4)
+        Answer: Emergency,Alert,Critical,Error,Warning 
+    4. (line 11)4.!4 -/var/log/4sig.log
+        -(5,6,7) 
+        Answer:  Notice,Informational,Debug 
+    5. (line 12)2,9,12.=5 /var/log/not.log
+        -(mail system{2},clock daemon{9},ntp subsystem{12},notice{.=15})
+        Answer: mail,clock,ntp,notice    
     6.
     7.
     8.

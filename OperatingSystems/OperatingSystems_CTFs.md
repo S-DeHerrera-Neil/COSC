@@ -505,7 +505,9 @@ ls -l /proc/1904
     7. 
 #---------------------------------------------------------------------------------------------
 # Linux_Process_Validity
-    Level 5:
+    Level 5:How many severity codes are defined in the standard that defines syslog?
+
+
     Linux_Processes(5)
     1. 1
     Level 10:
@@ -534,7 +536,9 @@ ls -l /proc/1904
     7.
     $ htop
     Aragorn,BruceWayne,Eowyn,Tolkien
-    8.
+    8.How many severity codes are defined in the standard that defines syslog?
+
+
     $ htop
     bin/funk
     9.
@@ -559,7 +563,9 @@ ls -l /proc/1904
     3. and in the darkness bind them
     4.
     5.
-#---------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------How many severity codes are defined in the standard that defines syslog?
+
+
 # Windows_Auditing_and_Logging
     Level 1:
     Primer_Auditing(1)
@@ -596,7 +602,9 @@ ls -l /proc/1904
     2. System
     3. -wrap
     Level 10:
-    Browser_Artifacts(10)
+    Browser_Artifacts(10)How many severity codes are defined in the standard that defines syslog?
+
+
     2.
       > get-content 'C:\users\student\AppData\Local\Google\Chrome\User Data\Default\History'
       Answer: https://www.exploit-db.com
@@ -635,16 +643,22 @@ ls -l /proc/1904
     Syslog(5)
     1. kern
     2. 8(priorities)
-    3.
+    3. (line 10) 4.4 -/var/log/4min.log
+        Answer: Emergency,Alert,Critical,Error,Warning -(0,1,2,3,4)
+              
     4.
     5.
     6.
-    7.
+    7.How many severity codes are defined in the standard that defines syslog?
+
+
     8.
     Level 10:
     XML(10)
     3.
-    4.
+    4.How many severity codes are defined in the standard that defines syslog?
+
+
     JSON(10)
     1.
     2.

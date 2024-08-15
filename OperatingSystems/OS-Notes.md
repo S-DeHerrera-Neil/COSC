@@ -10,6 +10,7 @@ This command will login to our linops as student:
     - no path in the command because it is being run from the directory that the configration file is currently in.
 '''
 syntax sudo <VPN> <configuration file path,> 
+
 $ sudo openvpn config.ovpn
 '''
 ## SSH Command ##

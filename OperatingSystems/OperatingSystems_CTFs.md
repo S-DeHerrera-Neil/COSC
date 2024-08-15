@@ -649,9 +649,7 @@ ls -l /proc/1904
         Answer:  Notice,Informational,Debug -(5,6,7) 
     5.
     6.
-    7.How many severity codes are defined in the standard that defines syslog?
-
-
+    7.
     8.
     Level 10:
     XML(10)

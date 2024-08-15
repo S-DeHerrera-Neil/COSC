@@ -439,14 +439,14 @@ ls -l /proc/1904
     Linux Boot Bits and Bytes(5)
     1. 4,8
     2. 4
-    3. 
+    3. 17
     Linux Boot MBR(5)
     1.
     Linux Boot SysV(5)
     1.
     linux Boot Hex(5)
     2. 0x0-0xF
-    3.
+    3. 0-15
     4.0x35D
     Level 10:
     Linux Boot Bits and Bytes(10)
@@ -459,8 +459,8 @@ ls -l /proc/1904
     4.
     5.
     Linux Boot SysV(10)
-    2.
-    3.
+    2. 2
+    3. 
     4.
     Linux Boot SysD(5)
     1.
@@ -528,10 +528,11 @@ ls -l /proc/1904
     4. HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
     Level 10:
     Windows_UAC_Basics(10)
-    5.lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
-                    single ORed set before participating in AND option selectio
+    5. asInvoker
     6. 
+    
     7.
+    
     8.
 #---------------------------------------------------------------------------------------------
 # Windows_Services
@@ -654,6 +655,7 @@ ls -l /proc/1904
         Aswer: C:\Windows\Temp\bad_intentions.exe 
     Prefetch(10)
     2.
+    
     3.
     Recycle_Bin(10)
     3.

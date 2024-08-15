@@ -647,7 +647,8 @@ ls -l /proc/1904
         Answer: Emergency,Alert,Critical,Error,Warning -(0,1,2,3,4)
     4. 4.!4 -/var/log/4sig.log
         Answer:  Notice,Informational,Debug -(5,6,7) 
-    5.
+    5. 2,9,12.=5 /var/log/not.log
+        Answer:  -(2,9,12.=5)
     6.
     7.
     8.

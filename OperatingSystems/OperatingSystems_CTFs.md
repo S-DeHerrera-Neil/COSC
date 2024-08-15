@@ -346,7 +346,7 @@ ls -l /proc/1904
     17.smss.exe
     18.session 0
     19.secure boot
-    20.
+    20.hibernation
     21.HKLM\Software\Microsoft\Windows\CurrentVersion\RunServices
     22.local logon
     23.userinit.exe
@@ -380,7 +380,13 @@ ls -l /proc/1904
     Level 10:
     windows_Boot_Remediate(10)
     1.
+    > bcdedit
+        Anwser: 1RF5Zgf9P
     2.
+    > bcdedit /deletevalue {default} safeboot
+    > shutdown /r
+    > shutdown -a    #run until it aborts the shutdown
+        Awnser: 76Drp6hB
     3.
     4.
     5.
@@ -407,10 +413,19 @@ ls -l /proc/1904
     $sudo cat /dev/vda | xxd -l 32 -c 0x10 -g 1
         Answer: 63,90,8e,d0,31,e4,8e,d8#count
     Linux Boot MBR(10)
-    2.
-    3.
+    2. assembly language
+    3. 
+    $ xxd -l 120 -ps -c 20 xxd.1
+    $ dd -ibs 16 
+    $ dd bs=1 skip==446 count=16 if=mbroken of=linuxsucks
+    $ md5sum linuxsucks
+        Anwser: 2a5948fad4ec68170b23faaa2a16cef8
     4.
+    $ dd bs=1 skip=392 count=4 if=mmbroken of=linuxsucks
+    $ md5sum linuxsucks
+        Anwser: 5fa690cb0f0789cbc57decfd096a503e
     5.
+    
     Linux Boot SysV(10)
     2. 2
     3. /etc/init.d/reboot
@@ -558,7 +573,31 @@ ls -l /proc/1904
     Linux_Process_Proc_Dir(15)
     3.
     Linux_Process_Find_Evil(15)
-    1.
+        1.find / -name *chant*
+        sudo lsof | grep chant
+        #output
+        offering  17496           Balrog    9w      REG              254,1        0     142174                 
+        /home/Balrog/chantlock
+        netcat    17538           Balrog    9w      REG              254,1        0     142174                              /home/Balrog/chantlock
+        sudo lsof | grep offering
+        sudo cat /home/The_Eye/chant
+        #output
+        Mausan ukoul for avhe mubullat goth
+        htop
+        # to find /home/witch_king
+        ls -l /home/witch_king
+        cat /home/witch_king/camlindon
+        #output
+        #!/bin/bash
+        (
+         flock -n 9 || exit 1
+         echo "beaconing"
+         for i in $(seq 1 5); do nc -lw10 127.0.0.1 -p 1234 2>/dev/null  ; sleep 10; done
+         echo "done beaconing"
+        ) 9>/tmp/mylockfile
+        
+            Anwser: Mausan ukoul for avhe mubullat goth,witch_king,127.0.0.1:1234
+
     2.
     3. and in the darkness bind them
     4.

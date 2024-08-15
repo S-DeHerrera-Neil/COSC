@@ -713,20 +713,30 @@ ls -l /proc/1904
     5. (line 12)2,9,12.=5 /var/log/not.log
         -(mail system{2},clock daemon{9},ntp subsystem{12},notice{.=15})
         Answer: mail,clock,ntp,notice    
-    6.
-    7.
-    8.
+    6. auth,authpriv,8,10.30.0.1
+    7. Yes
+    8. 0,7,UDP
     Level 10:
     XML(10)
-    3.
+    3. 
+    $ xpath -q -e '//host/address/@addr' output.xml | md5sum
+        Anwser: 0e850f14fc192c5105955ec094287bd2
     4.
+    $ xpath -q -e '//host/address/@addr | //host/ports/port/@portid' output.xml | md5sum
+        Anwser: ff7990139b6d09aa65afb6e069db0dec
     JSON(10)
     1.
+    $ cat conn.log | jq .
+    $ cat conn.log | jq . | md5sum
+        Anwser: 25ebedf7442e470eaaa48b5f7d5b96f4
     2.
+    
     3.
+        cat conn.log | jq 'select(.resp_bytes >= 40).ts' | wc -l
+            Anwser: 177
     Syslog(10)
-    9.
-    10.
+    9. 7
+    10. 10.24.0.1
     WHUT(10)
     1.
     2.

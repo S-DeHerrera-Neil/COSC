@@ -39,52 +39,8 @@
     1.select-stringls -l /proc/1904
             ^use the key that was enumerated from the symmetric file
                 Anwser: DeCrypt
-        
-        
-Linux Basics LFS Hierarchy(10)
-        7.
-        Linux Basics users and Groups(10)
-        1. 
-        $ cat /etc/passwd | cut -d: -f5-6 | sort
-            answer: Traitor 
-        2.
-        $ cat /etc/group | grep "lodge"
-        answer: aximand,erebus,ezekyle,garviel,sejanus,tarik
-        3.
-        $  cat /etc/passwd | cut -d: -f7 | sort | uniq
-        $ cat /etc/passwd | grep "/bin/sh"
-            answer: nobody
-        4.
-Linux Basics Permisions(10)
-        1.
-        $ find / -type d -name "Bibliotheca" 2>/dev/null
-            Answer: /media/Bibliotheca
-        2.
-        $ cd /media
-        $ ls -l
-        $ cat /etc/passwd | grep "sh"
-        $ cat /etc/passwd | grep "bash"
-           Then count 
-           answer: 15 
-        3.
-        $ cat /etc/group | grep "chapter"
-        $ cat /etc/group | grep "chapter"
-            mephistonAuditing
-        Just look in every dir till you see a file that homie has write permissions on
-            answer: Codex_Astartes
-        4.
-        Codex_Heriticus
-        5. 
-        Codex_Imperium
-        6. GHOSTS
-        7. execute
-        8. 
-        9. Expand your mind
-        10. Ph'nglui mglw'nafh Cthulhu
-        
-
-
-  Windows_PowerShell_Basics(5)lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using multiple -c options.  They are joined in a
+    Windows_PowerShell_Basics(5)
+        lects  the listing of files for processes executing the command that begins with the characters of c.  Multiple commands may be specified, using                 multiple -c            options.  They are joined in a
                 single ORed set before participating in AND option selectio
     7.(C:\Users\)
     Windows_PowerShell_Basics(10)Create a new branch for this commit and start a pull request Learn more about pull requests
@@ -256,8 +212,21 @@ ls -l /proc/1904
         4
         Linux Basics Reformat(10)
         1.
-        
+        Linux Basics LFS Hierarchy(10)
+        7.
+        Linux Basics users and Groups(10)
+        1. 
+        $ cat /etc/passwd | cut -d: -f5-6 | sort
+            answer: Traitor 
         2.
+        $ cat /etc/group | grep "lodge"
+        answer: aximand,erebus,ezekyle,garviel,sejanus,tarik
+        3.
+        $  cat /etc/passwd | cut -d: -f7 | sort | uniq
+        $ cat /etc/passwd | grep "/bin/sh"
+            answer: nobody
+        4.
+
         Linux Basics Bash Logic(10)
         1.
         
@@ -418,7 +387,7 @@ ls -l /proc/1904
 #---------------------------------------------------------------------------------------------
 # Start_Linux_Boot_Process
     Level 5:
-    linux Boot Hex(5)
+    linux Boot Hex(5)What is the numerical code assigned to the facility dealing with authorization?
     1.0xFF
     Linux Boot Bits and Bytes(5)
     1. 4,8
@@ -660,7 +629,7 @@ ls -l /proc/1904
     2. protocol="tcp"
     Standards(5)
     1. 5424
-    2. 
+    2. 4-(security/authorization messages)
     3.
     4.
     Syslog(5)

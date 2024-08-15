@@ -571,9 +571,9 @@ ls -l /proc/1904
     Linux_Processes(15)
     10.
     Linux_Process_Proc_Dir(15)
-    3.
+    3. and in the darkness bind them
     Linux_Process_Find_Evil(15)
-        1.find / -name *chant*
+    1. find / -name *chant*
         sudo lsof | grep chant
         #output
         offering  17496           Balrog    9w      REG              254,1        0     142174                 
@@ -598,8 +598,13 @@ ls -l /proc/1904
         
             Anwser: Mausan ukoul for avhe mubullat goth,witch_king,127.0.0.1:1234
 
-    2.
-    3. and in the darkness bind them
+    2.  systemctl
+        whatischaos.service
+        ls -l /lib/systemd/system | grep chaos
+        cat /lib/systemd/system/whatischaos.service
+        cat /lib/systemd/system/whatischaos.timer
+            Anwser: netcat -lp 3389 < /tmp/NMAP_all_hosts.txt,whatischaos.timer
+    3. 
     4.
     5.
 #---------------------------------------------------------------------------------------------How many severity codes are defined in the standard that defines syslog?

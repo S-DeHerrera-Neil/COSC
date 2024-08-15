@@ -666,6 +666,10 @@ ls -l /proc/1904
       Answer: https://www.exploit-db.com
     Recent_Files(10)
     2.
+    > reg query hkcu\software\microsoft\windows\currentversion\explorer\recentdocs
+    > get-item 'Registry::\HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.*'
+        - [System.Text.Encoding]::Unicode.GetString((gp "REGISTRY::HKEY_USERS\*\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt")."6")
+            Anwser: Flag, Found A.
     BAM(10)
     2.
     > Get-Item HKLM:\SYSTEM\CurrentControlSet\Services\bam\UserSettings\*

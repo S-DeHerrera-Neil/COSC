@@ -672,10 +672,11 @@ ls -l /proc/1904
         Aswer: C:\Windows\Temp\bad_intentions.exe 
     Prefetch(10)
     2.
-    
-    3.
+    > get-childitem -Path 'C:\Windows\Prefetch' -ErrorAction Continue
+        Anwsers: DARK_FORCES-8F2869FC.pf
+    3. 2/23/2022
     Recycle_Bin(10)
-    3.
+    3. 
     > Get-Childitem 'C:\$RECYCLE.BIN' -Recurse -Verbose -Force | select FullName
     > get-content 'C:\$RECYCLE.BIN\S-1-5-21-2881336348-3190591231-4063445930-1003\$RZDAQ4U.txt'
         Anwser: $RZDAQ4U.txt,DontTrashMeyo

@@ -648,7 +648,7 @@ ls -l /proc/1904
     4. 4.!4 -/var/log/4sig.log
         Answer:  Notice,Informational,Debug -(5,6,7) 
     5. 2,9,12.=5 /var/log/not.log
-        Answer:  -(2,9,12.=5)
+        Answer: mail,clock,ntp,notice    -(mail system{2},clock daemon{9},ntp subsystem{12},notice{.=15})
     6.
     7.
     8.

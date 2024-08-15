@@ -675,10 +675,10 @@ ls -l /proc/1904
     Level 5:
     XML(5)
     1. scaninfo
-    2.
+    2. protocol="tcp"
     Standards(5)
-    1.
-    2.
+    1. 5424
+    2. 
     3.
     4.
     Syslog(5)

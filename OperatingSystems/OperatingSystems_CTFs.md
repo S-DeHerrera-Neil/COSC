@@ -309,7 +309,7 @@ ls -l /proc/1904
     Level 10:
     7.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN *All CAPS*
     8.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN
-    9.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCEa
+    9.HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     10.HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
     Level 15:
     11.
@@ -320,8 +320,10 @@ ls -l /proc/1904
         *As student
      > reg query hkcu\software\microsoft\windows\currentversion\run
      Answer: C:\botnet.exe
-    13.
-    14.
+    13. 
+    > reg query HKLM:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUNONCE
+    C:\virus.exe
+    14. 
     *As student
      > reg query hkcu\software\microsoft\windows\currentversion\runonce
      Answer: C:\worm.exe
@@ -664,6 +666,7 @@ ls -l /proc/1904
         Anwser: $RZDAQ4U.txt,DontTrashMeyo
     Jump_Lists(10)
     _.
+    > Get-ItemProperty -Path "C:\Users\<Username>\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\*" | Select-Object Name, LastWriteTime
     Level 15:
     Logs(15)
     4.

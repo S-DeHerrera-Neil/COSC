@@ -630,8 +630,8 @@ ls -l /proc/1904
     Standards(5)
     1. 5424
     2. 4-(security/authorization messages)
-    3.
-    4.
+    3. 8(sevirity 0-7)
+    4. 0(system unusable, "instability messages", )
     Syslog(5)
     1. kern
     2. 8(priorities)

@@ -634,7 +634,7 @@ ls -l /proc/1904
     4.
     Syslog(5)
     1. kern
-    2.
+    2. 8(priorities)
     3.
     4.
     5.

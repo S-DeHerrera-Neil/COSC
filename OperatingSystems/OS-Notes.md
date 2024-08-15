@@ -11,7 +11,7 @@ This command will login to our linops as student:
 '''
 syntax sudo <VPN> <configuration file path,> 
 
-$ sudo openvpn config.ovpn
+$ sudo openvpn --config config.ovpn
 '''
 ## SSH Command ##
 'ssh student@10.50.27.61 -X'

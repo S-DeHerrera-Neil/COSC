@@ -408,7 +408,8 @@ ls -l /proc/1904
     2.monolithic
     3. 6.1
     4. 10
-    5.
+    5. 
+    > systeminfo | findstr /C:"OS Version" /C:"BIOS Version"
     Level 5:
     Windows_Boot_INIT(5)
     1.System

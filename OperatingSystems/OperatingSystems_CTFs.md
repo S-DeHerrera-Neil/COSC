@@ -443,14 +443,14 @@ ls -l /proc/1904
     Linux Boot MBR(5)
     1.
     Linux Boot SysV(5)
-    1.
+    1. Minas_Tirith
     linux Boot Hex(5)
     2. 0x0-0xF
     3. 0-15
     4.0x35D
     Level 10:
     Linux Boot Bits and Bytes(10)
-    4.
+    4. 
     $sudo cat /dev/vda | xxd -l 32 -c 0x10 -g 1
         Answer: 63,90,8e,d0,31,e4,8e,d8#count
     Linux Boot MBR(10)
@@ -460,10 +460,10 @@ ls -l /proc/1904
     5.
     Linux Boot SysV(10)
     2. 2
-    3. 
-    4.
+    3. /etc/init.d/reboot
+    4. 2,3,4,5
     Linux Boot SysD(5)
-    1.
+    1. 
     2.
     3.
     4.

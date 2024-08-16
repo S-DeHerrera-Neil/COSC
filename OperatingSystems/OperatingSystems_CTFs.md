@@ -751,6 +751,65 @@ ls -l /proc/1904
     # Oof. Long Day.
 #---------------------------------------------------------------------------------------------
 # Windows_Analysis
-
+Level 1:
+Primer_Networking
+1.
+2.
+3.
+4.
+5.
+6.
+Primer_Security
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+Primer_Networking
+7.
+8.
+9.
+10.
+Primer_Surveys
+1.
+2.
+3.
+Level 5:
+Windows_Memory_Analysis_Plugin
+1.
+2.
+3.
+Windows_Memory_Analysis_Basics
+1.
+2.
+Windows_Volitility_Data
+_.
+Level 10:
+Windows_Memory_Analysis_Basics
+3.
+4.
+Windows_Malware
+1.
+2.
+3.
+4.
 #---------------------------------------------------------------------------------------------
 # Windows_active_Directory

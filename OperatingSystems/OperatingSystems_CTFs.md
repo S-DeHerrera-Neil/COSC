@@ -798,18 +798,19 @@ Windows_Memory_Analysis_Plugin
 2.
 3.
 Windows_Memory_Analysis_Basics
-1.
-2.
+1. imageinfo
+2. -h
 Windows_Volitility_Data
-_.
+_. Registers, Cache
 Level 10:
 Windows_Memory_Analysis_Basics
 3. cmdscan
 4. WinXPSP2x86
 Windows_Malware
 1. sc query malware
+>
 2. 1a498b8
- 
+ >
 3. 
 > Set-MpPreference -ExclusionPath 'C:\Users\andy.dwyer\Desktop\Memory_Analysis\'
 > cd C:\Users\andy.dwyer\Desktop\Memory_Analysis

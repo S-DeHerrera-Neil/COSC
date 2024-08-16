@@ -766,32 +766,32 @@ Primer_Security
 4. 500
 5. 
 6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
-16.
-17.
-18.
-19.
-20.
-21.
-22.
+7. Backup
+8. faster
+9. Descriptors
+10. DACL 
+11. Get-acl
+12. Net localgroup
+13. icacls
+14. DEP
+15. ASLR
+16. shim
+17. Credential Guard
+18. Windows Defender
+19. SEHOP
+20. 
+21. Windows Resource Protection
+22. /scannow
 23.
 Primer_Networking
-7.
-8.
-9.
-10.
+7. nslookup
+8. System32\drivers\etc\hosts
+9. DNS
+10. nbtstat
 Primer_Surveys
-1.
-2.
-3.
+1. Red
+2. Blue
+3. Incident response
 Level 5:
 Windows_Memory_Analysis_Plugin
 1.

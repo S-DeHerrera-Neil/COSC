@@ -804,12 +804,19 @@ Windows_Volitility_Data
 _.
 Level 10:
 Windows_Memory_Analysis_Basics
-3.
-4.
+3. cmdscan
+4. WinXPSP2x86
 Windows_Malware
-1.
-2.
-3.
+1. sc query malware
+2. 1a498b8
+ 
+3. 
+> Set-MpPreference -ExclusionPath 'C:\Users\andy.dwyer\Desktop\Memory_Analysis\'
+> cd C:\Users\andy.dwyer\Desktop\Memory_Analysis
+> .\volatility_2.6_win64_standalone.exe -f ".\0zapftis.vmem" --profile=WinXPSP2x86 procdump -p 544 -D .
+> Get-FileHash -Algorithm md5 .\executable.544.exe
+    Answer: 6CEE14703054E226E87A963372F767AA
 4.
+
 #---------------------------------------------------------------------------------------------
 # Windows_active_Directory

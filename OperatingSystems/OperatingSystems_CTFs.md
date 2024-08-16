@@ -753,18 +753,18 @@ ls -l /proc/1904
 # Windows_Analysis
 Level 1:
 Primer_Networking
-1.
-2.
-3.
-4.
-5.
-6.
+1. NDIS
+2. netstat -r
+3. Well Known Ports
+4. Ephemeral ports
+5. Name Resolution
+6. DNS
 Primer_Security
-1.
-2.
-3.
-4.
-5.
+1. SID
+2. /user
+3. 1000
+4. 500
+5. 
 6.
 7.
 8.

@@ -817,6 +817,7 @@ Windows_Malware
 > Get-FileHash -Algorithm md5 .\executable.544.exe
     Answer: 6CEE14703054E226E87A963372F767AA
 4.
-
+> .\volatility_2.6_win64_standalone.exe -f ".\0zapftis.vmem" --profile=WinXPSP2x86 connscan
+    Anwser: 172.16.98.1:6666
 #---------------------------------------------------------------------------------------------
 # Windows_active_Directory

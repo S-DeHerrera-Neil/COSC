@@ -782,7 +782,7 @@ Primer_Security
 20. 
 21. Windows Resource Protection
 22. /scannow
-23.
+23. \WinSxS\Backup
 Primer_Networking
 7. nslookup
 8. System32\drivers\etc\hosts

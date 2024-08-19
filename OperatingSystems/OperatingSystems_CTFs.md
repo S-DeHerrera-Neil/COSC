@@ -827,22 +827,27 @@ ls -l /proc/1904
     1. Active Directory
     2. Objects 
     3. 
-    4.
-    5.
-    6.
-    7.
-    8.
+    4. LDAP
+    5. Administrator
+    6. Disable
+    7. Get-ADUser
+    8. DS
     Level 5:
     Active_Directory_Basics
-    1.
-    2.
+    1. 
+    2.Get-ADGroup
     3.
-    4.
+    4. Search-ADAccount
     Level 10:
     AD_Search_Accounts
     _.
+    > Get-ADUser -Filter {Enabled -eq $true} -Properties AccountExpirationDate | Where-Object {$_.AccountExpirationDate -lt (get-date) -and $_.Enabled -ne $null} | select-object GivenName
+        Awnser: Krause,Page
     AD_Search_Emails
     _.
+    > get-aduser -filter * -properties EmailAddress | where-object {$_.emailaddress -notlike "*mail.mil"} | select-object EmailAddress
+        Awnswer: CharlieB@ashleymadison.com
+                 Skyler01@ashleymadison.com
     AD_Seach_Files
     _.
     AD_Search_Insider

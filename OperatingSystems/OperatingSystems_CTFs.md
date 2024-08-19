@@ -850,18 +850,34 @@ ls -l /proc/1904
                  Skyler01@ashleymadison.com
     AD_Seach_Files
     _.
+    > get-childitem -force -recurse -erroraction SilentlyContinue | select Mode, LastWriteTime, Fullname
+        Answer: lulz.pdf
     AD_Search_Insider
     1.
+    > net use * "\\file-server\warrior share"
+        Answer: 14287.pdf
     2.
+    > Get-ADUser -Filter * -Properties telephoneNumber | where-object {$_.telephoneNumber -like "*336-6754"}
+    Answer: Karen.Nance
     AD_Search_Naming
     _.
+    > Get-ADUser -Filter * -Properties Description | select Description
+    > Get-ADUser -Filter * -Properties Description | where-object {$_.Description -notlike "*PLT Soldier"} | select-object Description
+    > Get-ADUser -Filter * -Properties Description | where-object {$_.Description -like "*description"}
+        Answer: Ibarra,Lee
     AD_Search_Passwords
     _.
     AD_Search_PII
     _.
+    > get-childitem -force -recurse -erroraction SilentlyContinue | select Mode, LastWriteTime, Fullname
+        Answer: phone_matrix.xlsx
     Active_Directory_Basics
     5.
+    > get-addomaincontroller -filter *
+        answer: army
     6.
+    > Get-ADUser -Filter * -Properties * | where-object {$_.name -like "*krbtgt"}
+        Answer: 502
     7.
     8.
     Level 15:

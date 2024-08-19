@@ -751,74 +751,117 @@ ls -l /proc/1904
     # Oof. Long Day.
 #---------------------------------------------------------------------------------------------
 # Windows_Analysis
-Level 1:
-Primer_Networking
-1. NDIS
-2. netstat -r
-3. Well Known Ports
-4. Ephemeral ports
-5. Name Resolution
-6. DNS
-Primer_Security
-1. SID
-2. /user
-3. 1000
-4. 500
-5. 
-6.
-7. Backup
-8. faster
-9. Descriptors
-10. DACL 
-11. Get-acl
-12. Net localgroup
-13. icacls
-14. DEP
-15. ASLR
-16. shim
-17. Credential Guard
-18. Windows Defender
-19. SEHOP
-20. 
-21. Windows Resource Protection
-22. /scannow
-23. \WinSxS\Backup
-Primer_Networking
-7. nslookup
-8. System32\drivers\etc\hosts
-9. DNS
-10. nbtstat
-Primer_Surveys
-1. Red
-2. Blue
-3. Incident response
-Level 5:
-Windows_Memory_Analysis_Plugin
-1.
-2.
-3.
-Windows_Memory_Analysis_Basics
-1. imageinfo
-2. -h
-Windows_Volitility_Data
-_. Registers, Cache
-Level 10:
-Windows_Memory_Analysis_Basics
-3. cmdscan
-4. WinXPSP2x86
-Windows_Malware
-1. sc query malware
->
-2. 1a498b8
- >
-3. 
-> Set-MpPreference -ExclusionPath 'C:\Users\andy.dwyer\Desktop\Memory_Analysis\'
-> cd C:\Users\andy.dwyer\Desktop\Memory_Analysis
-> .\volatility_2.6_win64_standalone.exe -f ".\0zapftis.vmem" --profile=WinXPSP2x86 procdump -p 544 -D .
-> Get-FileHash -Algorithm md5 .\executable.544.exe
-    Answer: 6CEE14703054E226E87A963372F767AA
-4.
-> .\volatility_2.6_win64_standalone.exe -f ".\0zapftis.vmem" --profile=WinXPSP2x86 connscan
-    Anwser: 172.16.98.1:6666
+    Level 1:
+    Primer_Networking
+    1. NDIS
+    2. netstat -r
+    3. Well Known Ports
+    4. Ephemeral ports
+    5. Name Resolution
+    6. DNS
+    Primer_Security
+    1. SID
+    2. /user
+    3. 1000
+    4. 500
+    5. 
+    6.
+    7. Backup
+    8. faster
+    9. Descriptors
+    10. DACL 
+    11. Get-acl
+    12. Net localgroup
+    13. icacls
+    14. DEP
+    15. ASLR
+    16. shim
+    17. Credential Guard
+    18. Windows Defender
+    19. SEHOP
+    20. 
+    21. Windows Resource Protection
+    22. /scannow
+    23. \WinSxS\Backup
+    Primer_Networking
+    7. nslookup
+    8. System32\drivers\etc\hosts
+    9. DNS
+    10. nbtstat
+    Primer_Surveys
+    1. Red
+    2. Blue
+    3. Incident response
+    Level 5:
+    Windows_Memory_Analysis_Plugin
+    1.
+    2.
+    3.
+    Windows_Memory_Analysis_Basics
+    1. imageinfo
+    2. -h
+    Windows_Volitility_Data
+    _. Registers, Cache
+    Level 10:
+    Windows_Memory_Analysis_Basics
+    3. cmdscan
+    4. WinXPSP2x86
+    Windows_Malware
+    1. sc query malware
+    >
+    2. 1a498b8
+     >
+    3. 
+    > Set-MpPreference -ExclusionPath 'C:\Users\andy.dwyer\Desktop\Memory_Analysis\'
+    > cd C:\Users\andy.dwyer\Desktop\Memory_Analysis
+    > .\volatility_2.6_win64_standalone.exe -f ".\0zapftis.vmem" --profile=WinXPSP2x86 procdump -p 544 -D .
+    > Get-FileHash -Algorithm md5 .\executable.544.exe
+        Answer: 6CEE14703054E226E87A963372F767AA
+    4.
+    > .\volatility_2.6_win64_standalone.exe -f ".\0zapftis.vmem" --profile=WinXPSP2x86 connscan
+        Anwser: 172.16.98.1:6666
 #---------------------------------------------------------------------------------------------
 # Windows_active_Directory
+    Level 1:
+    Active_Directory
+    1. Active Directory
+    2. Objects 
+    3. 
+    4.
+    5.
+    6.
+    7.
+    8.
+    Level 5:
+    Active_Directory_Basics
+    1.
+    2.
+    3.
+    4.
+    Level 10:
+    AD_Search_Accounts
+    _.
+    AD_Search_Emails
+    _.
+    AD_Seach_Files
+    _.
+    AD_Search_Insider
+    1.
+    2.
+    AD_Search_Naming
+    _.
+    AD_Search_Passwords
+    _.
+    AD_Search_PII
+    _.
+    Active_Directory_Basics
+    5.
+    6.
+    7.
+    8.
+    Level 15:
+    AD_Follow_Insider_Trail
+    1.
+    2.
+    3.
+    4.

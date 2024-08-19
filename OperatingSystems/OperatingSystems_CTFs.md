@@ -823,51 +823,51 @@ ls -l /proc/1904
 #---------------------------------------------------------------------------------------------
 # Windows_active_Directory
     Level 1:
-    Active_Directory
+    Active_Directory(1)
     1. Active Directory
     2. Objects 
-    3. 
+    3. schema
     4. LDAP
     5. Administrator
     6. Disable
     7. Get-ADUser
     8. DS
     Level 5:
-    Active_Directory_Basics
-    1. 
-    2.Get-ADGroup
-    3.
+    Active_Directory_Basics(5)
+    1. 21-1004336348-1177238915-682003330
+    2. Get-ADGroup
+    3. Get-ADUser -filter *
     4. Search-ADAccount
     Level 10:
-    AD_Search_Accounts
+    AD_Search_Accounts(5)
     _.
     > Get-ADUser -Filter {Enabled -eq $true} -Properties AccountExpirationDate | Where-Object {$_.AccountExpirationDate -lt (get-date) -and $_.Enabled -ne $null} | select-object GivenName
         Awnser: Krause,Page
-    AD_Search_Emails
+    AD_Search_Emails(5)
     _.
     > get-aduser -filter * -properties EmailAddress | where-object {$_.emailaddress -notlike "*mail.mil"} | select-object EmailAddress
         Awnswer: CharlieB@ashleymadison.com
                  Skyler01@ashleymadison.com
-    AD_Seach_Files
+    AD_Seach_Files(10)
     _.
     > get-childitem -force -recurse -erroraction SilentlyContinue | select Mode, LastWriteTime, Fullname
         Answer: lulz.pdf
-    AD_Search_Insider
+    AD_Search_Insider(10)
     1.
     > net use * "\\file-server\warrior share"
         Answer: 14287.pdf
     2.
     > Get-ADUser -Filter * -Properties telephoneNumber | where-object {$_.telephoneNumber -like "*336-6754"}
     Answer: Karen.Nance
-    AD_Search_Naming
+    AD_Search_Naming(10)
     _.
     > Get-ADUser -Filter * -Properties Description | select Description
     > Get-ADUser -Filter * -Properties Description | where-object {$_.Description -notlike "*PLT Soldier"} | select-object Description
     > Get-ADUser -Filter * -Properties Description | where-object {$_.Description -like "*description"}
         Answer: Ibarra,Lee
-    AD_Search_Passwords
+    AD_Search_Passwords(10)
     _.
-    AD_Search_PII
+    AD_Search_PII(10)
     _.
     > get-childitem -force -recurse -erroraction SilentlyContinue | select Mode, LastWriteTime, Fullname
         Answer: phone_matrix.xlsx
@@ -881,7 +881,7 @@ ls -l /proc/1904
     7.
     8.
     Level 15:
-    AD_Follow_Insider_Trail
+    AD_Follow_Insider_Trail(15)
     1.
     2.
     3.

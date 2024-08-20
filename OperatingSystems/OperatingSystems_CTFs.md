@@ -79,10 +79,10 @@
     Windows_PowerShell_Logic(15)
     9.
     Windows_PowerShell_REGEX(15)ps -elf | grep sshd
-ls -l /proc/1904
-/proc/1904/exe,/usr/sbin/sshd
-    5.> (Get-Content words.txt | Where-Object {$_ -match '((aa)[a-g])'}).count
-        Answer: 357
+    ls -l /proc/1904
+    /proc/1904/exe,/usr/sbin/sshd
+        5.> (Get-Content words.txt | Where-Object {$_ -match '((aa)[a-g])'}).count
+            Answer: 357
 #-----------------------------------------------------------------------------------------------
 
 # Windows_PowerShell_Profiles

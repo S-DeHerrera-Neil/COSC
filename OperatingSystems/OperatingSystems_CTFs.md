@@ -328,6 +328,10 @@
     > Get-Content .\README
         answer: the output
     10.
+    > Get-ChildItem -path c:\users\ctf -hidden -Recurse -Force -directory
+    > cd [specified DIR]
+    > get-content [""]
+        answer: in ^there
     11.
     12.
     Level 15:

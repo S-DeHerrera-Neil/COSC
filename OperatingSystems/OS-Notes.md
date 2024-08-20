@@ -22,7 +22,6 @@ $ sudo openvpn --config config.ovpn
 $ /usr/bin/remmina &
 '''
 
-
 ## SSH Command ##
 'ssh student@10.50.27.61 -X'
 

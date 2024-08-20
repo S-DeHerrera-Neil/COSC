@@ -102,7 +102,7 @@
     > $PSHome
     Question 5: Which PowerShell variable stores the path to the "Current User, Current Host" profile?
 
-    > $profile
+    > $profileAntecedent
     Question 6: What command would you run to view the help for PowerShell Profiles?
 
     > get-help about_profiles
@@ -229,7 +229,8 @@
 
         Linux Basics Bash Logic(10)
         1.
-        
+        $ awk 'NR>=420&&NR<=1337' /home/garviel/numbers | sha512sum
+            ^ command for the sha512 hash.
         2.
         Level 15:
         Linux Basics Regular Expressions(15)
@@ -294,7 +295,7 @@
     4.attributes
     5.$DATA
     6.$LOGGED_UTILITY_STREAM
-    7.$SECURITY_DESCRIPTOR
+    7.$SECURITY_DESCRIPTORlast five characters 
     8.0x80
     9.1024 bytes
     10.Explicit
@@ -314,8 +315,18 @@
     6.hostsCreate a new branch for this commit and start a pull request Learn more about pull requests
     Level 10:
     7.BUILTIN\Users
-    8.
-    9.
+    8. 
+    > Get-ChildItem -Path C:\ -Filter hosts* -Recurse
+    > cd [the appropriate directory]
+    >  Get-Content hosts
+    >  Get-FileHash -Path hosts -Algorithm MD5
+        Answer: LAST 5 of the hash
+    9. 
+    > cd c:\Users\CTF
+    > Get-ChildItem -path readme* -Recurse -Force
+    > cd [to the path specified]
+    > Get-Content .\README
+        answer: the output
     10.
     11.
     12.
@@ -442,7 +453,7 @@
 
 #---------------------------------------------------------------------------------------------
 # Windows_Process_Validity
-    Level 1:
+    Level 1:reg query 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList'
     Primer_Process(1)
     1. C:\Windows\SysWOW64
     2. smss.exe
@@ -506,7 +517,7 @@
 # Windows_Services
     Level 5:Monitoring
     Windows_UAC_Basics(5)
-    1. sc query
+    1. sc querylast five characters 
     2. sc queryex type=service state=all
     3. Get-Service
     4. HKLM\System\CurrentControlSet\Services
@@ -619,7 +630,7 @@
         $ cat .bash_logout
             Awnser: /home/garviel/.bash_logout,12.54.37.8:12000
 
-#---------------------------------------------------------------------------------------------How many severity codes are defined in the standard that defines syslog?
+#-------------------------------------------------------------------------------------------        -How many severity codes are defined in the standard that defines syslog?
 
 
 # Windows_Auditing_and_Logging
@@ -853,7 +864,7 @@
     > get-childitem -force -recurse -erroraction SilentlyContinue | select Mode, LastWriteTime, Fullname
         Answer: lulz.pdf
     AD_Search_Insider(10)
-    1.
+    1.last five characters 
     > net use * "\\file-server\warrior share"
         Answer: 14287.pdf
     2.

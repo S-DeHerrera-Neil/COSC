@@ -7,21 +7,16 @@ This command will login to our linops as student:
 # command: terminator (opens a terminal that allows you to split screens)
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ## command to run OpenVPN via debian CLI
-    - no path in the command because it is being run from the directory that the configration file is currently in.
-'''
+- no path in the command because it is being run from the directory that the configration file is currently in.
 - syntax sudo <VPN> <configuration file path,> 
 
-$ sudo openvpn --config config.ovpn
-'''
+      $ sudo openvpn --config config.ovpn
 
 ## RDP via Debian system
-        - path for file is /usr/bin/remmina
-'''
+- path for file is /usr/bin/remmina
 - to start the RDP service via cli
 
-$ /usr/bin/remmina &
-'''
-
+        $ /usr/bin/remmina &
 ## SSH Command ##
 'ssh student@10.50.27.61 -X'
 

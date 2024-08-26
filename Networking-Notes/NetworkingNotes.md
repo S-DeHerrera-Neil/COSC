@@ -32,10 +32,10 @@ Network Access:
     - IEEE - LAN/WAN electrical standards (Standards )
 
   - OSI Layer 1 (Bits): Binary, Decimal, Hexidecimal, Base64
-    - Binary: Base2(0/1), Place Values(), Format()01000111 100010 1100011), Groupings(bit, nibble, byte, half-word,word)
-    - Bit = 1bit, Nibble = 4bits, Byte = 8bits, Half-Word = 16bits, Word = 32bits
-    - Hexideciaml (0x42,etc..)
-    - Base64 (A_Z, a-z, 0-9, +, /) "May include padding"
+      - Binary: Base2(0/1), Place Values(), Format()01000111 100010 1100011), Groupings(bit, nibble, byte, half-word,word)
+      - Bit = 1bit, Nibble = 4bits, Byte = 8bits, Half-Word = 16bits, Word = 32bits
+      - Hexideciaml (0x42,etc..)
+      - Base64 (A_Z, a-z, 0-9, +, /) "May include padding"
   - Topologies
       - Bus (all in line)
       - Star(All connected at one point'typicalle a switch')
@@ -45,7 +45,7 @@ Network Access:
       - Hierarical(Enterprise level{Access Layer, Distribution Layer, Core Layer})
    - Devices
       - Hubs(sends packets to every ports)
-      - Repeaters(Extends the distance that your medium can go Cat5, Fiber, etc.{maximum threshold it can go})
+      - Repeaters(Extends the distance that your medium can go CAT5, Fiber, etc.{maximum threshold it can go})
       - Switches(Every port can be mapped to a specific network{Collision Domains}, Virtual Local Area Networks (VLANs)) Are Networks
       - Routers(Connects Networks{Domains})
     - Bit-Time

@@ -63,3 +63,85 @@ Network Access:
     - Frame
       - Header|Data{HigherLayerHeader|HigherLayerData|HigherLayerTrailer}Data|Footer/Trailer
       
+- Switches(how they affect visability)
+    - (CAM) Table - Building MAC-Address 'table'
+      - Learn by Reading Source MAC addressses (Look up then forward)
+    - Forwarding Frames
+      - Decision based on Destination MAC Address
+*    - Switching Modes
+        - Cut-Through
+        - Fragment-Free
+        - Store-and-Forward
+    - CAM Table Overflow Attack (Yikes) Overriding information
+      - Send frames with bogus source MAC address to switch
+      - Cause switch to fill table with bogus addresses
+      - Switch will not be able to learn new (valid) MAC addresses
+    - MAC Addressing: length 48 bit|6 byte| 12 Hex
+      - Format:
+        - Windows 01-23-45-12-24-56
+        - Unix/Linux: 01:23:45:12:34:56
+        - Cisco:L 1234.5612.3456
+      - Parts
+        - OUI: First 24-bits assigned by IANA
+        - Vendor Assigned: Last 24-bits assigned by vendor
+        
+      - Unicast 1-1
+      - Multicast 1-Many
+      - Broadcast 1-Everyone
+ 
+      - MAC Spoofing
+        - Hardware
+        - Firmware
+        - burned-in
+          - Now changed w/ software
+
+      - VLANs (Virtual Local Area Networks)
+        - Need 0x8100 (VLAN Tags)
+        - Need Trunks to pass the packets from device to device (based off the VLAN Tag)
+      - Default - VLAN 1
+      - Data - User Traffic
+      - Voice - VOIP traffic
+      - Management - Switch/Router management
+      - Native - untagged switch and router traffic
+
+      - Switches give you a VLAN (Can only see VLAN information between switches)
+      - Double Tagging VLAN Tag 1.(0x88..) VLAN Tag 2.(0x81..)
+ 
+      - VLAN Hopping Attack via "Double Tagging (0x8100)x2"
+        - Switch Spoofing (DTP)
+        - Single Tagging
+        - Double Tagging (Using native VLAN)
+       
+        - ARP (Address Resolution Protocol)
+       
+        - VTP (VLAN Trunking Protocol) Server that 'clients pull information from' CISCO
+          - Dynamically add/remove/modify VLANs
+          - Cisco proprietary
+          - Modes
+            - Server
+            - Client
+            - Transparent
+          
+          - VTP vulnerability, the server with the most revisions takes precident and propegates.
+         
+          - DTP (Dynamic Trunking Protocol)
+            - Used to dynamically create trunk links
+            - Cisco Proprietary
+            - Modes
+              - Dynamic-Auto
+              - Dynamic-Desirable
+            - On by default
+            - Can send crafted messages to form a VLAN trunk link
+            - Recommended to:
+              - Disable DTP negotiations
+              - Manually asssign as Access or Trunk
+             
+          - CDP (Cisco Discovery Protocol)
+            - Clear text
+            - enabled by default
+            - may be required for VOIP
+          - FDP (Foundary Discovery Protocol)
+          - LLDP (Link Layer Discovery Protocol)
+          - STP (Spanning Tree Protocol)
+         
+          - Root (Last Hop before Default Gateway)

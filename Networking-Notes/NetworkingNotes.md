@@ -4,7 +4,8 @@ Miro: https://miro.com/app/board/o9J_klSqCSY=/
 CTFD-1: 
 (Linux Environment): https://explainshell.com/
 
-CTFD-1: http://networking-ctfd-1.server.vta:8000/ or http://10.50.20.180:8000/ (If you wanna access from home)
+CTFD-1: 	
+http://networking-ctfd-2.server.vta:8000/ or http://10.50.23.63:8000/ (If you wanna access from home)
 ```  
   NEDE-M-006
   p...!

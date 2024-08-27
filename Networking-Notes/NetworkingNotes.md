@@ -146,3 +146,89 @@ Network Access:
           - STP (Spanning Tree Protocol)
          
           - Root (Last Hop before Default Gateway)
+
+Day 2 (20240827) Traffic Capture
+-Advantages
+- sniffing based off of capture libraries
+- sniffing the wire shows you what is leaving your box.
+- Networks have threasholds(a limit)
+-Disadvantages
+- needs elevated privilages
+- Can only capture what the NIC can see
+- Might lose packets
+- Consumes many resources
+
+- Packets captured in 2 ways:
+  - Hardware 
+  - Software (use pre-existing hardware)
+ 
+  - Sockets: a way to tie an IP Address and Port together
+    -User Space Sockets
+    - Stream Socket (TCP)
+    - Datagram Socket (UDP)
+    -Kernel Space Sockets
+    - RAW Sockets
+   
+    - Capture Library
+      -Requires root
+      - Promiscious Mode (Listen on all NICs)
+      - All captured packets are created as RAW Sockets
+
+    - Types of Sniffing
+      - Active 
+      - Passive
+     
+      - Interface Naming
+        -Traditional
+        - eth0, eth1
+        -Consistent
+        - eno1, ens3
+
+    - Preform Real-Time Network Traffic Sniffing
+
+      - TCPDump Primatives (Human Readable, so you don't have to parse through the packet)
+      - User Friendly capture expresions:
+        - src or dst
+        - host or net
+        - tcp or udp
+      -TCPDump Primative Qualifiers
+        - type=what the number refers to
+          - host, net, port, or port range
+        - dir=transfer direction to and/or from
+          - src or dst
+        - proto=restricts the match to a particular protocol(s)
+          - ether, arp, ip, ip6, icmp, tcp or udp
+
+     - check if the value is "0x800" and if this is true "j
+          -A :Print payload 
+          -D :list interfaces
+          -i :specify capture interface
+          -e :print data-link headers
+          -X or -XX :print payload in HEX and ASCII
+
+        -Basic TCPDump Options
+          -w=write to pcap
+          -r=read from pcap
+          -v, vv, or vvv=verbosity
+          -n=no inverse lookups
+
+       -Logical Operators
+       - Primiatives can be combined using:
+         - 'and' (&&)
+         - 'or' (||)
+         - 'not' (!)
+        
+      -Relational Operators:
+        - < or <=
+        - > or >=
+        - = or == or !=
+
+    -TCPDump Primative Examples
+      - Simple
+      - Extended
+   
+   - Wireshark (Capture vs Display Filter):
+     - Capture: used to specify which packets should be saved to disk while capturing.
+     - Display: allow you to change the view of what packets are displayed of those that are captured.
+    
+     

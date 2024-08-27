@@ -231,4 +231,5 @@ Day 2 (20240827) Traffic Capture
      - Capture: used to specify which packets should be saved to disk while capturing.
      - Display: allow you to change the view of what packets are displayed of those that are captured.
     
-     
+  - POF (Passive OS Fingerprinting)
+    - Tool that's installed on the Linux boxes to help validate OS Fingerprinting. It matches signatures in it's database file "/etc/p0f/p0f.fp"

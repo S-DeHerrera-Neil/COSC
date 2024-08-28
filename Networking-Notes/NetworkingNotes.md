@@ -297,3 +297,15 @@ $ sudo !!
       message = b'Message'
       hidden_msg = base64.b64encode(message)
       ```
+
+# Helpful Commands:
+
+- nc -lp 1111 < echo "Hello There"
+- echo "kill" | nc -lp 1111
+- echo "Hello there" | nc -lp 1111
+- nc -lp 1111 < text.txt
+- sudo tcpdump 'ip[4:2] = 20' -vvXX
+- sudo tcpdump 'ip[2:2] = 1776' -vvXX
+- sudo tcpdump 'tcp[2:2] = 1776' -vvXX
+- nc -luvp 5309 
+- echo "Sending" | nc -luvp 2222

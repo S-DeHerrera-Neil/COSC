@@ -233,3 +233,22 @@ Day 2 (20240827) Traffic Capture
     
   - POF (Passive OS Fingerprinting)
     - Tool that's installed on the Linux boxes to help validate OS Fingerprinting. It matches signatures in it's database file "/etc/p0f/p0f.fp"
+
+Day 3 (20240828) Packet Creation Creation
+
+  - Stream Socket: Connection oriented [TCP, SCTP & BT]
+  - Datagram: Connectionless [UDP]
+  - RAW: Direct sending and recieving of IP Packets w/out automatic protocol-specific formatting 
+
+  - User Space: Stream & Datagram Sockets
+  - Kernel Space: RAW Sockets (Kernel Space) $ sudo
+
+  - import{module}
+  - from {module} import * "can call funtions by their name"
+
+  - RAW packets allow you to change and modify the parameters in which you send your data.
+
+- After you run a command, this will run the last command as sudo.
+```
+$ sudo !!
+```

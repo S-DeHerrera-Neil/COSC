@@ -255,16 +255,45 @@ $ sudo !!
 
 - Encoding & Decoding
   - different commands:
-    - Encode text to Hex
+
+    - Hex 
+      - Encode text to Hex
+      ```
+      echo "Message" | xxd
+      ```
+      - Encode file to Hex
+      ```
+      xxd file.txt file-encoded.txt
+      ```
+      - Decode file from Hex
+      ```
+      xxd -r file-encoded.txt file-decoded.txt
+      ```
+
+    - Python Hex Encoding
     ```
-    echo "Message" | xxd
+    import binascii
+    message = b'Message'
+    hidden_msg = binascii.hexlify(message)
     ```
-    - Encode file to Hex
-    ```
-    xxd file.txt file-encoded.txt
-    ```
-    - Decode file from Hex
-    ```
-    xxd -r file-encoded.txt file-decoded.txt
-    ```
-    
+
+    - Base 64
+      - Encode text to base64
+      ```
+      echo "Message" | base64
+      ```
+      - Endode file to Base64:
+      ```
+      base64 file.txt > file-encoded.txt
+      ```
+      - Decode file from Base64:
+      ```
+      base64 -d file-encoded.txt > file-decoded.txt
+      ```
+
+      - Python Base64 Encoding
+      ```
+      import base64
+      message = b'Message'
+      hidden_msg = base64.b64encode(message)
+      ```

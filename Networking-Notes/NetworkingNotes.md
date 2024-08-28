@@ -252,3 +252,19 @@ Day 3 (20240828) Packet Creation Creation
 ```
 $ sudo !!
 ```
+
+- Encoding & Decoding
+  - different commands:
+    - Encode text to Hex
+    ```
+    echo "Message" | xxd
+    ```
+    - Encode file to Hex
+    ```
+    xxd file.txt file-encoded.txt
+    ```
+    - Decode file from Hex
+    ```
+    xxd -r file-encoded.txt file-decoded.txt
+    ```
+    

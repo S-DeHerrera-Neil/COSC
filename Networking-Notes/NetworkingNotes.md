@@ -1,4 +1,5 @@
 Resources:
+draw.io
 
 Miro: https://miro.com/app/board/o9J_klSqCSY=/
 CTFD-1: 
@@ -488,3 +489,4 @@ sudo traceroute 172.16.82.106 -T -p 443
     ```
     nc -nuzvw1 172.16.82.106 1000-2000 2>&1 | grep -E 'succ|open'
     ```
+

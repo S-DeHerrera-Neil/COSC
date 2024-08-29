@@ -1,4 +1,4 @@
-# Network Reconnissance Methodology
+# Network Reconnaissance Methodology
 
   - Host Discovery
     - Ruby ping sweep (if ping is available)
@@ -20,7 +20,7 @@
 
 
 Scan Methodology
-  nmap - Pn [IP Addr] -T4 -p 21-23, 80
+  nmap - Pn [IP Addr] -T4 -p 21-23, 80 *
 
   - Quick Scan Port 21-23, 80
   - Specific ports based on hints/clues found
@@ -39,3 +39,15 @@ Passive Recon Methodology
   - Interfaces and Subnets
     - ip a *
     - show interfaces {VYOS} *
+  - Neighbors
+    - ip neigh *
+  - Routing Table
+    - ip route *
+    - show ip route {VYOS}
+  - Files of Interest
+    - find / iname flag* *
+    - find / -iname hint* *
+  - Other listening ports
+    - ss -ntlp *
+  - Available Tools
+    - which tcpdump wireshark nmap telnet get curl ping

@@ -309,3 +309,182 @@ $ sudo !!
 - sudo tcpdump 'tcp[2:2] = 1776' -vvXX
 - nc -luvp 5309 
 - echo "Sending" | nc -luvp 2222
+
+Day 4 (20240829) Reconnissance
+
+- Passive External: OSINT, DNS
+  - OSINT Framework, Pentest-Standard, SecuritySift, web-crawlers
+- Active External: Ping, NMap, Netcat, Banner Grabs, Tracerourte
+  - 
+- Passive Internal: On their Box, Internal scanning like listed above
+- Active Internal: On their Box, Native tools, ps -elf, etc... 
+
+- Reconnaissance (Active and Passive)
+  - Network footprinting
+  - Network Scanning
+  - Network Enumeration
+  - Vulnerability Assesment
+ 
+- Passive Recon: OSINT, PAI(Publicaly Available Information)
+  - Lots of tools in the slide for OSINT
+
+# Commands:
+  - dig: DNS server queries (UDP 53)
+  - whois: Information about owners registered to a Domain (TCP 43)
+
+  whois:
+  ```
+  whois zonetransfer.me
+  ```
+  dig:
+  ```
+  dig zonetransfer.me A
+  dig zonetransfer.me AAAA
+  dig zonetransfer.me MX
+  dig zonetransfer.me TXT
+  dig zonetransfer.me NS
+  dig zonetransfer.me SOA
+  ```
+
+  Zone Transfer: (axfr protocol used for zone transfers)
+    - syntax  dir axfr {@soa.server} {target-site}
+  ```
+  dig axfr @nsztm1.digi.ninja zonetransfer.me
+  ```
+
+  Google Searches
+    - Dork Search
+  ```
+  site:*.ccboe.net
+
+  site:*.ccboe.net "administrator"
+  ```
+
+  Shodan:
+  - Be aware of attribution. You can lose your clearance.
+  ```
+  https://www.shodan.io
+  ```  
+
+  POF (Passive OS Fingerprinting)
+  - Passive scanning of network traffic and packet captures
+  ```
+  more /etc/p0f/p0f.fp
+
+  sudo p0f -i eth0
+
+  sudo p0f -r test.pcap
+  ```
+
+## Active External (discovery)
+  - Scanning Nature: Active & passive
+    - Remote to Local (Outside to inside the Network)
+    - Local to Remote
+    - Local to Local
+    - Remote to Remote
+   
+    - Vertical Scan: 1-1 (scans all the ports on target)
+    - Horizantal Scan: 1-Many (scans a single, set of ports, or range of ports for various targets)
+    - ...
+   
+    ping: ping 1 ip
+    ```
+    ping 172.16.82.106 -c 1
+    ```
+    ping: ping a range
+    ```
+    for i in {1..254}; do (ping -c 1 172.16.82.$i | grep "bytes from" &) ; done
+    ```
+
+    ## Nmap
+    - Default Scan:
+      - User: Full Connect (-sT) 
+      - Root: TCP SYN Scan (-sS) "Stealth Scan" run as sudo
+      - IF PORT(s) is/are not specified, NMAP 1000 most commonly used TCP or UDP ports.
+       
+    - NMAP states:
+      - open
+      - closed
+      - filtered
+      - unfiltered
+      - open|filtered
+      - closed|filtered
+
+    - NMAP Scan Types:
+      - SYN scan ()
+      - Full connect scan ()
+      - Null scan (0 flags attached)
+      - FIN scan ()
+      - XMAS tree scan ()
+      - UDP scan (takes a long time, looking for absence of destination unreachable)
+      - Idle scan (sets up a RDR and runs the scan from it "Zombie Scan")
+    Do NOT ctrl+c LET the command finish out
+
+    NMAP Scan Types
+    - (-D) Decoy Scan
+    - (-sA) ACK/Window scan
+    - (-sR) RPC scan
+    - (-b) FTP scan
+    - (-O) OS Fingerprinting
+    - (-sV) Version 
+    - Discovery Probes
+    - (-PE) ICMP Ping
+    - (-Pn) No ping
+
+    NMAP Tim-Out
+    - (-T0) Paranoid
+    - (-T1) Sneaky
+    - (-T2) Polite
+    - (-T3) Normal
+    - (-T4) Aggresive
+    - (-T5) Insane
+We are doing T4!!!
+
+# Commands:
+  - NMAP Delay
+```
+--scan-delay <time> - Minimum delay between probes
+```
+```
+--max-scan-delay <time> - Max delay between probes
+```
+
+- NMAP Rate Limit
+```
+--min-rate <number> - Minimum packets per second
+```
+```
+--max-rate <number> - Max packets per second
+```
+
+- Traceroute Firewalking
+```
+traceroute 172.16.82.106
+traceroute 172.16.82.106 -p 123
+sudo traceroute 172.16.82.106 -I
+sudo traceroute 172.16.82.106 -T
+sudo traceroute 172.16.82.106 -T -p 443
+```
+
+- NetCat Scanning
+  - syntax: nc [Options] [Target IP] [Target Port(s)]
+
+- NetCat Horizantal Scanning
+  - TCP
+  ```
+  for i in {1..254}; do nc -nvzw1 172.16.82.$i 20-23 80 2>&1 & done | grep -E 'succ|open'
+  ```
+  - UDP
+  ```
+  for i in {1..254}; do nc -nuvzw1 172.16.82.$i 1000-2000 2>&1 & done | grep -E 'succ|open'
+  ```
+
+  - NetCat Vertical Scanning
+    - TCP
+    ```
+    nc -nzvw1 172.16.82.106 21-23 80 2>&1 | grep -E 'succ|open'
+    ```
+    - UDP
+    ```
+    nc -nuzvw1 172.16.82.106 1000-2000 2>&1 | grep -E 'succ|open'
+    ```

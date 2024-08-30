@@ -1,4 +1,4 @@
-# Network Reconnaissance Methodology
+# Network Reconnaissance Methodology.
 
   - Host Discovery
     - Ruby ping sweep (if ping is available)

@@ -1,17 +1,23 @@
-Resources:
+# Resources:
 [draw.io](https://app.diagrams.net/)
 
 Miro: https://miro.com/app/board/o9J_klSqCSY=/
-CTFD-1: 
-(Linux Environment): https://explainshell.com/
+ 
+## Help (Linux Environment): https://explainshell.com/
 
-CTFD-1: 	
+
+
+## CTFD-2: 	
 http://networking-ctfd-2.server.vta:8000/ or http://10.50.23.63:8000/ (If you wanna access from home)
 ```  
   NEDE-M-006
   p...!
 ```
-Blue  Internet Hosts: Your Environment
+## Virtual Envirnoments:
+
+#### Blue  Internet Host(s): 
+
+#### Red Internet Host(s):
 
 Day 1 (20240826)
 

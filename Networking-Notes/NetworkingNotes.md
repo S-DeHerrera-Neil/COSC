@@ -1,7 +1,9 @@
 # Resources:
 [draw.io](https://app.diagrams.net/)
 Miro: https://miro.com/app/board/o9J_klSqCSY=/
- ## Help (Linux Environment): https://explainshell.com/
+## Help (Linux Environment): https://explainshell.com/
+
+
 ## command to run OpenVPN via debian CLI
 - no path in the command because it is being run from the directory that the configration file is currently in.
 - syntax sudo <VPN> <configuration file path,> 

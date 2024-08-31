@@ -1,6 +1,8 @@
 # Resources:
 [draw.io](https://app.diagrams.net/)
 Miro: https://miro.com/app/board/o9J_klSqCSY=/
+FG:
+https://net.cybbh.io/public/networking/latest/index.html
 ## Help (Linux Environment): https://explainshell.com/
 
 

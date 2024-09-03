@@ -23,12 +23,11 @@ CTFD Credentials
 ## Virtual Envirnoments:
 
 #### Blue  Internet Host(s): 
-      Student#: student6
+     Student#: student20
 
-      Command: ssh student@10.50.38.41 -X
+      Command: ssh student@10.50.41.223 -X
 
       Password: password
-
 #### Red Internet Host(s):
       Entry Float IP: 10.50.37.85
       

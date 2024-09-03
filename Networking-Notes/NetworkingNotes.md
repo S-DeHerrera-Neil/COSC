@@ -561,7 +561,7 @@ Day 4(20240903) File Transfer/Redirection
        - -r(recursively copy an entire directoy)
        - -3(3-way copy)
       
-        
+Proxie Chains knows to use port: 9050        
 
 # Commands:
 
@@ -571,15 +571,117 @@ wget with the -r {recursive option does...}
       proxychains wget -r ftp://10.0.0.104
       ```
 Download from remote Dir to local Dir
+      
       ```
       scp student@172.16.82.106:secretstuff.txt /home/student
       ```
 Upload a file to remote Dir from Local Dir
+      
       ``` 
       scp secretstuff.txt student@172.16.82.106:/home/student
       ```
 Copy a file from a remote Host to a seperate remote host
+      
       ```
       scp -3 student@172.16.82.106:/home/student/secretstuff.txt student@172.16.82.112:/home/student
       password:    password:
       ```
+Recursive upload of a folder to remote host's $Home Dir
+
+      ```
+      $ scp -r folder/ student@172.16.82.106:
+      ```
+Recursive download of a folder from remote to my current working Dir
+
+      ```
+      $ scp -r student@172.16.82.106:folder/ .
+      ```
+Download Syntax w/alternate SSHD
+- Downlaod a file froma remote Dir to a local Dir
+
+  ```
+  $ scp -P 1111 student@172.16.82.106:secretstuff.txt .
+      ```
+- Upload a file to a remote Dir from a local Dir
+
+      ```
+      $ scp -P 1111 secretstuff.txt student@172.16.82.106:
+
+      ```
+Create a local port forward to target device
+
+      ```
+      ssh student@172.16.82.106 -L 1111:localhost:22 -NT
+      ```
+Download a file from  a remote Dir to a local Dir
+
+      ```
+      scp -P 1111 student@localhost:secretstuff.txt /home/student
+      ```
+Upload a file to a remote Dir from a local Dir
+
+      ```
+      scp -P 1111 secretstuff.txt student@localhost:/home/student
+      ```
+SCP SYNTAX THROUGH A DYNAMIC PORT FORWARD
+- Create a Dynamic Port Forward to target device
+
+```
+ssh student@172.16.82.106 -D 9050 -NT
+
+```
+- Download a file from a remote directory to a local directory
+
+```
+proxychains scp student@localhost:secretstuff.txt .
+
+```
+- Upload a file to a remote directory from a local directory
+
+```
+proxychains scp secretstuff.txt student@localhost:
+
+```
+NETCAT: CLIENT TO LISTENER FILE TRANSFER
+Listener (receive file):
+
+```
+nc -lvp 9001 > newfile.txt
+```
+Client (sends file):
+
+```
+nc 172.16.82.106 9001 < file.txt
+```
+
+NETCAT: LISTENER TO CLIENT FILE TRANSFER 
+Listener (sends file):
+
+```
+nc -lvp 9001 < file.txt
+```
+Client (receive file):
+
+```
+nc 172.16.82.106 9001 > newfile.txt
+```
+
+NETCAT RELAY DEMOS *(using NETCAT as a relay)
+Listener - Listener
+
+On Blue_Host-1 Relay:
+
+```
+mknod mypipe p
+nc -lvp 1111 < mypipe | nc -lvp 3333 > mypipe
+```
+On Internet_Host (send):
+
+```
+nc 172.16.82.106 1111 < secret.txt
+```
+On Blue_Priv_Host-1 (receive):
+
+```
+nc 192.168.1.1 3333 > newsecret.txt
+```

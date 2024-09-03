@@ -563,6 +563,30 @@ Day 4(20240903) File Transfer/Redirection
       
 Proxie Chains knows to use port: 9050        
 
+If you have a BASH shell you can invoke /dev/tcp
+- /dev/tcp for when you do not have netcat
+- 
+
+netcat can open a (BASH terminal) via the [-c] & [-e] option switches -e(evoke, shows you the shell -c(just the commands)
+
+Packers: compress data
+- compress how much data is sent
+
+Encoding(changing how you see the data) Decoding(changing it back)
+- Cyberchef
+
+Hexidecimal encoding & decoding
+- convert from bases
+
+XXD
+
+Base64 encoding & decoding
+- A-Z,a-z,1-9,+,/
+- padding: used to fill in any unused space in each 24-bit group
+
+
+- Transfer File w/ Base64
+
 # Commands:
 
 wget with the -r {recursive option does...}

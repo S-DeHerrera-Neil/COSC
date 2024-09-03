@@ -515,3 +515,71 @@ sudo traceroute 172.16.82.106 -T -p 443
     nc -nuzvw1 172.16.82.106 1000-2000 2>&1 | grep -E 'succ|open'
     ```
 
+#-------------------------------------------------------------------------------------------------------------------------
+
+Day 4(20240903) File Transfer/Redirection
+      
+  - Active/Passice FTP
+  - SCP transfer files
+
+   - TFTP
+   - FTP (21 C2/20 Data) 
+
+     - Active
+       Client RHP -> :21 Host
+       Client RHP <- :21
+     * Client RHP <- :20 Host starts another session port:20 data
+       Client RHP -> :20
+
+     - Passive (Port :20 needs to be enabled)
+       Client RHP -> :21 Host
+       Client RHP <- :21
+     * Client RHP -> :EHP Host tells client to connect to an (Ephemeral High Port) to to utilize port :20 FTP DATA
+       Client RHP <- :EHP
+   
+   - FTPS:
+     - adds SSL/TLS encryption to FTP
+     - Interactive terminal access
+     - Explicit Mode: ports :20/:21
+       - Option for Encryption
+     - Implicit Mode ports :989/:990
+       - Encryption assumed 
+   
+   - SFTP
+     - Uses symmetric & asymmetric encryption
+     - adds FTP like services to SSH
+     - authentication via (username:/password:)
+   
+   - SCP (when SSH'd into a box, you are in that user's home dirtectory)
+     - TCP :22
+     - Authentication via (Username:/password:) or SSH key
+     - Non-Interactive
+     - Options
+       - .(pwd)
+       - -v(verbose)
+       - -P(alternate port)
+       - -r(recursively copy an entire directoy)
+       - -3(3-way copy)
+      
+        
+
+# Commands:
+
+wget with the -r {recursive option does...}
+
+      ```
+      proxychains wget -r ftp://10.0.0.104
+      ```
+Download from remote Dir to local Dir
+      ```
+      scp student@172.16.82.106:secretstuff.txt /home/student
+      ```
+Upload a file to remote Dir from Local Dir
+      ``` 
+      scp secretstuff.txt student@172.16.82.106:/home/student
+      ```
+Copy a file from a remote Host to a seperate remote host
+      ```
+      scp -3 student@172.16.82.106:/home/student/secretstuff.txt student@172.16.82.112:/home/student
+      password:    password:
+      ```

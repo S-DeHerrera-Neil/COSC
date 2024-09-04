@@ -20,7 +20,7 @@
 
 
 Scan Methodology
-  nmap - Pn [IP Addr] -T4 -p 21-23, 80 *
+  nmap - Pn [IP Addr] -T4 -p 21-23, 80 --open *
 
   - Quick Scan Port 21-23, 80
   - Specific ports based on hints/clues found

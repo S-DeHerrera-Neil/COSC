@@ -5,3 +5,15 @@
 - ops> $ ssh PC2@localhost -p 2XX00 -L 2XX02:127.0.0.1:2XX99 -NT
 - OPS> $ ssh PC3@localhost -p 2XX02 
        
+--------------------------------------------------------------------------------
+*Futurama*
+- BIH> ssh bender@float -p1234 -D 9050 -NT
+- BIH> ssh bender@{float ip} -p 1234 -L 1111:172.17.17.28:23 -NT
+- BIH> telnet 127.0.0.1 1111
+- philip> bender@172.17.17.17 -p 1234 -R 1112:127.0.0.1:127.0.0.1:4321 -NT
+- BIH> ssh bender@{float ip} -p 1234 -L 1113:127.0.0.1:1112 -NT
+- BIH> ssh philip@127.0.0.1 -p 1113 -D 9050 -NT
+- BIH> ssh 
+- BIH>
+- BIH>
+- BIH>

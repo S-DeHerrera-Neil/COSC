@@ -13,7 +13,7 @@
 - philip> bender@172.17.17.17 -p 1234 -R 1112:127.0.0.1:127.0.0.1:4321 -NT
 - BIH> ssh bender@{float ip} -p 1234 -L 1113:127.0.0.1:1112 -NT
 - BIH> ssh philip@127.0.0.1 -p 1113 -D 9050 -NT
-- BIH> ssh 
-- BIH>
-- BIH>
-- BIH>
+- BIH> ssh philip@127.0.0.1 -p 1113 -L 1114:192.168.30.150:1212
+- BIH> ssh leela@127.0.0.1 -p 1114 -D 9050 -NT
+- BIH> ssh leela@127.0.0.1 -p 1114 -L 1115:10.10.12.121:2932 -NT
+- BIH> ssh professor@127.0.0.1 -p 1115 -D 9050 -NT

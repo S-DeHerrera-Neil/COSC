@@ -708,3 +708,70 @@ On Blue_Priv_Host-1 (receive):
 ```
 nc 192.168.1.1 3333 > newsecret.txt
 ```
+
+Day 6 (20240906)
+
+Sensors
+ - In-line: Impacts network latency
+   - IPS
+   - Firewall
+ - Out of Band:
+   - Passive Sensor: Monitor network segments, can detect but not stop
+     - IDS
+   - Switched Port Analyzer
+
+      TAP: Appliance placed between 2 network devices, not scalable
+
+      MITM: Attacker can use ARP or other method/protocol
+
+      SPAN: Configured on Network Switch, places burden on the network Switch. (High degree of packet loss)
+
+Fingerprinting: 
+ - Active OS fingerprinting
+   - Easier
+   - Send packets to the target and monitor response
+   - Tools
+     - Nmap
+     - Xprobe2
+     - sinfp3
+
+Baselining: Snapshots of what the network looks like during a time frame, 7 Days to establish the initial snapshot.
+      - Determine current state of Network
+      - Ascertain the current utiliziation of network resources
+      - Identify normal vs peak network time
+      - Verify port/protocol usage
+
+
+
+Indicators
+ - Indicator of Attack(IOA): Proactive
+   - Series of actions
+   - Focus on Intent
+   - Looks for what MUST happen
+  
+ - Indicator of Compromise(IOC): Reaction
+   - Forensic Evidence
+   - Provides Information that can change
+Some Indicators:
+           - .exe/executable files
+           - NOP sled
+           - Repeated Letters
+           - Well Known Signatures
+           - Mismatched Protocols
+           - Unusual traffic
+           - Large amounts of traffic/ unual times 
+ 
+ Rootkit:
+       - Bootkit
+       - Gootkit
+
+Polymorphic vs. Metamorphic
+- Polymormorphic: Changes it's code using encryption keys, which makes each iteration look different.
+- Metamorphic: Rewrites its code without an encryption key, making each iteration new and unique. *More dangerous than^ Polymorphic*
+
+
+Mobile Code: Portable, various OSs.
+
+BIOS/Firmware
+ - IOA: Malware reinfection
+ - IOC: Depends on the malware type/class

@@ -29,3 +29,8 @@ or
 > ping 172.16.40.10
 > sudo nft list table ip CCTC
 
+> sudo nft add chain ip CCTC INPUT { \; policy accept \; }
+> sudo nft add chain ip CCTC OUTPUT { \; policy accept \; }
+> sudo nft list table ip CCTC
+> sudo nft flush table ip CCTC
+> sudo nft list table ip CCTC

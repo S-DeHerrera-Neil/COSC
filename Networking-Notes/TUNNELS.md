@@ -21,3 +21,18 @@
 - BIH> ssh leela@127.0.0.1 -p 1114 -D 9050 -NT
 - BIH> ssh leela@127.0.0.1 -p 1114 -L 1115:10.10.12.121:2932 -NT
 - BIH> ssh professor@127.0.0.1 -p 1115 -D 9050 -NT
+
+--------------------------------------------------------------------------------------
+
+- BIH> telnet 10.50.23.236
+- eric> ssh net2_student20@10.50.39.211 -R 1111:127.0.0.1:8462 -NT
+- BIH> ssh net2_student20@127.0.0.1 -p 1111 -D 9050 -NT (close)
+- BIH> ssh net2_student20@127.0.0.1 -p 1111 -L 2222:192.168.100.60:22 -NT
+- BIH> ssh net2_student20@127.0.0.1 -p 2222 -D 9050 -NT
+- BIH> ssh kyle@127.0.0.1 -p 2222 -L 3333:10.90.50.140:6481
+- BIH> ssh net2_student20@127.0.0.1 -p 3333 -D 9050 -NT
+- BIH> ssh net2_student@127.0.0.1 -p 3333 -L 4444:172.20.21.5:23 -NT
+- BIH> telnet 127.0.0.1 4444
+- stan> ssh net2_student20@172.20.21.4 -p 6481 -R 5555:127.0.0.1:22 -NT
+- BIH> ssh net2_student20@127.0.0.1 -p 3333 -L 6666:127.0.0.1:5555 -NT
+- BIH> ssh net2_student20@127.0.0.1 -p 6666 -D 9050 -NT

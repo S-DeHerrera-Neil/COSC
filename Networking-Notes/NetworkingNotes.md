@@ -861,7 +861,6 @@ CHAINS ASSIGNED TO EACH TABLE
 -n - Disables inverse lookups when listing rules
 --line-numbers - Prints the rule number when listing rules
 
-
       * COMMON IPTABLE OPTIONS *
 -p - Specifies the protocol
 -i - Specifies the input interface
@@ -869,10 +868,22 @@ CHAINS ASSIGNED TO EACH TABLE
 --sport - Specifies the source port
 --dport - Specifies the destination port
 -s - Specifies the source IP
--d - Specifies the destination IP
+-d - Specifies the destination IP    -m to enable iptables extensions:
+
+-m state --state NEW,ESTABLISHED,RELATED,UNTRACKED,INVALID
+
+-m mac [ --mac-source | --mac-destination ] [mac]
+
+-p [tcp|udp] -m multiport [ --dports | --sports | --ports { port1 | port1:port15 } ]
+
+-m bpf --bytecode [ 'bytecode' ]
+
+-m iprange [ --src-range | --dst-range { ip1-ip2 } ]
 -j - Specifies the jump target action
 
-* Before you flush the rules change the default policy, change it to ACCEPT *
+                                                                              * Before you flush the rules change the default policy, change it to ACCEPT *
+
+                                                                              
 
   IPTABLES SYNTAX:
 iptables -t [table] -A [chain] [rules] -j [action]
@@ -892,3 +903,95 @@ iptables -t [table] -A [chain] [rules] -j [action]
 -m iprange [ --src-range | --dst-range { ip1-ip2 } ]
 
   
+1. CREATE THE TABLE
+      nft add table [family] [table]
+    [family] = ip*, ip6, inet, arp, bridge and netdev.
+    [table] = user provided name for the table.
+
+2. CREATE THE BASE CHAIN
+    nft add chain [family] [table] [chain] { type [type] hook [hook]
+    priority [priority] \; policy [policy] \;}
+
+* [chain] = User defined name for the chain.
+
+* [type] =  can be filter, route or nat.
+
+* [hook] = prerouting, ingress, input, forward, output or
+         postrouting.
+
+* [priority] = user provided integer. Lower number = higher
+             priority. default = 0. Use "--" before
+             negative numbers.
+
+* ; [policy] ; = set policy for the chain. Can be
+              accept (default) or drop.
+
+ Use "\" to escape the ";" in bash
+
+3. CREATE A RULE IN THE CHAIN
+   nft add rule [family] [table] [chain] [matches (matches)] [statement]
+
+* [matches] = typically protocol headers(i.e. ip, ip6, tcp,
+            udp, icmp, ether, etc)
+
+* (matches) = these are specific to the [matches] field.
+
+* [statement] = action performed when packet is matched. Some
+              examples are: log, accept, drop, reject,
+              counter, nat (dnat, snat, masquerade)
+
+  RULE MATCH OPTIONS:
+  ip [ saddr | daddr { ip | ip1-ip2 | ip/CIDR | ip1, ip2, ip3 } ]
+
+tcp flags { syn, ack, psh, rst, fin }
+
+tcp [ sport | dport { port1 | port1-port2 | port1, port2, port3 } ]
+
+udp [ sport| dport { port1 | port1-port2 | port1, port2, port3 } ]
+
+icmp [ type | code { type# | code# } ]
+
+
+RULE MATCH OPTIONS:
+ct state { new, established, related, invalid, untracked }
+
+iif [iface]
+
+oif [iface]
+
+MODIFY NFTABLES
+
+nft { list | flush } ruleset
+
+nft { delete | list | flush } table [family] [table]
+
+nft { delete | list | flush } chain [family] [table] [chain]
+
+MODIFY NFTABLES cont.
+
+
+SOURCE NAT: SNAT
+```
+iptables -t nat -A POSTROUTING -o eth0 -s 192.168.0.1 -j SNAT --to 1.1.1.1
+```
+SOURCE NAT: SNAT
+```
+iptables -t nat -A POSTROUTING -p tcp -o eth0 -s 192.168.0.1 -j SNAT --to 1.1.1.1:9001
+```
+SOURCE NAT: Masquerade
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
+DESTINATION NAT: DNAT
+```
+iptables -t nat -A PREROUTING -i eth0 -d 8.8.8.8 -j DNAT --to 10.0.0.1
+```
+DESTINATION NAT: DNAT
+```
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 22 -j DNAT --to 10.0.0.1:22
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to 10.0.0.2:80
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j DNAT --to 10.0.0.3:443
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+```
+
+

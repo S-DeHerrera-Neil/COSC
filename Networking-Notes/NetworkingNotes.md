@@ -25,6 +25,7 @@ CTFD Credentials
 #### Blue  Internet Host(s): 
      Student#: student20
 
+      Float IP:
       Command: ssh student@10.50.41.223 -X
 
       Password: password

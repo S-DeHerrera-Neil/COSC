@@ -709,6 +709,7 @@ On Blue_Priv_Host-1 (receive):
 ```
 nc 192.168.1.1 3333 > newsecret.txt
 ```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Day 6 (20240906)
 
@@ -776,3 +777,104 @@ Mobile Code: Portable, various OSs.
 BIOS/Firmware
  - IOA: Malware reinfection
  - IOC: Depends on the malware type/class
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day 7 (20240909)
+
+Defense in Depth
+ - Permimeter
+ - Network Security
+ - Endpoint Security
+ - Application and OS Security
+ - Data Security
+
+Default Policies
+ - Explicit: percise, clearly expressed
+ - Implicit: implied or understood
+
+
+Blacklisting vs Allow-listing
+- Block-Listing (Black Listing) 
+ - Implicit ACCEPT
+ - Explicit DENY
+- Allow-Listing (White Listing)
+ - Implicit DENY
+ - Explicit ACCEPT
+
+Opertation Modes
+- Routed Mode
+- Transparent Mode
+
+FireWall Filtering Methods:
+- Stateless -L3+4
+- Stateful Inspection -L4
+- Circuit-Level -L5
+- Application Layer -L7
+- Next Generation (NGFW) -L7
+
+Software vs Hardware Vs Cloud
+- Software: host-based
+- Hardware:network-based
+- Cloud: provided as a Service
+
+We are gonna use: iptables & nftables
+
+- NF_IP_PRE_ROUTING > PREROUTING
+- NF_IP_LOCAL_IN > INPUT
+- NF_IP_FORWARD > FORWARD
+- NF_Ip_LOCAL_OUT > OUTPUT
+- NF_IP_POST_ROUTING > POSTROUTING
+
+1. TABLES - contain chains
+      - filter - default table. Provides packet filtering.
+      - nat - used to translate private ←→ public address and ports.
+      - mangle - provides special packet alteration. Can modify various fields header fields.
+      - raw - used to configure exemptions from connection tracking.
+      - security - used for Mandatory Access Control (MAC) networking rules.
+2. CHAINS - contain rules
+      - PREROUTING - packets entering NIC before routing
+      - INPUT - packets to localhost after routing
+      - FORWARD - packets routed from one NIC to another. (needs to be enabled)
+      - OUTPUT - packets from localhost to be routed
+      - POSTROUTING - packets leaving system after routing
+  
+CHAINS ASSIGNED TO EACH TABLE
+      - filter - INPUT, FORWARD, and OUTPUT
+      - nat - PREROUTING, POSTROUTING, INPUT, and OUTPUT
+      - mangle - All chains
+      - raw - PREROUTING and OUTPUT
+      - security - INPUT, FORWARD, and OUTPUT
+
+3. RULES - dictate what to match and what actions to preform on packets when packets match a rule
+
+
+
+      IPTABLES SYNTAX
+iptables -t [table] -A [chain] [rules] -j [action]
+
+      * COMMON IPTABLE OPTIONS * 
+-t - Specifies the table. (Default is filter)
+-A - Appends a rule to the end of the list or below specified rule
+-I - Inserts the rule at the top of the list or above specified rule
+-R - Replaces a rule at the specified rule number
+-D - Deletes a rule at the specified rule number
+-F - Flushes the rules in the selected chain
+-L - Lists the rules in the selected chain using standard formatting
+-S - Lists the rules in the selected chain without standard formatting
+-P - Sets the default policy for the selected chain
+-n - Disables inverse lookups when listing rules
+--line-numbers - Prints the rule number when listing rules
+
+
+      * COMMON IPTABLE OPTIONS *
+-p - Specifies the protocol
+-i - Specifies the input interface
+-o - Specifies the output interface
+--sport - Specifies the source port
+--dport - Specifies the destination port
+-s - Specifies the source IP
+-d - Specifies the destination IP
+-j - Specifies the jump target action
+
+* Before you flush the rules change the default policy, change it to ACCEPT *

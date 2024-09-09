@@ -848,11 +848,6 @@ CHAINS ASSIGNED TO EACH TABLE
 
 3. RULES - dictate what to match and what actions to preform on packets when packets match a rule
 
-
-
-      IPTABLES SYNTAX
-iptables -t [table] -A [chain] [rules] -j [action]
-
       * COMMON IPTABLE OPTIONS * 
 -t - Specifies the table. (Default is filter)
 -A - Appends a rule to the end of the list or below specified rule
@@ -878,3 +873,22 @@ iptables -t [table] -A [chain] [rules] -j [action]
 -j - Specifies the jump target action
 
 * Before you flush the rules change the default policy, change it to ACCEPT *
+
+  IPTABLES SYNTAX:
+iptables -t [table] -A [chain] [rules] -j [action]
+      -i [ iface ]
+      -o [ iface ]
+      -s [ ip.add | network/CIDR ]
+      -d [ ip.add | network/CIDR ]
+-p icmp [ --icmp-type type# { /code# } ]
+-p tcp [ --sport | --dport { port1 |  port1:port2 } ]
+-p tcp [ --tcp-flags SYN,ACK,PSH,RST,FIN,URG,ALL,NONE ]
+-p udp [ --sport | --dport { port1 | port1:port2 } ]
+    -m to enable iptables extensions:
+-m state --state NEW,ESTABLISHED,RELATED,UNTRACKED,INVALID
+-m mac [ --mac-source | --mac-destination ] [mac]
+-p [tcp|udp] -m multiport [ --dports | --sports | --ports { port1 | port1:port15 } ]
+-m bpf --bytecode [ 'bytecode' ]
+-m iprange [ --src-range | --dst-range { ip1-ip2 } ]
+
+  

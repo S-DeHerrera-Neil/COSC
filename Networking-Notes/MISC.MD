@@ -21,4 +21,11 @@ or
 > sudo nft add chain ip CCTC INPUT { \; policy drop \; }
 > sudo nft add chain ip CCTC OUTPUT { \; policy drop \; }
 
+> sudo nft insert rule ip CCTC INPUT ip saddr 172.16.82.106 drop
+> ping 172.16.82.106
+> sudo nft insert rule ip CCTC OUTPUT ip daddr 172.16.82.106 drop
+> sudo nft add rule ip CCTC INPUT ip saddr 172.16.40.10 accept
+> sudo nft add rule ip CCTC OUTPUT ip daddr 172.16.40.10 accept
+> ping 172.16.40.10
+> sudo nft list table ip CCTC
 

@@ -34,3 +34,9 @@ or
 > sudo nft list table ip CCTC
 > sudo nft flush table ip CCTC
 > sudo nft list table ip CCTC
+
+
+nat
+0c2ca80fad4accccce3bcecec1d238ce
+be33fe60229f8b8ee22931a3820d30ac
+e4f4c65b3884eadf7986adc76caea32c

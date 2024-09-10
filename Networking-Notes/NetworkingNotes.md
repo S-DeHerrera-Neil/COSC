@@ -881,7 +881,7 @@ CHAINS ASSIGNED TO EACH TABLE
 -m iprange [ --src-range | --dst-range { ip1-ip2 } ]
 -j - Specifies the jump target action
 
-                                                                              * Before you flush the rules change the default policy, change it to ACCEPT *
+                                                                  * Before you flush the rules change the default policy, change it to ACCEPT *
 
                                                                               
 

@@ -113,7 +113,7 @@ internet_host$ ssh netX_studentX@{T3_float_ip} -D 9050 -NT
 2.
 proxychains ./scan.sh
 3.
-proxychains wget -r http://{cortina_ip}
+proxychains wget -r http://10.3.0.1
 *
 ---------------------------------------------------------------------------------------------------
 q7.

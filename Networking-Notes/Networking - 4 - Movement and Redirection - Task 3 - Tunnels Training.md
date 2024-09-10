@@ -94,8 +94,11 @@ internet_host$ ssh netX_studentX@localhost -p NssXX -D 9050 -NT
 2.
 proxychains ./scan.sh
 3.
-proxychains wget -r ftp://{mohammed_ip}
+proxychains wget -r ftp://10.2.0.2
 *
+- You have accessed Mohammed's FTP server. The flag is the answer to the following question: "Which file is used to configure default settings for the SSH client on a Linux system, including options for connection preferences and behaviors? (provide the complete path)"
+
+:sshd_config
 ---------------------------------------------------------------------------------------------------
 q6.
 T3 is the authorized initial pivot

@@ -36,3 +36,29 @@
 - stan> ssh net2_student20@172.20.21.4 -p 6481 -R 5555:127.0.0.1:22 -NT
 - BIH> ssh net2_student20@127.0.0.1 -p 3333 -L 6666:127.0.0.1:5555 -NT
 - BIH> ssh net2_student20@127.0.0.1 -p 6666 -D 9050 -NT
+-----------------------------------------------------------------------------------
+- BIH> ssh Sterling@10.50.38.17 -L 1111:127.0.0.1:22 -NT
+- BIH> ssh net2_student20@127.0.0.1 -p 1111 -D 9050 -NT (close)
+
+- BIH> ssh Sterling@127.0.0.1 -p 1111 -L 2222:10.1.2.200:23 -NT
+
+- *forgot:*
+- *BIH> Telnet 127.0.0.1 2222
+			        
+- Lana> ssh Sterling@10.1.2.130 -p 22 -R 3333:127.0.0.1:8976 -NT
+				*^ Ask for clarification *
+- *BIH> ssh Sterling@10.50.38.17 -L 4444:10.1.2.200:3333 -NT
+
+- BIH> ssh Lana@127.0.0.1 -p 4444 -D 9050 -NT 
+
+- BIH> ssh lana@127.0.0.1 -p 4444 -L 5555:10.2.5.20:22 -NT
+
+- BIH> ssh Cheryl@127.0.0.1 -p 5555 -L 6666:10.3.39:23 -NT
+- *BIH> Telnet 127.0.0.1 6666
+
+- Malory> ssh Cheryl@10.3.5.33 -p 22 -R 7777:127.0.0.1:3597 -NT
+- BIH> ssh Cheryl@127.0.0.1 -p 5555 -L 8888:127.0.0.1:7777 -NT
+
+### I have duty tonight, I was gonna light the beacon's of Gondor
+## we ride
+    

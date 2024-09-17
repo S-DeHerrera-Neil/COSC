@@ -8,6 +8,8 @@ command
 output
 ```
 
+Understand the How?
+----------------------------------------------------------------------------------
 # Day 1 (20240917)
   Tunnels!!!! is Security's better?
 
@@ -29,6 +31,13 @@ Password:
 JumpBox:
   * 10.50.37.98
 ```
+### vta instances:
+```
+  windows_opstation_QiJd (win_ops):
+10.50.39.134
+  linux_opstation_QiJd (nix_ops):
+10.50.27.61
+```
 ### CTFD Server:
 ```
 10.50.20.30:8000
@@ -46,3 +55,4 @@ v0cEcUbwIzY878p
 
 
 
+--------------------------------------------------------------------------------

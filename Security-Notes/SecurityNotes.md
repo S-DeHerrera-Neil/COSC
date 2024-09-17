@@ -103,6 +103,11 @@ $ssh -MS /tmp/tgt2 creds@127.0.0.1 -p 6666
 
 ## Admin Tools:
 ```
+nmap
+  nmap scripts locations:
+/usr/share/nmap/scripts
+
+
 
 ```
 

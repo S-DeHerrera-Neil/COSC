@@ -64,6 +64,7 @@ v0cEcUbwIzY878p
 
 ## Tunnels!!!! is Security's better?
   MS(Master Socket)
+
 ```
 ## set up connection jump box
 
@@ -100,11 +101,21 @@ $ssh -MS /tmp/tgt2 creds@127.0.0.1 -p 6666
 
 ```
 
-
 ## Admin Tools:
 ```
 
 ```
+
+
+Pen Testing 6 phases
+1. Mission Definition
+2 Recon
+3. Footprinting 
+4. Exploitation & Initial Access
+5. Post-Exploitation                        * SCP for exfiltration *
+6. Documentation
+
+
 
 
 

@@ -14,13 +14,13 @@ output
 
 ## Environment Information
 ```
-Jump Box:
+Jump Box Website:
   10.50.36.14/classinfo.html
 Username format:
   NEDE-006-M
 Information from Site above:^
-  Stack Number	Username	Password	jump
-  6 	NEDE-006-M 	v0cEcUbwIzY878p 	10.50.37.98
+  Stack Number	  Username	      Password	          JumpBox
+  ^6 	            ^NEDE-006-M^ 	^ v0cEcUbwIzY878p ^	  ^10.50.37.98^
 
 ```
 

@@ -1,7 +1,7 @@
 ## Offensive "Security"
   Techniques are outdated, but focus on the methodology.
 
-### SSgt Dow's note taking process
+### SSgt Dow's note taking process:
 ```
 context
 command
@@ -12,7 +12,8 @@ output
   Tunnels!!!! is Security's better?
 
 
-## Environment Information
+## Environment Information:
+
 ```
 Jump Box Website:
   10.50.36.14/classinfo.html
@@ -21,11 +22,17 @@ Username format:
 Information from Site above:^
   Stack Number	  Username	      Password	          JumpBox
   ^6 	            ^NEDE-006-M^ 	^ v0cEcUbwIzY878p ^	  ^10.50.37.98^
-
+```
+### CTFD Server:
+```
+10.50.20.30:8000
 ```
 
->
 
+## Admin Tools:
+```
+
+```
 
 
 

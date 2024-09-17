@@ -37,11 +37,21 @@ JumpBox:
 10.50.39.134
   Commands:
 xfreerdp /v:10.50.39.134 /u:student /p:password /size:1920x1000 +clipboard
+  Credentials:
+Username:
+  student
+Password:
+  password
 
   linux_opstation_QiJd (nix_ops):
 10.50.27.61
     Commands:
 ssh student@10.50.27.61 -X
+  Credentials:
+Username:
+  student
+Password:
+  password
 ```
 ### CTFD Server:
 ```

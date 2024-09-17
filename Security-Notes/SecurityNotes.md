@@ -93,7 +93,9 @@ $ ss -ntlp
 $ firefox
   * In Firefox URL: 127.0.0.1:2222 ^as specified above *
 
-$ ssh -MS /tmp/tgt1 creds^@127.0.0.1 -p 3333 
+$ ssh -MS /tmp/tgt1 creds@127.0.0.1 -p 3333
+$ ssh -S /tmp/tgt1 tgt1 -O forward -L127.0.0.1:6666:192.168.10:22 -L127.0.0.1:7777:192.168.50.20:22
+$ssh -MS /tmp/tgt2 creds@127.0.0.1 -p 6666
 
 
 ```

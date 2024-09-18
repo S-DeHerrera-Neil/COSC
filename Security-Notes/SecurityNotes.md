@@ -12,8 +12,6 @@ Understand the How?
 ----------------------------------------------------------------------------------
 # Day 1 (20240917)
   
-
-
 ## Environment Information:
 
 ### Jumpbox Information:
@@ -101,7 +99,7 @@ $ssh -MS /tmp/tgt2 creds@127.0.0.1 -p 6666
 
 ```
 
-## Admin Tools:
+## Admin Tools (proxychains??):
 ```
 nmap
   nmap scripts locations:

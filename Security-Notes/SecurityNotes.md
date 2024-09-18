@@ -230,6 +230,7 @@ document.body.innerHTML
   
 
 
+### nikto command
 ```
 sudo apt install nikto
 ```

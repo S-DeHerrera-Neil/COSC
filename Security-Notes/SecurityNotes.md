@@ -120,10 +120,25 @@ Pen Testing 6 phases
 5. Post-Exploitation                        * SCP for exfiltration *
 6. Documentation
 
-
-
-
-
-
-
 --------------------------------------------------------------------------------
+
+Day 2 (20240918)
+
+http
+  client/server relationship
+
+### http methods:
+- GET
+- POST
+- HEAD
+- PUT
+
+### http response codes:
+- 10X == Informational
+- 2XX == Success
+- 30X == Redirection
+- 4XX == Client Error
+- 5XX == Server Error
+
+
+* If your SQL injection is not getting delivered in a POST request, you can get it via the firefox developer tools and try again as a GET request.

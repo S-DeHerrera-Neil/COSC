@@ -77,13 +77,21 @@ for i in {1..254}; do (ping -c 1 192.168.28.$i | grep "bytes from" &) ; done
   * Copy the IPs that were ping sweeped against.
 -
 ## on lin-ops:
-$ ssh -S /tmp/jump jump -O forward -D9050
-  student@jump:
-$ ss -ntlp
+```
+ssh -S /tmp/jump jump -O forward -D9050
+```
+student@jump:
+```
+ss -ntlp
+```
   * Port Enumeration
-$ proxychains nmap {IPs enumerated}  
+```
+proxychains nmap {IPs enumerated}
+```
   * Port Validation (Interrogation)
-$ proxychains nc {IP} {port}
+```
+proxychains nc {IP} {port}
+```
 -
 
       *Port Forward*

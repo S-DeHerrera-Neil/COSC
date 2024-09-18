@@ -166,3 +166,17 @@ wget --save-cookies cookies.txt --keep-session-cookies --post-data 'user=1&passw
 wget --load-cookies cookies.txt -p https://website/interesting/article.php
 ```
 
+### JavaScript (JS) * Runs on the Client's Machine!!!
+  - Allows websites to interact with the client
+    - Javascript runs on the client's machine
+  - Coded as "file.js", or in-line of HTML
+
+
+# Website Enumeration:
+- ROBOTS.TXT
+- Legitimate surfing (Open Source)
+- Tools:
+  - NSE scripts
+  - Nikto (web scraper)
+  - Burp suite (Outside scope of class)
+ 

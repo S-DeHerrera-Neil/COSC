@@ -178,5 +178,48 @@ wget --load-cookies cookies.txt -p https://website/interesting/article.php
 - Tools:
   - NSE scripts
   - Nikto (web scraper)
+
   - Burp suite (Outside scope of class)
  
+## Cross-Site Scripting (XSS) Overview: using unsanitized GET,POST,... reuests to the site
+
+### Reflected XSS: most common
+- Attacker uses trusted server to get a payload to the target. 
+  - You send a link to target, it redirects them to a website that doesn't have the resource, on the 404 error the payload gets delivered to the target.
+ 
+  - Example:
+    http://example.com/page.php?name=dXNlcjEyMw
+
+### Stored XSS: payload resides on the webpage (like a wateringhole attack)
+- Resides on vulnerable site
+- Only requires user to visit page
+
+- Capturing Cookies
+```
+document.cookie
+```
+- capturing keystrokes
+  - bind KEYDOWN and KEYUP
+- Capturing Sensitive Data
+```
+document.body.innerHTML
+```
+
+## ServerSide Injection
+
+   Directory Traversal/Path Traversal
+
+- Ability to read/execute outside web server's directory
+- Uses ``` ../... ``` (Relative paths) in manipulating a server-side file path
+
+
+
+
+
+
+
+
+
+
+
+

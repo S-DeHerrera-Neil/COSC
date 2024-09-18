@@ -227,8 +227,15 @@ document.body.innerHTML
 - User input not validated
   - Common example is a SOHO router, with a web page to allow ping
  
-  
 
+### Might allow the following in it's code:
+```
+system("ping -c 1 ".$_GET["ip"]);
+```
+### Run the following to chain/stack our arbitrary command:
+```
+; cat /etc/passwd
+```
 
 ### nikto command
 ```

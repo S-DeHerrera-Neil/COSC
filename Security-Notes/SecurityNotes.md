@@ -144,9 +144,27 @@ http
 * If your SQL injection is not getting delivered in a POST request, you can get it via the firefox developer tools and try again as a GET request.
 
 ### http Fileds:
-- User-Agent (web browser, rendering engine, OS, what was used to communicate with the Server)
-- Referer ()
-- Cookie ()
+- User-Agent (web browser, rendering engine, OS, what was used to communicate with the Server, typically generic, how the client utility describes itself to the server)
+- Referer (Beyond scope of course)
+- Cookie (data stored on server, for your session. Set cookie field {used for SSO},)
 - Data ()
 - Server ()
 - Set-Cookie ()
+
+HTTP Method Notes
+  - GET request can be utilized to pass data to the server using the URL string:
+```
+http://10.50.x.x/path/pathdemo.php?myfile=demo1
+```
+
+### wget
+- Recursively download
+- Recover from broken transfers
+- SSL/TLS support
+
+```
+wget -r -l2 -P /tmp ftp://ftpserver/
+wget --save-cookies cookies.txt --keep-session-cookies --post-data 'user=1&password=2' https://website
+wget --load-cookies cookies.txt -p https://website/interesting/article.php
+```
+

@@ -142,3 +142,11 @@ http
 
 
 * If your SQL injection is not getting delivered in a POST request, you can get it via the firefox developer tools and try again as a GET request.
+
+### http Fileds:
+- User-Agent (web browser, rendering engine, OS, what was used to communicate with the Server)
+- Referer ()
+- Cookie ()
+- Data ()
+- Server ()
+- Set-Cookie ()

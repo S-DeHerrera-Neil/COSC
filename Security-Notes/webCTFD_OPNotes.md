@@ -46,8 +46,8 @@ Recon: Utilize proxychain tools
 * after getting the dynamic tunnel running 
 
 ```
-proxychains nmap 10.100.28.40 -p 80
-proxychains nc 10.100.28.40 80
+proxychains nmap 10.100.28.40
+proxychains nc 10.100.28.40 {port[s]}
 proxychains nmap --script http-enum 10.100.28.40
 ```
 * http-enum esults:
@@ -68,7 +68,7 @@ Nmap done: 1 IP address (1 host up) scanned in 3.61 seconds
 ```
 * utilize nikto
 ```
-nikto v -h 10.100.28.40
+proxychains nikto v -h 10.100.28.40
 ```
 # On lin-ops:
 * Utilize your existing Socket file, put in a new port forward:

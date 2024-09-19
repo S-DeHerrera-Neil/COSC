@@ -1,6 +1,7 @@
 ```
 Scheme of Maneuver:
 >Jump Box: 10.50.37.98
+>password: v0cEcUbwIzY878p
 ->T1:10.100.28.40
 -->T2: 10.100.28.55
 ```

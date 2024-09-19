@@ -11,7 +11,7 @@ T1
 Hostname: Donovian_MI_websvr
 IP: 10.100.28.40
 PORTS: 80
-OS: unknown
+OS: Apache/2.4.29 (Ubuntu) Server
 Creds:unknown
 Last Known SSH Port: 4444
 PSP: Unknown

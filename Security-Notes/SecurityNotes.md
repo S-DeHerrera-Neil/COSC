@@ -380,7 +380,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5rS3kC2o4vqMXTe68VU48WzXrPSZ+WzUXwTWVvZYT
 	- sending private key to encrypt the begging of the conversation. This allows the client to authenticate.
 
  ```
- ssh -i .ssh/id_rsa -MS /tmp/web www-data@10.50.28.11
+ ssh -i .ssh/id_rsa -MS /tmp/web www-data@127.0.0.1 -p {} 
  ```
 	
  * Congrats, you did a ssh  masquerade

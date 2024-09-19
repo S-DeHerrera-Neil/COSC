@@ -57,7 +57,7 @@ Host is up (0.00042s latency).
 Not shown: 998 closed ports
 PORT     STATE SERVICE
 80/tcp   open  http
-| http-enum: 
+|   http-enum: 
 |   /robots.txt: Robots file
 |   /css/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
 |   /images/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
@@ -69,6 +69,18 @@ Nmap done: 1 IP address (1 host up) scanned in 3.61 seconds
 * utilize nikto
 ```
 proxychains nikto v -h 10.100.28.40
+```
+* from nmap scans:
+```
+/robots.txt
+/css
+/images
+/uploads
+```
+* from nikto:
+```
+/icons/README
+/net_test
 ```
 # On lin-ops:
 * Utilize your existing Socket file, put in a new port forward:

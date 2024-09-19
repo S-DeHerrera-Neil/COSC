@@ -178,7 +178,7 @@ wget --load-cookies cookies.txt -p https://website/interesting/article.php
   - Allows websites to interact with the client
     - Javascript runs on the client's machine
   - Coded as "file.js", or in-line of HTML
-
+ 
 
 # Website Enumeration:
 - ROBOTS.TXT
@@ -449,9 +449,19 @@ CREATE INDEX: Creates an index (search key)
 DROP INDEX: Deletes an index
 
 ```
+we will use as Union Select
 
-will use as Union Select
 
+### SQL Injection Considerations:
+- req. valid SQL Queries
+- Is info_schema DB available
+- GET Request vs POST Request methods
+
+### Unsanitized vs Sanitized Fields
+Can be found using a Single Quote => '
+- Will return extraneous information.
+- ' closes a variable, to allow for additional statements/clause
+- May show no errors or 
 
 
 

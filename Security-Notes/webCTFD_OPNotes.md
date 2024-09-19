@@ -243,8 +243,11 @@ cat /home/student/.ssh/id_rsa.pub
 * copy that key over to billybob's /home/billybob/.ssh directory. Into a new file called:	
 	* /home/billybob/.ssh/authorized_keys
 ```
-; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8Ny133z4AEchrClekmxkUtlWrflXcGT8JBygIkkm/Cy7AyZ+U/Sx9YWXrYft9R0GRE/CcJpQfJJhPp0juq+Zc+vYQ73bdOf3duEZjPRTzMiibq8wOpiguT5kJ1jBs6WYqdyuWUO61Re1b1rFAcZsxz26t3S+8+ycYWyYTDthO5ugSXdXmpy9PIHUcb5ogvT0wpIOxLaVyZhlzm6CadP7iklvJAXRXqDeReKU2XdCPpKZb3awt0g4SU7d4Z6od5wR1xGgYwCpAfCpttUnyk5cgVr2YGjvpY4ExkMYSFvZmA2ENXH/3WDpx3I31/DBeGSbIAOqvTUIMGy3kmxQDKp/p student@lin-ops" >> /home/billybob/.ssh/authorized_keys
+; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaf56Lv5nrgWiIKbzhHLOiqyog8ATYemjQAFZYDA4sGfbVofZR+wOeoazbV3xCW9zQdqYpUZHUvpuIDVhNfc4RuLOurS+kddlJ8lJeh/GWarckQfksCpCtEV9Cd4LFIUsWpbPXF1v68RJY+kE5IP84B6+aM+2gwfSULR9rpSWV+P2npvRV3zmeGCevJqT57sMfKitI6lNpYRVFF6VAl+g4LEtQ2ac1VwfYZl//FTYwpUNS24M6o0quG1L80YD88+p0XwEN+SDifd0Qrx5GIf+yOrEcu75EIg6KLko042f9vIb35XL5AnW5nIu9xNJZcj4OoLX3Ppht3Rja27zRg39n student@lin-ops" >> /home/billybob/.ssh/authorized_keys
 ```
+; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaf56Lv5nrgWiIKbzhHLOiqyog8ATYemjQAFZYDA4sGfbVofZR+wOeoazbV3xCW9zQdqYpUZHUvpuIDVhNfc4RuLOurS+kddlJ8lJeh/GWarckQfksCpCtE
+V9Cd4LFIUsWpbPXF1v68RJY+kE5IP84B6+aM+2gwfSULR9rpSWV+P2npvRV3zmeGCevJqT57sMfKitI6lNpYRVFF6VAl+g4LEtQ2ac1VwfYZl//FTYwpUNS24M6o0quG1L80YD88+p0XwEN+
+SDifd0Qrx5GIf+yOrEcu75EIg6KLko042f9vIb35XL5AnW5nIu9xNJZcj4OoLX3Ppht3Rja27zRg39n student@lin-ops" >> /home/billybob/.ssh/authorized_keys
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # on lin-ops
 * make a new socket, and ssh into the web server, and loggon

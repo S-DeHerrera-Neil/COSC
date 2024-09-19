@@ -47,12 +47,12 @@ http://10.50.36.14
 ```
 ' OR 1='1
 
-{}' OR 1='1
+{option}' OR 1='1
 ```
 
 ```
 
-{}' UNION SELECT 1,2,3,4 #
+{option}' UNION SELECT 1,2,3,4 #
 ```
 * insert both into the input fileds:
   - User:

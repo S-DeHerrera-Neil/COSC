@@ -1,8 +1,11 @@
 Scheme of Maneuver:
+```
 >Jump Box
 ->T1:10.100.28.40
 -->T2: 10.100.28.55
+```
 --------------------
+```
 T1
 Hostname: Donovian_MI_websvr
 IP: 10.100.28.40
@@ -24,16 +27,15 @@ Last Known SSH Port: unknown
 PSP: Unknown
 Malware: Unknown
 Action: Conduct approved Web Exploitation techniques to collect intellegence.
+```
 --------------------------------------------------------------------------------
 
-
-
-	Recon: prerequisites
+## Recon: prerequisites
 ---------------------------------------------|
 	* if no socket file then, make one.  |
-ssh -MS /tmp/jump student@10.50.37.98	      |
-				^ jump IP     |
-					      |
+ssh -MS /tmp/jump student@10.50.37.98	     |
+				^ jump IP    |
+					     |
 	* if no dynamic port, make one.      |
 ssh -S /tmp/jump jump -O forward -D 9050     |
 ---------------------------------------------|

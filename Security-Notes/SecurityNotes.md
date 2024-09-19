@@ -69,8 +69,8 @@ lin-ops:
 ```
 ssh -MS /tmp/jump student@10.50.37.98
 ```
-  * password: v0cEcUbwIzY878p
-  * student@jump:
+  * password:```v0cEcUbwIzY878p```
+  * student@jump: ``` 10.50.37.98```
 ```
 for i in {1..254}; do (ping -c 1 192.168.28.$i | grep "bytes from" &) ; done
 ```

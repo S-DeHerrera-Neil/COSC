@@ -449,7 +449,7 @@ CREATE INDEX: Creates an index (search key)
 DROP INDEX: Deletes an index
 
 ```
-we will use as Union Select
+we will use as ```UNION SELECT```
 
 
 ### SQL Injection Considerations:

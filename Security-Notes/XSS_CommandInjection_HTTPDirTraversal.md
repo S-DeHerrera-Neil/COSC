@@ -67,7 +67,7 @@ Nmap done: 1 IP address (1 host up) scanned in 3.61 seconds
 ```
 * utilize nikto
 ```
-nikto v -h 10.100.28.40
+proxychains nikto v -h 10.100.28.40
 ```
 * results of nikto:
 ```

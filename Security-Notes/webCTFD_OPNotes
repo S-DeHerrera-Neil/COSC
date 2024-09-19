@@ -1,15 +1,15 @@
 Scheme of Maneuver:
->Jump Box
+>Jump Box: 10.50.37.98
 ->T1:10.100.28.40
 -->T2: 10.100.28.55
 --------------------
 T1
 Hostname: Donovian_MI_websvr
 IP: 10.100.28.40
-PORTS: 80,4444
+PORTS: 80
 OS: unknown
 Creds:unknown
-Last Known SSH Port: unknown
+Last Known SSH Port: 4444
 PSP: Unknown
 Malware: Unknown
 Action: Conduct approved Web Exploitation techniques to collect intellegence.

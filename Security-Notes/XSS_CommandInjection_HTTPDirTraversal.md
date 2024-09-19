@@ -41,7 +41,7 @@ ssh -MS /tmp/jump student@10.50.37.98	     |
 ssh -S /tmp/jump jump -O forward -D 9050     |
 ---------------------------------------------|
 ```
-# On lin-ops(1)
+# On lin-ops
 Recon: Utilize proxychain tools
 * after getting the dynamic tunnel running 
 ```
@@ -69,10 +69,6 @@ Nmap done: 1 IP address (1 host up) scanned in 3.61 seconds
 ```
 proxychains nikto v -h 10.100.28.40
 ```
-
------------------------------------------------------------------------------------------
-
-# On lin-ops:
 * Utilize your existing Socket file, put in a new port forward:
 ```
 ssh -S /tmp/jump jump -O forward -L 127.0.0.1:1111:10.100.28.40:80

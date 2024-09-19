@@ -33,9 +33,9 @@ Action: Conduct approved Web Exploitation techniques to collect intellegence.
 Recon: prerequisites
 ---------------------------------------------|
 	* if no socket file then, make one.  |
-ssh -MS /tmp/jump student@10.50.37.98	      |
-				^ jump IP     |
-					      |
+ssh -MS /tmp/jump student@10.50.37.98	     |
+				^ jump IP    |
+					     |
 	* if no dynamic port, make one.      |
 ssh -S /tmp/jump jump -O forward -D 9050     |
 ---------------------------------------------|

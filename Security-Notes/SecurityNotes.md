@@ -98,6 +98,7 @@ proxychains nc {IP} {port}
   lin-ops:
 ```
 ssh -S /tmp/jump jump -O cancel -D9050
+
 ssh -S /tmp/jump jump -O forward -L127.0.0.1:2222:192.168.28.100:80 -L127.0.0.1:3333:192.168.28.100:2222 -L127.0.0.1:5555:[DifferentIP]:DifferentPort
 ss -ntlp
 firefox &
@@ -415,9 +416,7 @@ python3 -m http.server
 		
 -----------------------------------------------------------------------------------
 
-Day 3 (20240918)
-
-
+# Day 3 (20240918)
 
 SQL Standard Commands:
 ```
@@ -554,17 +553,39 @@ UNION SELECT table_schema,table_name,column_name from information_schema.columns
 ``` 
 UNION SELECT table_schema,column_name,table_name from information_schema.columns
 ```
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Day 3 (20240918)
+
+## Reverse Engineering
+
+### X86_64 Assmebly
+
+* 16 general purpose 64-bit registers
+```
+%rax - the first return register
+%rbp - the base pointer that keeps track of the base of the stack
+%rsp - the stack pointer that points to the top of the stack
+```
+You will will see arguments passed to the functions as something like:
+```[%ebp-0x8]```
+
+### X86_64 Assembly - Common Terms
+
+- HEAP: Memory that can be allocated and deallocated
+- STACK: A contiguous section of memory used for passing arguments
+- GENERAL REGISTER: A multipurpose register that can be used by either programmer or user to store data or a memory location address
+- CONTROL REGISTER: A processor register that changes or controls the behavior of a CPU
+- FLAGS REGISTER: Contains the current state of the processor
 
 
 
+### X86_64 Assembly - Memory Offset
+* There is one instruction pointer register that points to the memory offset of the next instruction in the code segment:
+
+64-Bit	Lower 32 bits	Lower 16 bits	Descrition
+
+RIP	EIP		IP		Instruction Pointer; holds address for next instruction to be executed
 
 
-
-
-
-
-
-
-
-
-
+Stack: First in Last out.

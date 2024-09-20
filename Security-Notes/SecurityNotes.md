@@ -16,12 +16,10 @@ Understand the How?
 
 ### Jumpbox Information:
 ```
-Jump Box Website:
+Jump Box Website: see below
   10.50.36.14/classinfo.html
-Username format:
-  NEDE-006-M
-Stack Number:	  	      	          
-  * 6
+Username format: NEDE-006-M
+Stack Number: 6
 Username: NEDE-006-M
 Password: v0cEcUbwIzY878p
 JumpBox: 10.50.37.98
@@ -45,11 +43,10 @@ Password: password
 ```
 ### CTFD Server:
 ```
+	Website: See below
 10.50.20.30:8000
-  Username:
-NEDE-006-M
-  Password:
-v0cEcUbwIzY878p
+  Username: NEDE-006-M
+  Password: v0cEcUbwIzY878p
 ```
 
 ## Tunnels!!!! is Security's better?

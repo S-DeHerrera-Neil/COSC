@@ -148,15 +148,29 @@ cd .\downloads
 ```
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-  * check contents w/ strings
+### check contents w/ strings
 ```
   z:\strings.exe .\entry.exe
 ```
-  * validate file type another way.
+* Results in strings:
 ```
- get-content -First 2 .\demo1_new.exe
+Enter key:
+123@magicKey
+Success!
+Invalid key.
+hkA
 ```
-* use dissassembler
+
+### validate file type another way.
+```
+ get-content -First 2 .\entry.exe
+```
+* Results via get-content:
+```
+MZ♥♦ÿÿ¸@ð♫▼º♫´ Í!¸☺LÍ!This program cannot be run in DOS mode.
+```
+
+### use dissassembler
   * search in start menu, for GHIDRA
   - Make a new project
     - File: upper left hand corner

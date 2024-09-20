@@ -12,5 +12,12 @@
   - Make a new project
     - File: upper left hand corner
       - New Project: Leave on defualt settings, so just hit next.
-      - Name project: I named demo1_new.exe "SpicyBoy"
-      - 
+      - Name project: I named project "SpicyBoy" for the demo1_new.exe.
+      - Open the Project, and click analyze.
+
+      - Top of page:
+        - search
+          - search for string
+          - search on term you have seen, via string analysis
+          - When it takes you to the keyword, click on "FUN_" function
+            - This will open up the Decompile function.

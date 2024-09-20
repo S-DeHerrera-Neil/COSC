@@ -22,34 +22,26 @@ Username format:
   NEDE-006-M
 Stack Number:	  	      	          
   * 6
-Username:			
-  * NEDE-006-M
-Password:
-  * v0cEcUbwIzY878p
-JumpBox:
-  * 10.50.37.98
+Username: NEDE-006-M
+Password: v0cEcUbwIzY878p
+JumpBox: 10.50.37.98
 ```
 ### vta instances:
 ```
-  windows_opstation_QiJd (win_ops):
-10.50.39.134
-  Commands:
-xfreerdp /v:10.50.39.134 /u:student /p:password /size:1920x1000 +clipboard
-  Credentials:
-Username:
-  student
-Password:
-  password
+  windows_opstation_QiJd (win_ops): 10.50.39.134
+  Commands: See Below
+XFREERDP Syntax: 
+xfreerdp /v:10.50.39.134 /u:student /glyph-cache /clipboard /dynamic-resolution
+Credentials:
+Username: student
+Password: password
 
-  linux_opstation_QiJd (nix_ops):
-10.50.27.61
-    Commands:
+  linux_opstation_QiJd (nix_ops): 10.50.27.61
+    Commands: See Below
 ssh student@10.50.27.61 -X
   Credentials:
-Username:
-  student
-Password:
-  password
+Username: student
+Password: password
 ```
 ### CTFD Server:
 ```

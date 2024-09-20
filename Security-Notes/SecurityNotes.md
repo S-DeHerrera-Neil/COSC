@@ -593,27 +593,25 @@ RIP	EIP		IP		Instruction Pointer; holds address for next instruction to be execu
 
 ```
 MOV: move source to destination
-
 PUSH: push source onto stack
-
 POP: Pop top of stack to destination
-
 INC: Increment source by 1
-
 DEC: Decrement source by 1
-
 ADD: Add source to destination
-
 SUB: Subtract source from destination
-
 CMP: Compare 2 values by subtracting them and setting the %RFLAGS register. ZeroFlag set means they are the same.
-
 JMP: Jump to specified location
-
 JLE: Jump if less than or equal
-
 JE: Jump if equal
 ```
 
+* Reverse Engineering Workflow (Software):
+- Static
+- Behavioral
+- Dynamic
+- Disassembly
+- Document Findings
+
+Patch Code:
 
 

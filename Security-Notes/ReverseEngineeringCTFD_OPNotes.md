@@ -18,9 +18,9 @@ Prior Approvals:All files can be extracted from the known target "Donovian-Webse
 T1
 Hostname: web.site.donovia
 IP: 192.168.28.111
-OS: unknown
+OS: Apache/2.4.29 (Ubuntu) Server 
 Creds: comrade::StudentWebExploitPassword
-Last Known SSH Port: unknown
+Last Known SSH Port: 2222
 PSP: Unknown
 Malware: Unknown
 Action: Extract approved binaries under directory titled "longTermStorage".

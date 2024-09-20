@@ -15,11 +15,16 @@ Scenario Credentials: FLAG = R3V3R535t@rt0F@ct1v1ty
 Prior Approvals:All files can be extracted from the known target "Donovian-Webserver". Only authorized to conduct task on Analyst Workstations.
 
 ```
-T1
+T1 "conference.site.donovia"
 Hostname: web.site.donovia
 IP: 192.168.28.111
 OS: Apache/2.4.29 (Ubuntu) Server 
 Creds: comrade::StudentWebExploitPassword
+HTTP Ports: 80, 8080
+  - http-enum:
+  /css/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+  /images/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+  /sites/: Potentially interesting folder
 Last Known SSH Port: 2222
 PSP: Unknown
 Malware: Unknown

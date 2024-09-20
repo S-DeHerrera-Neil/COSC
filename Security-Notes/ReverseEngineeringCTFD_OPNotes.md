@@ -30,6 +30,7 @@ PSP: Unknown
 Malware: Unknown
 Action: Extract approved binaries under directory titled "longTermStorage".
 ```
+# Action: Extract approved binaries under directory titled "longTermStorage".
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

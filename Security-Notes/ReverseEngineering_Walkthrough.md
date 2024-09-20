@@ -2,12 +2,18 @@
 ## Step1: static anlysis
 - In file Explorer map "live.sysinternals.com" to z Drive.
   - Via powershell
-  > cd .\downloads
+```
+cd .\downloads
+```
   * check contents w/ strings
-  > z:\strings.exe .\demo_new.exe
+```
+  z:\strings.exe .\demo_new.exe
+```
   * validate file type another way.
-  > get-content -First 2 .\demo1_new.exe
-  * use dissassembler
+```
+ get-content -First 2 .\demo1_new.exe
+```
+* use dissassembler
   * search in start menu, for GHIDRA
   - Make a new project
     - File: upper left hand corner
@@ -21,3 +27,13 @@
           - search on term you have seen, via string analysis
           - When it takes you to the keyword, click on "FUN_" function
             - This will open up the Decompile function.
+           
+      - In decompile window:
+        - Convert the hex value to decimal.
+
+-----------------------------------------------------------------------------
+
+static analysis:
+ - run stings on demo2_new.exe
+   - look for keywords: keys, mz, "!This program cannot be run in DOS mode."
+   - get-content 

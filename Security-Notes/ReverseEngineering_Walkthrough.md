@@ -38,4 +38,26 @@ static analysis:
    - look for keywords: keys, mz, "!This program cannot be run in DOS mode."
    - get-content
    - Open up Ghidra
-   - 
+     - Look at condition that the "sucess" statement. Convert Hex to Decimal.
+     - 
+---------------------
+
+patch the code.
+- value of 65664 or 12
+```
+  if (iVar1 == 0) {
+    uVar2 = 65664;
+  }
+  else {
+    uVar2 = 12;
+```
+For patching go to the other condition in the boolean structure above ^
+- click on the other variable, change that value to '65664'
+- so that reguardless of the input, you will get a success.
+  - export the file, rename, and test. 
+
+
+
+* software doing software things 2
+* software doing software things 2
+No assistance.

@@ -23,8 +23,8 @@ cd .\downloads
 
       - Top of page:
         - search
-          - search for string
-          - search on term you have seen, via string analysis
+          - search for string 
+          - search on term you have seen ^ from string analysis "sucess", via filter.
           - When it takes you to the keyword, click on "FUN_" function
             - This will open up the Decompile function.
            
@@ -36,4 +36,6 @@ cd .\downloads
 static analysis:
  - run stings on demo2_new.exe
    - look for keywords: keys, mz, "!This program cannot be run in DOS mode."
-   - get-content 
+   - get-content
+   - Open up Ghidra
+   - 

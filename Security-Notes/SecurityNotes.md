@@ -583,9 +583,37 @@ You will will see arguments passed to the functions as something like:
 ### X86_64 Assembly - Memory Offset
 * There is one instruction pointer register that points to the memory offset of the next instruction in the code segment:
 
+```
 64-Bit	Lower 32 bits	Lower 16 bits	Descrition
 
 RIP	EIP		IP		Instruction Pointer; holds address for next instruction to be executed
+```
+
+### Stack: First in Last out.
+
+```
+MOV: move source to destination
+
+PUSH: push source onto stack
+
+POP: Pop top of stack to destination
+
+INC: Increment source by 1
+
+DEC: Decrement source by 1
+
+ADD: Add source to destination
+
+SUB: Subtract source from destination
+
+CMP: Compare 2 values by subtracting them and setting the %RFLAGS register. ZeroFlag set means they are the same.
+
+JMP: Jump to specified location
+
+JLE: Jump if less than or equal
+
+JE: Jump if equal
+```
 
 
-Stack: First in Last out.
+

@@ -24,4 +24,22 @@ PSP: Unknown
 Malware: Unknown
 Action: Extract approved binaries under directory titled "longTermStorage".
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Entry.exe
+5
+Level II Challenge
+
+Situation:
+Various teams have extracted binaries from Donovian development networks. Analyze the given binaries to find weaknesses and create signatures.
+
+Provided:
+compiled executable: (entry.exe)
+source code: (entry.c)
+Task: Run the executable with expected input and retrieve success message.
+Method: disassemble the executable and follow the program’s execution to discover its functionality, and expected input.
+
+Ensure that before you move on from this challenge that you have fully understood what you have done to disassemble and reverse engineer this binary and how it is related to the provided source code.
+
+What is the key for this binary?
+

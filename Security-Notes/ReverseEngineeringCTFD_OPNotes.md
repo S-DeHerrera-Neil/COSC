@@ -14,6 +14,7 @@ Scenario Credentials: FLAG = R3V3R535t@rt0F@ct1v1ty
 
 Prior Approvals:All files can be extracted from the known target "Donovian-Webserver". Only authorized to conduct task on Analyst Workstations.
 
+```
 T1
 Hostname: web.site.donovia
 IP: 192.168.28.111
@@ -23,9 +24,11 @@ Last Known SSH Port: unknown
 PSP: Unknown
 Malware: Unknown
 Action: Extract approved binaries under directory titled "longTermStorage".
-
+```
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Entry.exe
 5
 Level II Challenge

@@ -245,9 +245,7 @@ cat /home/student/.ssh/id_rsa.pub
 ```
 ; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaf56Lv5nrgWiIKbzhHLOiqyog8ATYemjQAFZYDA4sGfbVofZR+wOeoazbV3xCW9zQdqYpUZHUvpuIDVhNfc4RuLOurS+kddlJ8lJeh/GWarckQfksCpCtEV9Cd4LFIUsWpbPXF1v68RJY+kE5IP84B6+aM+2gwfSULR9rpSWV+P2npvRV3zmeGCevJqT57sMfKitI6lNpYRVFF6VAl+g4LEtQ2ac1VwfYZl//FTYwpUNS24M6o0quG1L80YD88+p0XwEN+SDifd0Qrx5GIf+yOrEcu75EIg6KLko042f9vIb35XL5AnW5nIu9xNJZcj4OoLX3Ppht3Rja27zRg39n student@lin-ops" >> /home/billybob/.ssh/authorized_keys
 ```
-; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaf56Lv5nrgWiIKbzhHLOiqyog8ATYemjQAFZYDA4sGfbVofZR+wOeoazbV3xCW9zQdqYpUZHUvpuIDVhNfc4RuLOurS+kddlJ8lJeh/GWarckQfksCpCtE
-V9Cd4LFIUsWpbPXF1v68RJY+kE5IP84B6+aM+2gwfSULR9rpSWV+P2npvRV3zmeGCevJqT57sMfKitI6lNpYRVFF6VAl+g4LEtQ2ac1VwfYZl//FTYwpUNS24M6o0quG1L80YD88+p0XwEN+
-SDifd0Qrx5GIf+yOrEcu75EIg6KLko042f9vIb35XL5AnW5nIu9xNJZcj4OoLX3Ppht3Rja27zRg39n student@lin-ops" >> /home/billybob/.ssh/authorized_keys
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

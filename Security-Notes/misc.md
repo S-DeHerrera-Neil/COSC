@@ -17,4 +17,7 @@ ssh -S /tmp/web web -O forward -L127.0.0.1:2224:10.100.28.40:4444
 ssh -S /tmp/jump jump -O cancel -D9050
 
 ssh -S /tmp/web web -O forward -D9050
+
+proxychains nmap -Pn -n -T5 10.100.28.55
+
 ```

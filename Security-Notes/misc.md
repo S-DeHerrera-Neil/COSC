@@ -1,4 +1,10 @@
 MS setup: 
+
+JB Password:
+```
+v0cEcUbwIzY878p
+```
+
 ```
 ssh -MS /tmp/jump student@10.50.37.98	     
 

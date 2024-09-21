@@ -47,6 +47,7 @@ Recon: Utilize proxychain tools
 
 ```
 proxychains nmap 10.100.28.40
+proxychains nmap -Pn -n -T5 {IP}
 proxychains nc 10.100.28.40 {port[s]}
 proxychains nmap --script http-enum 10.100.28.40
 ```

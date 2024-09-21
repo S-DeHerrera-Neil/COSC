@@ -20,4 +20,5 @@ ssh -S /tmp/web web -O forward -D9050
 
 proxychains nmap -Pn -n -T5 10.100.28.55
 
+proxychains nmap --script http-enum 10.100.28.55
 ```

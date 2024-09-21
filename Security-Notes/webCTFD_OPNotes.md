@@ -255,6 +255,7 @@ SDifd0Qrx5GIf+yOrEcu75EIg6KLko042f9vIb35XL5AnW5nIu9xNJZcj4OoLX3Ppht3Rja27zRg39n 
 ssh -MS /tmp/web student@10.50.37.98
 ssh -S /tmp/web web -O forward -L127.0.0.1:2222:10.100.28.40:4444
 ssh billybob@127.0.0.1 -p 2222
+ssh -S /tmp/jump jump -O cancel -D9050
 ssh -S /tmp/web web -O forward -D9050
 ```
 	# on lin-ops

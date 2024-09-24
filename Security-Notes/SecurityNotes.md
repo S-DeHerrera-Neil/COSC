@@ -587,7 +587,14 @@ POP: Pop top of stack to destination
 INC: Increment source by 1
 DEC: Decrement source by 1
 ADD: Add source to destination
-SUB: Subtract source from destination
+SUB: Subtract source from destinationdisass <FUNCTION>   #   Disassemble portion of the program
+info <...>  #   Supply info for specific stack areas
+x/256c $<REGISTER>  #   Read characters from specific register
+break <address>  #   Establish a break point
+
+Questions?
+7
+GDB UsesInstallation of Peda Plugingit clone https://github.com/longld/peda.git ~/peda echo "source ~/peda/peda.py" >> ~/.gdbinit Common Commandsdisass <FUNCTION> # Disassemble portion of the program info <...> # Supply info for specific stack areas x/256c $<REGISTER> # Read characters from specific register break <address> # Establish a break point
 CMP: Compare 2 values by subtracting them and setting the %RFLAGS register. ZeroFlag set means they are the same.
 JMP: Jump to specified location
 JLE: Jump if less than or equal
@@ -603,4 +610,72 @@ JE: Jump if equal
 
 Patch Code:
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Day 4 (20240924)
+
+
+* stringcopy function, what thh hacker on the Tony Hawk video utilized.
+
+
+## Buffer Overflows
+```
+Heap:
+Stack:
+----------
+Registers:
+----------
+Instruction Pointer (IP):
+Stack Pointer (SP):
+-------------------
+Base Pointer (BP):
+------------------
+Function:
+---------
+Shellcode:
+```
+
+* Buffer Overflow Defenses:
+  - Non executable (NX) stack
+  - Address Space Layout Randomization (ASLR)
+  - Data Execution Prevention (DEP)
+  - Stack Canaries (Stack Smashing detection)
+  - Position Independent Executable (PIE)
+
+* Technical Help
+	Tools:
+- IDA, GHIDRA
+- GDB, MONA, IMMUNITY
+- BASH, PYTHON
+
+GDB Uses:
+```
+git clone https://github.com/longld/peda.git ~/peda echo "source ~/peda/peda.py" >> ~/.gdbinit Common Commands
+
+disass <FUNCTION> # Disassemble portion of the program 
+info <...> # Supply info for specific stack areas 
+x/256c $<REGISTER> # Read characters from specific register 
+break <address> # Establish a break point
+```
+
+After downloading the "func" file
+
+### On PowerShell:
+
+running strings:
+```
+z:\strings.exe func
+```
+results:
+- GCC
+- GNU
+- GLIBC
+
+run a get-content:
+```
+get-content -First 2 func
+```
+results:
+- ELF
+
+...

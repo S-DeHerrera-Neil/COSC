@@ -741,3 +741,21 @@ gdb-peda, use bash as it's shell.
 
 ```
 run <<<$(./buffer.py)
+```
+
+```
+env - gdb ./func
+```
+in gdb 
+```
+unset env COLUMNS
+unset env LINES
+```
+
+```
+info proc map
+```
+
+f7de1000
+
+ffffe000

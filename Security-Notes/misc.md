@@ -65,9 +65,9 @@ proxychains nmap --script http-enum 10.100.28.55
 ## ExploitationDevelopmentCTFD_OPNotes
 
 After running string.exe in powershell.
-    Items of interest:
-    - stdin@@GLIBC_2.0
-    - ELF
-    - Press enter to view inventory:
+Items of interest:
+- stdin@@GLIBC_2.0
+- ELF
+- Press enter to view inventory:
 
 

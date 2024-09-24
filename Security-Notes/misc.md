@@ -21,7 +21,8 @@ proxychains nmap -Pn -n -T5 10.100.28.55
 proxychains nmap --script http-enum 10.100.28.55
 ```
 
------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
     Golden Rule:
     ```
@@ -58,3 +59,15 @@ proxychains nmap --script http-enum 10.100.28.55
 ```
 ## q8 * Using the /cases/register.php page on DNLA create a user with admin permissions, ensuring the firstname is set to Hacker. Once created log in to get the flag.
 (meh !! I ain't pressed)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ExploitationDevelopmentCTFD_OPNotes
+
+After running string.exe in powershell.
+    Items of interest:
+    - stdin@@GLIBC_2.0
+    - ELF
+    - Press enter to view inventory:
+
+

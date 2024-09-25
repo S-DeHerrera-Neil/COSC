@@ -70,4 +70,16 @@ Items of interest:
 - ELF
 - Press enter to view inventory:
 
+```
+  char local_4c [68];
+  
+  printf("Press enter to view inventory: ");
+  fgets(local_4c,0x200,stdin);
+# 0x200 = 512
+    puts(
+      "Total Inventory:\nBandages: 12\nKvass: 1.000\nTurnips: 12.000\n5.45x39: 20.000\nAK-74M: 200\n Zastava Koral: 50"
+      );
+  usleep(5000);
+  return 0;
+```
 

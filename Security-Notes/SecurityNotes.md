@@ -801,3 +801,39 @@ Have to do on 2 machines, your's and the targets...
 
 Windows Exploit Development.
 
+## Walkthrough:
+
+
+- use strings
+- run it in the environment
+- ```netstat -anop tcp``` match to the port that we found in strings analysis
+- Open Immunity, while process is running. 
+ - "CPU - thread"
+  - file
+   - attach
+    - Look at the ```bottom right``` and if it says ```pause``` go to the ```top left``` and click the ```play button``` so it says ```running```.
+
+- go to your lin-ops workstation and build a script
+
+	### Script name "WinExploit.py" in home dir
+```
+#!/usr/bin/env python
+
+import socket
+
+buf = " " 
+
+s = socket.socket ( socket.AF_INET, socket.SOCK_STREAM ) ## Create IPv4, tcp
+s.connect(("192.168.65.10", 9999)) ## Private IP of WinOps and secureserver port
+print s.recv(1024) ## Print to screen what we recieve
+s.send(buf) ## Send our buf variable
+print s.recv(1024) ## Print to screen what we recieve
+s.close ## Close the socket
+```
+- run via python 2 on lin-ops
+```
+python WinExploit.py
+```
+- 
+-
+- 

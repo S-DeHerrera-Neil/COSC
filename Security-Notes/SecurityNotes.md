@@ -946,8 +946,68 @@ s.close ## Close the socket
   - Virus & threat protection
     - every radio button is turned off
 
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Day 6 (20240926)
     
+
+Pivoting & Redirection
+- Control Sockets
+- Enumeration
+- Exfiltration(SCP)
+
+SSH Overview
+Basic Characteristics:
+- Access remote systems using an SSH server as a proxy
+- Securely transfer files
+- Execute commands on a remote system
+- VPN using the SSH protocol as a transport
+- Forwarding the X Window System display to the client system (Moba X)
+
+SSH Keys
+- SSH keys are asymetric(public/private) key pairs that can be used to authenticate a user to a system in combination with or to replace the use of a password
+- If you are able to find a users private ssh key it can potentially be used to gain access to other systems
+Using Stolen SSH Keys:
+- Bring private key to your own box
+- On your box:
+```
+chmod 600 /home/student/stolenkey
+ssh -i /home/student/stolenkey jane@1.2.3.4
+```
+### ssh as the user who is the original key owner
+
+Control Sockets
+Benefits Provided Include:
+- Multiplexing
+- Data exfiltration
+- Less logging
+
+### Local Host Enumeration
+User Enumeration
+- Why is this important?
+- What does it provide?
+Windows: ```net user```
+Linux: ```cat /etc/passwd```
+
+### Process Enumeration
+- Why is this important?
+- What does it provide?
+
+Windows: ```tasklist /v```
+Linux: ```ps -elf```
+
+### Network Connection Enumeration
+- Why is this important?
+- What does it provide?
+
+Windows: ```ipconfig /all```
+Linux: 
+```
+ifconfig -a      # SysV (deprecated)
+ip a             # SystemD
+```
+
+
+
+
+

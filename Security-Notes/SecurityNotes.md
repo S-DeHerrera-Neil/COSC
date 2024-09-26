@@ -1026,3 +1026,4 @@ scp <source> <destination>
 ncat --ssl <ip> <port> < <file>
 ```
 
+# Intranet 7, no collaboration. Only Help from the instructor.

